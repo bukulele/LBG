@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
 
 html, body {
     width: 100%;
@@ -7,4 +7,27 @@ html, body {
     padding: 0;
     font-family: 'Manrope', sans-serif;
     background-color: #1D1E20;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    gap: 10px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.btn--red {
+    background: #8C171E;
+}
+
+.btn--pink {
+    background: linear-gradient(180deg, #FA00FF 0%, #FF4F4F 100%), linear-gradient(180deg, #01D52F 0%, #00F335 100%);
+}
+
+.btn--pink:hover {
+    background: linear-gradient(180deg, #24D135 0%, #4E8B5B 100%), linear-gradient(180deg, #01D52F 0%, #00F335 100%);
 }
