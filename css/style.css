@@ -9,6 +9,11 @@ html, body {
     background-color: #1D1E20;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 .btn {
     display: flex;
     flex-direction: row;

@@ -39,7 +39,6 @@ class navBar extends HTMLElement {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 18px 25px 18px 0;
         gap: 43px;
       }
       .navbar__links {
