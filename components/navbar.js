@@ -13,7 +13,7 @@ class navBar extends HTMLElement {
         align-items: center;
         height: 70px;
         background: linear-gradient(90.01deg, #6C060C -0.4%, #671616 98.74%);
-        padding: 0 20px;
+        padding: 10px 20px;
         gap: 10px;
       }
       .navbar a {
@@ -83,7 +83,6 @@ class navBar extends HTMLElement {
       }
       .navbar__links li {
         list-style: none;
-        width: 100%;
         display: flex;
         align-items: center;
       }
@@ -171,7 +170,7 @@ class navBar extends HTMLElement {
       </div>
       <div class="navbar__links-container navbar__links-container--device-position navbar__links-container--background-set">
         <div class="navbar__close">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="25" height="25" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.1936 4.1936C4.45145 3.93582 4.80112 3.79102 5.16572 3.79102C5.53032 3.79102 5.88 3.93582 6.13785 4.1936L10.9998 9.0556L15.8618 4.1936C16.1212 3.94313 16.4685 3.80454 16.829 3.80767C17.1895 3.8108 17.5344 3.95541 17.7893 4.21035C18.0443 4.46528 18.1889 4.81015 18.192 5.17067C18.1952 5.53119 18.0566 5.87852 17.8061 6.13785L12.9441 10.9998L17.8061 15.8618C18.0566 16.1212 18.1952 16.4685 18.192 16.829C18.1889 17.1895 18.0443 17.5344 17.7893 17.7893C17.5344 18.0443 17.1895 18.1889 16.829 18.192C16.4685 18.1952 16.1212 18.0566 15.8618 17.8061L10.9998 12.9441L6.13785 17.8061C5.87852 18.0566 5.53119 18.1952 5.17067 18.192C4.81015 18.1889 4.46528 18.0443 4.21035 17.7893C3.95541 17.5344 3.8108 17.1895 3.80767 16.829C3.80454 16.4685 3.94313 16.1212 4.1936 15.8618L9.0556 10.9998L4.1936 6.13785C3.93582 5.88 3.79102 5.53032 3.79102 5.16572C3.79102 4.80112 3.93582 4.45145 4.1936 4.1936Z" fill="white"/>
           </svg>
         </div>
