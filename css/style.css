@@ -3,10 +3,16 @@
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: 'Manrope', sans-serif;
     background-color: #1D1E20;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 #page-container {
@@ -16,13 +22,15 @@ html, body {
 
 .btn {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
+    border: none;
+    border-radius: 6px;
     gap: 10px;
     height: 50px;
-    border-radius: 6px;
+    padding: 0 30px;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .btn--red {
@@ -35,4 +43,12 @@ html, body {
 
 .btn--pink:hover {
     background: linear-gradient(180deg, #24D135 0%, #4E8B5B 100%), linear-gradient(180deg, #01D52F 0%, #00F335 100%);
+}
+
+.btn--yellow {
+    background: linear-gradient(0deg, #FFC30A, #FFC30A), #2DC115;
+}
+
+.btn--yellow:hover {
+    background: linear-gradient(0deg, #FBFF31, #FBFF31), #8C171E;
 }
