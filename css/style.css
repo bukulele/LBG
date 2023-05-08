@@ -31,6 +31,12 @@ body * {
     padding: 0 30px;
     font-weight: 700;
     font-size: 16px;
+    white-space: nowrap;
+}
+
+.btn--mobile-small {
+    height: 34px;
+    padding: 0 18px;
 }
 
 .btn--red {
@@ -51,4 +57,11 @@ body * {
 
 .btn--yellow:hover {
     background: linear-gradient(0deg, #FBFF31, #FBFF31), #8C171E;
+}
+
+@media only screen and (min-width: 768px) {
+    .btn--mobile-small {
+        height: 50px;
+        padding: 0 30px;
+    }
 }

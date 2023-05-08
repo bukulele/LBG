@@ -14,7 +14,7 @@ class navBar extends HTMLElement {
         height: 70px;
         background: linear-gradient(90.01deg, #6C060C -0.4%, #671616 98.74%);
         padding: 10px 20px;
-        gap: 10px;
+        gap: 20px;
       }
       .navbar a {
         text-decoration: none;
@@ -33,7 +33,9 @@ class navBar extends HTMLElement {
         height: 100%;
       }
       .navbar__logo img {
-        height: 100%;
+        height: auto;
+        max-height: 100%;
+        width: 100%;
       }
       .navbar__links-container-wrapper {
         display: block;
@@ -176,17 +178,29 @@ class navBar extends HTMLElement {
         width: 100%;
         padding: 15px 0;
       }
-      .navbar__user-buttons {
+      
+      .navbar__user-buttons,
+      .links-container__user-buttons {
         margin: 15px 0;
         display: flex;
         align-items: center;
         gap: 30px;
       }
       
-      .navbar__user-buttons a {
+      .navbar__user-buttons a,
+      .links-container__user-buttons a {
         color: #fff;
         font-weight: 700;
       } 
+      
+      .navbar__user-buttons {
+        display: flex;
+        margin-left: auto;
+      }
+      
+      .navbar__user-buttons .log-in-button {
+        display: none;
+      }
       .navbar__search {
         display: flex;
         flex-direction: row;
@@ -229,6 +243,7 @@ class navBar extends HTMLElement {
         width: 30px;
         height: 23px;        
         cursor: pointer;
+        flex-shrink: 0;
       }
       .navbar__hamburger span {
         display: block;
@@ -240,6 +255,12 @@ class navBar extends HTMLElement {
       
       #memberButton * {
       pointer-events: none;
+      }
+      
+      @media only screen and (min-width: 768px)  {
+        .navbar__user-buttons .log-in-button {
+          display: block;
+        }
       }
     </style>
     <nav class="navbar">
@@ -287,7 +308,7 @@ class navBar extends HTMLElement {
             </svg>
           NEWS</a></li>
         </ul>
-        <div class="navbar__user-buttons">
+        <div class="links-container__user-buttons">
           ${this.userAuthorized ? `
           <button id="memberButton" class="btn btn--yellow">
             <p>Member</p>
@@ -298,8 +319,8 @@ class navBar extends HTMLElement {
             </div>
           </button>
           ` : `
-            <a class="btn btn--pink">JOIN NOW</a>
-            <a class="">LOG IN</a>
+            <a class="btn btn--pink join-now-button">JOIN NOW</a>
+            <a href="" class="log-in-button">LOG IN</a>
           `}
         </div>
         <ul class="navbar__links navbar__member-links">
@@ -344,6 +365,21 @@ class navBar extends HTMLElement {
           </svg>
           <input type="text" placeholder="SEARCH" />
         </div>
+      </div>
+      <div class="navbar__user-buttons">
+        ${this.userAuthorized ? `
+        <button id="memberButton" class="btn btn--yellow">
+          <p>Member</p>
+          <div class="user-buttons__chevron">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.12285L0.983755 3.1501L7.00918 8.93296L7.65184 8.31636L7.6483 8.31943L13.0014 3.1812L14 4.13994C12.5205 5.56009 8.38983 9.52485 7.00918 10.8501C5.98305 9.86582 6.98305 10.8257 0 4.12285Z" fill="black"/>
+            </svg>
+          </div>
+        </button>
+        ` : `
+          <a href="" class="log-in-button">LOG IN</a>
+          <a class="btn btn--mobile-small btn--pink join-now-button">JOIN NOW</a>
+        `}
       </div>
       <div class="navbar__hamburger">
         <span></span>
