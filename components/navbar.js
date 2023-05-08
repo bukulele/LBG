@@ -303,6 +303,48 @@ class navBar extends HTMLElement {
           display: block;
         }
       }
+      
+      @media only screen and (min-width: 1025px) {
+        .navbar__links-container--device-position  {
+          position: relative;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          right: unset;
+          padding: 0;
+        }
+        .navbar__links-container--background-set {
+          background: transparent;
+        }
+        .navbar__logo {
+          min-width: 273px;
+        }
+        .navbar__search {
+          margin: 0;
+          max-width: 394px;
+        }
+        .navbar__close {
+          display: none;
+        }
+        .navbar__links {
+          flex-direction: row;
+          gap: 43px;
+          align-items: center;
+          justify-content: space-between;
+          margin-right: 43px;
+        }
+        .links-container__member-links {
+          display: none;
+        }
+        .links-container__user-buttons {
+          display: none;
+        }
+        
+        .navbar__hamburger {
+          display: none;
+        }
+      }
     </style>
     <nav class="navbar">
       <div class="navbar__container">
