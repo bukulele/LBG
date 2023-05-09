@@ -34,6 +34,10 @@ body * {
     white-space: nowrap;
 }
 
+.btn * {
+    pointer-events: none;
+}
+
 .btn--mobile-small {
     height: 34px;
     padding: 0 18px;

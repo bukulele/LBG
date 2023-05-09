@@ -3,12 +3,15 @@ const navbarWrapper = document.querySelector('.navbar__links-container-wrapper')
 const navbarLinksContainer = document.querySelector('.navbar__links-container');
 const navbarMemberLinks = document.querySelector('.links-container__member-links');
 const memberButtonSide = document.querySelector('#memberButtonSide');
-const memberButtonSideChevron = memberButtonSide.querySelector('.user-buttons__chevron');
 const navbarHamburger = document.querySelector('.navbar__hamburger');
 const memberButton = document.querySelector('#memberButton');
-const memberButtonChevron = memberButton.querySelector('.user-buttons__chevron');
 const memberZoneContainer = document.querySelector('.navbar__member-zone-container');
 
+let memberButtonSideChevron;
+let memberButtonChevron;
+
+if (memberButtonSide) memberButtonSideChevron = memberButtonSide.querySelector('.user-buttons__chevron');
+if (memberButton) memberButtonChevron = memberButton.querySelector('.user-buttons__chevron');
 function showNavigationMenu() {
   console.log('showNavigationMenu');
   navbarWrapper.classList.add('navbar__links-container-wrapper--show');
