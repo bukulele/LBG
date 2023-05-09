@@ -1,7 +1,7 @@
 class navBar extends HTMLElement {
   constructor() {
     super();
-    this.userAuthorized = true;
+    this.userAuthorized = false;
   }
 
   connectedCallback() {
@@ -205,6 +205,7 @@ class navBar extends HTMLElement {
       .links-container__user-buttons a {
         color: #fff;
         font-weight: 700;
+        white-space: nowrap;
       } 
       
       .navbar__user-buttons {
