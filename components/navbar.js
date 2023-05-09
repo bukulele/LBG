@@ -161,7 +161,8 @@ class navBar extends HTMLElement {
         pointer-events: none;
       }
       .navbar__links,
-      .links-container__member-links {
+      .links-container__member-links,
+      .member-zone-container__member-links {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -170,13 +171,15 @@ class navBar extends HTMLElement {
         width: 100%;
       }
       .navbar__links li,
-       .links-container__member-links li {
+      .links-container__member-links li,
+      .member-zone-container__member-links li{
         list-style: none;
         display: flex;
         align-items: center;
       }
       .navbar__links a,
-       .links-container__member-links a {
+      .links-container__member-links a,
+      .member-zone-container__member-links a {
         display: flex;
         align-items: center;
         height: 100%;
@@ -305,20 +308,20 @@ class navBar extends HTMLElement {
       }
       
       @media only screen and (min-width: 1025px) {
+        .navbar__links-container {
+          gap: 10px;
+        }
         .navbar__links-container--device-position  {
           position: relative;
           flex-direction: row;
           align-items: center;
-          justify-content: space-between;
+          justify-content: center;
           width: 100%;
           right: unset;
           padding: 0;
         }
         .navbar__links-container--background-set {
           background: transparent;
-        }
-        .navbar__logo {
-          min-width: 273px;
         }
         .navbar__search {
           margin: 0;
@@ -327,12 +330,15 @@ class navBar extends HTMLElement {
         .navbar__close {
           display: none;
         }
+        .navbar__links-container-wrapper {
+          display: none;
+        }
         .navbar__links {
           flex-direction: row;
-          gap: 43px;
+          gap: 10px;
           align-items: center;
-          justify-content: space-between;
-          margin-right: 43px;
+          justify-content: center;
+          width: auto;
         }
         .links-container__member-links {
           display: none;
@@ -343,6 +349,17 @@ class navBar extends HTMLElement {
         
         .navbar__hamburger {
           display: none;
+        }
+      }
+      
+      @media only screen and (min-width: 1250px) {
+        .navbar__links-container,
+        .navbar__links {
+          gap: 43px;
+        }
+        
+        .navbar__logo {
+          min-width: 273px;
         }
       }
     </style>
@@ -472,7 +489,7 @@ class navBar extends HTMLElement {
         </div>
       </div>
       <div class="navbar__member-zone-container navbar__member-zone-container--hidden">
-        <ul class="links-container__member-links">
+        <ul class="member-zone-container__member-links">
           <li><a href="index.html">
             <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4232 15.675H2.99408C2.37893 15.675 1.92468 15.068 2.15669 14.5098C3.2332 11.9287 5.76225 10.45 8.70821 10.45C11.6551 10.45 14.1841 11.9287 15.2606 14.5098C15.4926 15.068 15.0384 15.675 14.4232 15.675ZM5.15243 5.22499C5.15243 3.30393 6.74809 1.74165 8.70821 1.74165C10.6692 1.74165 12.264 3.30393 12.264 5.22499C12.264 7.14605 10.6692 8.70833 8.70821 8.70833C6.74809 8.70833 5.15243 7.14605 5.15243 5.22499ZM17.3781 15.358C16.7318 12.4329 14.7104 10.2741 12.0498 9.29438C13.4596 8.18232 14.2819 6.38402 13.9796 4.41507C13.6294 2.13087 11.6897 0.30303 9.34825 0.0365549C6.11605 -0.331808 3.37454 2.13266 3.37454 5.22499C3.37454 6.87087 4.15326 8.33733 5.36756 9.29438C2.70606 10.2741 0.685489 12.4329 0.0383376 15.358C-0.196344 16.4213 0.678378 17.4167 1.78867 17.4167H15.6277C16.7389 17.4167 17.6137 16.4213 17.3781 15.358Z" fill="white"/>
