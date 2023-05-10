@@ -7,8 +7,6 @@ class footerBlock extends HTMLElement {
     this.innerHTML = `
       <style>
         .footer {
-          position: absolute;
-          bottom: 0;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -25,11 +23,67 @@ class footerBlock extends HTMLElement {
           width: 100%;
         }
         .footer__upper {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: repeat(3, auto);
+          grid-template-areas: "footerText"
+          "footerBenefits"
+          "footerAward";
           width: 100%;
-          background-color: #25272A;          
+          background-color: #25272A;    
+          padding: 30px 25px;      
+          gap: 20px;
+        }
+        .upper__footer-text {
+          grid-area: footerText;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          color: #fff;
+        }
+        .upper__footer-text h3 {
+          font-size: 20px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .upper__footer-text p {
+          text-align: justify;
+          font-size: 14px;
+        }
+        .upper__footer-benefits {
+          grid-area: footerBenefits;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #fff;
+        }
+        .upper__footer-benefits h4 {
+          font-weight: 800;
+          font-size: 14px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFC30A;
+        }
+        .upper__footer-benefits ul {
+          font-size: 14px;
+        }
+        .upper__footer-benefits li {
+          list-style: none;
+        }
+        .upper__footer-benefits li::before {
+          content: "\\2022";  
+          color: #FFC30A; 
+          font-weight: bold; 
+          display: inline-block;
+          width: 1em;
+        }
+        .upper__footer-award {
+          margin: 10px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
         }
         .footer__lower {
           display: flex;
@@ -128,6 +182,7 @@ class footerBlock extends HTMLElement {
           color: #fff;
           text-align: center;
           font-size: 14px;
+          font-weight: 500;
         }
         .footer__partners {
           display: flex;
@@ -143,6 +198,27 @@ class footerBlock extends HTMLElement {
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__upper">
+            <div class="upper__footer-text">
+              <h3>any title  any title</h3>
+              <p>Today we have a roster of 3 new girls that are new to LBG so please welcome Alisa, Lina & Marsianna, they are meeting up for a game of strip darts, the rules are plain, each time you lose a round you lose and article of clothing, and the loser will have to masturbate in front of the others :) Who would you place your bets Today we have a roster of 3 new girls that are new to LBG so please welcome Alisa, Lina & Marsianna, they are meeting up for a game of strip darts, the rules are plain, each time you lose a round you lose and article.</p>
+            </div>
+            <div class="upper__footer-benefits">
+              <h4>member benefits</h4>
+              <ul>
+                <li>Weekly uploads of the world's kinkiest girls</li>
+                <li>Full 4K content</li>
+                <li>Watch on any device</li>
+                <li>Shot from 100% pure POV</li>
+                <li>Tiny Teens & Busty Babes</li>
+                <li>The girls always finish job!</li>
+                <li>Mouth, Pussy & Anal</li>
+                <li>Fast Customer Support</li>
+              </ul>
+            </div>
+            <div class="upper__footer-award">
+              <img src="/assets/images/award.png" alt="">
+              <a class="btn btn--pink join-now-button">JOIN NOW</a>
+            </div>
           </div>
           <div class="footer__lower">
             <div class="footer__navigation-container">
@@ -196,7 +272,7 @@ class footerBlock extends HTMLElement {
                 <p>ALL MODELS APPEARING ON THIS WEBSITE ARE 18 YEARS OR OLDER</p>
               </div>
               <div class="social__links">
-                <a href="" class="btn btn--yellow btn--mobile-small">
+                <a href="" class="btn btn--yellow btn--mobile-xs">
                   <div class="icon-container">
                     <svg width="20" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_2_1192)">
@@ -211,7 +287,7 @@ class footerBlock extends HTMLElement {
                   </div>
                   <p>MODELS WANTED</p>
                 </a>
-                <a href="" class="btn btn--yellow btn--mobile-small">
+                <a href="" class="btn btn--yellow btn--mobile-xs">
                   <div class="icon-container">
                     <svg width="20" height="20" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M20.7344 0.428223C19.9022 1.20072 18.9013 1.80822 17.7922 2.19522C16.6352 2.39322 13.4331 0.953222 11.8553 2.42322C11.5923 2.67822 11.2675 2.93322 10.9272 3.18822C10.1847 2.87322 9.04 2.39322 8.20469 1.92822C7.36938 1.46322 5.26562 0.428223 5.26562 0.428223L0.625 5.67822C0.625 5.67822 1.76969 7.17822 2.48125 8.16822C2.94531 8.82822 3.51766 9.83322 3.88891 10.5082L3.36297 11.1082C3.27325 11.2807 3.21911 11.4832 3.21911 11.6977C3.21911 12.0502 3.36142 12.3712 3.595 12.6082C3.80847 12.7627 4.07608 12.8557 4.36844 12.8557C4.6608 12.8557 4.92841 12.7627 5.14497 12.6052C4.99956 12.7687 4.91448 12.9787 4.91448 13.2082C4.91448 13.4977 5.05061 13.7557 5.26408 13.9267C5.48683 14.0542 5.75444 14.1292 6.03906 14.1292C6.32369 14.1292 6.5913 14.0542 6.82023 13.9237C6.64698 14.1322 6.54644 14.3932 6.54644 14.6782C6.54644 14.9632 6.64698 15.2242 6.81559 15.4312C6.96873 15.4837 7.14663 15.5152 7.33225 15.5152C7.65245 15.5152 7.94945 15.4207 8.19541 15.2602C8.12889 15.4027 8.09486 15.5647 8.09486 15.7357C8.09486 16.0867 8.24336 16.4032 8.48467 16.6282C8.68577 16.7167 8.92244 16.7677 9.16994 16.7677C9.51953 16.7677 9.84592 16.6657 10.1151 16.4902L10.9133 15.7897C11.6434 16.4947 12.6504 16.9312 13.7626 16.9312C13.7935 16.9312 13.826 16.9312 13.857 16.9297C14.6211 16.8667 15.2615 16.3957 15.5492 15.7432C15.7751 15.8272 16.0319 15.8842 16.3041 15.8842C16.6692 15.8842 17.008 15.7822 17.2941 15.6067C18.199 15.0262 17.9825 14.5762 17.9825 14.5762C18.1758 14.6587 18.4001 14.7067 18.6368 14.7067C19.1334 14.7067 19.5804 14.4937 19.8836 14.1577C20.1558 13.8862 20.3214 13.5172 20.3214 13.1122C20.3214 12.8272 20.2394 12.5617 20.0971 12.3352C20.1094 12.3427 20.1203 12.3427 20.1295 12.3427C20.7808 12.3427 21.3469 11.9947 21.6424 11.4817C21.7476 11.2252 21.8048 10.9372 21.8048 10.6372C21.8048 10.1242 21.6347 9.64872 21.3469 9.26172L21.3516 9.26922C22.62 9.02922 22.5736 8.41422 23.1924 7.51422C23.7864 6.77322 24.5103 6.16122 25.3379 5.70222L20.7344 0.428223ZM20.657 11.0182C19.9764 11.6782 19.4505 11.3932 18.2903 10.5382C17.1302 9.68322 14.8253 8.07822 14.8253 8.07822C14.9197 8.53572 15.1378 8.93322 15.4456 9.24972C15.9391 9.78822 17.4086 11.0182 18.1047 11.6482C18.5378 12.0382 19.6516 12.8182 19.0019 13.4182C18.3522 14.0182 17.8417 13.4182 16.7744 12.5782C15.707 11.7382 13.3248 9.66822 13.3248 9.66822C13.3233 9.69522 13.3218 9.72522 13.3218 9.75672C13.3218 10.1437 13.4826 10.4932 13.7425 10.7482C14.0055 11.0482 15.475 12.4282 16.0938 13.0582C16.7125 13.6882 17.2539 14.0632 16.728 14.5582C16.202 15.0532 15.1347 14.2732 14.5469 13.6882C13.6342 12.8332 11.8244 11.2432 11.8244 11.2432C11.8228 11.2672 11.8228 11.2942 11.8228 11.3227C11.8228 11.7487 11.9744 12.1387 12.2297 12.4477C12.6752 13.0147 13.5414 13.7497 14.0673 14.3197C14.5933 14.8897 14.9027 15.3697 14.0673 15.8197C13.232 16.2697 11.9945 15.1597 11.4531 14.6197V14.6167C11.4531 14.4622 11.3943 14.3212 11.2984 14.2132C11.0525 13.9927 10.7199 13.8562 10.3564 13.8562C10.1955 13.8562 10.0408 13.8832 9.89697 13.9312C10.095 13.7602 10.2125 13.5202 10.2125 13.2532C10.2125 12.9862 10.095 12.7462 9.90625 12.5782C9.71134 12.4357 9.46694 12.3502 9.20242 12.3502C8.93791 12.3502 8.69195 12.4357 8.4955 12.5797C8.67648 12.4102 8.78786 12.1777 8.78786 11.9182C8.78786 11.5987 8.61925 11.3182 8.36402 11.1547C8.12734 11.0092 7.84427 10.9252 7.54108 10.9252C7.16364 10.9252 6.81714 11.0572 6.54798 11.2747C6.69494 11.1037 6.78156 10.8847 6.78156 10.6447C6.78156 10.3522 6.65008 10.0897 6.4428 9.90822C6.16745 9.66072 5.79775 9.50922 5.39247 9.50922C5.1063 9.50922 4.83869 9.58422 4.6082 9.71622L3.57953 8.03172C2.86797 6.93672 2.03266 5.79672 2.03266 5.79672L5.55953 1.64172C5.55953 1.64172 6.8125 2.39172 7.84891 2.96172C8.35938 3.24672 9.24109 3.62172 9.90625 3.92172C8.85437 4.68672 7.97266 5.42172 8.23563 5.93172C8.69505 6.25272 9.26894 6.44622 9.88923 6.44622C10.4709 6.44622 11.0123 6.27672 11.464 5.98572C12.0409 5.60922 12.7633 5.38122 13.5414 5.38122C14.0782 5.38122 14.5886 5.48922 15.0512 5.68572C15.9081 6.24672 17.4859 7.62672 18.9245 8.49672C20.7344 9.77172 21.0902 10.5967 20.657 11.0167V11.0182Z" fill="currentColor"/>

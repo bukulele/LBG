@@ -1,13 +1,15 @@
 class navBar extends HTMLElement {
   constructor() {
     super();
-    this.userAuthorized = true;
+    this.userAuthorized = false;
   }
 
   connectedCallback() {
     this.innerHTML = `
     <style>
       .navbar {
+        position: fixed;
+        top: 0;
         display: block;
         width: 100%;
         height: 70px;
@@ -227,6 +229,7 @@ class navBar extends HTMLElement {
         margin: 15px 0;
         min-height: 50px;
         max-height: 50px;
+        min-width: 150px;
         width: 100%;
         border-radius: 6px;
       }
