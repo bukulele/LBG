@@ -312,6 +312,12 @@ class navBar extends HTMLElement {
       }
       
       @media only screen and (min-width: 1025px) {
+        .navbar__container {
+          padding: 10px;
+        }
+        .navbar__user-buttons {
+          gap: 20px;
+        }
         .navbar__links-container {
           gap: 10px;
         }
@@ -329,7 +335,7 @@ class navBar extends HTMLElement {
         }
         .navbar__search {
           margin: 0;
-          max-width: 394px;
+          max-width: 300px;
         }
         .navbar__close {
           display: none;
@@ -356,7 +362,10 @@ class navBar extends HTMLElement {
         }
       }
       
-      @media only screen and (min-width: 1250px) {
+      @media only screen and (min-width: 1275px) {
+        .navbar__container {
+          padding: 10px 20px;
+        }
         .navbar__links-container,
         .navbar__links {
           gap: 43px;
@@ -364,6 +373,9 @@ class navBar extends HTMLElement {
         
         .navbar__logo {
           min-width: 273px;
+        }
+        .navbar__search {
+          max-width: 394px;
         }
       }
     </style>
