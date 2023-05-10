@@ -40,7 +40,7 @@ body * {
 
 .btn--mobile-small {
     height: 34px;
-    padding: 0 18px;
+    padding: 10px;
 }
 
 .btn--red {
@@ -59,8 +59,22 @@ body * {
     background: linear-gradient(0deg, #FFC30A, #FFC30A), #2DC115;
 }
 
+.btn--yellow p {
+    color: #000;
+}
+
 .btn--yellow:hover {
     background: linear-gradient(0deg, #FBFF31, #FBFF31), #8C171E;
+}
+
+.btn--yellow .icon-container {
+    color: #6C060C;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {

@@ -7,6 +7,9 @@ const navbarHamburger = document.querySelector('.navbar__hamburger');
 const memberButton = document.querySelector('#memberButton');
 const memberZoneContainer = document.querySelector('.navbar__member-zone-container');
 
+const icon = document.querySelector('.search-svg-i');
+console.log(icon);
+
 let memberButtonSideChevron;
 let memberButtonChevron;
 
