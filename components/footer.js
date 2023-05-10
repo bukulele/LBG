@@ -129,6 +129,16 @@ class footerBlock extends HTMLElement {
           text-align: center;
           font-size: 14px;
         }
+        .footer__partners {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+        }
+        .footer__partners img {
+          height: 100%;
+          width: auto;
+        }
       </style>
       <footer class="footer">
         <div class="footer__container">
@@ -228,7 +238,12 @@ class footerBlock extends HTMLElement {
               <p>All images, videos and design are strictly copyright protected.</p>
               <p>Copyright @ lostbetsgames.com. All rights reserved.</p>
             </div>
-            <div class="footer__partners"></div>
+            <div class="footer__partners">
+              <img src="/assets/images/visa.png" alt="" />
+              <img src="/assets/images/mastercard.png" alt="" />
+              <img src="/assets/images/asacp.png" alt="" />
+              <img src="/assets/images/rta.png" alt="" />
+            </div>
           </div> 
         </div>
       </footer>
