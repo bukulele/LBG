@@ -290,17 +290,17 @@ class footerBlock extends HTMLElement {
             <div class="upper__footer-futured">
               <h2>AS FUTURED IN</h2>
               <div class="footer-futured__logos">
-                <img src="/assets/images/laweekly.png" alt="">
-                <img src="/assets/images/the_huffingston_post.png" alt="">
-                <img src="/assets/images/the_washington_post.png" alt="">
-                <img src="/assets/images/the_guardian.png" alt="">
-                <img src="/assets/images/daily_news.png" alt="">
-                <img src="/assets/images/daily_beast.png" alt="">
-                <img src="/assets/images/forbes.png" alt="">
-                <img src="/assets/images/esquire.png" alt="">
-                <img src="/assets/images/maxim.png" alt="">
-                <img src="/assets/images/the_sun.png" alt="">
-                <img src="/assets/images/vice.png" alt="">
+                <img src="assets/images/laweekly.png" alt="">
+                <img src="assets/images/the_huffingston_post.png" alt="">
+                <img src="assets/images/the_washington_post.png" alt="">
+                <img src="assets/images/the_guardian.png" alt="">
+                <img src="assets/images/daily_news.png" alt="">
+                <img src="assets/images/daily_beast.png" alt="">
+                <img src="assets/images/forbes.png" alt="">
+                <img src="assets/images/esquire.png" alt="">
+                <img src="assets/images/maxim.png" alt="">
+                <img src="assets/images/the_sun.png" alt="">
+                <img src="assets/images/vice.png" alt="">
               </div>
             </div>
             <div class="upper__footer-text">
@@ -321,7 +321,7 @@ class footerBlock extends HTMLElement {
               </ul>
             </div>
             <div class="upper__footer-award">
-              <img src="/assets/images/award.png" alt="">
+              <img src="assets/images/award.png" alt="">
               <a class="btn btn--pink join-now-button">JOIN NOW</a>
             </div>
           </div>
@@ -420,10 +420,10 @@ class footerBlock extends HTMLElement {
               <p>Copyright @ lostbetsgames.com. All rights reserved.</p>
             </div>
             <div class="footer__partners">
-              <img src="/assets/images/visa.png" alt="" />
-              <img src="/assets/images/mastercard.png" alt="" />
-              <img src="/assets/images/asacp.png" alt="" />
-              <img src="/assets/images/rta.png" alt="" />
+              <img src="assets/images/visa.png" alt="" />
+              <img src="assets/images/mastercard.png" alt="" />
+              <img src="assets/images/asacp.png" alt="" />
+              <img src="assets/images/rta.png" alt="" />
             </div>
           </div> 
         </div>
