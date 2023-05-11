@@ -21,19 +21,45 @@ class footerBlock extends HTMLElement {
           justify-content: center;
           align-items: center;
           width: 100%;
+          background-color: #25272A;  
         }
         .footer__upper {
           display: grid;
           grid-template-columns: 100%;
-          grid-template-rows: repeat(3, auto);
-          grid-template-areas: "footerText"
+          grid-template-rows: repeat(4, auto);
+          grid-template-areas: "footerFutured"
+          "footerText"
           "footerBenefits"
           "footerAward";
           width: 100%;
-          background-color: #25272A;    
-          padding: 30px 25px;      
+          max-width: 1400px;  
+          padding: 60px 25px;      
           gap: 20px;
           place-items: center;
+        }
+        .upper__footer-futured {
+          grid-area: footerFutured;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        }
+        .upper__footer-futured h2 {
+          font-weight: 800;
+          color: #fff;
+          font-size: 40px;
+        }
+        .footer-futured__logos {
+          padding: 0 40px 40px 40px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+        }
+        .footer-futured__logos img {
+          width: 20%;
+          height: auto;
         }
         .upper__footer-text {
           grid-area: footerText;
@@ -134,16 +160,21 @@ class footerBlock extends HTMLElement {
           width: 100%;
         }
         .footer__social {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: repeat(3, auto);
+          grid-template-areas: "socialDiscaimer"
+          "socialLinks"
+          "socialNetworks";
+          place-items: center;
           gap: 30px;
         }
         .social__disclaimer {
+          grid-area: socialDiscaimer;
           display: flex;
           gap: 10px;
           justify-content: flex-start;
-          align-items: center;  
+          align-items: center;
         }
         .social__disclaimer > p {
           color: #2DC115;
@@ -167,17 +198,21 @@ class footerBlock extends HTMLElement {
           font-size: 20px;
         }
         .social__links {
+          grid-area: socialLinks;
           display: flex;
-          width: 100%;
           align-items: center;
           justify-content: center;
           gap: 20px;
         }
         .social__networks {
+          grid-area: socialNetworks;
           display: flex;
           align-items: center;
-          gap: 27px;
+          gap: 20px;
           color: #fff;
+        }
+        .social__networks p {
+          white-space: nowrap;
         }
         .footer__rights {
           display: flex;
@@ -204,28 +239,70 @@ class footerBlock extends HTMLElement {
         @media only screen and (min-width: 768px) {
           .footer__upper {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
-            grid-template-areas: "footerText footerText"
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "footerFutured footerFutured"
+            "footerText footerText"
             "footerAward footerBenefits";
           }
           .upper__footer-benefits {
             align-items: flex-start;
           }
+          .footer-futured__logos img {
+            width: 15%;
+            height: auto;
+          }
+          .footer__social {
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: "socialDiscaimer socialDiscaimer"
+            "socialLinks socialNetworks";
+          }
+          .social__disclaimer > p {
+            white-space: nowrap;
+          }
         }
         @media only screen and (min-width: 1025px) {
           .footer__upper {
             grid-template-columns: 1fr min-content 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "footerText footerAward footerBenefits";
+            grid-template-rows: auto auto;
+            grid-template-areas: "footerFutured footerFutured footerFutured" 
+            "footerText footerAward footerBenefits";
           }
           .upper__footer-text {
             max-width: 530px;
+          }
+          .footer__links a {
+            font-size: 16px;
+          }
+        }
+        @media only screen and (min-width: 1275px) {
+          .footer__social {
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100%;
+            grid-template-areas: "socialDiscaimer socialLinks socialNetworks";
           }
         }
       </style>
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__upper">
+            <div class="upper__footer-futured">
+              <h2>AS FUTURED IN</h2>
+              <div class="footer-futured__logos">
+                <img src="/assets/images/laweekly.png" alt="">
+                <img src="/assets/images/the_huffingston_post.png" alt="">
+                <img src="/assets/images/the_washington_post.png" alt="">
+                <img src="/assets/images/the_guardian.png" alt="">
+                <img src="/assets/images/daily_news.png" alt="">
+                <img src="/assets/images/daily_beast.png" alt="">
+                <img src="/assets/images/forbes.png" alt="">
+                <img src="/assets/images/esquire.png" alt="">
+                <img src="/assets/images/maxim.png" alt="">
+                <img src="/assets/images/the_sun.png" alt="">
+                <img src="/assets/images/vice.png" alt="">
+              </div>
+            </div>
             <div class="upper__footer-text">
               <h3>any title  any title</h3>
               <p>Today we have a roster of 3 new girls that are new to LBG so please welcome Alisa, Lina & Marsianna, they are meeting up for a game of strip darts, the rules are plain, each time you lose a round you lose and article of clothing, and the loser will have to masturbate in front of the others :) Who would you place your bets Today we have a roster of 3 new girls that are new to LBG so please welcome Alisa, Lina & Marsianna, they are meeting up for a game of strip darts, the rules are plain, each time you lose a round you lose and article.</p>

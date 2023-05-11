@@ -367,16 +367,19 @@ class navBar extends HTMLElement {
         .navbar__container {
           padding: 10px 20px;
         }
-        .navbar__links-container,
-        .navbar__links {
-          gap: 43px;
-        }
         
         .navbar__logo {
           min-width: 273px;
         }
         .navbar__search {
           max-width: 394px;
+        }
+      }
+      
+      @media only screen and (min-width: 1290px) {
+        .navbar__links-container,
+        .navbar__links {
+          gap: 43px;
         }
       }
     </style>
