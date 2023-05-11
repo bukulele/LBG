@@ -1,7 +1,7 @@
 class navBar extends HTMLElement {
   constructor() {
     super();
-    this.userAuthorized = false;
+    this.userAuthorized = true;
   }
 
   connectedCallback() {
