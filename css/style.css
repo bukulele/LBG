@@ -1,28 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
 
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: 'Manrope', sans-serif;
     background-color: #1D1E20;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 #page-container {
     position: relative;
     min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(90px, auto) auto min-content;
 }
 
 .btn {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
-    gap: 10px;
-    height: 50px;
+    border: none;
     border-radius: 6px;
+    gap: 5px;
+    height: 50px;
+    width: fit-content;
+    padding: 0 30px;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.btn * {
+    pointer-events: none;
+}
+
+.btn--mobile-small {
+    height: 34px;
+    padding: 6px 18px;
+}
+
+.btn--mobile-xs {
+    height: 34px;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .btn--red {
@@ -30,9 +59,41 @@ html, body {
 }
 
 .btn--pink {
+    color: #fff;
     background: linear-gradient(180deg, #FA00FF 0%, #FF4F4F 100%), linear-gradient(180deg, #01D52F 0%, #00F335 100%);
 }
 
 .btn--pink:hover {
     background: linear-gradient(180deg, #24D135 0%, #4E8B5B 100%), linear-gradient(180deg, #01D52F 0%, #00F335 100%);
+}
+
+.btn--yellow {
+    background: linear-gradient(0deg, #FFC30A, #FFC30A), #2DC115;
+}
+
+.btn--yellow p {
+    color: #000;
+}
+
+.btn--yellow:hover {
+    background: linear-gradient(0deg, #FBFF31, #FBFF31), #8C171E;
+}
+
+.btn--yellow .icon-container {
+    color: #6C060C;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .btn--mobile-small,
+    .btn--mobile-xs {
+        height: 50px;
+        padding: 0 30px;
+        font-size: inherit;
+    }
 }
