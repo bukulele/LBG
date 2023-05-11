@@ -45,7 +45,7 @@ class navBar extends HTMLElement {
       .navbar__logo img {
         height: auto;
         max-height: 100%;
-        width: 100%;
+        width: auto;
       }
       .navbar__links-container-wrapper {
         display: block;
@@ -433,7 +433,9 @@ class navBar extends HTMLElement {
             <button id="memberButtonSide" class="btn btn--yellow">
               <p>Member</p>
               <div class="user-buttons__chevron">
-                <object data="/assets/icons/chevron.svg" width="14" height="14"></object>  
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="black"/>
+                </svg>              
               </div>
             </button>
             ` : `
