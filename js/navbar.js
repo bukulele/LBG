@@ -6,6 +6,7 @@ const memberButtonSide = document.querySelector('#memberButtonSide');
 const navbarHamburger = document.querySelector('.navbar__hamburger');
 const memberButton = document.querySelector('#memberButton');
 const memberZoneContainer = document.querySelector('.navbar__member-zone-container');
+const elem = document.querySelector('#nav_bar');
 
 const icon = document.querySelector('.search-svg-i');
 console.log(icon);
@@ -68,6 +69,11 @@ function showUserMenu (event) {
     memberZoneContainer.classList.add('navbar__member-zone-container--visible');
     memberZoneContainer.style.top = `${navBarHeight}px`;
   }
+}
+
+function changeShit () {
+  console.log(elem);
+  elem.setAttribute('userAuthorized', 'true');
 }
 
 navbarHamburger.addEventListener('click', showNavigationMenu);

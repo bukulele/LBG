@@ -1,10 +1,15 @@
 class navBar extends HTMLElement {
+
   constructor() {
     super();
-    this.userAuthorized = false;
   }
 
-  connectedCallback() {
+
+
+
+  render() {
+    // let userauthorized = this.getAttribute('userAuthorized' || 'false');
+
     this.innerHTML = `
     <style>
       .navbar {
@@ -429,7 +434,7 @@ class navBar extends HTMLElement {
             NEWS</a></li>
           </ul>
           <div class="links-container__user-buttons">
-            ${this.userAuthorized ? `
+            ${this.getAttribute('userauthorized') === 'true' ? `
             <button id="memberButtonSide" class="btn btn--yellow">
               <p>Member</p>
               <div class="user-buttons__chevron">
@@ -438,7 +443,7 @@ class navBar extends HTMLElement {
             </button>
             ` : `
               <a class="btn btn--pink join-now-button">JOIN NOW</a>
-              <a href="" class="log-in-button">LOG IN</a>
+              <a onclick="changeShit()" href="#" class="log-in-button">LOG IN</a>
             `}
           </div>
           <ul class="links-container__member-links links-container__member-links--hidden">
@@ -480,7 +485,7 @@ class navBar extends HTMLElement {
           </div>
         </div>
         <div class="navbar__user-buttons">
-          ${this.userAuthorized ? `
+          ${this.getAttribute('userauthorized') === 'true' ? `
           <button id="memberButton" class="btn btn--yellow">
             <p>Member</p>
             <div class="user-buttons__chevron">
@@ -490,7 +495,7 @@ class navBar extends HTMLElement {
             </div>
           </button>
           ` : `
-            <a href="" class="log-in-button">LOG IN</a>
+            <a onclick="changeShit()" href="#" class="log-in-button">LOG IN</a>
             <a class="btn btn--mobile-small btn--pink join-now-button">JOIN NOW</a>
           `}
         </div>
@@ -535,7 +540,22 @@ class navBar extends HTMLElement {
       </div>
     </nav>
     `;
+    this.setAttribute('userauthorized', 'false');
+  }
+
+  connectedCallback() {
+    if (!this.rendered) {
+      this.render();
+      this.rendered = true;
+    }
+  }
+
+  static get observedAttributes() {
+    return ['userauthorized'];
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    this.render();
   }
 }
-
 customElements.define("nav-bar", navBar);
