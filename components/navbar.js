@@ -232,6 +232,7 @@ class navBar extends HTMLElement {
         min-width: 150px;
         width: 100%;
         border-radius: 6px;
+        color: #fff;
       }
       
       .navbar__search input {

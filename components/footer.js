@@ -212,6 +212,16 @@ class footerBlock extends HTMLElement {
             align-items: flex-start;
           }
         }
+        @media only screen and (min-width: 1025px) {
+          .footer__upper {
+            grid-template-columns: 1fr min-content 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "footerText footerAward footerBenefits";
+          }
+          .upper__footer-text {
+            max-width: 530px;
+          }
+        }
       </style>
       <footer class="footer">
         <div class="footer__container">
