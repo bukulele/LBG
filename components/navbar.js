@@ -8,7 +8,7 @@ class navBar extends HTMLElement {
 
 
   render() {
-    // let userauthorized = this.getAttribute('userAuthorized' || 'false');
+    let userauthorized = this.getAttribute('userAuthorized' || 'false');
 
     this.innerHTML = `
     <style>
@@ -540,7 +540,7 @@ class navBar extends HTMLElement {
       </div>
     </nav>
     `;
-    this.setAttribute('userauthorized', 'false');
+    // this.setAttribute('userauthorized', 'false');
   }
 
   connectedCallback() {
@@ -555,6 +555,7 @@ class navBar extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
+    console.log(name, oldValue, newValue);
     this.render();
   }
 }

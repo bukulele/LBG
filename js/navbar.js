@@ -8,8 +8,7 @@ const memberButton = document.querySelector('#memberButton');
 const memberZoneContainer = document.querySelector('.navbar__member-zone-container');
 const elem = document.querySelector('#nav_bar');
 
-const icon = document.querySelector('.search-svg-i');
-console.log(icon);
+console.log('HERE');
 
 let memberButtonSideChevron;
 let memberButtonChevron;
