@@ -6,6 +6,7 @@
         <title>Title</title>
         <link rel="stylesheet" href="css/style.css" />
         <script src="components/navbar.js"></script>
+        <script src="components/videoTitle.js"></script>
         <script src="components/videos.js"></script>
         <script src="components/footer.js"></script>
     </head>
@@ -13,7 +14,14 @@
         <div id="page-container">
             <nav-bar></nav-bar>
                 <div class="main">
-                    <videos-block></videos-block>
+                    <videos-block>
+                        <span slot="video_1"><video-title><span slot="video-title">Video 1</span></video-title></span>
+                        <span slot="video_2"><video-title><span slot="video-title">Video 2</span></video-title></span>
+                        <span slot="video_3"><video-title><span slot="video-title">Video 3</span></video-title></span>
+                        <span slot="video_4"><video-title><span slot="video-title">Video 4</span></video-title></span>
+                        <span slot="video_5"><video-title><span slot="video-title">Video 5</span></video-title></span>
+                        <span slot="video_6"><video-title><span slot="video-title">Video 6</span></video-title></span>
+                    </videos-block>
                 </div>
             <footer-block></footer-block>
         </div>

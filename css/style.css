@@ -58,6 +58,10 @@ body * {
     background: #8C171E;
 }
 
+.btn--red:hover {
+    background: linear-gradient(0deg, #BE1C25, #BE1C25), #8C171E;
+}
+
 .btn--pink {
     color: #fff;
     background: linear-gradient(180deg, #FA00FF 0%, #FF4F4F 100%), linear-gradient(180deg, #01D52F 0%, #00F335 100%);
