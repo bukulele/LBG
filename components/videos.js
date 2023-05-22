@@ -6,6 +6,7 @@ class videosBlock extends HTMLElement {
   connectedCallback() {
     this.attachShadow({mode: 'open'});
     this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="css/style.css" />
       <div class="videos-block">
         <div class="videos-block__container">
           <h2>HOTTEST AND FRESHEST VIDEO</h2>

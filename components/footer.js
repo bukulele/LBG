@@ -44,11 +44,11 @@ class footerBlock extends HTMLElement {
           align-items: center;
           gap: 20px;
         }
-        .upper__footer-futured h2 {
-          font-weight: 800;
-          color: #fff;
-          font-size: 40px;
-        }
+        /*.upper__footer-futured h2 {*/
+        /*  font-weight: 800;*/
+        /*  color: #fff;*/
+        /*  font-size: 40px;*/
+        /*}*/
         .footer-futured__logos {
           padding: 0 40px 40px 40px;
           display: flex;
@@ -71,7 +71,6 @@ class footerBlock extends HTMLElement {
           color: #fff;
         }
         .upper__footer-text h3 {
-          font-size: 20px;
           text-align: center;
           text-transform: uppercase;
         }
@@ -89,8 +88,6 @@ class footerBlock extends HTMLElement {
           color: #fff;
         }
         .upper__footer-benefits h4 {
-          font-weight: 800;
-          font-size: 14px;
           text-align: center;
           text-transform: uppercase;
           color: #FFC30A;

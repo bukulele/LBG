@@ -15,6 +15,24 @@ body * {
     padding: 0;
 }
 
+
+h2 {
+    font-weight: 800;
+    font-size: 20px;
+    color: #fff;
+}
+h3 {
+    font-weight: 800;
+    font-size: 20px;
+    color: #fff;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+}
+
 #page-container {
     position: relative;
     min-height: 100vh;
