@@ -7,6 +7,20 @@ class videosBlock extends HTMLElement {
     this.attachShadow({mode: 'open'});
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="css/style.css" />
+      <style>
+        .videos-block__container {
+          width: 340px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+        }
+        .videos-block__titles {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+      </style>
       <div class="videos-block">
         <div class="videos-block__container">
           <h2>HOTTEST AND FRESHEST VIDEO</h2>

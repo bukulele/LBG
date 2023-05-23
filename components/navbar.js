@@ -13,6 +13,7 @@ class navBar extends HTMLElement {
         display: block;
         width: 100%;
         height: 70px;
+        z-index: 100;
       }
       .navbar__container {
         display: flex;
@@ -24,7 +25,6 @@ class navBar extends HTMLElement {
         background: linear-gradient(90.01deg, #6C060C -0.4%, #671616 98.74%);
         padding: 10px 20px;
         gap: 20px;
-        z-index: 100;
       }
       .navbar a {
         text-decoration: none;
