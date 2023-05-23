@@ -11,15 +11,17 @@ class videoTitle extends HTMLElement {
         .video-title__container {
           position: relative;
           display: flex;
-          width: 100%;
+          width: 340px;
           height: 188px;
           overflow: hidden;
           border-radius: 30px;
           text-decoration: none;
         }
-        .video-title__container img {
-          width: auto;
-          height: 100%;
+        .video-title__image img,
+        ::slotted(img) {
+          min-width: 100%;
+          min-height: 100%;
+          object-fit: cover;
         }
         .video-title__block-over {
           position: absolute;
@@ -79,6 +81,13 @@ class videoTitle extends HTMLElement {
           justify-content: flex-end;
           gap: 17px;
           color: #F3B700;
+        }
+        
+        @media only screen and (min-width: 1275px) {            
+          .video-title__container {
+            width: 100%;
+            height: 100%;
+          }
         }
       </style>
       <a class="video-title__container">

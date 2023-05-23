@@ -54,6 +54,7 @@ h4 {
     font-weight: 700;
     font-size: 16px;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .btn * {
@@ -73,6 +74,7 @@ h4 {
 
 .btn--red {
     background: #8C171E;
+    color: #fff;
 }
 
 .btn--red:hover {
@@ -111,10 +113,18 @@ h4 {
 }
 
 @media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
     .btn--mobile-small,
     .btn--mobile-xs {
         height: 50px;
         padding: 0 30px;
         font-size: inherit;
+    }
+}
+@media only screen and (min-width: 1275px) {
+    h2 {
+        font-size: 40px;
     }
 }
