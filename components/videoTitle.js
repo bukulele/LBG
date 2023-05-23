@@ -34,7 +34,7 @@ class videoTitle extends HTMLElement {
           padding: 27px 17px;
           width: 100%;
           height: 100%;
-          background: linear-gradient(72.47deg, rgba(29, 30, 32, 0.85) 0%, rgba(29, 30, 32, 0) 48.96%);
+          background: linear-gradient(72.47deg, rgba(29, 30, 32, 0.85) 0%, rgba(29, 30, 32, 0) 48.96%), linear-gradient(357.62deg, rgba(29, 30, 32, 0.85) -2.79%, rgba(29, 30, 32, 0) 29.46%);
         }
         .video-title__name {
           font-size: 16px;

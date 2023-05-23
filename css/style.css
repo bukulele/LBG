@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
 
+/*GLOBAL STYLES*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -126,5 +127,55 @@ h4 {
 @media only screen and (min-width: 1275px) {
     h2 {
         font-size: 40px;
+    }
+}
+
+
+/*VIDEOS AND MODELS BLOCK*/
+.videos-block,
+.models-block {
+    margin: 50px 0;
+}
+.videos-block__container,
+.models-block__container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.videos-block__titles,
+.models-block__titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .videos-block__titles,
+    .models-block__titles {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media only screen and (min-width: 1275px) {
+    .videos-block,
+    .models-block {
+        padding: 0 30px;
+    }
+    .videos-block__titles {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(340px, 600px));
+        grid-template-rows: repeat(auto-fit, minmax(188px, 1fr));
+    }
+    .videos-block__container,
+    .models-block__container {
+        gap: 35px;
     }
 }
