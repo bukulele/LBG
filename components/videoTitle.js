@@ -17,7 +17,7 @@ class videoTitle extends HTMLElement {
           border-radius: 30px;
           text-decoration: none;
         }
-        .video-title__image img,
+        .video-title__container img,
         ::slotted(img) {
           min-width: 100%;
           min-height: 100%;
