@@ -45,7 +45,7 @@ class navBar extends HTMLElement {
       .navbar__logo img {
         height: auto;
         max-height: 100%;
-        width: auto;
+        width: 100%;
       }
       .navbar__links-container-wrapper {
         display: block;
