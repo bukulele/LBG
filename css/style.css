@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
+/*REMOVE LATER*/
+.model-title__award p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
 
 /*GLOBAL STYLES*/
 * {
@@ -151,7 +158,14 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.videos-block__titles {
     gap: 10px;
+}
+
+.models-block__titles {
+    gap: 50px;
 }
 
 @media only screen and (min-width: 768px) {
