@@ -33,7 +33,7 @@ class footerBlock extends HTMLElement {
           "footerAward";
           width: 100%;
           max-width: 1400px;  
-          padding: 60px 25px;      
+          padding: 0 25px;      
           gap: 20px;
           place-items: center;
         }

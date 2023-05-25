@@ -11,11 +11,17 @@
         <script src="components/videos.js"></script>
         <script src="components/models.js"></script>
         <script src="components/footer.js"></script>
+        <script src="components/sliderBlock.js"></script>
+        <script src="components/sliderElement.js"></script>
     </head>
     <body>
         <div id="page-container">
             <nav-bar></nav-bar>
                 <div class="main">
+                    <slider-block>
+                        <span slot="slider-block-title">Our Lost Bets Games</span>
+                        <slider-element slot="slider-element-1"><img slot="video-title-image" src="assets/temp/image%201.png" alt=""></slider-element>
+                    </slider-block>
                     <videos-block>
                         <video-title slot="video_1"><img slot="video-title-image" src="assets/temp/image%201.png" alt=""></video-title>
                         <video-title slot="video_2"><img slot="video-title-image" src="assets/temp/image%202.png" alt=""></video-title>
