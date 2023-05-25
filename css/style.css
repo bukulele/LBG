@@ -174,7 +174,13 @@ h4 {
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
+    }
+    .videos-block__titles {
         gap: 30px;
+    }
+    .models-block__titles {
+        column-gap: 30px;
+        row-gap: 50px;
     }
 }
 
@@ -188,8 +194,21 @@ h4 {
         grid-template-columns: repeat(3, minmax(340px, 600px));
         grid-template-rows: repeat(auto-fit, minmax(188px, 1fr));
     }
+    .models-block__titles {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(340px, 450px));
+        grid-template-rows: repeat(auto-fit, 1fr);
+    }
     .videos-block__container,
     .models-block__container {
         gap: 35px;
+    }
+}
+
+@media only screen and (min-width: 1510px) {
+    .models-block__titles {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(340px, 450px));
+        grid-template-rows: repeat(auto-fit, 1fr);
     }
 }

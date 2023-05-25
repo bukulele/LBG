@@ -19,15 +19,17 @@ class modelTitle extends HTMLElement {
       .model-title__image {
         position: relative;
         width: 100%;
-        height: 484px;
+        /*height: 484px;*/
         border-radius: 30px;
         overflow: hidden;
+        aspect-ratio: 340/484;
       }
       .model-title__image img,
       ::slotted(img) {
         min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
+        height: 100%;
+        /*min-height: 100%;*/
+        /*object-fit: cover;*/
       }
       .model-title__block-over {
         position: absolute;
@@ -114,6 +116,19 @@ class modelTitle extends HTMLElement {
         font-weight: 700;
         font-size: 12px;
         color: rgba(255, 255, 255, 0.5);
+      }
+      
+      @media only screen and (min-width: 1275px) {
+        .model-title__container {
+          width: 100%;
+        }
+        .model-title__bottom-block p {
+          font-size: 16px;
+        }
+        .model-title__bottom-block svg {
+          width: 30px;
+          height: 30px;
+        }
       }
     </style>
     <a class="model-title__container">
