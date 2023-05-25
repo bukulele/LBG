@@ -46,7 +46,7 @@ h4 {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: minmax(90px, auto) auto min-content;
+    grid-template-rows: minmax(70px, auto) auto min-content;
 }
 
 .btn {
@@ -130,6 +130,9 @@ h4 {
         padding: 0 30px;
         font-size: inherit;
     }
+    #page-container {
+        grid-template-rows: minmax(90px, auto) auto min-content;
+    }
 }
 @media only screen and (min-width: 1275px) {
     h2 {
@@ -197,7 +200,6 @@ h4 {
     .models-block__titles {
         display: grid;
         grid-template-columns: repeat(3, minmax(340px, 450px));
-        grid-template-rows: repeat(auto-fit, 1fr);
     }
     .videos-block__container,
     .models-block__container {
@@ -207,8 +209,6 @@ h4 {
 
 @media only screen and (min-width: 1510px) {
     .models-block__titles {
-        display: grid;
         grid-template-columns: repeat(4, minmax(340px, 450px));
-        grid-template-rows: repeat(auto-fit, 1fr);
     }
 }
