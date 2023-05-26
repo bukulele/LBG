@@ -430,7 +430,7 @@ class navBar extends HTMLElement {
           </ul>
           <div class="links-container__user-buttons">
             ${this.userAuthorized ? `
-            <button id="memberButtonSide" class="btn btn--yellow">
+            <button id="memberButtonSide" class="btn btn--classic btn--yellow">
               <p>Member</p>
               <div class="user-buttons__chevron">
                 <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -439,7 +439,7 @@ class navBar extends HTMLElement {
               </div>
             </button>
             ` : `
-              <a class="btn btn--pink join-now-button">JOIN NOW</a>
+              <a class="btn btn--classic btn--pink join-now-button">JOIN NOW</a>
               <a href="" class="log-in-button">LOG IN</a>
             `}
           </div>
@@ -483,7 +483,7 @@ class navBar extends HTMLElement {
         </div>
         <div class="navbar__user-buttons">
           ${this.userAuthorized ? `
-          <button id="memberButton" class="btn btn--yellow">
+          <button id="memberButton" class="btn btn--classic btn--yellow">
             <p>Member</p>
             <div class="user-buttons__chevron">
               <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -493,7 +493,7 @@ class navBar extends HTMLElement {
           </button>
           ` : `
             <a href="" class="log-in-button">LOG IN</a>
-            <a class="btn btn--mobile-small btn--pink join-now-button">JOIN NOW</a>
+            <a class="btn btn--classic btn--mobile-small btn--pink join-now-button">JOIN NOW</a>
           `}
         </div>
         <div class="navbar__hamburger">

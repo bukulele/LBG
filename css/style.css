@@ -58,15 +58,25 @@ h4 {
     justify-content: center;
     align-items: center;
     border: none;
+    width: fit-content;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.btn--classic {
     border-radius: 6px;
     gap: 5px;
     height: 50px;
-    width: fit-content;
     padding: 0 30px;
     font-weight: 700;
     font-size: 16px;
-    white-space: nowrap;
-    text-decoration: none;
+}
+
+.btn--slider {
+    height: 56px;
+    width: 56px;
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .btn * {
@@ -145,7 +155,7 @@ h4 {
 }
 
 
-/*VIDEOS AND MODELS BLOCK*/
+/*VIDEOS, MODELS AND SLIDER BLOCK*/
 .videos-block,
 .models-block,
 .slider-block {
@@ -160,6 +170,10 @@ h4 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding-bottom: 50px;
+}
+.slider-block__container {
+    overflow: hidden;
 }
 .videos-block,
 .models-block {
@@ -238,6 +252,14 @@ h4 {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
+}
+.slider-block__slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    transform: translateX(calc(calc(414px - 340px) / 2));
+    align-self: flex-start;
 }
 .video-title__block-over,
 .slider-element__block-over {
@@ -321,6 +343,16 @@ h4 {
     color: #F3B800;
     font-size: 16px;
     font-weight: 700;
+}
+.slider-block__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn--slider svg {
+    width: 20px;
+    height: 20px;
 }
 @media only screen and (min-width: 1275px) {
     .video-title__container,

@@ -19,7 +19,7 @@ class videosBlock extends HTMLElement {
             <slot name="video_6"></slot>
           </div>
           <div class="videos-block__button-container">
-            <a href="" class="btn btn--red">SHOW MORE VIDEOS</a>  
+            <a href="" class="btn btn--classic btn--red">SHOW MORE VIDEOS</a>  
           </div>
         </div>
       </div>

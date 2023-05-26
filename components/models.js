@@ -21,7 +21,7 @@ class modelsBlock extends HTMLElement {
             <slot name="model_8"></slot>
           </div>
           <div class="models-block__button-container">
-            <a href="" class="btn btn--red">SHOW MORE MODELS</a>  
+            <a href="" class="btn btn--classic btn--red">SHOW MORE MODELS</a>  
           </div>
         </div>
       </div>
