@@ -17,6 +17,9 @@ class sliderBlock extends HTMLElement {
             <slot name="slider-element-4"></slot>            
             <slot name="slider-element-5"></slot>            
             <slot name="slider-element-6"></slot>            
+            <slot name="slider-element-7"></slot>            
+            <slot name="slider-element-8"></slot>            
+            <slot name="slider-element-9"></slot>            
           </div>
           <div class="slider-block__buttons">
             <div class="btn btn--slider slider-block__slide-left">

@@ -7,9 +7,6 @@ const navbarHamburger = document.querySelector('.navbar__hamburger');
 const memberButton = document.querySelector('#memberButton');
 const memberZoneContainer = document.querySelector('.navbar__member-zone-container');
 
-const icon = document.querySelector('.search-svg-i');
-console.log(icon);
-
 let memberButtonSideChevron;
 let memberButtonChevron;
 
@@ -22,7 +19,6 @@ function showNavigationMenu() {
 }
 
 function hideNavigationMenu(event) {
-  console.log(memberZoneContainer.className.includes('navbar__member-zone-container--visible'));
   if (event.target.className.includes('navbar__close') || event.target.className.includes('navbar__links-container-wrapper')) {
     console.log('hideNavigationMenu');
     navbarWrapper.classList.remove('navbar__links-container-wrapper--show');
@@ -30,7 +26,6 @@ function hideNavigationMenu(event) {
   }
   if (memberZoneContainer.className.includes('navbar__member-zone-container--visible') && !event.target.closest('.navbar__member-zone-container')) {
     console.log('hideUserMenu');
-    console.log(memberButton);
     memberButtonChevron.style.removeProperty('transform');
     memberZoneContainer.style.removeProperty('top');
     memberZoneContainer.classList.remove('navbar__member-zone-container--visible');

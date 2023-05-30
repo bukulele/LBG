@@ -254,12 +254,16 @@ h4 {
     object-fit: cover;
 }
 .slider-block__slider {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    transform: translateX(calc(calc(414px - 340px) / 2));
     align-self: flex-start;
+    left: 0;
+}
+.slider--animated {
+    transition: all 0.2s ease-in-out;
 }
 .video-title__block-over,
 .slider-element__block-over {
@@ -358,7 +362,8 @@ h4 {
     .video-title__container,
     .slider-element__container {
         width: 100%;
-        height: 100%;
+        height: auto;
+        aspect-ratio: 340/188;
     }
     .video-title__name,
     .slider-element__name {
