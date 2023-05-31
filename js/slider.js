@@ -14,9 +14,9 @@ let numberOfSlides = sliderImages.children.length;
 let currentSlide = startingElementNumber;
 let windowWidth = document.body.clientWidth;
 let sliderElement_1 = document.querySelector(`#page-container > div > slider-block > slider-element:nth-child(${startingElementNumber})`).shadowRoot.querySelector(".slider-element__container");
-let sliderElement_butOne = document.querySelector(`#page-container > div > slider-block > slider-element:nth-child(${numberOfSlides})`).shadowRoot.querySelector(".slider-element__container");
-let initialPosition = (windowWidth) / 2 - sliderElement_1.offsetWidth - gapBetweenSlides * 2 - sliderElement_1.offsetWidth / 2 ;
-let butOnePosition = (windowWidth) / 2 - sliderElement_butOne.offsetWidth - gapBetweenSlides * 2 - sliderElement_butOne.offsetWidth / 2 - sliderElement_butOne.offsetLeft;
+let sliderElement_butOne = document.querySelector(`#page-container > div > slider-block > slider-element:nth-child(${numberOfSlides - 1})`).shadowRoot.querySelector(".slider-element__container");
+let initialPosition = (windowWidth) / 2 - sliderElement_1.offsetWidth - gapBetweenSlides * 2 - sliderElement_1.offsetWidth / 2 - 1 ;
+let butOnePosition = (windowWidth) / 2 - sliderElement_butOne.offsetWidth - gapBetweenSlides * 2 - sliderElement_butOne.offsetWidth / 2 - sliderElement_butOne.offsetLeft - 1;
 // let butOnePosition = (windowWidth - sliderElement_butOne.offsetWidth) / 2 - sliderElement_butOne.offsetLeft;
 let buttonLeft = sliderBlockContainer.querySelector('.slider-block__slide-left');
 let buttonRight = sliderBlockContainer.querySelector('.slider-block__slide-right');
@@ -27,6 +27,7 @@ console.log(document);
 buttonLeft.addEventListener('click', moveSlidesLeft);
 buttonRight.addEventListener('click', moveSlidesRight);
 function moveSlidesLeft () {
+  console.log(currentSlide);
   addAnimation(sliderImages);
   if (currentSlide === 2) {
     removeAnimation(sliderImages);
