@@ -86,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/LBG_logo.png\";\n\n//# sourceURL=webpack:///./assets/images/LBG_logo.png?");
+eval("module.exports = __webpack_require__.p + \"LBG_logo.png\";\n\n//# sourceURL=webpack:///./assets/images/LBG_logo.png?");
 
 /***/ }),
 
@@ -96,7 +96,7 @@ eval("module.exports = __webpack_require__.p + \"images/LBG_logo.png\";\n\n//# s
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/asacp.png\";\n\n//# sourceURL=webpack:///./assets/images/asacp.png?");
+eval("module.exports = __webpack_require__.p + \"asacp.png\";\n\n//# sourceURL=webpack:///./assets/images/asacp.png?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("module.exports = __webpack_require__.p + \"images/asacp.png\";\n\n//# sour
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/award.png\";\n\n//# sourceURL=webpack:///./assets/images/award.png?");
+eval("module.exports = __webpack_require__.p + \"award.png\";\n\n//# sourceURL=webpack:///./assets/images/award.png?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("module.exports = __webpack_require__.p + \"images/award.png\";\n\n//# sour
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/daily_beast.png\";\n\n//# sourceURL=webpack:///./assets/images/daily_beast.png?");
+eval("module.exports = __webpack_require__.p + \"daily_beast.png\";\n\n//# sourceURL=webpack:///./assets/images/daily_beast.png?");
 
 /***/ }),
 
@@ -126,7 +126,7 @@ eval("module.exports = __webpack_require__.p + \"images/daily_beast.png\";\n\n//
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/daily_news.png\";\n\n//# sourceURL=webpack:///./assets/images/daily_news.png?");
+eval("module.exports = __webpack_require__.p + \"daily_news.png\";\n\n//# sourceURL=webpack:///./assets/images/daily_news.png?");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("module.exports = __webpack_require__.p + \"images/daily_news.png\";\n\n//#
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/esquire.png\";\n\n//# sourceURL=webpack:///./assets/images/esquire.png?");
+eval("module.exports = __webpack_require__.p + \"esquire.png\";\n\n//# sourceURL=webpack:///./assets/images/esquire.png?");
 
 /***/ }),
 
@@ -146,7 +146,7 @@ eval("module.exports = __webpack_require__.p + \"images/esquire.png\";\n\n//# so
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/forbes.png\";\n\n//# sourceURL=webpack:///./assets/images/forbes.png?");
+eval("module.exports = __webpack_require__.p + \"forbes.png\";\n\n//# sourceURL=webpack:///./assets/images/forbes.png?");
 
 /***/ }),
 
@@ -156,7 +156,7 @@ eval("module.exports = __webpack_require__.p + \"images/forbes.png\";\n\n//# sou
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/laweekly.png\";\n\n//# sourceURL=webpack:///./assets/images/laweekly.png?");
+eval("module.exports = __webpack_require__.p + \"laweekly.png\";\n\n//# sourceURL=webpack:///./assets/images/laweekly.png?");
 
 /***/ }),
 
@@ -166,7 +166,7 @@ eval("module.exports = __webpack_require__.p + \"images/laweekly.png\";\n\n//# s
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/mastercard.png\";\n\n//# sourceURL=webpack:///./assets/images/mastercard.png?");
+eval("module.exports = __webpack_require__.p + \"mastercard.png\";\n\n//# sourceURL=webpack:///./assets/images/mastercard.png?");
 
 /***/ }),
 
@@ -176,7 +176,7 @@ eval("module.exports = __webpack_require__.p + \"images/mastercard.png\";\n\n//#
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/maxim.png\";\n\n//# sourceURL=webpack:///./assets/images/maxim.png?");
+eval("module.exports = __webpack_require__.p + \"maxim.png\";\n\n//# sourceURL=webpack:///./assets/images/maxim.png?");
 
 /***/ }),
 
@@ -186,7 +186,7 @@ eval("module.exports = __webpack_require__.p + \"images/maxim.png\";\n\n//# sour
   \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/rta.png\";\n\n//# sourceURL=webpack:///./assets/images/rta.png?");
+eval("module.exports = __webpack_require__.p + \"rta.png\";\n\n//# sourceURL=webpack:///./assets/images/rta.png?");
 
 /***/ }),
 
@@ -196,7 +196,7 @@ eval("module.exports = __webpack_require__.p + \"images/rta.png\";\n\n//# source
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/the_guardian.png\";\n\n//# sourceURL=webpack:///./assets/images/the_guardian.png?");
+eval("module.exports = __webpack_require__.p + \"the_guardian.png\";\n\n//# sourceURL=webpack:///./assets/images/the_guardian.png?");
 
 /***/ }),
 
@@ -206,7 +206,7 @@ eval("module.exports = __webpack_require__.p + \"images/the_guardian.png\";\n\n/
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/the_huffingston_post.png\";\n\n//# sourceURL=webpack:///./assets/images/the_huffingston_post.png?");
+eval("module.exports = __webpack_require__.p + \"the_huffingston_post.png\";\n\n//# sourceURL=webpack:///./assets/images/the_huffingston_post.png?");
 
 /***/ }),
 
@@ -216,7 +216,7 @@ eval("module.exports = __webpack_require__.p + \"images/the_huffingston_post.png
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/the_sun.png\";\n\n//# sourceURL=webpack:///./assets/images/the_sun.png?");
+eval("module.exports = __webpack_require__.p + \"the_sun.png\";\n\n//# sourceURL=webpack:///./assets/images/the_sun.png?");
 
 /***/ }),
 
@@ -226,7 +226,7 @@ eval("module.exports = __webpack_require__.p + \"images/the_sun.png\";\n\n//# so
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/the_washington_post.png\";\n\n//# sourceURL=webpack:///./assets/images/the_washington_post.png?");
+eval("module.exports = __webpack_require__.p + \"the_washington_post.png\";\n\n//# sourceURL=webpack:///./assets/images/the_washington_post.png?");
 
 /***/ }),
 
@@ -236,7 +236,7 @@ eval("module.exports = __webpack_require__.p + \"images/the_washington_post.png\
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/vice.png\";\n\n//# sourceURL=webpack:///./assets/images/vice.png?");
+eval("module.exports = __webpack_require__.p + \"vice.png\";\n\n//# sourceURL=webpack:///./assets/images/vice.png?");
 
 /***/ }),
 
@@ -246,7 +246,7 @@ eval("module.exports = __webpack_require__.p + \"images/vice.png\";\n\n//# sourc
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/visa.png\";\n\n//# sourceURL=webpack:///./assets/images/visa.png?");
+eval("module.exports = __webpack_require__.p + \"visa.png\";\n\n//# sourceURL=webpack:///./assets/images/visa.png?");
 
 /***/ })
 
@@ -322,7 +322,7 @@ eval("module.exports = __webpack_require__.p + \"images/visa.png\";\n\n//# sourc
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/dist/";
+/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

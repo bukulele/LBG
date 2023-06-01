@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'), // The output directory
     filename: '[name].bundle.js', // The bundled JavaScript file
-    publicPath: '/dist/'
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -26,7 +26,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name][ext]'
+          filename: '[name][ext]'
         }
       }
     ]

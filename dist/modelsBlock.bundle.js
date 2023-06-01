@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 10.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_10.png?");
+eval("module.exports = __webpack_require__.p + \"image 10.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_10.png?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 10.png\";\n\n//# s
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 11.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_11.png?");
+eval("module.exports = __webpack_require__.p + \"image 11.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_11.png?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 11.png\";\n\n//# s
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 12.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_12.png?");
+eval("module.exports = __webpack_require__.p + \"image 12.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_12.png?");
 
 /***/ }),
 
@@ -66,7 +66,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 12.png\";\n\n//# s
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 13.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_13.png?");
+eval("module.exports = __webpack_require__.p + \"image 13.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_13.png?");
 
 /***/ }),
 
@@ -76,7 +76,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 13.png\";\n\n//# s
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 14.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_14.png?");
+eval("module.exports = __webpack_require__.p + \"image 14.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_14.png?");
 
 /***/ }),
 
@@ -86,7 +86,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 14.png\";\n\n//# s
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 7.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_7.png?");
+eval("module.exports = __webpack_require__.p + \"image 7.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_7.png?");
 
 /***/ }),
 
@@ -96,7 +96,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 7.png\";\n\n//# so
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 8.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_8.png?");
+eval("module.exports = __webpack_require__.p + \"image 8.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_8.png?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 8.png\";\n\n//# so
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 9.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_9.png?");
+eval("module.exports = __webpack_require__.p + \"image 9.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_9.png?");
 
 /***/ })
 
@@ -167,7 +167,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 9.png\";\n\n//# so
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/dist/";
+/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/

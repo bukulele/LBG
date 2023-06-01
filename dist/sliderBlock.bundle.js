@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 1.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_1.png?");
+eval("module.exports = __webpack_require__.p + \"image 1.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_1.png?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 1.png\";\n\n//# so
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 2.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_2.png?");
+eval("module.exports = __webpack_require__.p + \"image 2.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_2.png?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 2.png\";\n\n//# so
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 3.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_3.png?");
+eval("module.exports = __webpack_require__.p + \"image 3.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_3.png?");
 
 /***/ }),
 
@@ -66,7 +66,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 3.png\";\n\n//# so
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 4.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_4.png?");
+eval("module.exports = __webpack_require__.p + \"image 4.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_4.png?");
 
 /***/ }),
 
@@ -76,7 +76,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 4.png\";\n\n//# so
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 5.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_5.png?");
+eval("module.exports = __webpack_require__.p + \"image 5.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_5.png?");
 
 /***/ }),
 
@@ -86,7 +86,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 5.png\";\n\n//# so
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/image 6.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_6.png?");
+eval("module.exports = __webpack_require__.p + \"image 6.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_6.png?");
 
 /***/ })
 
@@ -147,7 +147,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 6.png\";\n\n//# so
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/dist/";
+/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
