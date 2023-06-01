@@ -1,4 +1,5 @@
 {
+  "homepage":"http://bukulele.github.io/LBG/",
   "devDependencies": {
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
