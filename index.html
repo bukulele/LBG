@@ -1,60 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <title>Title</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <script src="components/navbar.js"></script>
-        <script src="components/videoTitle.js"></script>
-        <script src="components/modelTitle.js"></script>
-        <script src="components/videos.js"></script>
-        <script src="components/models.js"></script>
-        <script src="components/footer.js"></script>
-        <script src="components/sliderBlock.js"></script>
-        <script src="components/sliderElement.js"></script>
-    </head>
-    <body>
-        <div id="page-container">
-            <nav-bar></nav-bar>
-                <div class="main">
-                    <slider-block>
-                        <span slot="slider-block-title">Our Lost Bets Games</span>
-                        <slider-element slot="slider-element-1"><img slot="video-title-image" src="assets/temp/image%201.png" alt=""></slider-element>
-                        <slider-element slot="slider-element-2"><img slot="video-title-image" src="assets/temp/image%202.png" alt=""></slider-element>
-                        <slider-element slot="slider-element-3"><img slot="video-title-image" src="assets/temp/image%203.png" alt=""></slider-element>
-                        <slider-element slot="slider-element-4"><img slot="video-title-image" src="assets/temp/image%204.png" alt=""></slider-element>
-                        <slider-element slot="slider-element-5"><img slot="video-title-image" src="assets/temp/image%205.png" alt=""></slider-element>
-                        <slider-element slot="slider-element-6"><img slot="video-title-image" src="assets/temp/image%206.png" alt=""></slider-element>
-                        <slider-element slot="slider-element-7"><img slot="video-title-image" src="assets/temp/image%201.png" alt=""></slider-element>
-                        <slider-element slot="slider-element-8"><img slot="video-title-image" src="assets/temp/image%202.png" alt=""></slider-element>
-                        <slider-element slot="slider-element-9"><img slot="video-title-image" src="assets/temp/image%203.png" alt=""></slider-element>
-                    </slider-block>
-                    <videos-block>
-                        <video-title slot="video_1"><img slot="video-title-image" src="assets/temp/image%201.png" alt=""></video-title>
-                        <video-title slot="video_2"><img slot="video-title-image" src="assets/temp/image%202.png" alt=""></video-title>
-                        <video-title slot="video_3"><img slot="video-title-image" src="assets/temp/image%203.png" alt=""></video-title>
-                        <video-title slot="video_4"><img slot="video-title-image" src="assets/temp/image%204.png" alt=""></video-title>
-                        <video-title slot="video_5"><img slot="video-title-image" src="assets/temp/image%205.png" alt=""></video-title>
-                        <video-title slot="video_6"><img slot="video-title-image" src="assets/temp/image%206.png" alt=""></video-title>
-                    </videos-block>
-                    <models-block>
-                        <model-title slot="model_1"><img slot="model-title-image" src="assets/temp/image%207.png" alt=""><span slot="model-data">Luisa Star, 29</span><span slot="model-about">Sleeping naked just relieves all the stress in your body!</span></model-title>
-                        <model-title slot="model_2"><img slot="model-title-image" src="assets/temp/image%208.png" alt=""><span slot="model-data">Alisa Jorahova, 25</span><span slot="model-about">Sleeping naked just relieves all the stress in your body!</span></model-title>
-                        <model-title slot="model_3"><img slot="model-title-image" src="assets/temp/image%209.png" alt=""><span slot="model-data">Lina Joy, 31</span><span slot="model-about">Sleeping naked just relieves all the stress in your body!</span></model-title>
-                        <model-title slot="model_4"><img slot="model-title-image" src="assets/temp/image%2010.png" alt=""><span slot="model-data">Bella Angel, 23</span><span slot="model-about">Sleeping naked just relieves all the stress in your body!</span></model-title>
-                        <model-title slot="model_5"><img slot="model-title-image" src="assets/temp/image%2011.png" alt=""><span slot="model-data">Luisa Star, 29</span><span slot="model-about">Sleeping naked just relieves all the stress in your body!</span></model-title>
-                        <model-title slot="model_6"><img slot="model-title-image" src="assets/temp/image%2012.png" alt=""><span slot="model-data">Alisa Jorahova, 25</span><span slot="model-about">Sleeping naked just relieves all the stress in your body!</span></model-title>
-                        <model-title slot="model_7"><img slot="model-title-image" src="assets/temp/image%2013.png" alt=""><span slot="model-data">Lina Joy, 31</span><span slot="model-about">Sleeping naked just relieves all the stress in your body!</span></model-title>
-                        <model-title slot="model_8"><img slot="model-title-image" src="assets/temp/image%2014.png" alt=""><div slot="model-title-award" class="model-title__award" style="background-color: #8A2EAA;">
-                            <div class="award__icon-container">&#128081;</div>
-                            <p>Perfect</p>
-                        </div><span slot="model-data">Bella Angel, 23</span><span slot="model-about">Sleeping naked just relieves all the stress in your body!</span></model-title>
-                    </models-block>
-                </div>
-            <footer-block></footer-block>
-        </div>
-        <script src="js/navbar.js"></script>
-        <script src="js/slider.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Title</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="page-container">
+    <nav id="navbar" class="navbar"></nav>
+    <div class="main">
+        <div id="sliderBlock_1" class="slider-block"></div>
+        <div id="videosBlock" class="videos-block"></div>
+        <div id="modelsBlock" class="models-block"></div>
+    </div>
+    <footer id="footer" class="footer"></footer>
+</div>
+<script src="dist/main.bundle.js"></script>
+<script src="dist/videosBlock.bundle.js"></script>
+<script src="dist/modelsBlock.bundle.js"></script>
+<script src="dist/sliderBlock.bundle.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/slider.js"></script>
+</body>
 </html>

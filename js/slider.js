@@ -1,28 +1,24 @@
-// let sliderImages = document.querySelector('.slider-block__slider');
 const startingElementNumber = 2;
 
-let sliderElementReference = document.querySelector("#page-container > div > videos-block > video-title:nth-child(1)").shadowRoot.querySelector(".video-title__container");
-let sliderElementAll = document.querySelectorAll('#page-container > div > slider-block > slider-element');
+let sliderElementReference = document.querySelector(".video-title__container");
+let sliderElementAll = document.querySelectorAll('.slider-element__container');
 for (let elem of sliderElementAll) {
-  elem.shadowRoot.querySelector(".slider-element__container").style.width = `${sliderElementReference.offsetWidth}px`;
+  elem.style.width = `${sliderElementReference.offsetWidth}px`;
 }
 
-let sliderBlockContainer = document.querySelector('#page-container > div > slider-block').shadowRoot.querySelector('.slider-block__container');
-let sliderImages = document.querySelector("#page-container > div > slider-block").shadowRoot.querySelector(".slider-block__slider");
+let sliderBlockContainer = document.querySelector('.slider-block__container');
+let sliderImages = document.querySelector(".slider-block__slider");
 let gapBetweenSlides = Number(window.getComputedStyle(sliderImages).gap.slice(0, -2));
 let numberOfSlides = sliderImages.children.length;
 let currentSlide = startingElementNumber;
 let windowWidth = document.body.clientWidth;
-let sliderElement_1 = document.querySelector(`#page-container > div > slider-block > slider-element:nth-child(${startingElementNumber})`).shadowRoot.querySelector(".slider-element__container");
-let sliderElement_butOne = document.querySelector(`#page-container > div > slider-block > slider-element:nth-child(${numberOfSlides - 1})`).shadowRoot.querySelector(".slider-element__container");
+let sliderElement_1 = document.querySelector(`.slider-block__slider`).querySelector(`.slider-element__container:nth-child(${startingElementNumber})`);
+let sliderElement_butOne = document.querySelector(`.slider-block__slider`).querySelector(`.slider-element__container:nth-child(${numberOfSlides - 2})`);
 let initialPosition = (windowWidth) / 2 - sliderElement_1.offsetWidth - gapBetweenSlides * 2 - sliderElement_1.offsetWidth / 2 - 1 ;
 let butOnePosition = (windowWidth) / 2 - sliderElement_butOne.offsetWidth - gapBetweenSlides * 2 - sliderElement_butOne.offsetWidth / 2 - sliderElement_butOne.offsetLeft - 1;
-// let butOnePosition = (windowWidth - sliderElement_butOne.offsetWidth) / 2 - sliderElement_butOne.offsetLeft;
 let buttonLeft = sliderBlockContainer.querySelector('.slider-block__slide-left');
 let buttonRight = sliderBlockContainer.querySelector('.slider-block__slide-right');
 sliderImages.style.left = `${initialPosition}px`;
-console.log(window.innerWidth);
-console.log(document);
 
 buttonLeft.addEventListener('click', moveSlidesLeft);
 buttonRight.addEventListener('click', moveSlidesRight);

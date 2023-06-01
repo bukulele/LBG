@@ -50,7 +50,11 @@ h4 {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: minmax(70px, auto) auto min-content;
+    grid-template-rows: auto min-content;
+}
+
+.main {
+    margin-top: 70px;
 }
 
 .btn {
@@ -138,14 +142,14 @@ h4 {
     h2 {
         font-size: 30px;
     }
+    .main {
+        margin-top: 90px;
+    }
     .btn--mobile-small,
     .btn--mobile-xs {
         height: 50px;
         padding: 0 30px;
         font-size: inherit;
-    }
-    #page-container {
-        grid-template-rows: minmax(90px, auto) auto min-content;
     }
 }
 @media only screen and (min-width: 1275px) {
