@@ -7,6 +7,6 @@ import modelsBlock from './components/modelsBlock.html';
 
 document.getElementById('navbar').innerHTML = navbar;
 document.getElementById('footer').innerHTML = footer;
-document.getElementById('sliderBlock').innerHTML = sliderBlock;
+document.getElementById('sliderBlock_1').innerHTML = sliderBlock;
 document.getElementById('videosBlock').innerHTML = videosBlock;
 document.getElementById('modelsBlock').innerHTML = modelsBlock;

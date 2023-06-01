@@ -6,16 +6,17 @@ import image5 from '../../assets/temp/image 5.png';
 import image6 from '../../assets/temp/image 6.png';
 import sliderElement from './sliderElement.html';
 
-const videos = [image1, image2, image3, image4, image5, image6, image1, image2, image3];
+const slides_1 = [image1, image2, image3, image4, image5, image6, image1, image2, image3];
 
-let sliderBlockSlider = document.getElementById('videosBlockTitles');
+let sliderBlockSlider_1 = document.querySelector('#sliderBlock_1 .slider-block__slider');
 
-for (let video of videos) {
-  videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
-  let imageElement = document.createElement('img');
-  imageElement.src = video;
-  let elem = videosBlockTitles.lastElementChild.querySelector('.model-title__image')
-  title.insertAdjacentElement('afterbegin', imageElement);
-  videosBlockTitles.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
+fulfillSlider(sliderBlockSlider_1, slides_1);
+
+function fulfillSlider (elem, slides) {
+  for (let slide of slides) {
+    sliderBlockSlider_1.insertAdjacentHTML('beforeend', sliderElement);
+    let imageElement = document.createElement('img');
+    imageElement.src = slide;
+    sliderBlockSlider_1.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
+  }
 }
-
