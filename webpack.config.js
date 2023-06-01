@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'), // The output directory
     filename: '[name].bundle.js', // The bundled JavaScript file
-    publicPath: '/'
+    publicPath: '/dist/'
   },
   module: {
     rules: [
