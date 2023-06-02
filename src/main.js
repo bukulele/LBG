@@ -3,6 +3,7 @@ import footer from './components/footer.html';
 import sliderBlock from './components/sliderBlock.html';
 import videosBlock from './components/videosBlock.html';
 import modelsBlock from './components/modelsBlock.html';
+import banner from './components/banner.html';
 
 document.getElementById('navbar').innerHTML = navbar;
 document.getElementById('footer').innerHTML = footer;
@@ -10,6 +11,7 @@ let sliderBlock1 = document.getElementById('sliderBlock_1');
 let sliderBlock2 = document.getElementById('sliderBlock_2');
 document.getElementById('videosBlock').innerHTML = videosBlock;
 document.getElementById('modelsBlock').innerHTML = modelsBlock;
+document.getElementById('banner_1').innerHTML = banner;
 
 sliderBlock1.innerHTML = sliderBlock;
 sliderBlock2.innerHTML = sliderBlock;
