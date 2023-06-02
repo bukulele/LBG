@@ -1,15 +1,23 @@
 // SET SIZE OF SLIDER ELEMENTS IN LINE WITH VIDEOS TITLES
 let sliderElementReference = document.querySelector(".video-title__container");
 let sliderElementAll = document.querySelectorAll('.slider-element__container');
-for (let elem of sliderElementAll) {
-  elem.style.width = `${sliderElementReference.offsetWidth}px`;
-}
+// for (let elem of sliderElementAll) {
+//   elem.style.width = `${sliderElementReference.offsetWidth}px`;
+// }
 
 
 const startingElementNumber = 2;
 let sliderBlock = document.querySelectorAll('.slider-block__slider');
-for (let slider of sliderBlock) {
-  defineSlider(slider);
+setSliders(sliderBlock, sliderElementAll);
+
+function setSliders(sliderBlock, sliderElementAll) {
+  for (let elem of sliderElementAll) {
+    elem.style.width = `${sliderElementReference.offsetWidth}px`;
+  }
+
+  for (let slider of sliderBlock) {
+    defineSlider(slider);
+  }
 }
 
 function defineSlider(slider) {
@@ -28,7 +36,6 @@ function defineSlider(slider) {
   slider.dataset.butOnePosition = String(butOnePosition);
   slider.dataset.slideWidth = String(slideWidth);
   slider.dataset.gapBetweenSlides = String(gapBetweenSlides);
-  console.log(slider.dataset);
 }
 
 function moveSlidesLeft(event) {
@@ -96,6 +103,10 @@ function removeAnimation(elem) {
   }
 }
 
+function handleWindowResize() {
+  setSliders(sliderBlock, sliderElementAll);
+}
+
 document.addEventListener('click', moveSlidesLeft);
 document.addEventListener('click', moveSlidesRight);
-// document.addEventListener('click', moveSlides);
+window.addEventListener('resize', handleWindowResize);
