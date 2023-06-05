@@ -171,6 +171,12 @@ h4 {
     background-color: #25272A;
     padding-bottom: 50px;
 }
+.slider-block {
+    padding-bottom: 50px;
+}
+.slider-block--lighter-bg {
+    background-color: #25272A;
+}
 .videos-block__container,
 .models-block__container,
 .slider-block__container {
@@ -362,15 +368,6 @@ h4 {
     align-items: center;
     padding: 46px 30px;
 }
-/*.banner-block__title {*/
-/*    font-size: 25px;*/
-/*    font-weight: 800;*/
-/*    color: #F3B800;*/
-/*    text-align: center;*/
-/*    margin-bottom: 5px;*/
-/*    -webkit-text-stroke: 3px #fff;*/
-/*    paint-order: stroke fill;*/
-/*}*/
 .banner-block__title {
     margin-bottom: 5px;
     height: 25px;
@@ -432,6 +429,32 @@ h4 {
         padding: 0 30px;
         justify-content: space-between;
     }
+    .banner-block {
+        padding: 0 30px;
+    }
+    .banner-block__container {
+        width: 100%;
+        height: fit-content;
+    }
+    .banner-block__image-container--bg1 {
+        aspect-ratio: 1862/401;
+    }
+    .banner-block__title {
+        height: auto;
+        width: 70%;
+    }
+    .banner-block__description {
+        font-size: 12px;
+    }
+    .btn--banner {
+        margin-top: 10px;
+        min-height: 40px;
+        font-size: 18px;
+    }
+    .banner-block__chevrons svg {
+        height: 9px;
+        width: 18px;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -445,6 +468,18 @@ h4 {
         height: auto;
         aspect-ratio: 340/188;
     }
+    .btn--banner {
+        margin-top: 25px;
+        min-height: 50px;
+        font-size: 25px;
+    }
+    .banner-block__description {
+        font-size: 15px;
+    }
+    .banner-block__chevrons svg {
+        height: 10px;
+        width: 20px;
+    }
 }
 
 @media only screen and (min-width: 1275px) {
@@ -453,18 +488,8 @@ h4 {
     }
     .videos-block,
     .models-block {
-        padding: 0 30px;
+        padding: 0 30px 50px;
     }
-    /*.video-title__container,*/
-    /*.slider-element__container {*/
-    /*    width: 100%;*/
-    /*    height: auto;*/
-    /*    aspect-ratio: 340/188;*/
-    /*}*/
-    /*.videos-block__titles {*/
-    /*    display: grid;*/
-    /*    grid-template-columns: repeat(3, minmax(340px, 1fr));*/
-    /*}*/
     .models-block__titles {
         display: grid;
         grid-template-columns: repeat(3, minmax(340px, 1fr));
