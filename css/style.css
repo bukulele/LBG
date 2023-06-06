@@ -342,7 +342,6 @@ h4 {
     position: relative;
     overflow: hidden;
     width: 360px;
-    height: 266px;
     margin: auto;
 }
 .banner-block__image-container {
@@ -355,6 +354,14 @@ h4 {
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
+    height: 266px;
+}
+.banner-block__image-container--bg2 {
+    background-image: url("/assets/images/banner_bg_2.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right 40% bottom 0;
+    height: 326px;
 }
 .banner-block__content {
     position: absolute;
@@ -366,7 +373,12 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.banner-block__content--padding-big {
     padding: 46px 30px;
+}
+.banner-block__content--padding-small {
+    padding: 30px 0;
 }
 .banner-block__title {
     margin-bottom: 5px;
@@ -389,7 +401,25 @@ h4 {
     font-size: 15px;
     text-align: center;
 }
-
+.banner-block__section {
+    width: 100%;
+}
+.banner-block__section p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #A1A1A1;
+    margin: 0 40px;
+}
+.banner-block__list {
+    margin-left: 40px;
+}
+.banner-block__list li {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    list-style-image: url("/assets/icons/check.svg");
+}
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
     h2 {
@@ -434,10 +464,10 @@ h4 {
     }
     .banner-block__container {
         width: 100%;
-        height: fit-content;
     }
     .banner-block__image-container--bg1 {
         aspect-ratio: 1862/401;
+        height: fit-content;
     }
     .banner-block__title {
         height: auto;
