@@ -506,6 +506,7 @@ h4 {
     .banner-block__content--vertical-s {
         flex-direction: row;
         align-items: flex-start;
+        width: 100%;
     }
     .banner-block__content--padding-small {
         padding: 5px 10px 5px 0;
@@ -536,7 +537,6 @@ h4 {
         aspect-ratio: 340/188;
     }
     .btn--banner {
-        margin-top: 25px;
         min-height: 50px;
         font-size: 25px;
     }
@@ -549,6 +549,17 @@ h4 {
     .banner-block__chevrons svg {
         height: 10px;
         width: 20px;
+    }
+    .banner-block__content--padding-small {
+        padding: 5px 10px;
+    }
+    .banner-block__list li {
+        font-size: 20px;
+        background-size: 20px;
+        padding-left: 23px;
+    }
+    .banner-block__section p {
+        font-size: 12px;
     }
 }
 
@@ -584,5 +595,29 @@ h4 {
 @media only screen and (min-width: 1510px) {
     .models-block__titles {
         grid-template-columns: repeat(4, minmax(340px, 1fr));
+    }
+    .banner-block__description {
+        font-size: 24px;
+    }
+    .banner-block__list li {
+        font-size: 32px;
+        background-size: 32px;
+        padding-left: 35px;
+    }
+    .banner-block__section p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    .btn--banner {
+        min-height: 82px;
+        font-size: 40px;
+        padding: 0 30px;
+        align-self: center;
+    }
+    .banner-block__chevrons svg {
+        height: 20px;
+        width: 40px;
     }
 }
