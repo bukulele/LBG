@@ -5,6 +5,7 @@ import videosBlock from './components/videosBlock.html';
 import modelsBlock from './components/modelsBlock.html';
 import banner from './components/banner.html';
 import banner2 from './components/banner2.html';
+import timerBlock from './components/timerBlock.html';
 
 document.getElementById('navbar').innerHTML = navbar;
 document.getElementById('footer').innerHTML = footer;
@@ -14,6 +15,7 @@ document.getElementById('videosBlock').innerHTML = videosBlock;
 document.getElementById('modelsBlock').innerHTML = modelsBlock;
 document.getElementById('banner_1').innerHTML = banner;
 document.getElementById('banner_2').innerHTML = banner2;
+document.getElementById('timerBlock').innerHTML = timerBlock;
 
 sliderBlock1.innerHTML = sliderBlock;
 sliderBlock2.innerHTML = sliderBlock;
