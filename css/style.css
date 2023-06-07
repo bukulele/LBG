@@ -372,13 +372,14 @@ h4 {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .banner-block__content--vertical {
     flex-direction: column;
+    align-items: center;
 }
 .banner-block__content--vertical-s {
     flex-direction: column;
+    align-items: center;
 }
 .banner-block__content--padding-big {
     padding: 46px 30px;
@@ -414,17 +415,22 @@ h4 {
     font-size: 14px;
     font-weight: 700;
     color: #A1A1A1;
-    margin: 0 40px;
+    margin: 5px 0 0 43px;
 }
 .banner-block__list {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .banner-block__list li {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
-    list-style-image: url("/assets/icons/check.svg");
+    list-style: none;
+    background-image: url("/assets/icons/check.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    padding-left: 23px;
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
@@ -488,9 +494,11 @@ h4 {
         font-size: 12px;
     }
     .btn--banner {
-        margin-top: 10px;
+        margin-top: 0;
         min-height: 40px;
         font-size: 18px;
+        padding: 0 20px;
+        align-self: center;
     }
     .banner-block__chevrons svg {
         height: 9px;
@@ -498,6 +506,22 @@ h4 {
     }
     .banner-block__content--vertical-s {
         flex-direction: row;
+        align-items: flex-start;
+    }
+    .banner-block__content--padding-small {
+        padding: 5px 10px 5px 0;
+    }
+    .banner-block__list {
+        margin-left: 10px;
+    }
+    .banner-block__list li {
+        font-size: 12px;
+        background-size: 12px;
+        padding-left: 15px;
+    }
+    .banner-block__section p {
+        font-size: 8px;
+        margin: 2px 0 0 25px;
     }
 }
 
