@@ -15,10 +15,10 @@ function defineLeftTime() {
   let minutesElem = document.querySelector('.timer-block__timer .timer__minutes .timer__figures');
   let secondsElem = document.querySelector('.timer-block__timer .timer__seconds .timer__figures');
 
-  daysElem.innerHTML = String(Math.floor(daysLeft));
-  hoursElem.innerHTML = String(Math.floor(hoursLeft));
-  minutesElem.innerHTML = String(Math.floor(minutesLeft));
-  secondsElem.innerHTML = String(Math.floor(secondsLeft));
+  daysElem.innerHTML = Math.floor(daysLeft) < 10 ? '0' + String(Math.floor(daysLeft)) : String(Math.floor(daysLeft));
+  hoursElem.innerHTML = Math.floor(hoursLeft) < 10 ? '0' + String(Math.floor(hoursLeft)) : String(Math.floor(hoursLeft));
+  minutesElem.innerHTML = Math.floor(minutesLeft) < 10 ? '0' + String(Math.floor(minutesLeft)) : String(Math.floor(minutesLeft));
+  secondsElem.innerHTML = Math.floor(secondsLeft) < 10 ? '0' + String(Math.floor(secondsLeft)) : String(Math.floor(secondsLeft));
 
   setTimeout(defineLeftTime, 1000);
 }
