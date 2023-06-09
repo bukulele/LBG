@@ -205,7 +205,8 @@ h4 {
 }
 .main-video-block__text-container {
     width: 100%;
-    max-width: 1189px;
+    max-width: fit-content;
+    max-height: 174px;
 }
 .main-video-block__text-container img {
     width: 100%;
@@ -603,6 +604,18 @@ h4 {
         padding: 0 30px;
         font-size: inherit;
     }
+    .main-video-block__image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1919 / 898;
+    }
+    .main-video-block__over {
+        padding: 35px 10px;
+    }
+    .main-video-block__sound {
+        left: 60px;
+        top: 45px;
+    }
     .videos-block__titles,
     .models-block__titles {
         flex-direction: row;
@@ -769,6 +782,9 @@ h4 {
 @media only screen and (min-width: 1510px) {
     h3 {
         font-size: 30px;
+    }
+    .main-video-block__over {
+        padding: 60px 10px;
     }
     .models-block__titles {
         grid-template-columns: repeat(4, minmax(340px, 1fr));
