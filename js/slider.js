@@ -30,6 +30,7 @@ function defineSlider(slider) {
   let slideWidth = sliderElement_1.offsetWidth;
   let initialPosition = (windowWidth) / 2 - slideWidth - gapBetweenSlides * 2 - slideWidth / 2 - 1;
   let butOnePosition = (windowWidth) / 2 - slideWidth - gapBetweenSlides * 2 - slideWidth / 2 - sliderElement_butOne.offsetLeft - 1;
+  console.log(windowWidth, slideWidth, gapBetweenSlides, slideWidth);
   console.log(initialPosition, currentSlide, initialPosition, butOnePosition, slideWidth, gapBetweenSlides);
   slider.style.left = `${initialPosition}px`;
   slider.dataset.currentSlide = String(currentSlide);
