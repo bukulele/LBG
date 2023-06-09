@@ -289,6 +289,10 @@ h4 {
     border-radius: 30px;
     text-decoration: none;
 }
+.slider-element__container img {
+    width: 100%;
+    height: auto;
+}
 .video-title__container img {
     min-width: 100%;
     min-height: 100%;
@@ -719,6 +723,7 @@ h4 {
     .videos-block__titles {
         display: grid;
         grid-template-columns: repeat(3, minmax(340px, 1fr));
+        grid-auto-rows: min-content;
     }
     .video-title__container,
     .slider-element__container {
