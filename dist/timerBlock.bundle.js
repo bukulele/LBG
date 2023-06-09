@@ -137,7 +137,7 @@ eval("module.exports = __webpack_require__.p + \"images/image 19.png\";\n\n//# s
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/dist/";
+/******/ 		__webpack_require__.p = "./dist/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
