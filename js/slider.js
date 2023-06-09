@@ -30,12 +30,13 @@ function defineSlider(slider) {
   let slideWidth = sliderElement_1.offsetWidth;
   let initialPosition = (windowWidth) / 2 - slideWidth - gapBetweenSlides * 2 - slideWidth / 2 - 1;
   let butOnePosition = (windowWidth) / 2 - slideWidth - gapBetweenSlides * 2 - slideWidth / 2 - sliderElement_butOne.offsetLeft - 1;
+  console.log(initialPosition, currentSlide, initialPosition, butOnePosition, slideWidth, gapBetweenSlides);
   slider.style.left = `${initialPosition}px`;
-  slider.dataset.currentSlide = currentSlide;
-  slider.dataset.initialPosition = initialPosition;
-  slider.dataset.butOnePosition = butOnePosition;
-  slider.dataset.slideWidth = slideWidth;
-  slider.dataset.gapBetweenSlides = gapBetweenSlides;
+  slider.dataset.currentSlide = String(currentSlide);
+  slider.dataset.initialPosition = String(initialPosition);
+  slider.dataset.butOnePosition = String(butOnePosition);
+  slider.dataset.slideWidth = String(slideWidth);
+  slider.dataset.gapBetweenSlides = String(gapBetweenSlides);
 }
 
 function moveSlidesLeft(event) {
