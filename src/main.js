@@ -6,9 +6,11 @@ import modelsBlock from './components/modelsBlock.html';
 import banner from './components/banner.html';
 import banner2 from './components/banner2.html';
 import timerBlock from './components/timerBlock.html';
+import mainVideoBlock from './components/mainVideoBlock.html';
 
 document.getElementById('navbar').innerHTML = navbar;
 document.getElementById('footer').innerHTML = footer;
+document.getElementById('mainVideoBlock').innerHTML = mainVideoBlock;
 let sliderBlock1 = document.getElementById('sliderBlock_1');
 let sliderBlock2 = document.getElementById('sliderBlock_2');
 document.getElementById('videosBlock').innerHTML = videosBlock;
