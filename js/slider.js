@@ -21,7 +21,7 @@ function setSliders(sliderBlock, sliderElementAll) {
 }
 
 function defineSlider(slider) {
-  let gapBetweenSlides = Number(window.getComputedStyle(slider).gap.slice(0, -2));
+  let gapBetweenSlides = Number(window.getComputedStyle(slider).columnGap.slice(0, -2));
   let numberOfSlides = slider.children.length;
   let currentSlide = startingElementNumber;
   let windowWidth = document.body.clientWidth;
@@ -30,7 +30,7 @@ function defineSlider(slider) {
   let slideWidth = sliderElement_1.offsetWidth;
   let initialPosition = (windowWidth) / 2 - slideWidth - gapBetweenSlides * 2 - slideWidth / 2 - 1;
   let butOnePosition = (windowWidth) / 2 - slideWidth - gapBetweenSlides * 2 - slideWidth / 2 - sliderElement_butOne.offsetLeft - 1;
-  console.log(window.getComputedStyle(slider));
+  // console.log(window.getComputedStyle(slider));
   console.log(windowWidth, slideWidth, gapBetweenSlides, slideWidth);
   console.log(initialPosition, currentSlide, initialPosition, butOnePosition, slideWidth, gapBetweenSlides);
   slider.style.left = `${initialPosition}px`;
