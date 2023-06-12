@@ -615,6 +615,35 @@ h4 {
     font-size: 14px;
     font-weight: 500;
 }
+.videos-block__selector select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    color: #F3B800;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    background-image: url("../assets/icons/chevron.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 14px;
+}
+.videos-block__selector select::-ms-expand {
+    display: none;
+}
+/*.videos-block__selector select::after {*/
+/*    content: "";*/
+/*    background-image: url("../assets/icons/chevron.svg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: right center;*/
+/*    background-size: 14px;*/
+/*}*/
 /*MESSAGE BLOCK*/
 .message-block__container {
     width: 340px;
