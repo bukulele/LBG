@@ -21,5 +21,5 @@ document.getElementById('timerBlock').innerHTML = timerBlock;
 
 sliderBlock1.innerHTML = sliderBlock;
 sliderBlock2.innerHTML = sliderBlock;
-sliderBlock1.querySelector('.slider-block__container h2').innerHTML = 'HOTTEST AND FRESHEST VIDEO';
+sliderBlock1.querySelector('.slider-block__container h2').innerHTML = 'OUR LOST BETS GAMES';
 sliderBlock2.querySelector('.slider-block__container h2').innerHTML = 'OUR LOST BETS PUNISHMENTS';

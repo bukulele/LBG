@@ -10,23 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/components/sliderElement.html":
-/*!*******************************************!*\
-  !*** ./src/components/sliderElement.html ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<a class=\\\"slider-element__container\\\" href=\\\"\\\">\\n  <div class=\\\"slider-element__block-over\\\">\\n    <p class=\\\"slider-element__name\\\">Strip Red Light Green Light With Delilah Minx</p>\\n    <div class=\\\"slider-element__info\\\">\\n      <div class=\\\"slider-element__videos-number\\\"><p>51 videos</p></div>\\n    </div>\\n  </div>\\n</a>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/sliderElement.html?");
-
-/***/ }),
-
 /***/ "./src/components/timerBlock.js":
 /*!**************************************!*\
   !*** ./src/components/timerBlock.js ***!
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_temp_image_15_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/temp/image 15.png */ \"./assets/temp/image 15.png\");\n/* harmony import */ var _assets_temp_image_16_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/temp/image 16.png */ \"./assets/temp/image 16.png\");\n/* harmony import */ var _assets_temp_image_17_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/temp/image 17.png */ \"./assets/temp/image 17.png\");\n/* harmony import */ var _assets_temp_image_18_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/temp/image 18.png */ \"./assets/temp/image 18.png\");\n/* harmony import */ var _assets_temp_image_19_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/temp/image 19.png */ \"./assets/temp/image 19.png\");\n/* harmony import */ var _sliderElement_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sliderElement.html */ \"./src/components/sliderElement.html\");\n\n\n\n\n\n\n\nconst screenshots = [_assets_temp_image_16_png__WEBPACK_IMPORTED_MODULE_1__, _assets_temp_image_17_png__WEBPACK_IMPORTED_MODULE_2__, _assets_temp_image_18_png__WEBPACK_IMPORTED_MODULE_3__, _assets_temp_image_19_png__WEBPACK_IMPORTED_MODULE_4__];\n\nlet mainVideoContainer = document.querySelector('.timer-block .timer-block__main-video');\nlet screenshotsContainer = document.querySelector('.timer-block .timer-block__videos-container');\n\nlet mainVideoImage = document.createElement('img');\nmainVideoImage.src = _assets_temp_image_15_png__WEBPACK_IMPORTED_MODULE_0__;\n\nmainVideoContainer.insertAdjacentElement('afterbegin', mainVideoImage);\nfulfillScreenshots(screenshotsContainer, screenshots);\n\nfunction fulfillScreenshots (elem, screenshots) {\n  for (let screenshot of screenshots) {\n    let imageElement = document.createElement('img');\n    imageElement.src = screenshot;\n    elem.insertAdjacentElement('beforeend', imageElement);\n  }\n}\n\n\n//# sourceURL=webpack:///./src/components/timerBlock.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_temp_image_15_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/temp/image 15.png */ \"./assets/temp/image 15.png\");\n/* harmony import */ var _assets_temp_image_16_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/temp/image 16.png */ \"./assets/temp/image 16.png\");\n/* harmony import */ var _assets_temp_image_17_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/temp/image 17.png */ \"./assets/temp/image 17.png\");\n/* harmony import */ var _assets_temp_image_18_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/temp/image 18.png */ \"./assets/temp/image 18.png\");\n/* harmony import */ var _assets_temp_image_19_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/temp/image 19.png */ \"./assets/temp/image 19.png\");\n\n\n\n\n\n\nconst screenshots = [_assets_temp_image_16_png__WEBPACK_IMPORTED_MODULE_1__, _assets_temp_image_17_png__WEBPACK_IMPORTED_MODULE_2__, _assets_temp_image_18_png__WEBPACK_IMPORTED_MODULE_3__, _assets_temp_image_19_png__WEBPACK_IMPORTED_MODULE_4__];\n\nlet mainVideoContainer = document.querySelector('.timer-block .timer-block__main-video');\nlet screenshotsContainer = document.querySelector('.timer-block .timer-block__videos-container');\n\nlet mainVideoImage = document.createElement('img');\nmainVideoImage.src = _assets_temp_image_15_png__WEBPACK_IMPORTED_MODULE_0__;\n\nmainVideoContainer.insertAdjacentElement('afterbegin', mainVideoImage);\nfulfillScreenshots(screenshotsContainer, screenshots);\n\nfunction fulfillScreenshots (elem, screenshots) {\n  for (let screenshot of screenshots) {\n    let imageElement = document.createElement('img');\n    imageElement.src = screenshot;\n    elem.insertAdjacentElement('beforeend', imageElement);\n  }\n}\n\n\n//# sourceURL=webpack:///./src/components/timerBlock.js?");
 
 /***/ }),
 
@@ -107,23 +97,6 @@ eval("module.exports = __webpack_require__.p + \"images/image 19.png\";\n\n//# s
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports

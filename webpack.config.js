@@ -6,7 +6,9 @@ module.exports = {
     videosBlock: './src/components/videosBlock.js',
     modelsBlock: './src/components/modelsBlock.js',
     sliderBlock: './src/components/sliderBlock.js',
-    timerBlock: './src/components/timerBlock.js'
+    timerBlock: './src/components/timerBlock.js',
+    videosPage: './src/videosPage.js',
+    videosBlockPage: './src/components/videosBlockPage.js'
   }, // The entry point of your application
   output: {
     path: path.resolve(__dirname, 'dist'), // The output directory

@@ -3,7 +3,6 @@ import image16 from '../../assets/temp/image 16.png';
 import image17 from '../../assets/temp/image 17.png';
 import image18 from '../../assets/temp/image 18.png';
 import image19 from '../../assets/temp/image 19.png';
-import sliderElement from "./sliderElement.html";
 
 const screenshots = [image16, image17, image18, image19];
 
