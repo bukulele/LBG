@@ -600,6 +600,21 @@ h4 {
     font-size: 12px;
     font-weight: 700;
 }
+/*VIDEOS AND MODELS FILTERS BLOCK*/
+.videos-block__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 25px;
+}
+.videos-block__selector label {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
 /*MESSAGE BLOCK*/
 .message-block__container {
     width: 340px;
