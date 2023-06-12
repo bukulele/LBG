@@ -6,6 +6,7 @@ import image5 from '../../assets/temp/image 5.png';
 import image6 from '../../assets/temp/image 6.png';
 import videoTitle from './videoTitle.html';
 import banner2 from './banner2.html';
+import messageBlock from './messageBlock.html';
 
 const videos = [image1, image2, image3, image4, image5, image6];
 
@@ -18,9 +19,9 @@ for (let video of videos) {
   videosBlockTitles.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
 }
 
-let message = '<div class="messageTEST">MESSAGE</div>';
-
+let message = '<div id="message" class="message-block"></div>';
 videosBlockTitles.insertAdjacentHTML('beforeend', message);
+document.getElementById('message').innerHTML = messageBlock;
 
 for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);

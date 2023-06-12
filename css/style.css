@@ -214,9 +214,15 @@ h4 {
 /*VIDEOS, MODELS AND SLIDER BLOCK*/
 .videos-block,
 .models-block,
-.banner-block {
+.banner-block,
+.message-block {
     background-color: #25272A;
     padding-bottom: 50px;
+    width: 100%;
+}
+.videos-block__titles > .banner-block,
+.videos-block__titles > .message-block {
+    padding: 20px 0;
 }
 .slider-block {
     padding-bottom: 50px;
@@ -594,6 +600,40 @@ h4 {
     font-size: 12px;
     font-weight: 700;
 }
+/*MESSAGE BLOCK*/
+.message-block__container {
+    width: 340px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+    background-color: #681213;
+    border-radius: 30px;
+}
+.message-block__container p {
+    color: #fff;
+    text-align: center;
+}
+.message-block__intro {
+    font-size: 16px;
+    font-weight: 700;
+}
+.message-block__intro span {
+    color: #F3B800;
+}
+.message-block__text {
+    font-size: 14px;
+    font-weight: 500;
+}
+.message-block__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+}
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
     h2 {
@@ -645,7 +685,8 @@ h4 {
         padding: 0 30px;
         justify-content: space-between;
     }
-    .banner-block {
+    .banner-block,
+    .videos-block__titles > .banner-block {
         padding: 0 30px 50px;
     }
     .banner-block__container {

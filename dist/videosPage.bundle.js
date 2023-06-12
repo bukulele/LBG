@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"videos-block__container\\\">\\n  <h2>HOTTEST AND FRESHEST VIDEO</h2>\\n  <div id=\\\"videosBlockTitles\\\" class=\\\"videos-block__titles\\\">\\n  </div>\\n  <div class=\\\"videos-block__button-container\\\">\\n    PAGER\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/videosBlockPage.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"videos-block__container\\\">\\n  <h2>VIDEOS</h2>\\n  <div id=\\\"videosBlockTitles\\\" class=\\\"videos-block__titles\\\">\\n  </div>\\n  <div class=\\\"videos-block__button-container\\\">\\n    PAGER\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/videosBlockPage.html?");
 
 /***/ }),
 
