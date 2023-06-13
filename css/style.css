@@ -629,6 +629,11 @@ h4 {
 .videos-block__selector select::-ms-expand {
     display: none;
 }
+.videos-block__selector select option {
+    background-color: #1D1E20;
+    font-size: 14px;
+    font-weight: 500;
+}
 /*MESSAGE BLOCK*/
 .message-block__container {
     width: 340px;
