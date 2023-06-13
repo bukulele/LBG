@@ -149,6 +149,12 @@ h4 {
 .btn--full {
     width: 100%;
 }
+.btn--link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    gap: 5px;
+}
 .icon-container {
     display: flex;
     align-items: center;
@@ -163,6 +169,18 @@ h4 {
 }
 .banner-block__chevrons svg:nth-child(even) {
     color: #FFC30A;
+}
+.single-news-block__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+}
+.single-news-block__icon-container svg {
+    width: 100%;
+    height: 100%;
+    color: #979899;
 }
 
 /*MAIN VIDEO BLOCK*/
@@ -634,26 +652,46 @@ h4 {
     font-size: 14px;
     font-weight: 500;
 }
-/*MESSAGE BLOCK*/
-.message-block__container {
-    width: 340px;
+/*SINGLE NEWS BLOCK AND MESSAGE BLOCKS*/
+.message-block__container,
+.single-news-block__container {
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 30px;
-    background-color: #681213;
     border-radius: 30px;
 }
-.message-block__container p {
+.message-block__container--background-red {
+    background-color: #681213;
+}
+.message-block__container--dimensions {
+    width: 340px;
+    padding: 30px;
+}
+.single-news-block__container--background-gray {
+    background-color: #2F3134;
+}
+.single-news-block__container--dimensions {
+    width: 360px;
+    padding: 20px;
+}
+.single-news-block__upper-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+.message-block__intro,
+.single-news-block__intro {
+    font-size: 16px;
+    font-weight: 700;
     color: #fff;
     text-align: center;
 }
-.message-block__intro {
-    font-size: 16px;
-    font-weight: 700;
+.single-news-block__intro {
+    text-align: left;
 }
 .message-block__intro span {
     color: #F3B800;
@@ -661,12 +699,42 @@ h4 {
 .message-block__text {
     font-size: 14px;
     font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+.single-news-block__text {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+}
+.single-news-block__text a {
+    color: #F3B800;
+    font-weight: 800;
+    text-decoration: none;
 }
 .message-block__buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 34px;
+}
+.single-news-block__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.single-news-block__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 15px;
+    height: 15px;
+}
+.single-news-block__close svg {
+    width: 100%;
+    height: 100%;
+    color: #fff;
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
