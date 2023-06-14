@@ -175,6 +175,9 @@ h4 {
 .btn--pager-inactive:hover {
     background-color: rgba(210, 68, 77, 0.5);
 }
+.btn--pager-s {
+    display: none;
+}
 .icon-container {
     display: flex;
     align-items: center;
@@ -895,6 +898,9 @@ h4 {
         top: 20px;
         right: 20px;
         left: unset;
+    }
+    .btn--pager-s {
+        display: flex;
     }
 }
 

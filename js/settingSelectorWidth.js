@@ -21,7 +21,6 @@ function adjustWidth (elem) {
   fakeElement.style.fontSize = elemFontSize;
   fakeElement.innerHTML = selectedOptionText;
   document.body.appendChild(fakeElement);
-  console.log(fakeElement);
   let width = fakeElement.offsetWidth;
   document.body.removeChild(fakeElement);
   elem.style.width = `${width + 30}px`;
