@@ -1,5 +1,5 @@
-let filtersBlock = document.querySelector('.videos-block__filters');
-let selectors = document.querySelectorAll('.videos-block__selector select');
+let filtersBlock = document.querySelector('#filtersBlock');
+let selectors = document.querySelectorAll('#filtersBlock select');
 
 for (let selector of selectors) {
   adjustWidth(selector);
