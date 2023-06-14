@@ -821,7 +821,8 @@ h4 {
         padding: 0 30px 50px;
     }
     .videos-block__titles > .banner-block,
-    .videos-block__titles > .message-block {
+    .videos-block__titles > .message-block,
+    .news-item-block {
         padding: 0 30px;
     }
     .banner-block__container,
@@ -942,6 +943,9 @@ h4 {
     .videos-block__titles > .message-block {
         grid-column-start: 1;
         grid-column-end: 4;
+        padding: 0;
+    }
+    .news-item-block {
         padding: 0;
     }
     .message-block__container {
