@@ -155,6 +155,9 @@ h4 {
     font-weight: 800;
     gap: 5px;
 }
+.btn--link:hover {
+    color: #F3B800;
+}
 .icon-container {
     display: flex;
     align-items: center;
@@ -180,7 +183,7 @@ h4 {
 .single-news-block__icon-container svg {
     width: 100%;
     height: 100%;
-    color: #979899;
+    opacity: 0.5;
 }
 
 /*MAIN VIDEO BLOCK*/
@@ -795,7 +798,8 @@ h4 {
         padding: 0 30px;
     }
     .banner-block__container,
-    .message-block__container {
+    .message-block__container--dimensions,
+    .single-news-block__container--dimensions {
         width: 100%;
     }
     .banner-block__image-container--bg1 {
@@ -846,6 +850,10 @@ h4 {
     .banner-block__section p {
         font-size: 8px;
         margin: 2px 0 0 25px;
+    }
+    .single-news-block__buttons {
+        justify-content: flex-start;
+        gap: 20px;
     }
     .timer-block__container {
         flex-direction: row-reverse;
@@ -990,11 +998,22 @@ h4 {
         grid-column-start: 1;
         grid-column-end: 5;
     }
-    .message-block__container {
+    .message-block__container,
+    .single-news-block__container {
         gap: 30px;
     }
-    .message-block__intro {
+    .single-news-block__container--dimensions {
+        padding: 30px;
+    }
+    .message-block__intro,
+    .single-news-block__intro {
         font-size: 32px;
+    }
+    .single-news-block__text {
+        font-size: 16px;
+    }
+    .btn--link {
+        font-size: 16px;
     }
 }
 

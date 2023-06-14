@@ -12,13 +12,17 @@ function handleSelect (event) {
 }
 
 function adjustWidth (elem) {
+  let compStyles = window.getComputedStyle(elem);
+  let elemFontSize = compStyles.getPropertyValue('font-size');
   let selectedOptionText = elem.options[elem.selectedIndex].text;
   let fakeElement = document.createElement("span");
   fakeElement.style.visibility = "hidden";
   fakeElement.style.whiteSpace = "nowrap";
+  fakeElement.style.fontSize = elemFontSize;
   fakeElement.innerHTML = selectedOptionText;
   document.body.appendChild(fakeElement);
+  console.log(fakeElement);
   let width = fakeElement.offsetWidth;
   document.body.removeChild(fakeElement);
-  elem.style.width = `${width + 20}px`;
+  elem.style.width = `${width + 30}px`;
 }
