@@ -158,6 +158,23 @@ h4 {
 .btn--link:hover {
     color: #F3B800;
 }
+.btn--pager {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.btn--pager-active {
+    background-color: #8C171E;
+}
+.btn--pager-inactive {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.btn--pager-inactive:hover {
+    background-color: rgba(210, 68, 77, 0.5);
+}
 .icon-container {
     display: flex;
     align-items: center;
@@ -654,6 +671,13 @@ h4 {
     background-color: #1D1E20;
     font-size: 14px;
     font-weight: 500;
+}
+.pager-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 /*SINGLE NEWS BLOCK AND MESSAGE BLOCKS*/
 .message-block__container,
