@@ -1039,6 +1039,9 @@ h4 {
     .model-title__container {
         width: 100%;
     }
+    .model-title__videos {
+        padding: 0 15px;
+    }
     .video-title__container,
     .slider-element__container {
         width: 100%;
@@ -1151,6 +1154,9 @@ h4 {
     /*.models-block__titles {*/
     /*    grid-template-columns: repeat(4, minmax(340px, 1fr));*/
     /*}*/
+    .model-title__videos {
+        padding: 0 22px;
+    }
     .banner-block__description {
         font-size: 24px;
     }
