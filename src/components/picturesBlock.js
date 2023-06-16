@@ -12,7 +12,7 @@ for (let picture of pictures) {
   picturesBlockTitles.insertAdjacentHTML('beforeend', pictureTitle);
   let imageElement = document.createElement('img');
   imageElement.src = picture;
-  let title = picturesBlockTitles.lastElementChild;
+  let title = picturesBlockTitles.lastElementChild.querySelector('.picture-title__image');
   title.insertAdjacentElement('afterbegin', imageElement);
 }
 

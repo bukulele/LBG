@@ -16,6 +16,6 @@ for (let model of models) {
   modelsBlockTitles.insertAdjacentHTML('beforeend', modelTitle);
   let imageElement = document.createElement('img');
   imageElement.src = model;
-  let title = modelsBlockTitles.lastElementChild.querySelector('.model-title__image')
+  let title = modelsBlockTitles.lastElementChild.querySelector('.model-title__image');
   title.insertAdjacentElement('afterbegin', imageElement);
 }
