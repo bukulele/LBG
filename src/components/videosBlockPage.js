@@ -13,6 +13,10 @@ import singleNewsBlock from './singleNewsBlock.html';
 const videos = [image1, image2, image3, image4, image5, image6];
 
 let videosBlockTitles = document.getElementById('videosBlockTitles');
+
+let newsItemContainer = '<div id="newsItemBlock" class="news-item-block"></div>';
+videosBlockTitles.insertAdjacentHTML('beforebegin', newsItemContainer);
+
 let newsItemBlock = document.getElementById('newsItemBlock');
 newsItemBlock.insertAdjacentHTML('afterbegin', singleNewsBlock);
 
