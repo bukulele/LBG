@@ -256,7 +256,8 @@ h4 {
 .videos-block,
 .models-block,
 .banner-block,
-.message-block {
+.message-block,
+.pictures-block {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
@@ -279,7 +280,8 @@ h4 {
 .videos-block__container,
 .models-block__container,
 .slider-block__container,
-.timer-block__container {
+.timer-block__container,
+.pictures-block__container {
     width: 100%;
     margin: auto;
     display: flex;
@@ -300,14 +302,16 @@ h4 {
     overflow: hidden;
 }
 .videos-block__titles,
-.models-block__titles {
+.models-block__titles,
+.pictures-block__titles {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-.videos-block__titles {
+.videos-block__titles,
+.pictures-block__titles {
     gap: 10px;
 }
 .models-block__titles {
@@ -329,7 +333,8 @@ h4 {
 
 /*VIDEO TITLE*/
 .video-title__container,
-.slider-element__container {
+.slider-element__container,
+.picture-title__container {
     position: relative;
     display: flex;
     width: 340px;
@@ -342,7 +347,8 @@ h4 {
     width: 100%;
     height: auto;
 }
-.video-title__container img {
+.video-title__container img,
+.picture-title__container img {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
@@ -909,13 +915,15 @@ h4 {
         padding: 0 30px 50px;
     }
     .videos-block__titles,
-    .models-block__titles {
+    .models-block__titles,
+    .pictures-block__titles {
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
     }
     .videos-block__titles,
-    .slider-block__slider {
+    .slider-block__slider,
+    .pictures-block__titles {
         gap: 30px;
     }
     .slider-block__slider {

@@ -11,6 +11,8 @@ module.exports = {
     videosBlockPage: './src/components/videosBlockPage.js',
     modelsPage: './src/modelsPage.js',
     modelsBlockPage: './src/components/modelsBlockPage.js',
+    videoPage: './src/videoPage.js',
+    picturesBlock: './src/components/picturesBlock.js'
   }, // The entry point of your application
   output: {
     path: path.resolve(__dirname, 'dist'), // The output directory
