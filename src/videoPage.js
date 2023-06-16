@@ -11,3 +11,5 @@ document.getElementById('picturesBlock').innerHTML = picturesBlock;
 document.getElementById('videosBlock').innerHTML = videosBlock;
 document.getElementById('banner_1').innerHTML = banner;
 document.getElementById('timerBlock').innerHTML = timerBlock;
+
+document.querySelector('.videos-block__container h2').innerHTML = 'SIMILAR VIDEOS';
