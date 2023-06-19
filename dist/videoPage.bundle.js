@@ -70,6 +70,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/watchVideoBlock.html":
+/*!*********************************************!*\
+  !*** ./src/components/watchVideoBlock.html ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/temp/image 20.png */ \"./assets/temp/image 20.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/diamond.png */ \"./assets/images/diamond.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);\nvar code = \"<div class=\\\"watch-video-block__container\\\">\\n    <div class=\\\"watch-video-block__video-container\\\">\\n        <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\" alt=\\\"\\\">\\n        <div class=\\\"video-container__block-over\\\">\\n            <div class=\\\"video-container__controls\\\">\\n                <div class=\\\"controls__play-container\\\">\\n                    <div class=\\\"play-container__icon-container\\\">\\n                        <svg viewBox=\\\"0 0 21 25\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\">\\n                            <path d=\\\"M3.54915 24.0705C3.2375 24.2622 2.88034 24.3673 2.51451 24.375C2.14868 24.3827 1.78742 24.2927 1.46797 24.1143C1.14852 23.9358 0.882452 23.6754 0.697197 23.3598C0.511941 23.0443 0.414203 22.685 0.414062 22.3191V2.2524C0.414203 1.88649 0.511941 1.52723 0.697197 1.21169C0.882452 0.896136 1.14852 0.635711 1.46797 0.457262C1.78742 0.278813 2.14868 0.188799 2.51451 0.196502C2.88034 0.204204 3.2375 0.309344 3.54915 0.501082L19.8527 10.5345C20.1519 10.7186 20.399 10.9763 20.5704 11.283C20.7417 11.5896 20.8317 11.9351 20.8317 12.2865C20.8317 12.6378 20.7417 12.9833 20.5704 13.2899C20.399 13.5966 20.1519 13.8543 19.8527 14.0385L3.54915 24.0705Z\\\" fill=\\\"currentColor\\\"/>\\n                        </svg>\\n                    </div>\\n                </div>\\n            </div>\\n            <div class=\\\"video-container__get-access\\\">\\n                <div class=\\\"get-access__header\\\">\\n                    <p>GET FULL VIDEO</p>\\n                    <div class=\\\"get-access__close\\\">\\n                        <svg viewBox=\\\"0 0 22 22\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\">\\n                            <path d=\\\"M4.1936 4.1936C4.45145 3.93582 4.80112 3.79102 5.16572 3.79102C5.53032 3.79102 5.88 3.93582 6.13785 4.1936L10.9998 9.0556L15.8618 4.1936C16.1212 3.94313 16.4685 3.80454 16.829 3.80767C17.1895 3.8108 17.5344 3.95541 17.7893 4.21035C18.0443 4.46528 18.1889 4.81015 18.192 5.17067C18.1952 5.53119 18.0566 5.87852 17.8061 6.13785L12.9441 10.9998L17.8061 15.8618C18.0566 16.1212 18.1952 16.4685 18.192 16.829C18.1889 17.1895 18.0443 17.5344 17.7893 17.7893C17.5344 18.0443 17.1895 18.1889 16.829 18.192C16.4685 18.1952 16.1212 18.0566 15.8618 17.8061L10.9998 12.9441L6.13785 17.8061C5.87852 18.0566 5.53119 18.1952 5.17067 18.192C4.81015 18.1889 4.46528 18.0443 4.21035 17.7893C3.95541 17.5344 3.8108 17.1895 3.80767 16.829C3.80454 16.4685 3.94313 16.1212 4.1936 15.8618L9.0556 10.9998L4.1936 6.13785C3.93582 5.88 3.79102 5.53032 3.79102 5.16572C3.79102 4.80112 3.93582 4.45145 4.1936 4.1936Z\\\" fill=\\\"currentColor\\\"/>\\n                        </svg>\\n                    </div>\\n                </div>\\n                <a href=\\\"\\\" class=\\\"btn btn--classic btn--pink\\\">\\n                    <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_1___ + \"\\\" alt=\\\"\\\">\\n                    <p>GET FULL<br>ACCESS</p>\\n                </a>\\n                <ul class=\\\"get-access__list\\\">\\n                    <li>100% Exclusive Content</li>\\n                    <li>Real amateur girls</li>\\n                    <li>High Quality</li>\\n                    <li>Regular Updates</li>\\n                    <li>Access to bonus content</li>\\n                </ul>\\n            </div>\\n        </div>\\n    </div>\\n    <div class=\\\"watch-video-block__description\\\"></div>\\n    <div class=\\\"watch-video-block__control-panel\\\"></div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/watchVideoBlock.html?");
+
+/***/ }),
+
 /***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
 /*!*********************************************************!*\
   !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
@@ -86,7 +96,7 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_videosBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/videosBlock.html */ \"./src/components/videosBlock.html\");\n/* harmony import */ var _components_banner_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner.html */ \"./src/components/banner.html\");\n/* harmony import */ var _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/timerBlock.html */ \"./src/components/timerBlock.html\");\n/* harmony import */ var _components_picturesBlock_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/picturesBlock.html */ \"./src/components/picturesBlock.html\");\n\n\n\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('picturesBlock').innerHTML = _components_picturesBlock_html__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\ndocument.getElementById('videosBlock').innerHTML = _components_videosBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\ndocument.getElementById('banner_1').innerHTML = _components_banner_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\ndocument.getElementById('timerBlock').innerHTML = _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\n\ndocument.querySelector('.videos-block__container h2').innerHTML = 'SIMILAR VIDEOS';\n\n\n//# sourceURL=webpack:///./src/videoPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_videosBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/videosBlock.html */ \"./src/components/videosBlock.html\");\n/* harmony import */ var _components_banner_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner.html */ \"./src/components/banner.html\");\n/* harmony import */ var _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/timerBlock.html */ \"./src/components/timerBlock.html\");\n/* harmony import */ var _components_picturesBlock_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/picturesBlock.html */ \"./src/components/picturesBlock.html\");\n/* harmony import */ var _components_watchVideoBlock_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/watchVideoBlock.html */ \"./src/components/watchVideoBlock.html\");\n\n\n\n\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('watchVideoBlock').innerHTML = _components_watchVideoBlock_html__WEBPACK_IMPORTED_MODULE_6__[\"default\"];\ndocument.getElementById('picturesBlock').innerHTML = _components_picturesBlock_html__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\ndocument.getElementById('videosBlock').innerHTML = _components_videosBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\ndocument.getElementById('banner_1').innerHTML = _components_banner_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\ndocument.getElementById('timerBlock').innerHTML = _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\n\ndocument.querySelector('.videos-block__container h2').innerHTML = 'SIMILAR VIDEOS';\n\n\n//# sourceURL=webpack:///./src/videoPage.js?");
 
 /***/ }),
 
@@ -147,6 +157,16 @@ eval("module.exports = __webpack_require__.p + \"images/daily_beast.png\";\n\n//
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"images/daily_news.png\";\n\n//# sourceURL=webpack:///./assets/images/daily_news.png?");
+
+/***/ }),
+
+/***/ "./assets/images/diamond.png":
+/*!***********************************!*\
+  !*** ./assets/images/diamond.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/diamond.png\";\n\n//# sourceURL=webpack:///./assets/images/diamond.png?");
 
 /***/ }),
 
@@ -267,6 +287,16 @@ eval("module.exports = __webpack_require__.p + \"images/vice.png\";\n\n//# sourc
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"images/visa.png\";\n\n//# sourceURL=webpack:///./assets/images/visa.png?");
+
+/***/ }),
+
+/***/ "./assets/temp/image 20.png":
+/*!**********************************!*\
+  !*** ./assets/temp/image 20.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/image 20.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_20.png?");
 
 /***/ })
 
