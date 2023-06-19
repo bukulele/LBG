@@ -385,6 +385,7 @@ h4 {
 .picture-title__image {
     width: 100%;
     aspect-ratio: 442/245;
+    display: flex;
 }
 .video-title__block-over,
 .slider-element__block-over {
