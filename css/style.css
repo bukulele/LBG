@@ -993,6 +993,7 @@ h4 {
     align-items: center;
     justify-content: center;
     color: #fff;
+    transform: translateX(10%);
 }
 .play-container__icon-container svg {
     width: 100%;
@@ -1009,6 +1010,10 @@ h4 {
     padding: 15px 10px;
     gap: 10px;
 }
+.video-container__get-access > a > p > span::before {
+    content: "\a";
+    white-space: pre;
+}
 .get-access__header {
     width: 100%;
     display: flex;
@@ -1024,8 +1029,8 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     color: #fff;
 }
 .get-access__close svg {
@@ -1092,6 +1097,7 @@ h4 {
 .watch-video-block__text p a {
     color: #FFC30A;
     text-decoration: none;
+    white-space: pre;
 }
 .watch-video-block__control-panel {
     grid-area: watchVideoControl;
@@ -1111,12 +1117,13 @@ h4 {
     justify-content: center;
     gap: 15px;
 }
-.control-panel__header p {
+.control-panel__text {
     font-size: 14px;
     color: #fff;
     font-weight: 800;
+    white-space: nowrap;
 }
-.control-panel__header p span {
+.control-panel__text span {
     color: #979899;
     font-weight: 500;
 }
@@ -1368,6 +1375,43 @@ h4 {
         padding-right: 20px;
         place-items: flex-start;
     }
+    .video-container__get-access {
+        gap: 20px;
+    }
+    .get-access__icon-container {
+        width: 20px;
+        height: 20px;
+    }
+    .video-container__get-access > a > p > span::before {
+        content: " ";
+    }
+    .get-access__header p {
+        font-size: 20px;
+    }
+    .get-access__list li {
+        font-size: 14px;
+        background-size: 14px;
+        padding-left: 17px;
+        line-height: 2;
+    }
+    .get-access__header {
+        justify-content: center;
+    }
+    .get-access__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .controls__play-container {
+        min-width: 100px;
+        width: 100px;
+        min-height: 100px;
+        height: 100px;
+    }
+    .play-container__icon-container {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -1447,6 +1491,15 @@ h4 {
         grid-template-areas: "watchVideoContainer watchVideoControl"
         "watchVideoDescription watchVideoControl";
     }
+    .watch-video-block__description {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+    .watch-video-block__name {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 
 @media only screen and (min-width: 1275px) {
@@ -1458,11 +1511,6 @@ h4 {
     .pictures-block {
         padding: 0 30px 50px;
     }
-    /*.models-block__titles {*/
-    /*    display: grid;*/
-    /*    grid-template-columns: repeat(4, minmax(0, 1fr));*/
-    /*    grid-auto-rows: min-content;*/
-    /*}*/
     .videos-block__container,
     .models-block__container {
         gap: 35px;
@@ -1482,9 +1530,6 @@ h4 {
     .videos-block__selector select {
         font-size: 16px;
     }
-    /*.model-title__container {*/
-    /*    width: 100%;*/
-    /*}*/
     .model-title__bottom-block p {
         font-size: 16px;
     }
@@ -1508,9 +1553,6 @@ h4 {
         column-gap: 30px;
         row-gap: 50px;
     }
-    /*.models-block__titles {*/
-    /*    grid-template-columns: repeat(4, minmax(340px, 1fr));*/
-    /*}*/
     .model-title__videos {
         padding: 0 22px;
     }
@@ -1561,11 +1603,62 @@ h4 {
         font-size: 16px;
     }
     .watch-video-block__container {
+        grid-template-columns: auto minmax(360px, 440px);
         grid-template-areas: "watchVideoContainer watchVideoControl"
-        "watchVideoDescription .";
+        "watchVideoDescription watchVideoControl";
+        gap: 30px;
     }
     .watch-video-block__control-panel {
-        height: 100%;
+        max-height: 100%;
+        gap: 20px;
+    }
+    .video-container__get-access {
+        gap: 30px;
+    }
+    .get-access__header p {
+        font-size: 32px;
+    }
+    .get-access__list li {
+        font-size: 20px;
+        background-size: 20px;
+        padding-left: 23px;
+        line-height: 2;
+    }
+    .get-access__close {
+        top: 30px;
+        right: 30px;
+    }
+    .controls__play-container {
+        min-width: 233px;
+        width: 233px;
+        min-height: 233px;
+        height: 233px;
+    }
+    .play-container__icon-container {
+        width: 90px;
+        height: 90px;
+    }
+
+    .data__actors > p,
+    .data__tags > p,
+    .data__actors-list p,
+    .tags-container__tag,
+    .control-panel__text,
+    .watch-video-block__text p {
+        font-size: 16px;
+    }
+    .watch-video-block__name p {
+        font-size: 40px;
+    }
+    .watch-video-block__description {
+        gap: 40px;
+    }
+    .watch-video-block__icons-container {
+        gap: 15px;
+    }
+    .watch-video-block__icon {
+        width: 50px;
+        height: 50px;
     }
 }
 
