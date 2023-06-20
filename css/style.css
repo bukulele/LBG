@@ -182,6 +182,13 @@ h4 {
 .btn--pager-s {
     display: none;
 }
+.btn--framed {
+    border: 2px solid #4F4F4F;
+    color: #fff;
+}
+.btn--framed span {
+    color: rgba(255, 255, 255, 0.5);
+}
 .icon-container {
     display: flex;
     align-items: center;
@@ -1107,6 +1114,94 @@ h4 {
 .control-panel__header p span {
     color: #979899;
     font-weight: 500;
+}
+.control-panel__rate-video {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.control-panel__rate-video > p {
+    color: rgba(255, 255, 255, 0.5);
+}
+.control-panel__rate-video .btn {
+    gap: 5px;
+    color: #fff;
+}
+.control-panel__element--bordered {
+    border: 2px solid #4F4F4F;
+    border-radius: 6px;
+}
+.rate-video__icon-container {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rate-video__icon-container svg {
+    width: 100%;
+    height: 100%;
+}
+.control-panel__favorites {
+    color: #fff;
+}
+.favorites__icon-container {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.favorites__icon-container svg {
+    width: 100%;
+    height: 100%;
+}
+.control-panel__data {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+.data__actors,
+.data__tags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+.data__actors {
+    border-bottom: 1px solid #4F4F4F;
+    padding-bottom: 20px;
+}
+.data__actors-list,
+.data__tags-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+.data__actors > p,
+.data__tags > p,
+.data__actors-list p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff
+}
+.data__actors-list p span {
+    font-weight: 800;
+    color: #F3B800;
+}
+.tags-container__tag {
+    border-radius: 10px;
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
