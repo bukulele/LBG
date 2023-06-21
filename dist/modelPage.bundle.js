@@ -40,6 +40,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/modelProfileBlock.html":
+/*!***********************************************!*\
+  !*** ./src/components/modelProfileBlock.html ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"model-profile-block__container\\\">\\n  <h2>Test</h2>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/modelProfileBlock.html?");
+
+/***/ }),
+
 /***/ "./src/components/navbar.html":
 /*!************************************!*\
   !*** ./src/components/navbar.html ***!
@@ -80,6 +90,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/videosBlock.html":
+/*!*****************************************!*\
+  !*** ./src/components/videosBlock.html ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"videos-block__container\\\">\\n  <h2></h2>\\n  <div id=\\\"videosBlockTitles\\\" class=\\\"videos-block__titles\\\">\\n  </div>\\n  <div class=\\\"videos-block__button-container\\\">\\n    <a href=\\\"videos.html\\\" class=\\\"btn btn--classic btn--red\\\">SHOW MORE VIDEOS</a>\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/videosBlock.html?");
+
+/***/ }),
+
 /***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
 /*!*********************************************************!*\
   !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
@@ -96,7 +116,7 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_banner_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/banner.html */ \"./src/components/banner.html\");\n/* harmony import */ var _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/timerBlock.html */ \"./src/components/timerBlock.html\");\n/* harmony import */ var _components_picturesBlock_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/picturesBlock.html */ \"./src/components/picturesBlock.html\");\n/* harmony import */ var _components_commentsBlock_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/commentsBlock.html */ \"./src/components/commentsBlock.html\");\n/* harmony import */ var _components_pagerContainer_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pagerContainer.html */ \"./src/components/pagerContainer.html\");\n\n\n\n\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('picturesBlock').innerHTML = _components_picturesBlock_html__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\ndocument.getElementById('commentsBlock').innerHTML = _components_commentsBlock_html__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\ndocument.getElementById('banner_1').innerHTML = _components_banner_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\ndocument.getElementById('timerBlock').innerHTML = _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\ndocument.querySelector('.pictures-block__button-container').innerHTML = _components_pagerContainer_html__WEBPACK_IMPORTED_MODULE_6__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/modelPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_banner_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/banner.html */ \"./src/components/banner.html\");\n/* harmony import */ var _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/timerBlock.html */ \"./src/components/timerBlock.html\");\n/* harmony import */ var _components_picturesBlock_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/picturesBlock.html */ \"./src/components/picturesBlock.html\");\n/* harmony import */ var _components_commentsBlock_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/commentsBlock.html */ \"./src/components/commentsBlock.html\");\n/* harmony import */ var _components_pagerContainer_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pagerContainer.html */ \"./src/components/pagerContainer.html\");\n/* harmony import */ var _components_modelProfileBlock_html__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/modelProfileBlock.html */ \"./src/components/modelProfileBlock.html\");\n/* harmony import */ var _components_videosBlock_html__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/videosBlock.html */ \"./src/components/videosBlock.html\");\n\n\n\n\n\n\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('modelProfileBlock').innerHTML = _components_modelProfileBlock_html__WEBPACK_IMPORTED_MODULE_7__[\"default\"];\ndocument.getElementById('picturesBlock').innerHTML = _components_picturesBlock_html__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\ndocument.getElementById('videosBlock').innerHTML = _components_videosBlock_html__WEBPACK_IMPORTED_MODULE_8__[\"default\"];\ndocument.getElementById('commentsBlock').innerHTML = _components_commentsBlock_html__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\ndocument.getElementById('banner_1').innerHTML = _components_banner_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\ndocument.getElementById('timerBlock').innerHTML = _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\ndocument.querySelector('.videos-block__container h2').innerHTML = 'VIDEOS';\ndocument.querySelector('.pictures-block__button-container').innerHTML = _components_pagerContainer_html__WEBPACK_IMPORTED_MODULE_6__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/modelPage.js?");
 
 /***/ }),
 
