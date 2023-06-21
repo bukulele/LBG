@@ -1144,10 +1144,12 @@ h4 {
     font-size: 16px;
     font-weight: 500;
 }
-.control-panel__rate-video > p {
+.control-panel__rate-video > p,
+.control-panel__rate-model > p{
     color: rgba(255, 255, 255, 0.5);
 }
-.control-panel__rate-video .btn {
+.control-panel__rate-video .btn,
+.control-panel__rate-model .btn {
     gap: 5px;
     color: #fff;
 }
@@ -1321,6 +1323,7 @@ h4 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, auto);
+    place-items: center;
     grid-template-areas: "modelPhoto"
     "modelControls"
     "modelDescription"
@@ -1328,9 +1331,20 @@ h4 {
     gap: 20px;
     background-color: #2F3134;
     border-radius: 30px;
+    padding: 20px;
 }
 .model-profile-block__photo {
     grid-area: modelPhoto;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.model-profile-block__photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
 .model-profile-block__controls {
     grid-area: modelControls;
