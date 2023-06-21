@@ -287,7 +287,8 @@ h4 {
 .models-block,
 .banner-block,
 .message-block,
-.pictures-block {
+.pictures-block,
+.comments-block {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
@@ -311,7 +312,8 @@ h4 {
 .models-block__container,
 .slider-block__container,
 .timer-block__container,
-.pictures-block__container {
+.pictures-block__container,
+.comments-block__container {
     width: 100%;
     margin: auto;
     display: flex;
@@ -805,7 +807,8 @@ h4 {
 }
 /*VIDEOS AND MODELS FILTERS BLOCK*/
 .videos-block__filters,
-.models-block__filters {
+.models-block__filters,
+.comments-block__filters {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -815,13 +818,15 @@ h4 {
     margin: 0 25px;
 }
 .videos-block__selector label,
-.models-block__selector label {
+.models-block__selector label,
+.comments-block__selector label {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
 }
 .videos-block__selector select,
-.models-block__selector select {
+.models-block__selector select,
+.comments-block__selector select {
     background-color: transparent;
     border: none;
     font-family: inherit;
@@ -833,11 +838,13 @@ h4 {
     outline: none;
 }
 .videos-block__selector select::-ms-expand,
-.videos-block__selector select::-ms-expand {
+.models-block__selector select::-ms-expand,
+.comments-block__selector select::-ms-expand {
     display: none;
 }
 .videos-block__selector select option,
-.videos-block__selector select option {
+.models-block__selector select option,
+.comments-block__selector select option {
     background-color: #1D1E20;
     font-size: 14px;
     font-weight: 500;
@@ -1217,6 +1224,58 @@ h4 {
     font-size: 14px;
     font-weight: 800;
 }
+/*COMMENTS BLOCK*/
+.comments-block__container {
+    padding: 15px;
+}
+.comments-block__login p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.comments-block__login p a {
+    font-weight: 800;
+    color: #F3B800;
+    text-decoration: none;
+}
+.comments-block__comment {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+.comments-block__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.comments-block__avatar {
+    min-width: 58px;
+    width: 58px;
+    min-height: 58px;
+    height: 58px;
+}
+.comments-block__avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.comments-block__username a {
+    font-weight: 800;
+    font-size: 16px;
+    color: #F3B800;
+    text-decoration: none;
+}
+.comments-block__date p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+.comments-block__text p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
     h2 {
@@ -1527,7 +1586,11 @@ h4 {
         padding: 0 60px;
     }
     .videos-block__selector label,
-    .videos-block__selector select {
+    .videos-block__selector select,
+    .models-block__selector label,
+    .models-block__selector select,
+    .comments-block__selector label,
+    .comments-block__selector select {
         font-size: 16px;
     }
     .model-title__bottom-block p {
