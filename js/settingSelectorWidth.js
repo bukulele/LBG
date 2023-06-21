@@ -1,27 +1,31 @@
-let filtersBlock = document.querySelector('#filtersBlock');
-let selectors = document.querySelectorAll('#filtersBlock select');
+let filtersBlocks = document.querySelectorAll('.filters-block');
 
-for (let selector of selectors) {
-  adjustWidth(selector);
-}
+for (let filtersBlock of filtersBlocks) {
 
-filtersBlock.addEventListener('change', handleSelect);
+  let selectors = document.querySelectorAll('.filters-block select');
 
-function handleSelect (event) {
-  adjustWidth(event.target);
-}
+  for (let selector of selectors) {
+    adjustWidth(selector);
+  }
 
-function adjustWidth (elem) {
-  let compStyles = window.getComputedStyle(elem);
-  let elemFontSize = compStyles.getPropertyValue('font-size');
-  let selectedOptionText = elem.options[elem.selectedIndex].text;
-  let fakeElement = document.createElement("span");
-  fakeElement.style.visibility = "hidden";
-  fakeElement.style.whiteSpace = "nowrap";
-  fakeElement.style.fontSize = elemFontSize;
-  fakeElement.innerHTML = selectedOptionText;
-  document.body.appendChild(fakeElement);
-  let width = fakeElement.offsetWidth;
-  document.body.removeChild(fakeElement);
-  elem.style.width = `${width + 30}px`;
+  filtersBlock.addEventListener('change', handleSelect);
+
+  function handleSelect(event) {
+    adjustWidth(event.target);
+  }
+
+  function adjustWidth(elem) {
+    let compStyles = window.getComputedStyle(elem);
+    let elemFontSize = compStyles.getPropertyValue('font-size');
+    let selectedOptionText = elem.options[elem.selectedIndex].text;
+    let fakeElement = document.createElement("span");
+    fakeElement.style.visibility = "hidden";
+    fakeElement.style.whiteSpace = "nowrap";
+    fakeElement.style.fontSize = elemFontSize;
+    fakeElement.innerHTML = selectedOptionText;
+    document.body.appendChild(fakeElement);
+    let width = fakeElement.offsetWidth;
+    document.body.removeChild(fakeElement);
+    elem.style.width = `${width + 30}px`;
+  }
 }
