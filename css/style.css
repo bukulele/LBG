@@ -1585,6 +1585,21 @@ h4 {
         width: 40px;
         height: 40px;
     }
+    .model-profile-block {
+        padding: 20px 30px 50px 30px;
+    }
+    .model-profile-block__container {
+        width: 100%;
+        grid-template-columns: min-content minmax(auto, 865px);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "modelPhoto modelControls"
+        "modelPhoto modelDescription"
+        "modelPhoto modelParticipation";
+    }
+    .model-profile-block__photo {
+        align-self: start;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -1719,6 +1734,11 @@ h4 {
     }
     .pictures-block__titles {
         gap: 30px;
+    }
+    .model-profile-block__control-panel {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
