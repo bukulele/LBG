@@ -288,7 +288,8 @@ h4 {
 .banner-block,
 .message-block,
 .pictures-block,
-.comments-block {
+.comments-block,
+.model-profile-block {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
@@ -307,6 +308,9 @@ h4 {
 }
 .timer-block {
     padding: 50px 0;
+}
+.model-profile-block {
+    padding-top: 20px;
 }
 .videos-block__container,
 .models-block__container,
@@ -562,13 +566,15 @@ h4 {
     font-size: 12px;
     font-weight: 700;
 }
-.model-title__bottom-block {
+.model-title__bottom-block,
+.model-profile-block__participation {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
 }
-.bottom-block__activity {
+.bottom-block__activity,
+.participation__activity {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1144,6 +1150,10 @@ h4 {
     font-size: 16px;
     font-weight: 500;
 }
+.control-panel__rate-model {
+    width: fit-content;
+    padding: 0 30px;
+}
 .control-panel__rate-video > p,
 .control-panel__rate-model > p{
     color: rgba(255, 255, 255, 0.5);
@@ -1346,14 +1356,39 @@ h4 {
     height: auto;
     border-radius: 15px;
 }
-.model-profile-block__controls {
+.model-profile-block__control-panel {
     grid-area: modelControls;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.model-profile-block__name p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
 }
 .model-profile-block__description {
     grid-area: modelDescription;
 }
+.model-profile-block__description p {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+}
 .model-profile-block__participation {
     grid-area: modelParticipation;
+    width: 100%;
+}
+.model-profile-block__participation p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.model-profile-block__participation svg {
+    color: #F3B700;
+    width: 32px;
+    height: 32px;
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
