@@ -318,7 +318,8 @@ h4 {
 .models-block__container,
 .slider-block__container,
 .timer-block__container,
-.pictures-block__container {
+.pictures-block__container,
+.news-block__container {
     width: 100%;
     margin: auto;
     display: flex;
@@ -815,7 +816,8 @@ h4 {
 /*VIDEOS AND MODELS FILTERS BLOCK*/
 .videos-block__filters,
 .models-block__filters,
-.comments-block__filters {
+.comments-block__filters,
+.news-block__filters {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -826,14 +828,16 @@ h4 {
 }
 .videos-block__selector label,
 .models-block__selector label,
-.comments-block__selector label {
+.comments-block__selector label,
+.news-block__selector label {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
 }
 .videos-block__selector select,
 .models-block__selector select,
-.comments-block__selector select {
+.comments-block__selector select,
+.news-block__selector select {
     background-color: transparent;
     border: none;
     font-family: inherit;
@@ -846,12 +850,14 @@ h4 {
 }
 .videos-block__selector select::-ms-expand,
 .models-block__selector select::-ms-expand,
-.comments-block__selector select::-ms-expand {
+.comments-block__selector select::-ms-expand,
+.news-block__selector select::-ms-expand {
     display: none;
 }
 .videos-block__selector select option,
 .models-block__selector select option,
-.comments-block__selector select option {
+.comments-block__selector select option,
+.news-block__selector select option {
     background-color: #1D1E20;
     font-size: 14px;
     font-weight: 500;
@@ -1452,6 +1458,12 @@ h4 {
     gap: 20px;
     align-items: center;
 }
+.news-block__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
     h2 {
@@ -1754,6 +1766,10 @@ h4 {
     {
         width: 892px !important;
     }
+    .news-block__container,
+    .news-block__list {
+        gap: 35px;
+    }
 }
 
 @media only screen and (min-width: 1275px) {
@@ -1786,6 +1802,8 @@ h4 {
     .models-block__selector select,
     .comments-block__selector label,
     .comments-block__selector select,
+    .news-block__selector label,
+    .news-block__selector select,
     .model-title__bottom-block p,
     .comments-block__login p,
     .comments-block__text p {
