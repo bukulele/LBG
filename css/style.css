@@ -289,7 +289,8 @@ h4 {
 .message-block,
 .pictures-block,
 .comments-block,
-.model-profile-block {
+.model-profile-block,
+.news-block {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
@@ -916,10 +917,11 @@ h4 {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
 }
-.single-news-block__text a {
+.single-news-block__read-more {
     color: #F3B800;
     font-weight: 800;
     text-decoration: none;
+    white-space: pre;
 }
 .message-block__buttons {
     display: flex;
@@ -933,6 +935,10 @@ h4 {
     justify-content: space-between;
     width: 100%;
 }
+.news-block .single-news-block__buttons--bordered {
+    border-top: 1px solid #525252;
+    padding-top: 20px;
+}
 .single-news-block__close {
     display: flex;
     justify-content: center;
@@ -944,6 +950,15 @@ h4 {
     width: 100%;
     height: 100%;
     color: #fff;
+}
+.news-block .news-block--invisible {
+    display: none;
+}
+.news-block--visible {
+    display: none;
+}
+.news-block .news-block--visible {
+    display: flex;
 }
 /*WATCH VIDEO BLOCK*/
 .watch-video-block__container {
@@ -1405,6 +1420,17 @@ h4 {
     color: #F3B700;
     width: 32px;
     height: 32px;
+}
+/*NEWS BLOCK*/
+.news-block  {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.news-block .single-news-block__container {
+    width: 360px;
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
