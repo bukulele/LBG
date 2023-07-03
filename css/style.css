@@ -1099,6 +1099,10 @@ h4 {
     padding-left: 12px;
     white-space: nowrap;
 }
+.get-access__icon-container {
+    width: 20px;
+    height: 20px;
+}
 .watch-video-block__description {
     grid-area: watchVideoDescription;
     width: 100%;
@@ -1611,10 +1615,6 @@ h4 {
     }
     .video-container__get-access {
         gap: 20px;
-    }
-    .get-access__icon-container {
-        width: 20px;
-        height: 20px;
     }
     .video-container__get-access > a > p > span::before {
         content: " ";
