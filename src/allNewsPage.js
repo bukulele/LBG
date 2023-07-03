@@ -9,3 +9,7 @@ document.getElementById('footer').innerHTML = footer;
 document.getElementById('newsBlock').innerHTML = singleNewsBlock;
 document.getElementById('banner_1').innerHTML = banner;
 document.getElementById('timerBlock').innerHTML = timerBlock;
+document.getElementById('newsBlock').insertAdjacentHTML('afterbegin', singleNewsBlock);
+document.getElementById('newsBlock').insertAdjacentHTML('afterbegin', singleNewsBlock);
+document.getElementById('newsBlock').insertAdjacentHTML('afterbegin', singleNewsBlock);
+document.getElementById('newsBlock').insertAdjacentHTML('afterbegin', singleNewsBlock);
