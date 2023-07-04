@@ -16,7 +16,9 @@ module.exports = {
     modelPage: './src/modelPage.js',
     modelPicturesBlock: './src/components/modelPicturesBlock.js',
     allNewsPage: './src/allNewsPage.js',
-    newsBlock: './src/components/newsBlock.js'
+    newsBlock: './src/components/newsBlock.js',
+    oneNewsPage: './src/oneNewsPage.js',
+    oneNewsBlock: './src/components/oneNewsBlock.js',
   }, // The entry point of your application
   output: {
     path: path.resolve(__dirname, 'dist'), // The output directory

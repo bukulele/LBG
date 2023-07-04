@@ -1458,7 +1458,8 @@ h4 {
     gap: 20px;
     align-items: center;
 }
-.news-block__list {
+.news-block__list,
+.news-block__news-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1767,7 +1768,8 @@ h4 {
         width: 892px !important;
     }
     .news-block__container,
-    .news-block__list {
+    .news-block__list,
+    .news-block__news-container {
         gap: 35px;
     }
 }
