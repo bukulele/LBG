@@ -976,15 +976,15 @@ h4 {
     height: 100%;
     color: #fff;
 }
-.news-block .news-block--invisible {
-    display: none;
-}
-.news-block--visible {
-    display: none;
-}
-.news-block .news-block--visible {
-    display: flex;
-}
+/*.news-block .news-block--invisible {*/
+/*    display: none;*/
+/*}*/
+/*.news-block--visible {*/
+/*    display: none;*/
+/*}*/
+/*.news-block .news-block--visible {*/
+/*    display: flex;*/
+/*}*/
 /*WATCH VIDEO BLOCK*/
 .watch-video-block__container {
     width: 360px;

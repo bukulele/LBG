@@ -19,6 +19,7 @@ videosBlockTitles.insertAdjacentHTML('beforebegin', newsItemContainer);
 
 let newsItemBlock = document.getElementById('newsItemBlock');
 newsItemBlock.insertAdjacentHTML('afterbegin', singleNewsBlock);
+newsItemBlock.querySelector('.single-news-block__text').insertAdjacentHTML('beforeend', '<a href="" class="single-news-block__read-more">Read more</a>');
 
 newsItemBlock.insertAdjacentHTML('beforebegin', filters);
 
