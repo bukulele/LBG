@@ -16,5 +16,5 @@ for (let textContainer of textContainers) {
 }
 let blockButtons = document.querySelectorAll('.single-news-block__buttons');
 for (let block of blockButtons) {
-  block.insertAdjacentHTML('beforebegin', '<a href="" class="single-news-block__read-more news-block--visible">Read more</a><a href="" class="btn btn--classic btn--red btn--full-xs">VIEW COMMENTS (3) OR COMMENT</a>');
+  block.insertAdjacentHTML('beforebegin', '<a href="onenews.html" class="single-news-block__read-more">Read more</a><a href="onenews.html" class="btn btn--classic btn--red btn--full-xs">VIEW COMMENTS (3) OR COMMENT</a>');
 }

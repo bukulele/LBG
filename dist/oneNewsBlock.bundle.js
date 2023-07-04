@@ -26,7 +26,57 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _singleNewsBlock_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./singleNewsBlock.html */ \"./src/components/singleNewsBlock.html\");\n\n\ndocument.querySelector('.news-block__container .news-block__news-container').innerHTML = _singleNewsBlock_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n\n\n//# sourceURL=webpack:///./src/components/oneNewsBlock.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_temp_image_34_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/temp/image 34.png */ \"./assets/temp/image 34.png\");\n/* harmony import */ var _assets_temp_image_35_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/temp/image 35.png */ \"./assets/temp/image 35.png\");\n/* harmony import */ var _assets_temp_image_36_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/temp/image 36.png */ \"./assets/temp/image 36.png\");\n/* harmony import */ var _assets_temp_image_37_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/temp/image 37.png */ \"./assets/temp/image 37.png\");\n/* harmony import */ var _assets_temp_image_38_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/temp/image 38.png */ \"./assets/temp/image 38.png\");\n/* harmony import */ var _singleNewsBlock_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./singleNewsBlock.html */ \"./src/components/singleNewsBlock.html\");\n\n\n\n\n\n\n\nlet images = [_assets_temp_image_34_png__WEBPACK_IMPORTED_MODULE_0__, _assets_temp_image_35_png__WEBPACK_IMPORTED_MODULE_1__, _assets_temp_image_36_png__WEBPACK_IMPORTED_MODULE_2__, _assets_temp_image_37_png__WEBPACK_IMPORTED_MODULE_3__, _assets_temp_image_38_png__WEBPACK_IMPORTED_MODULE_4__];\ndocument.querySelector('.news-block__container .news-block__news-container').innerHTML = _singleNewsBlock_html__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\n\nlet singleBlockButtons = document.querySelector('.single-news-block__buttons');\nsingleBlockButtons.innerHTML = `\n            <a href=\"\" class=\"btn btn--link\">\n                <div class=\"control-panel__icon-container\">\n                    <svg viewBox=\"0 0 24 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <g clip-path=\"url(#clip0_6_7084)\">\n                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M18.923 8.25776C17.7134 8.25776 16.6401 7.69461 15.9053 6.82262L8.85285 11.0141C9.00043 11.4451 9.0967 11.9026 9.0967 12.3865C9.0967 12.8357 9.00845 13.2618 8.88011 13.668L15.9278 17.8562C16.6626 17.0007 17.7246 16.4491 18.923 16.4491C21.1386 16.4491 22.9338 18.2971 22.9338 20.5778C22.9338 22.8585 21.1386 24.7065 18.923 24.7065C16.7075 24.7065 14.9123 22.8585 14.9123 20.5778C14.9123 20.1253 15.0005 19.6976 15.1305 19.2913L8.08438 15.1032C7.34961 15.962 6.28595 16.5152 5.08595 16.5152C2.87041 16.5152 1.0752 14.6672 1.0752 12.3865C1.0752 10.1058 2.87041 8.25776 5.08595 8.25776C6.25387 8.25776 7.29346 8.77798 8.02662 9.59877L15.1208 5.38253C14.9973 4.98616 14.9123 4.57 14.9123 4.12905C14.9123 1.84835 16.7075 0.000337601 18.923 0.000337601C21.1386 0.000337601 22.9338 1.84835 22.9338 4.12905C22.9338 6.40975 21.1386 8.25776 18.923 8.25776Z\" fill=\"currentColor\"/>\n                        </g>\n                        <defs>\n                            <clipPath id=\"clip0_6_7084\">\n                                <rect width=\"24\" height=\"24.7059\" fill=\"currentColor\" transform=\"matrix(1 0 0 -1 0 24.7061)\"/>\n                            </clipPath>\n                        </defs>\n                    </svg>\n                </div>\n                <p>SHARE</p>\n            </a>\n`;\n\nsingleBlockButtons.insertAdjacentHTML('beforebegin', `\n<div class=\"single-news-block__photos\"></div>\n<div class=\"single-news-block__video\"></div>\n`);\n\nfor (let image of images) {\n  let imageElement = document.createElement('img');\n  imageElement.src = image;\n  document.querySelector('.single-news-block__photos').insertAdjacentElement('beforeend', imageElement);\n}\n\n\n//# sourceURL=webpack:///./src/components/oneNewsBlock.js?");
+
+/***/ }),
+
+/***/ "./assets/temp/image 34.png":
+/*!**********************************!*\
+  !*** ./assets/temp/image 34.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/image 34.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_34.png?");
+
+/***/ }),
+
+/***/ "./assets/temp/image 35.png":
+/*!**********************************!*\
+  !*** ./assets/temp/image 35.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/image 35.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_35.png?");
+
+/***/ }),
+
+/***/ "./assets/temp/image 36.png":
+/*!**********************************!*\
+  !*** ./assets/temp/image 36.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/image 36.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_36.png?");
+
+/***/ }),
+
+/***/ "./assets/temp/image 37.png":
+/*!**********************************!*\
+  !*** ./assets/temp/image 37.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/image 37.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_37.png?");
+
+/***/ }),
+
+/***/ "./assets/temp/image 38.png":
+/*!**********************************!*\
+  !*** ./assets/temp/image 38.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/image 38.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_38.png?");
 
 /***/ })
 
@@ -83,6 +133,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sin
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "./dist/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
