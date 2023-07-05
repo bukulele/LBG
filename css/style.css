@@ -873,7 +873,8 @@ h4 {
 }
 /*SINGLE NEWS BLOCK AND MESSAGE BLOCKS*/
 .message-block__container,
-.single-news-block__container {
+.single-news-block__container,
+.terms-block__container {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -882,7 +883,8 @@ h4 {
     gap: 10px;
     border-radius: 30px;
 }
-.news-block .single-news-block__container
+.news-block .single-news-block__container,
+.terms-block .terms-block__container
 {
     width: 360px !important;
 }
