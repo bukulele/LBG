@@ -29,6 +29,9 @@ singleBlockButtons.innerHTML = `
 
 singleBlockButtons.insertAdjacentHTML('beforebegin', `
 <div class="single-news-block__photos"></div>
+    <div class="single-news-block__text-container">
+        <p class="single-news-block__text">And now the hottest thing is casting:</p>
+    </div>
 <div class="single-news-block__video"></div>
 `);
 
@@ -37,3 +40,20 @@ for (let image of images) {
   imageElement.src = image;
   document.querySelector('.single-news-block__photos').insertAdjacentElement('beforeend', imageElement);
 }
+
+document.querySelector('.single-news-block__video').innerHTML = `
+    <div class="watch-video-block__video-container">
+        <img src="/assets/temp/image%2020.png" alt="">
+        <div class="video-container__block-over">
+            <div class="video-container__controls">
+                <div class="controls__play-container">
+                    <div class="play-container__icon-container">
+                        <svg viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.54915 24.0705C3.2375 24.2622 2.88034 24.3673 2.51451 24.375C2.14868 24.3827 1.78742 24.2927 1.46797 24.1143C1.14852 23.9358 0.882452 23.6754 0.697197 23.3598C0.511941 23.0443 0.414203 22.685 0.414062 22.3191V2.2524C0.414203 1.88649 0.511941 1.52723 0.697197 1.21169C0.882452 0.896136 1.14852 0.635711 1.46797 0.457262C1.78742 0.278813 2.14868 0.188799 2.51451 0.196502C2.88034 0.204204 3.2375 0.309344 3.54915 0.501082L19.8527 10.5345C20.1519 10.7186 20.399 10.9763 20.5704 11.283C20.7417 11.5896 20.8317 11.9351 20.8317 12.2865C20.8317 12.6378 20.7417 12.9833 20.5704 13.2899C20.399 13.5966 20.1519 13.8543 19.8527 14.0385L3.54915 24.0705Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+`;

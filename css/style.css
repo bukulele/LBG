@@ -29,6 +29,7 @@ h2 {
     color: #fff;
     text-transform: uppercase;
     margin-top: 50px;
+    text-align: center;
 }
 h3 {
     font-weight: 800;
@@ -1933,13 +1934,13 @@ h4 {
         top: 30px;
         right: 30px;
     }
-    .controls__play-container {
+    .watch-video-block__container .controls__play-container {
         min-width: 233px;
         width: 233px;
         min-height: 233px;
         height: 233px;
     }
-    .play-container__icon-container {
+    .watch-video-block__container .play-container__icon-container {
         width: 90px;
         height: 90px;
     }
