@@ -320,7 +320,8 @@ h4 {
 .slider-block__container,
 .timer-block__container,
 .pictures-block__container,
-.news-block__container {
+.news-block__container,
+.terms-block__container {
     width: 100%;
     margin: auto;
     display: flex;
