@@ -899,6 +899,15 @@ h4 {
     width: 360px;
     padding: 20px;
 }
+.news-block__last-modified {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+.news-block__last-modified span {
+    font-weight: 800;
+}
 .single-news-block__upper-container {
     display: flex;
     align-items: flex-start;
