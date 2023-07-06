@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/components/banner.html":
-/*!************************************!*\
-  !*** ./src/components/banner.html ***!
-  \************************************/
+/***/ "./src/components/authBlock.html":
+/*!***************************************!*\
+  !*** ./src/components/authBlock.html ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/GET FULL ACCESS NOW.png */ \"./assets/images/GET FULL ACCESS NOW.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar code = \"<div class=\\\"banner-block__container\\\">\\n    <div class=\\\"banner-block__image-container banner-block__image-container--bg1\\\"></div>\\n    <div class=\\\"banner-block__content banner-block__content--vertical banner-block__content--padding-big\\\">\\n        <div class=\\\"banner-block__title\\\">\\n            <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\" alt=\\\"\\\">\\n        </div>\\n        <p class=\\\"banner-block__description\\\">Join LostBetsGames today and save 45% with a yearly membership.</p>\\n        <p class=\\\"banner-block__description\\\">Don’t wait! Become a member today!</p>\\n        <a class=\\\"btn btn--banner\\\" href=\\\"\\\"><p><span>GET</span> FULL ACCESS</p>\\n            <div class=\\\"banner-block__chevrons\\\">\\n                <svg viewBox=\\\"0 0 14 8\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\">\\n                    <path fill-rule=\\\"evenodd\\\" clip-rule=\\\"evenodd\\\" d=\\\"M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z\\\" fill=\\\"currentColor\\\"/>\\n                </svg>\\n                <svg viewBox=\\\"0 0 14 8\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\">\\n                    <path fill-rule=\\\"evenodd\\\" clip-rule=\\\"evenodd\\\" d=\\\"M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z\\\" fill=\\\"currentColor\\\"/>\\n                </svg>\\n                <svg viewBox=\\\"0 0 14 8\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\">\\n                    <path fill-rule=\\\"evenodd\\\" clip-rule=\\\"evenodd\\\" d=\\\"M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z\\\" fill=\\\"currentColor\\\"/>\\n                </svg>\\n            </div>\\n        </a>\\n    </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/banner.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"auth-block__container\\\">\\n  <h2>AUTHORIZATION</h2>\\n  <div class=\\\"auth-block__group\\\">\\n    <div class=\\\"auth-block__half\\\">\\n      <form class=\\\"auth-block__form\\\">\\n        <input type=\\\"text\\\" class=\\\"auth-block__form-input\\\" placeholder=\\\"Login or email\\\">\\n        <input type=\\\"password\\\" class=\\\"auth-block__form-input\\\" placeholder=\\\"Password\\\">\\n        <input type=\\\"submit\\\" class=\\\"btn btn--form btn--full btn--yellow\\\" value=\\\"LOG IN\\\">\\n      </form>\\n      <a href=\\\"\\\" class=\\\"btn btn--link-g\\\">I forgot password</a>\\n      <a href=\\\"\\\" class=\\\"btn btn--link-g\\\">Need help?</a>\\n    </div>\\n    <div class=\\\"auth-block__half\\\">\\n      <div class=\\\"auth-block__benefits\\\">\\n        <p class=\\\"auth-block__benefits-header\\\">BUY ACCESS TO GET:</p>\\n        <ul class=\\\"auth-block__benefits-list\\\">\\n          <li>100% Exclusive Content</li>\\n          <li>Real amateur girls</li>\\n          <li>High Quality</li>\\n          <li>Regular Updates</li>\\n          <li>Access to bonus content</li>\\n        </ul>\\n        <p class=\\\"auth-block__benefits-text\\\">Not your typical pornstars that you see everywhere, but your average everyday next door girls!</p>\\n        <p class=\\\"auth-block__benefits-promo\\\">24/7 Support Day and Night</p>\\n      </div>\\n    </div>\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/authBlock.html?");
 
 /***/ }),
 
@@ -40,36 +40,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/components/pagerContainer.html":
-/*!********************************************!*\
-  !*** ./src/components/pagerContainer.html ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"pager-container\\\">\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-active\\\">1</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-inactive\\\">2</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-inactive\\\">3</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-inactive btn--pager-s\\\">4</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-inactive btn--pager-s\\\">5</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-inactive btn--pager-s\\\">6</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-inactive btn--pager-s\\\">7</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-inactive btn--pager-s\\\">8</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-inactive btn--pager-s\\\">9</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--pager btn--pager-inactive btn--pager-s\\\">10</a>\\n    <a href=\\\"\\\" class=\\\"btn btn--classic btn--red\\\">NEXT</a>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/pagerContainer.html?");
-
-/***/ }),
-
-/***/ "./src/components/timerBlock.html":
-/*!****************************************!*\
-  !*** ./src/components/timerBlock.html ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"timer-block__container\\\">\\n    <div class=\\\"timer-block__half timer-block__half--styled\\\">\\n        <div class=\\\"timer-block__timer-container\\\">\\n            <div class=\\\"timer-block__upcoming\\\">\\n                <p>UPCOMING VIDEO</p>\\n            </div>\\n            <div class=\\\"timer-block__name\\\">\\n                <h3>Strip Dice vs Bella Angel, Alisa Horakova, Arina</h3>\\n            </div>\\n            <div class=\\\"timer-block__timer\\\">\\n                <div class=\\\"timer__section timer__days\\\">\\n                    <p class=\\\"timer__figures\\\">- -</p>\\n                    <p class=\\\"timer__word\\\">DAYS</p>\\n                </div>\\n                <p class=\\\"timer__figures\\\">:</p>\\n                <div class=\\\"timer__section timer__hours\\\">\\n                    <p class=\\\"timer__figures\\\">- -</p>\\n                    <p class=\\\"timer__word\\\">HOURS</p>\\n                </div>\\n                <p class=\\\"timer__figures\\\">:</p>\\n                <div class=\\\"timer__section timer__minutes\\\">\\n                    <p class=\\\"timer__figures\\\">- -</p>\\n                    <p class=\\\"timer__word\\\">MINUTES</p>\\n                </div>\\n                <p class=\\\"timer__figures\\\">:</p>\\n                <div class=\\\"timer__section timer__seconds\\\">\\n                    <p class=\\\"timer__figures\\\">- -</p>\\n                    <p class=\\\"timer__word\\\">SECONDS</p>\\n                </div>\\n            </div>\\n            <a class=\\\"btn btn--classic btn--red btn--full\\\" href=\\\"\\\">START WATCHING</a>\\n        </div>\\n    </div>\\n    <div class=\\\"timer-block__half\\\">\\n        <div class=\\\"timer-block__videos-container\\\">\\n            <div class=\\\"timer-block__main-video\\\">\\n                <div class=\\\"main-video__time\\\">\\n                    <div class=\\\"main-video__icon-container\\\">\\n                        <svg viewBox=\\\"0 0 17 17\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\">\\n                            <g clip-path=\\\"url(#clip0_5_207)\\\">\\n                                <path d=\\\"M8.58594 0.448242C7.00369 0.448242 5.45697 0.917434 4.14138 1.79649C2.82579 2.67554 1.80041 3.92497 1.1949 5.38678C0.589404 6.84858 0.430977 8.45712 0.739659 10.009C1.04834 11.5608 1.81027 12.9863 2.92909 14.1051C4.04791 15.2239 5.47337 15.9858 7.02522 16.2945C8.57707 16.6032 10.1856 16.4448 11.6474 15.8393C13.1092 15.2338 14.3586 14.2084 15.2377 12.8928C16.1167 11.5772 16.5859 10.0305 16.5859 8.44824C16.5836 6.32722 15.7401 4.29372 14.2403 2.79392C12.7405 1.29413 10.707 0.450536 8.58594 0.448242V0.448242ZM8.58594 15.1149C7.2674 15.1149 5.97847 14.7239 4.88214 13.9914C3.78581 13.2588 2.93133 12.2176 2.42674 10.9995C1.92216 9.78129 1.79014 8.44085 2.04737 7.14764C2.30461 5.85443 2.93955 4.66655 3.8719 3.7342C4.80425 2.80185 5.99213 2.16691 7.28534 1.90967C8.57855 1.65244 9.91899 1.78446 11.1372 2.28905C12.3553 2.79363 13.3965 3.64811 14.1291 4.74444C14.8616 5.84077 15.2526 7.1297 15.2526 8.44824C15.2507 10.2158 14.5477 11.9103 13.2978 13.1601C12.048 14.41 10.3535 15.113 8.58594 15.1149Z\\\" fill=\\\"currentColor\\\"/>\\n                                <path d=\\\"M8.58558 4.44824C8.40876 4.44824 8.2392 4.51848 8.11417 4.6435C7.98915 4.76853 7.91891 4.9381 7.91891 5.11491V7.99824L5.67158 9.40623C5.52129 9.50012 5.41445 9.64986 5.37457 9.82252C5.33468 9.99518 5.36502 10.1766 5.45891 10.3269C5.5528 10.4772 5.70254 10.584 5.8752 10.6239C6.04786 10.6638 6.22929 10.6335 6.37958 10.5396L8.93958 8.93957C9.0363 8.87897 9.11584 8.79455 9.17059 8.69439C9.22534 8.59424 9.25345 8.4817 9.25224 8.36757V5.11491C9.25224 4.9381 9.182 4.76853 9.05698 4.6435C8.93196 4.51848 8.76239 4.44824 8.58558 4.44824Z\\\" fill=\\\"currentColor\\\"/>\\n                            </g>\\n                            <defs>\\n                                <clipPath id=\\\"clip0_5_207\\\">\\n                                    <rect width=\\\"16\\\" height=\\\"16\\\" fill=\\\"white\\\" transform=\\\"translate(0.585938 0.448242)\\\"/>\\n                                </clipPath>\\n                            </defs>\\n                        </svg>\\n                    </div>\\n                    <p>14:36</p>\\n                </div>\\n            </div>\\n        </div>\\n    </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/timerBlock.html?");
-
-/***/ }),
-
-/***/ "./src/components/videosBlock.html":
-/*!*****************************************!*\
-  !*** ./src/components/videosBlock.html ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"videos-block__container\\\">\\n  <h2></h2>\\n  <div id=\\\"videosBlockTitles\\\" class=\\\"videos-block__titles\\\">\\n  </div>\\n  <div class=\\\"videos-block__button-container\\\">\\n    <a href=\\\"videos.html\\\" class=\\\"btn btn--classic btn--red\\\">SHOW MORE VIDEOS</a>\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/videosBlock.html?");
-
-/***/ }),
-
 /***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
 /*!*********************************************************!*\
   !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
@@ -80,23 +50,13 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
 
 /***/ }),
 
-/***/ "./src/videosPage.js":
-/*!***************************!*\
-  !*** ./src/videosPage.js ***!
-  \***************************/
+/***/ "./src/authorizationPage.js":
+/*!**********************************!*\
+  !*** ./src/authorizationPage.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_videosBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/videosBlock.html */ \"./src/components/videosBlock.html\");\n/* harmony import */ var _components_banner_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner.html */ \"./src/components/banner.html\");\n/* harmony import */ var _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/timerBlock.html */ \"./src/components/timerBlock.html\");\n/* harmony import */ var _components_pagerContainer_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pagerContainer.html */ \"./src/components/pagerContainer.html\");\n\n\n\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('videosBlock').innerHTML = _components_videosBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\ndocument.getElementById('banner_1').innerHTML = _components_banner_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\ndocument.getElementById('timerBlock').innerHTML = _components_timerBlock_html__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\n\ndocument.querySelector('.videos-block__container h2').innerHTML = 'VIDEOS';\ndocument.querySelector('.videos-block__button-container').innerHTML = _components_pagerContainer_html__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/videosPage.js?");
-
-/***/ }),
-
-/***/ "./assets/images/GET FULL ACCESS NOW.png":
-/*!***********************************************!*\
-  !*** ./assets/images/GET FULL ACCESS NOW.png ***!
-  \***********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"images/GET FULL ACCESS NOW.png\";\n\n//# sourceURL=webpack:///./assets/images/GET_FULL_ACCESS_NOW.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_authBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/authBlock.html */ \"./src/components/authBlock.html\");\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('authBlock').innerHTML = _components_authBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/authorizationPage.js?");
 
 /***/ }),
 
@@ -353,7 +313,7 @@ eval("module.exports = __webpack_require__.p + \"images/visa.png\";\n\n//# sourc
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"videosPage": 0
+/******/ 			"authorizationPage": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -376,7 +336,7 @@ eval("module.exports = __webpack_require__.p + \"images/visa.png\";\n\n//# sourc
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/videosPage.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/authorizationPage.js");
 /******/ 	
 /******/ })()
 ;

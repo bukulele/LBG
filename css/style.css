@@ -76,7 +76,14 @@ h4 {
     font-weight: 700;
     font-size: 16px;
 }
-
+.btn--form {
+    border-radius: 13px;
+    gap: 5px;
+    height: 50px;
+    padding: 0 30px;
+    font-weight: 700;
+    font-size: 15px;
+}
 .btn--classic p {
     line-height: 1;
 }
@@ -168,6 +175,15 @@ h4 {
 }
 .btn--link:hover {
     color: #F3B800;
+}
+.btn--link-g {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 500;
+    gap: 5px;
+}
+.btn--link-g:hover {
+    color: #fff;
 }
 .btn--pager {
     width: 50px;
@@ -1128,9 +1144,6 @@ h4 {
     width: 100%;
     height: 100%;
 }
-.get-access__list {
-    /*margin-left: 20px;*/
-}
 .get-access__list li {
     font-size: 9px;
     font-weight: 800;
@@ -1506,11 +1519,10 @@ h4 {
 }
 /*AUTH BLOCK*/
 .auth-block__group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
+    display: grid;
+    grid-template-columns: 360px;
+    grid-auto-rows: auto auto;
+    place-items: center;
     gap: 10px;
 }
 .auth-block__half {
@@ -1518,6 +1530,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 30px;
     padding: 20px;
     gap: 20px;
@@ -1535,6 +1548,42 @@ h4 {
     height: 50px;
     width: 100%;
     padding: 20px;
+}
+.auth-block__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.auth-block__benefits-header {
+    color: #F3B800;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.auth-block__benefits-list li {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    list-style: none;
+    background-image: url("../assets/icons/check.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 14px;
+    padding-left: 17px;
+    white-space: nowrap;
+    line-height: 2;
+}
+.auth-block__benefits-text {
+    color: #A1A1A1;
+    font-size: 14px;
+    font-weight: 700;
+}
+.auth-block__benefits-promo {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
@@ -1746,6 +1795,14 @@ h4 {
     .model-profile-block__photo {
         align-self: start;
     }
+    .auth-block__group {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+    }
+    .auth-block__half {
+        width: 360px;
+        height: 100%;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -1906,6 +1963,9 @@ h4 {
     h3 {
         font-size: 30px;
     }
+    .btn--link-g {
+        font-size: 16px;
+    }
     .main-video-block__over {
         padding: 60px 10px;
     }
@@ -2039,6 +2099,34 @@ h4 {
     }
     .model-profile-block__description p {
         font-size: 16px;
+    }
+    .auth-block__group {
+        gap: 30px;
+    }
+    .auth-block__half {
+        width: 100%;
+        min-width: 360px;
+        max-width: 678px;
+        padding: 50px 30px;
+        gap: 30px;
+    }
+    .auth-block__form {
+        max-width: 421px;
+    }
+    .auth-block__benefits {
+        gap: 22px;
+    }
+    .auth-block__benefits-header,
+    .auth-block__benefits-promo {
+        font-size: 32px;
+    }
+    .auth-block__benefits-list li {
+        font-size: 24px;
+        background-size: 24px;
+        padding-left: 27px;
+    }
+    .auth-block__benefits-text {
+        font-size: 20px;
     }
 }
 
