@@ -970,6 +970,13 @@ h4 {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
 }
+.terms-block__text a {
+    text-decoration: none;
+    color: inherit;
+}
+.terms-block__text a:hover {
+    text-decoration: underline;
+}
 .single-news-block__read-more {
     color: #F3B800;
     font-weight: 800;
