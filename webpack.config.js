@@ -21,6 +21,7 @@ module.exports = {
     oneNewsBlock: './src/components/oneNewsBlock.js',
     termsPage: './src/termsPage.js',
     authorizationPage: './src/authorizationPage.js',
+    writeUsPage: './src/writeUsPage.js',
   }, // The entry point of your application
   output: {
     path: path.resolve(__dirname, 'dist'), // The output directory
