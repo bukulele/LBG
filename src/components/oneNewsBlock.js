@@ -43,7 +43,7 @@ for (let image of images) {
 
 document.querySelector('.single-news-block__video').innerHTML = `
     <div class="watch-video-block__video-container">
-        <img src="/assets/temp/image%2020.png" alt="">
+        <img src="../../assets/temp/image%2020.png" alt="">
         <div class="video-container__block-over">
             <div class="video-container__controls">
                 <div class="controls__play-container">
