@@ -3,6 +3,7 @@ import image35 from '../../assets/temp/image 35.png';
 import image36 from '../../assets/temp/image 36.png';
 import image37 from '../../assets/temp/image 37.png';
 import image38 from '../../assets/temp/image 38.png';
+import image20 from '../../assets/temp/image 20.png';
 import singleNewsBlock from './singleNewsBlock.html';
 
 let images = [image34, image35, image36, image37, image38];
@@ -43,7 +44,7 @@ for (let image of images) {
 
 document.querySelector('.single-news-block__video').innerHTML = `
     <div class="watch-video-block__video-container">
-        <img src="../../assets/temp/image%2020.png" alt="">
+        <img src="${image20}" alt="">
         <div class="video-container__block-over">
             <div class="video-container__controls">
                 <div class="controls__play-container">
