@@ -5,6 +5,7 @@ import image4 from '../../assets/temp/image 4.png';
 import image5 from '../../assets/temp/image 5.png';
 import image6 from '../../assets/temp/image 6.png';
 import videoTitle from './videoTitle.html';
+import manageVideoPreview from '../../js/manageVideoPreview';
 
 const videos = [image1, image2, image3, image4, image5, image6];
 
@@ -17,3 +18,4 @@ for (let video of videos) {
   videosBlockTitles.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
 }
 
+videosBlockTitles.insertAdjacentHTML('afterend', manageVideoPreview);
