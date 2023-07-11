@@ -9,6 +9,7 @@ import banner2 from './banner2.html';
 import messageBlock from './messageBlock.html';
 import filters from './videosFilters.html';
 import singleNewsBlock from './singleNewsBlock.html';
+import manageVideoPreview from '../../js/manageVideoPreview';
 
 const videos = [image1, image2, image3, image4, image5, image6];
 

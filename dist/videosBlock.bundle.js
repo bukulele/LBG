@@ -15,7 +15,7 @@
   \**********************************/
 /***/ (() => {
 
-eval("var videosBlockContainer = document.querySelector('#videosBlock .videos-block__container');\n\nfunction showLoader(event) {\n  if (event.target.className.includes('video-title__container')) {\n    event.target.classList.add('preview-loading');\n  }\n}\n\nfunction hideLoader(event) {\n  if (event.target.className.includes('video-title__container')) {\n    event.target.classList.remove('preview-loading');\n  }}\n\nvideosBlockContainer.addEventListener('mouseover', showLoader);\nvideosBlockContainer.addEventListener('mouseout', hideLoader);\n\n\n//# sourceURL=webpack:///./js/manageVideoPreview.js?");
+eval("var videosPreviewContainer = document.querySelector('#videosBlock .videos-block__container');\n\nfunction showLoader(event) {\n  console.log('showLoader');\n  if (event.target.className.includes('video-title__container')) {\n    event.target.classList.add('preview-loading');\n  }\n}\n\nfunction hideLoader(event) {\n  if (event.target.className.includes('video-title__container')) {\n    event.target.classList.remove('preview-loading');\n  }}\n\nvideosPreviewContainer.addEventListener('mouseover', showLoader);\nvideosPreviewContainer.addEventListener('mouseout', hideLoader);\n\n\n//# sourceURL=webpack:///./js/manageVideoPreview.js?");
 
 /***/ }),
 
