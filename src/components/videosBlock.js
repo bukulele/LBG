@@ -17,5 +17,3 @@ for (let video of videos) {
   imageElement.src = video;
   videosBlockTitles.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
 }
-
-videosBlockTitles.insertAdjacentHTML('afterend', manageVideoPreview);
