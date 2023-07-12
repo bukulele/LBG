@@ -5,7 +5,7 @@ function showLoader(event) {
     event.target.classList.add('preview-loading');
     videoTimerId = setTimeout(() => {
       let videoElement = document.createElement('video');
-      videoElement.src = '/dist/videos/097 - That\'s My Mommy (1955)_New.mov';
+      videoElement.src = './dist/videos/097 - That\'s My Mommy (1955)_New.mov';
       videoElement.autoplay = true;
       videoElement.muted = true;
       videoElement.playsinline = true;
