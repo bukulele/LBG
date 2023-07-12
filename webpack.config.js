@@ -44,6 +44,13 @@ module.exports = {
         generator: {
           filename: 'images/[name][ext]'
         }
+      },
+      {
+        test: /\.(mov|avi|mp4|webM|ogg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'videos/[name][ext]'
+        }
       }
     ]
   }
