@@ -1,28 +1,50 @@
 var videosPreviewContainer = document.querySelector('#videosBlock .videos-block__container');
-
+let videoTimerId;
 function showLoader(event) {
-  console.log('showLoader');
   if (event.target.className.includes('video-title__container')) {
-    fetch('../assets/temp/097 - That\'s My Mommy (1955)_New.mov')
-      .then(res => {
-        let videoElement = document.createElement('video');
-        videoElement.src = res.url;
-        videoElement.autoplay = "true";
-        videoElement.muted = "true";
-        event.target.insertAdjacentElement('afterbegin', videoElement);
-        console.log(res);
-      });
-    // event.target.
     event.target.classList.add('preview-loading');
+    videoTimerId = setTimeout(() => {
+      let videoElement = document.createElement('video');
+      videoElement.src = '../assets/temp/097 - That\'s My Mommy (1955)_New.mov';
+      videoElement.autoplay = true;
+      videoElement.muted = true;
+      videoElement.playsinline = true;
+      videoElement.controls = false;
+      videoElement.disablepictureinpicture = true;
+      videoElement.preload = 'none';
+      // videoElement.setAttribute('playsinline', true);
+      // videoElement.setAttribute('controls', false);
+      // videoElement.setAttribute('disablepictureinpicture', true);
+      videoElement.addEventListener('loadeddata', () => {
+        hideLoader(event.target);
+    });
+      event.target.querySelector('img').style.visibility = 'hidden';
+      event.target.insertAdjacentElement('afterbegin', videoElement);
+      if (videoElement.pictureInPictureElement) {
+        videoElement.exitPictureInPicture();
+      }
+    }, 1000);
   }
 }
 
-function hideLoader(event) {
+function hideLoader(target) {
+    target.classList.remove('preview-loading');
+}
+
+function removeVideo(event) {
   if (event.target.className.includes('video-title__container')) {
     let videoElement = event.target.querySelector('video');
-    videoElement.remove();
-    event.target.classList.remove('preview-loading');
-  }}
+    if (videoTimerId) {
+      clearTimeout(videoTimerId);
+    }
+    if (videoElement) {
+      // videoElement.removeEventListener('loadeddata');
+      videoElement.remove();
+      event.target.querySelector('img').style.visibility = 'visible';
+    }
+    hideLoader(event.target);
+  }
+}
 
 videosPreviewContainer.addEventListener('mouseover', showLoader);
-videosPreviewContainer.addEventListener('mouseout', hideLoader);
+videosPreviewContainer.addEventListener('mouseout', removeVideo);

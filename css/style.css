@@ -441,12 +441,12 @@ h4 {
     border-radius: 30px;
     text-decoration: none;
 }
-.video-title__container img {
+.video-title__container img,
+.video-title__container video {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
 }
-
 .picture-title__container img {
     width: 100%;
     height: auto;
