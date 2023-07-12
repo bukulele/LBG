@@ -3,21 +3,20 @@ let videoTimerId;
 function showLoader(event) {
   if (event.target.className.includes('video-title__container')) {
     event.target.classList.add('preview-loading');
-    videoTimerId = setTimeout(() => {
+    // videoTimerId = setTimeout(() => {
       let videoElement = document.createElement('video');
       videoElement.src = './dist/videos/097 - That\'s My Mommy (1955)_New.mov';
-      videoElement.autoplay = true;
+      // videoElement.autoplay = true;
       videoElement.muted = true;
       videoElement.playsinline = true;
       videoElement.controls = false;
       videoElement.disablepictureinpicture = true;
-      videoElement.preload = 'none';
+      // videoElement.preload = 'none';
       videoElement.style.visibility = 'hidden';
       videoElement.addEventListener('loadeddata', (e) => {
-        hideLoader(event.target);
-        event.target.querySelector('img').style.visibility = 'hidden';
-        event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
-        e.target.style.visibility = 'visible';
+        // hideLoader(event.target);
+        // event.target.querySelector('img').style.visibility = 'hidden';
+        // event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
     });
       // event.target.querySelector('img').style.visibility = 'hidden';
       // event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
@@ -25,7 +24,15 @@ function showLoader(event) {
       if (videoElement.pictureInPictureElement) {
         videoElement.exitPictureInPicture();
       }
-    }, 1000);
+      playVideo = videoElement.play()
+        .then(() => {
+          hideLoader(event.target);
+          event.target.querySelector('img').style.visibility = 'hidden';
+          event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
+          videoElement.style.visibility = 'visible';
+        })
+        .catch(e => console.log(e));
+    // }, 1000);
   }
 }
 
