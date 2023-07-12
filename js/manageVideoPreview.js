@@ -12,11 +12,15 @@ function showLoader(event) {
       videoElement.controls = false;
       videoElement.disablepictureinpicture = true;
       videoElement.preload = 'none';
-      videoElement.addEventListener('loadeddata', () => {
+      videoElement.style.visibility = 'hidden';
+      videoElement.addEventListener('loadeddata', (e) => {
         hideLoader(event.target);
+        event.target.querySelector('img').style.visibility = 'hidden';
+        event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
+        e.target.style.visibility = 'visible';
     });
-      event.target.querySelector('img').style.visibility = 'hidden';
-      event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
+      // event.target.querySelector('img').style.visibility = 'hidden';
+      // event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
       event.target.insertAdjacentElement('afterbegin', videoElement);
       if (videoElement.pictureInPictureElement) {
         videoElement.exitPictureInPicture();
