@@ -12,7 +12,7 @@ function showLoader(event) {
       videoElement.controls = false;
       videoElement.disablepictureinpicture = true;
       // videoElement.preload = 'none';
-      videoElement.style.visibility = 'hidden';
+      videoElement.style.display = 'none';
       videoElement.addEventListener('loadeddata', (e) => {
         // hideLoader(event.target);
         // event.target.querySelector('img').style.visibility = 'hidden';
@@ -31,7 +31,7 @@ function showLoader(event) {
           event.target.querySelector('img').style.visibility = 'hidden';
           // event.target.querySelector('.video-title__block-over').style.display = 'none';
     // event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
-          videoElement.style.visibility = 'visible';
+          videoElement.style.display = 'block';
         })
         .catch(e => console.log(e));
     // }, 1000);
