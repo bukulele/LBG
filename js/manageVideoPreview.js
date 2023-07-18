@@ -24,11 +24,12 @@ function showLoader(event) {
       if (videoElement.pictureInPictureElement) {
         videoElement.exitPictureInPicture();
       }
-      playVideo = videoElement.play()
+      videoElement.play()
         .then(() => {
+          console.log('started playing');
           hideLoader(event.target);
           event.target.querySelector('img').style.visibility = 'hidden';
-          event.target.querySelector('.video-title__block-over').style.display = 'none';
+          // event.target.querySelector('.video-title__block-over').style.display = 'none';
     // event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
           videoElement.style.visibility = 'visible';
         })
