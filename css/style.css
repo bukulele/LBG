@@ -296,6 +296,7 @@ h4 {
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .main-video-block__image img {
     height: 100%;

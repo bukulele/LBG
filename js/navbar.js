@@ -13,19 +13,16 @@ let memberButtonChevron;
 if (memberButtonSide) memberButtonSideChevron = memberButtonSide.querySelector('.user-buttons__chevron');
 if (memberButton) memberButtonChevron = memberButton.querySelector('.user-buttons__chevron');
 function showNavigationMenu() {
-  console.log('showNavigationMenu');
   navbarWrapper.classList.add('navbar__links-container-wrapper--show');
   navbarLinksContainer.style.right = '0px';
 }
 
 function hideNavigationMenu(event) {
   if (event.target.className.includes('navbar__close') || event.target.className.includes('navbar__links-container-wrapper')) {
-    console.log('hideNavigationMenu');
     navbarWrapper.classList.remove('navbar__links-container-wrapper--show');
     navbarLinksContainer.style.right = '-300px';
   }
   if (memberZoneContainer.className.includes('navbar__member-zone-container--visible') && !event.target.closest('.navbar__member-zone-container')) {
-    console.log('hideUserMenu');
     memberButtonChevron.style.removeProperty('transform');
     memberZoneContainer.style.removeProperty('top');
     memberZoneContainer.classList.remove('navbar__member-zone-container--visible');
@@ -35,7 +32,6 @@ function hideNavigationMenu(event) {
 }
 
 function toggleMemberLinks() {
-  console.log('toggleMemberLinks');
   if (!navbarMemberLinks.className.includes('links-container__member-links--show')) {
     memberButtonSideChevron.style.transform = 'rotate(-180deg)';
     navbarMemberLinks.classList.add('links-container__member-links--show');
@@ -47,7 +43,6 @@ function toggleMemberLinks() {
 }
 
 function clearNavbarMemberLinks () {
-  console.log('clearNavbarMemberLinks');
   navbarMemberLinks.removeEventListener('animationend', clearNavbarMemberLinks);
   navbarMemberLinks.classList.remove('links-container__member-links--show');
   navbarMemberLinks.classList.remove('links-container__member-links--hide');
@@ -56,7 +51,6 @@ function clearNavbarMemberLinks () {
 function showUserMenu (event) {
   event.stopPropagation();
   memberButtonChevron.style.transform = 'rotate(-180deg)';
-  console.log('showUserMenu');
   let navBarHeight = navBarElement.offsetHeight;
   if (memberZoneContainer.className.includes('navbar__member-zone-container--hidden')) {
     memberZoneContainer.classList.remove('navbar__member-zone-container--hidden');

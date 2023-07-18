@@ -237,11 +237,16 @@
     color: #fff;
   }
 
+  .navbar__search:focus-within {
+    background-color: #fff;
+    color: #F3B800;
+  }
+
   .navbar__search input {
     background-color: transparent;
     border: none;
     outline: none;
-    color: #fff;
+    color: #979899;
     font-size: 16px;
     font-weight: 700;
     width: 100%;
@@ -250,6 +255,9 @@
     color: #AF4349;
     font-size: 16px;
     font-weight: 700;
+  }
+  .navbar__search input:focus::placeholder {
+    color: #979899;
   }
   .user-buttons__chevron {
     display: flex;
