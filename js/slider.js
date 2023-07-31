@@ -1,10 +1,6 @@
 // SET SIZE OF SLIDER ELEMENTS IN LINE WITH VIDEOS TITLES
 let sliderElementReference = document.querySelector(".video-title__container");
 let sliderElementAll = document.querySelectorAll('.slider-element__container');
-// for (let elem of sliderElementAll) {
-//   elem.style.width = `${sliderElementReference.offsetWidth}px`;
-// }
-
 
 const startingElementNumber = 1;
 let sliderBlock = document.querySelectorAll('.slider-block__slider');
@@ -22,18 +18,14 @@ function setSliders(sliderBlock, sliderElementAll) {
 
 function defineSlider(slider) {
   let gapBetweenSlides = Number(window.getComputedStyle(slider).columnGap.slice(0, -2));
-  let numberOfSlides = slider.children.length;
   let currentSlide = startingElementNumber;
   let windowWidth = document.body.clientWidth;
   let sliderElement_1 = slider.querySelector(`.slider-element__container:nth-child(${startingElementNumber})`);
-  let sliderElement_butOne = slider.querySelector(`.slider-element__container:nth-child(${numberOfSlides - 2})`);
   let slideWidth = sliderElement_1.offsetWidth;
   let initialPosition = (windowWidth) / 2 - slideWidth - gapBetweenSlides * 2 - slideWidth / 2 - 1;
-  let butOnePosition = (windowWidth) / 2 - slideWidth - gapBetweenSlides * 2 - slideWidth / 2 - sliderElement_butOne.offsetLeft - 1;
   slider.style.left = `${initialPosition}px`;
   slider.dataset.currentSlide = String(currentSlide);
   slider.dataset.initialPosition = String(initialPosition);
-  slider.dataset.butOnePosition = String(butOnePosition);
   slider.dataset.slideWidth = String(slideWidth);
   slider.dataset.gapBetweenSlides = String(gapBetweenSlides);
 }
@@ -42,7 +34,6 @@ function moveSlidesLeft(event) {
   if (event.target.className.includes('slider-block__slide-left')) {
     let currentSlider = event.target.closest('.slider-block__container').querySelector('.slider-block__slider');
     let currentSlide = Number(currentSlider.dataset.currentSlide);
-    let butOnePosition = Number(currentSlider.dataset.butOnePosition);
     let slideWidth = Number(currentSlider.dataset.slideWidth);
     let gapBetweenSlides = Number(currentSlider.dataset.gapBetweenSlides);
     let numberOfSlides = currentSlider.children.length;
@@ -50,21 +41,16 @@ function moveSlidesLeft(event) {
     addAnimation(currentSlider);
     if (currentSlide === 1) {
       removeAnimation(currentSlider);
-      currentSlider.style.left = `${butOnePosition}px`;
+      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * (numberOfSlides - 2) + (slideWidth + gapBetweenSlides)}px`;
       currentSlide = numberOfSlides - 3;
       setTimeout(() => {
-        // currentSlide = numberOfSlides - 3;
         addAnimation(currentSlider);
         currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
-
-        // currentSlider.style.left = `${currentSlider.offsetLeft + slideWidth + gapBetweenSlides * 2}px`;
-      }, 0);
+        }, 0);
     } else {
       currentSlide -= 1;
       currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
-      // currentSlider.style.left = `${currentSlider.offsetLeft + slideWidth + gapBetweenSlides}px`;
     }
-    // currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
 
     currentSlider.dataset.currentSlide = String(currentSlide);
   }
@@ -81,15 +67,18 @@ function moveSlidesRight(event) {
 
     addAnimation(currentSlider);
     if (currentSlide + 2 === numberOfSlides) {
+      removeAnimation(currentSlider);
+      currentSlider.style.left = `${initialPosition}px`;
       currentSlide = 2;
-      currentSlider.style.left = `${currentSlider.offsetLeft - slideWidth - gapBetweenSlides}px`;
+
       setTimeout(() => {
-        removeAnimation(currentSlider);
-        currentSlider.style.left = `${initialPosition}px`;
-      }, 200);
+        addAnimation(currentSlider);
+        currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
+      }, 0);
     } else {
       currentSlide += 1;
-      currentSlider.style.left = `${currentSlider.offsetLeft - slideWidth - gapBetweenSlides}px`;
+      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
+
     }
 
     currentSlider.dataset.currentSlide = String(currentSlide);
