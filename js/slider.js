@@ -6,7 +6,7 @@ let sliderElementAll = document.querySelectorAll('.slider-element__container');
 // }
 
 
-const startingElementNumber = 2;
+const startingElementNumber = 1;
 let sliderBlock = document.querySelectorAll('.slider-block__slider');
 setSliders(sliderBlock, sliderElementAll);
 
@@ -48,18 +48,23 @@ function moveSlidesLeft(event) {
     let numberOfSlides = currentSlider.children.length;
 
     addAnimation(currentSlider);
-    if (currentSlide === 2) {
+    if (currentSlide === 1) {
       removeAnimation(currentSlider);
       currentSlider.style.left = `${butOnePosition}px`;
-      currentSlide = numberOfSlides - 2;
+      currentSlide = numberOfSlides - 3;
       setTimeout(() => {
+        // currentSlide = numberOfSlides - 3;
         addAnimation(currentSlider);
-        currentSlider.style.left = `${currentSlider.offsetLeft + slideWidth + gapBetweenSlides * 2}px`;
+        currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
+
+        // currentSlider.style.left = `${currentSlider.offsetLeft + slideWidth + gapBetweenSlides * 2}px`;
       }, 0);
     } else {
       currentSlide -= 1;
-      currentSlider.style.left = `${currentSlider.offsetLeft + slideWidth + gapBetweenSlides}px`;
+      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
+      // currentSlider.style.left = `${currentSlider.offsetLeft + slideWidth + gapBetweenSlides}px`;
     }
+    // currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
 
     currentSlider.dataset.currentSlide = String(currentSlide);
   }
