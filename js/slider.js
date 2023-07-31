@@ -2,7 +2,7 @@
 let sliderElementReference = document.querySelector(".video-title__container");
 let sliderElementAll = document.querySelectorAll('.slider-element__container');
 
-const startingElementNumber = 1;
+const startingElementNumber = 2;
 let sliderBlock = document.querySelectorAll('.slider-block__slider');
 setSliders(sliderBlock, sliderElementAll);
 
@@ -37,19 +37,20 @@ function moveSlidesLeft(event) {
     let slideWidth = Number(currentSlider.dataset.slideWidth);
     let gapBetweenSlides = Number(currentSlider.dataset.gapBetweenSlides);
     let numberOfSlides = currentSlider.children.length;
-
+    console.log(currentSlide);
     addAnimation(currentSlider);
-    if (currentSlide === 1) {
+    if (currentSlide === 2) {
+
       removeAnimation(currentSlider);
-      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * (numberOfSlides - 2) + (slideWidth + gapBetweenSlides)}px`;
-      currentSlide = numberOfSlides - 3;
+      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * (numberOfSlides - 3)}px`;
+      currentSlide = numberOfSlides - 2;
       setTimeout(() => {
         addAnimation(currentSlider);
-        currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
+        currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides) * 2}px`;
         }, 0);
     } else {
       currentSlide -= 1;
-      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
+      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides) * 2}px`;
     }
 
     currentSlider.dataset.currentSlide = String(currentSlide);
