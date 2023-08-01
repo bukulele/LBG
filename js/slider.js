@@ -17,71 +17,61 @@ function setSliders(sliderBlock, sliderElementAll) {
 }
 
 function defineSlider(slider) {
-  let gapBetweenSlides = Number(window.getComputedStyle(slider).columnGap.slice(0, -2));
   let currentSlide = startingElementNumber;
-  let windowWidth = document.body.clientWidth;
+  let sliderGroup = slider.closest(".slider-block__slider-group");
   let sliderElement_1 = slider.querySelector(`.slider-element__container:nth-child(${startingElementNumber})`);
   let slideWidth = sliderElement_1.offsetWidth;
-  let initialPosition = (windowWidth) / 2 - slideWidth - gapBetweenSlides * 2 - slideWidth / 2 - 1;
-  slider.style.left = `${initialPosition}px`;
+  slider.style.left = `${-slider.children[currentSlide - 1].offsetLeft - slideWidth / 2 + sliderGroup.offsetWidth / 2}px`;
   slider.dataset.currentSlide = String(currentSlide);
-  slider.dataset.initialPosition = String(initialPosition);
   slider.dataset.slideWidth = String(slideWidth);
-  slider.dataset.gapBetweenSlides = String(gapBetweenSlides);
 }
 
 function moveSlidesLeft(event) {
   if (event.target.className.includes('slider-block__slide-left')) {
+    let sliderGroup = event.target.closest(".slider-block__slider-group");
     let currentSlider = event.target.closest('.slider-block__container').querySelector('.slider-block__slider');
     let currentSlide = Number(currentSlider.dataset.currentSlide);
     let slideWidth = Number(currentSlider.dataset.slideWidth);
-    let gapBetweenSlides = Number(currentSlider.dataset.gapBetweenSlides);
     let numberOfSlides = currentSlider.children.length;
-    console.log(currentSlide);
     addAnimation(currentSlider);
     if (currentSlide === 2) {
-
       removeAnimation(currentSlider);
-      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * (numberOfSlides - 3)}px`;
-      currentSlide = numberOfSlides - 2;
+      currentSlide = numberOfSlides - 1;
+      currentSlider.style.left = `${-currentSlider.children[currentSlide - 1].offsetLeft - slideWidth / 2 + sliderGroup.offsetWidth / 2 - 1}px`;
+      currentSlide -= 1;
       setTimeout(() => {
         addAnimation(currentSlider);
-        currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides) * 2}px`;
+        currentSlider.style.left = `${-currentSlider.children[currentSlide - 1].offsetLeft - slideWidth / 2 + sliderGroup.offsetWidth / 2 - 1}px`;
         }, 0);
     } else {
       currentSlide -= 1;
-      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides) * 2}px`;
+      currentSlider.style.left = `${-currentSlider.children[currentSlide - 1].offsetLeft - slideWidth / 2 + sliderGroup.offsetWidth / 2 - 1}px`;
     }
-
     currentSlider.dataset.currentSlide = String(currentSlide);
   }
 }
 
 function moveSlidesRight(event) {
   if (event.target.className.includes('slider-block__slide-right')) {
+    let sliderGroup = event.target.closest(".slider-block__slider-group");
     let currentSlider = event.target.closest('.slider-block__container').querySelector('.slider-block__slider');
     let currentSlide = Number(currentSlider.dataset.currentSlide);
-    let initialPosition = Number(currentSlider.dataset.initialPosition);
     let slideWidth = Number(currentSlider.dataset.slideWidth);
-    let gapBetweenSlides = Number(currentSlider.dataset.gapBetweenSlides);
     let numberOfSlides = currentSlider.children.length;
 
     addAnimation(currentSlider);
     if (currentSlide + 2 === numberOfSlides) {
-      removeAnimation(currentSlider);
-      currentSlider.style.left = `${initialPosition}px`;
+      currentSlide += 1;
+      currentSlider.style.left = `${-currentSlider.children[currentSlide - 1].offsetLeft - slideWidth / 2 + sliderGroup.offsetWidth / 2 - 1}px`;
       currentSlide = 2;
-
       setTimeout(() => {
-        addAnimation(currentSlider);
-        currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
-      }, 0);
+        removeAnimation(currentSlider);
+        currentSlider.style.left = `${-currentSlider.children[currentSlide - 1].offsetLeft - slideWidth / 2 + sliderGroup.offsetWidth / 2 - 1}px`;
+      }, 200);
     } else {
       currentSlide += 1;
-      currentSlider.style.left = `${-(slideWidth + gapBetweenSlides) * currentSlide + (slideWidth + gapBetweenSlides)}px`;
-
+      currentSlider.style.left = `${-currentSlider.children[currentSlide - 1].offsetLeft - slideWidth / 2 + sliderGroup.offsetWidth / 2 - 1}px`;
     }
-
     currentSlider.dataset.currentSlide = String(currentSlide);
   }
 }
