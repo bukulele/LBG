@@ -479,6 +479,12 @@ h4 {
     height: 100%;
     background: linear-gradient(72.47deg, rgba(29, 30, 32, 0.85) 0%, rgba(29, 30, 32, 0) 48.96%), linear-gradient(357.62deg, rgba(29, 30, 32, 0.85) -2.79%, rgba(29, 30, 32, 0) 29.46%);
 }
+
+.timer-block__main-video .video-title__block-over {
+    justify-content: flex-start !important;
+    padding: 20px !important;
+    background: transparent !important;
+}
 .video-title__block-over {
     gap: 15px;
 }
@@ -490,6 +496,11 @@ h4 {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
+}
+.timer-block__main-video .video-title__name,
+.timer-block__main-video .video-title__date,
+.timer-block__main-video .video-title__icons {
+    display: none;
 }
 .video-title__info,
 .slider-element__info {

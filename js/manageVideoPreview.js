@@ -26,7 +26,7 @@ function showLoader(event) {
       }
       videoElement.play()
         .then(() => {
-          console.log('started playing');
+          // console.log('started playing');
           hideLoader(event.target);
           event.target.querySelector('img').style.visibility = 'hidden';
           // event.target.querySelector('.video-title__block-over').style.display = 'none';
@@ -58,5 +58,8 @@ function removeVideo(event) {
   }
 }
 
-videosPreviewContainer.addEventListener('mouseover', showLoader);
-videosPreviewContainer.addEventListener('mouseout', removeVideo);
+// videosPreviewContainer.addEventListener('mouseover', showLoader);
+// videosPreviewContainer.addEventListener('mouseout', removeVideo);
+
+document.addEventListener('mouseover', showLoader);
+document.addEventListener('mouseout', removeVideo);
