@@ -2051,6 +2051,9 @@ h4 {
     .timer-block__timer-container {
         width: 439px;
     }
+    .timer__section {
+        width: 110px;
+    }
     .timer__figures {
         font-size: 64px;
     }
