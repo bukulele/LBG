@@ -1,4 +1,4 @@
-var videosPreviewContainer = document.querySelector('#videosBlock .videos-block__container');
+// var videosPreviewContainer = document.querySelector('#videosBlock .videos-block__container');
 let videoTimerId;
 function showLoader(event) {
   if (event.target.className.includes('video-title__container')) {
