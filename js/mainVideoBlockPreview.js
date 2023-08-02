@@ -12,6 +12,7 @@ function handleImageLoading () {
   videoElement.playsinline = true;
   videoElement.controls = false;
   videoElement.disablepictureinpicture = true;
+  videoElement.autoPlay = true;
   // videoElement.setAttribute('webkit-playsinline', 'true');
   mainVideoContainer.insertAdjacentElement('afterbegin', videoElement);
   // mainImageContainer.style.display = 'none';
