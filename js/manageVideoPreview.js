@@ -12,7 +12,7 @@ function showLoader(event) {
       videoElement.controls = false;
       videoElement.disablepictureinpicture = true;
       videoElement.style.display = 'none';
-      videoElement.setAttribute('webkit-playsinline', 'true');
+      // videoElement.setAttribute('webkit-playsinline', '');
       event.target.insertAdjacentElement('afterbegin', videoElement);
       if (videoElement.pictureInPictureElement) {
         videoElement.exitPictureInPicture();
@@ -25,6 +25,13 @@ function showLoader(event) {
         })
         .catch(e => console.log(e));
     // }, 1000);
+
+    // Prevent fullscreen when playing
+    videoElement.addEventListener("webkitbeginfullscreen", function () {
+      if (!videoElement.webkitDisplayingFullscreen) {
+        videoElement.webkitEnterFullScreen();
+      }
+    });
   }
 }
 

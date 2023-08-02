@@ -12,7 +12,7 @@ function handleImageLoading () {
   videoElement.playsinline = true;
   videoElement.controls = false;
   videoElement.disablepictureinpicture = true;
-  videoElement.setAttribute('webkit-playsinline', 'true');
+  // videoElement.setAttribute('webkit-playsinline', 'true');
   mainVideoContainer.insertAdjacentElement('afterbegin', videoElement);
   // mainImageContainer.style.display = 'none';
   // mainVideoContainer.style.display = 'block';
@@ -22,7 +22,7 @@ function handleImageLoading () {
       mainVideoContainer.style.display = 'block';
       muteButton.style.display = 'block';
     })
-    .catch(e => console.log(e));
+    .catch(e => alert(e));
 }
 
 function toggleMute (event) {
