@@ -14,12 +14,12 @@ function handleImageLoading () {
   videoElement.disablepictureinpicture = true;
   videoElement.setAttribute('webkit-playsinline', 'true');
   mainVideoContainer.insertAdjacentElement('afterbegin', videoElement);
-  mainImageContainer.style.display = 'none';
-  mainVideoContainer.style.display = 'block';
+  // mainImageContainer.style.display = 'none';
+  // mainVideoContainer.style.display = 'block';
   videoElement.play()
     .then(() => {
-      // mainImageContainer.style.display = 'none';
-      // mainVideoContainer.style.display = 'block';
+      mainImageContainer.style.display = 'none';
+      mainVideoContainer.style.display = 'block';
       muteButton.style.display = 'block';
     })
     .catch(e => console.log(e));
