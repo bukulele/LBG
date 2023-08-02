@@ -13,11 +13,11 @@ function showLoader(event) {
       videoElement.disablepictureinpicture = true;
       // videoElement.preload = 'none';
       videoElement.style.display = 'none';
-      videoElement.addEventListener('loadeddata', (e) => {
+      // videoElement.addEventListener('loadeddata', (e) => {
         // hideLoader(event.target);
         // event.target.querySelector('img').style.visibility = 'hidden';
         // event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
-    });
+    // });
       // event.target.querySelector('img').style.visibility = 'hidden';
       // event.target.querySelector('.video-title__block-over').style.visibility = 'hidden';
       event.target.insertAdjacentElement('afterbegin', videoElement);
