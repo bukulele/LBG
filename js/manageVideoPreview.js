@@ -6,6 +6,7 @@ function showLoader(event) {
     // videoTimerId = setTimeout(() => {
       let videoElement = document.createElement('video');
       videoElement.src = './dist/videos/097 - That\'s My Mommy (1955)_New.mov';
+      videoElement.loop = true;
       videoElement.muted = true;
       videoElement.playsinline = true;
       videoElement.controls = false;

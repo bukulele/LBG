@@ -319,11 +319,14 @@ h4 {
     top: 30px;
     width: 46px;
     height: 46px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.main-video-block__sound--color-red {
+    color: rgba(255, 0, 0, 0.8) !important;
 }
 .main-video-block__sound svg {
     width: 100%;
     height: 100%;
-    color: rgba(255, 255, 255, 0.8);
 }
 .main-video-block__text-container {
     width: 100%;
