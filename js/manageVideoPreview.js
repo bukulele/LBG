@@ -12,6 +12,7 @@ function showLoader(event) {
       videoElement.controls = false;
       videoElement.disablepictureinpicture = true;
       videoElement.style.display = 'none';
+      videoElement.setAttribute('webkit-playsinline', 'true');
       event.target.insertAdjacentElement('afterbegin', videoElement);
       if (videoElement.pictureInPictureElement) {
         videoElement.exitPictureInPicture();

@@ -2,9 +2,9 @@ const mainVideoContainer = document.querySelector('.main-video-block__video');
 const mainImageContainer = document.querySelector('.main-video-block__image');
 const mainImage = mainImageContainer.querySelector('img');
 const muteButton = document.querySelector('.main-video-block__sound');
-alert('Preview Loaded');
+// alert('Preview Loaded');
 function handleImageLoading () {
-  alert('Image loaded');
+  // alert('Image loaded');
   let videoElement = document.createElement('video');
   videoElement.src = './dist/videos/South_Park_25x06_Hierba_Fegridad_Especial_del_Día_de_San_Patricio.mp4';
   videoElement.loop = true;
@@ -12,6 +12,7 @@ function handleImageLoading () {
   videoElement.playsinline = true;
   videoElement.controls = false;
   videoElement.disablepictureinpicture = true;
+  videoElement.setAttribute('webkit-playsinline', 'true');
   mainVideoContainer.insertAdjacentElement('afterbegin', videoElement);
   mainImageContainer.style.display = 'none';
   mainVideoContainer.style.display = 'block';
