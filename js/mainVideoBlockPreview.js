@@ -11,12 +11,11 @@ function handleImageLoading () {
   videoElement.playsinline = true;
   videoElement.controls = false;
   videoElement.disablepictureinpicture = true;
-  videoElement.style.display = 'none';
   mainVideoContainer.insertAdjacentElement('afterbegin', videoElement);
   videoElement.play()
     .then(() => {
       mainImageContainer.style.display = 'none';
-      videoElement.style.display = 'block';
+      mainVideoContainer.style.display = 'block';
       muteButton.style.display = 'block';
     })
     .catch(e => console.log(e));
