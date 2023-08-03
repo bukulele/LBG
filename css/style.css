@@ -326,7 +326,7 @@ h4 {
     color: rgba(255, 255, 255, 0.8);
 }
 .main-video-block__sound--color-red {
-    color: rgba(255, 0, 0, 0.8) !important;
+    color: rgba(85, 20, 32, 0.8) !important;
 }
 .main-video-block__sound svg {
     width: 100%;
@@ -446,6 +446,14 @@ h4 {
     overflow: hidden;
     border-radius: 30px;
     text-decoration: none;
+}
+.video-title__image,
+.video-title__video {
+    width: 100%;
+    height: 100%;
+}
+.video-title__video {
+    display: none;
 }
 .video-title__container * {
     pointer-events: none;

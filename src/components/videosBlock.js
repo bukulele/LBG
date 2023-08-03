@@ -17,5 +17,5 @@ for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
-  videosBlockTitles.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
+  videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }

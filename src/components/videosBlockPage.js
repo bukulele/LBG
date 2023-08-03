@@ -36,7 +36,7 @@ for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
-  videosBlockTitles.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
+  videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }
 
 let message = '<div id="message" class="message-block"></div>';
@@ -47,7 +47,7 @@ for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
-  videosBlockTitles.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
+  videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }
 let banner2Container = '<div id="banner_2" class="banner-block"></div>';
 
@@ -58,11 +58,11 @@ for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
-  videosBlockTitles.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
+  videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }
 for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
-  videosBlockTitles.lastElementChild.insertAdjacentElement('afterbegin', imageElement);
+  videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }

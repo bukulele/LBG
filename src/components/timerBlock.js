@@ -16,7 +16,7 @@ mainVideoImage.src = image15;
 // mainVideoContainer.insertAdjacentElement('afterbegin', mainVideoImage);
 mainVideoContainer.insertAdjacentHTML('afterbegin', videoTitle);
 let title = mainVideoContainer.querySelector('.video-title__container');
-title.insertAdjacentElement('afterbegin', mainVideoImage);
+title.querySelector('.video-title__image').insertAdjacentElement('afterbegin', mainVideoImage);
 fulfillScreenshots(screenshotsContainer, screenshots);
 
 function fulfillScreenshots (elem, screenshots) {
