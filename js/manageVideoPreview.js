@@ -1,7 +1,13 @@
 // var videosPreviewContainer = document.querySelector('#videosBlock .videos-block__container');
-let videoTimerId;
+// let videoTimerId;
+let currentTarget = null;
+
 function showLoader(event) {
   if (event.target.className.includes('video-title__container')) {
+    
+    if (currentTarget) return;
+
+    currentTarget = event.target;
     event.target.classList.add('preview-loading');
     // videoTimerId = setTimeout(() => {
       let videoElement = event.target.querySelector('.video-title__video video');
@@ -35,10 +41,17 @@ function hideLoader(target) {
 
 function removeVideo(event) {
   if (event.target.className.includes('video-title__container')) {
-    console.log('OUT');
+    let relatedTarget = event.relatedTarget;
+
+    while (relatedTarget) {
+      if (relatedTarget === currentTarget) return;
+
+      relatedTarget = relatedTarget.parentNode;
+    }
+    // console.log('OUT');
     let videoElement = event.target.querySelector('.video-title__video video');
     videoElement.pause();
-    videoElement.src='';
+    // videoElement.src='';
     event.target.querySelector('.video-title__image').style.display = 'flex';
     event.target.querySelector('.video-title__video').style.display = 'none';
     // if (videoTimerId) {
@@ -51,8 +64,10 @@ function removeVideo(event) {
       // event.target.querySelector('.video-title__block-over').style.display = 'flex';
     // }
     hideLoader(event.target);
+    currentTarget = null;
   }
 }
 
 document.addEventListener('mouseover', showLoader);
 document.addEventListener('mouseout', removeVideo);
+
