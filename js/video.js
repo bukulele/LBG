@@ -1,7 +1,7 @@
 let videoContainer = document.querySelector('.watch-video-block__video-container');
 let videoContainerHeight = videoContainer.offsetHeight;
 let videoControlPanel = document.querySelector('.watch-video-block__control-panel');
-let windowWidth;
+let windowWidth = window.innerWidth;
 
 defineElementsDimensions();
 
@@ -17,5 +17,6 @@ function setControlPanelMinHeight () {
 }
 
 function defineElementsDimensions () {
+  windowWidth = window.innerWidth;
   setControlPanelMinHeight();
 }

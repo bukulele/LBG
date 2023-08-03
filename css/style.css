@@ -1678,6 +1678,48 @@ h4 {
 div[data-icon] {
     pointer-events: auto;
 }
+
+.icon-tooltip {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #4F4F4F;
+    padding: 10px 15px;
+}
+.icon-tooltip p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+.icon-tooltip__arrow {
+    position: fixed;
+    content: " ";
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #4F4F4F transparent;
+    transform: translateX(-50%);
+}
+.icon-tooltip--arrow-right::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 90%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #4F4F4F transparent;
+}
+.icon-tooltip--arrow-left::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #4F4F4F transparent;
+}
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
     h2 {
