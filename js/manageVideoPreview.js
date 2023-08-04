@@ -16,7 +16,9 @@ function showLoader(event) {
         event.target.querySelector('.video-title__image').style.display = 'none';
         event.target.querySelector('.video-title__video').style.display = 'flex';
       })
-      .catch(e => console.log(e));
+      .catch(e => {
+        return;
+      });
   }
 }
 
