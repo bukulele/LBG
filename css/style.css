@@ -607,6 +607,7 @@ h4 {
     gap: 15px;
     width: 340px;
     height: auto;
+    text-decoration: none;
 }
 .model-title__image {
     position: relative;
@@ -685,10 +686,17 @@ h4 {
     font-size: 14px;
     color: #fff;
 }
-.model-title__bottom-block svg {
+.model-title__icon-container {
     color: #F3B700;
     width: 23px;
     height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.model-title__icon-container svg {
+    width: 100%;
+    height: 100%;
 }
 .model-title__info {
     display: flex;
@@ -1493,6 +1501,9 @@ h4 {
 .comments-block__icon-container {
     width: 20px;
     height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .comments-block__icon-container svg {
     width: 100%;
@@ -1573,10 +1584,18 @@ h4 {
     font-weight: 700;
     color: #fff;
 }
-.model-profile-block__participation svg {
+.model-profile-block__icon-container {
     color: #F3B700;
     width: 32px;
     height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.model-profile-block__icon-container svg {
+    width: 100%;
+    height: 100%;
 }
 /*NEWS BLOCK*/
 .news-block  {
@@ -1699,26 +1718,6 @@ div[data-icon] {
     border-style: solid;
     border-color: transparent transparent #4F4F4F transparent;
     transform: translateX(-50%);
-}
-.icon-tooltip--arrow-right::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;
-    left: 90%;
-    margin-left: -5px;
-    border-width: 7px;
-    border-style: solid;
-    border-color: transparent transparent #4F4F4F transparent;
-}
-.icon-tooltip--arrow-left::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;
-    left: 10%;
-    margin-left: -5px;
-    border-width: 7px;
-    border-style: solid;
-    border-color: transparent transparent #4F4F4F transparent;
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
@@ -2087,7 +2086,7 @@ div[data-icon] {
     .comments-block__text p {
         font-size: 16px;
     }
-    .model-title__bottom-block svg {
+    .model-title__icon-container {
         width: 30px;
         height: 30px;
     }

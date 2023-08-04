@@ -13,10 +13,8 @@ function showTooltip (event) {
     document.querySelector('body').insertAdjacentElement('beforeend', tooltip);
 
     if (tooltip.offsetWidth + targetPositionLeft >= window.innerWidth) {
-      // tooltip.classList.add('icon-tooltip--arrow-right');
       tooltip.style.left = `${targetPositionLeft + event.target.offsetWidth - tooltip.offsetWidth}px`;
     } else {
-      // tooltip.classList.add('icon-tooltip--arrow-left');
       tooltip.style.left = `${targetPositionLeft}px`;
     }
     tooltip.style.top = `${targetPositionTop + event.target.offsetHeight + 10}px`;
@@ -29,12 +27,17 @@ function showTooltip (event) {
   }
 }
 
-function hideTooltip (event) {
-  tooltip.remove();
-  tooltip = null;
-  arrow.remove();
-  arrow = null;
+function hideTooltip () {
+  if (tooltip) {
+    tooltip.remove();
+    tooltip = null;
+  }
+  if (arrow) {
+    arrow.remove();
+    arrow = null;
+  }
 }
 
 document.addEventListener('mouseover', showTooltip);
 document.addEventListener('mouseout', hideTooltip);
+document.addEventListener('scroll', hideTooltip);
