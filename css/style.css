@@ -717,6 +717,7 @@ h4 {
 
 /*BANNER*/
 .banner-block__container {
+    display: block;
     position: relative;
     overflow: hidden;
     width: 360px;
