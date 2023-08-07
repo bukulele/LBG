@@ -1653,6 +1653,7 @@ h4 {
     height: 50px;
     width: 100%;
     padding: 20px;
+    font-family: inherit;
 }
 .auth-block__benefits,
 .write-us-block__benefits {
