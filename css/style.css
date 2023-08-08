@@ -361,7 +361,8 @@ h4 {
 .news-block,
 .terms-block,
 .auth-block,
-.write-us-block {
+.write-us-block,
+.restore-block {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
