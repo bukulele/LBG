@@ -10,16 +10,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/components/authBlock.html":
-/*!***************************************!*\
-  !*** ./src/components/authBlock.html ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"auth-block__container\\\">\\n  <h2>AUTHORIZATION</h2>\\n  <div class=\\\"auth-block__group\\\">\\n    <div class=\\\"auth-block__half\\\">\\n      <form class=\\\"auth-block__form\\\">\\n        <input type=\\\"text\\\" class=\\\"auth-block__form-input\\\" placeholder=\\\"Login or email\\\">\\n        <input type=\\\"password\\\" class=\\\"auth-block__form-input\\\" placeholder=\\\"Password\\\">\\n        <input type=\\\"submit\\\" class=\\\"btn btn--form btn--full btn--yellow\\\" value=\\\"LOG IN\\\">\\n      </form>\\n      <a href=\\\"restore.html\\\" class=\\\"btn btn--link-g\\\">I forgot password</a>\\n      <a href=\\\"\\\" class=\\\"btn btn--link-g\\\">Need help?</a>\\n    </div>\\n    <div class=\\\"auth-block__half\\\">\\n      <div class=\\\"auth-block__benefits\\\">\\n        <p class=\\\"auth-block__benefits-header\\\">BUY ACCESS TO GET:</p>\\n        <ul class=\\\"auth-block__benefits-list\\\">\\n          <li>100% Exclusive Content</li>\\n          <li>Real amateur girls</li>\\n          <li>Members submit video ideas</li>\\n          <li>High Quality</li>\\n          <li>Regular Updates</li>\\n          <li>Access to bonus content</li>\\n        </ul>\\n        <p class=\\\"auth-block__benefits-text\\\">Not your typical pornstars that you see everywhere, but your average everyday next door girls!</p>\\n        <p class=\\\"auth-block__benefits-promo\\\">24/7 Support Day and Night</p>\\n      </div>\\n    </div>\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/authBlock.html?");
-
-/***/ }),
-
 /***/ "./src/components/footer.html":
 /*!************************************!*\
   !*** ./src/components/footer.html ***!
@@ -40,6 +30,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/restorePasswordBlock.html":
+/*!**************************************************!*\
+  !*** ./src/components/restorePasswordBlock.html ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"restore-block__container\\\">\\n  <h2>AUTHORIZATION</h2>\\n    <div class=\\\"restore-block__form-container\\\">\\n      <form class=\\\"restore-block__form\\\">\\n        <input type=\\\"text\\\" class=\\\"restore-block__form-input\\\" placeholder=\\\"Your login or email\\\">\\n        <div id=\\\"recaptchaContainer\\\"></div>\\n        <input type=\\\"submit\\\" class=\\\"btn btn--form btn--full btn--yellow\\\" value=\\\"SEND A LINK TO RESET YOUR PASSWORD BY EMAIL\\\">\\n      </form>\\n    </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/restorePasswordBlock.html?");
+
+/***/ }),
+
 /***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
 /*!*********************************************************!*\
   !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
@@ -50,13 +50,13 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
 
 /***/ }),
 
-/***/ "./src/authorizationPage.js":
-/*!**********************************!*\
-  !*** ./src/authorizationPage.js ***!
-  \**********************************/
+/***/ "./src/restorePasswordPage.js":
+/*!************************************!*\
+  !*** ./src/restorePasswordPage.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_authBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/authBlock.html */ \"./src/components/authBlock.html\");\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('authBlock').innerHTML = _components_authBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/authorizationPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_restorePasswordBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/restorePasswordBlock.html */ \"./src/components/restorePasswordBlock.html\");\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('restorePasswordBlock').innerHTML = _components_restorePasswordBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/restorePasswordPage.js?");
 
 /***/ }),
 
@@ -313,7 +313,7 @@ eval("module.exports = __webpack_require__.p + \"images/visa.png\";\n\n//# sourc
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"authorizationPage": 0
+/******/ 			"restorePasswordPage": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -336,7 +336,7 @@ eval("module.exports = __webpack_require__.p + \"images/visa.png\";\n\n//# sourc
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/authorizationPage.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/restorePasswordPage.js");
 /******/ 	
 /******/ })()
 ;
