@@ -24,7 +24,9 @@ function handleImageLoading () {
       mainVideoContainer.style.display = 'block';
       muteButton.style.display = 'block';
     })
-    .catch(e => alert(e));
+    .catch(e => {
+      return;
+    });
 }
 
 function toggleMute (event) {
