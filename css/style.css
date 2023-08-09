@@ -157,7 +157,7 @@ h4 {
     color: #000;
 }
 
-input[class=btn--yellow] {
+input[class~="btn--yellow"] {
     color: #000;
 }
 
