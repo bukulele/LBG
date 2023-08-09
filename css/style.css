@@ -362,7 +362,8 @@ h4 {
 .terms-block,
 .auth-block,
 .write-us-block,
-.restore-block {
+.restore-block,
+.profile-settings-block {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
@@ -394,7 +395,8 @@ h4 {
 .terms-block__container,
 .auth-block__container,
 .write-us-block__container,
-.restore-block__container {
+.restore-block__container,
+.profile-settings-block__container {
     width: 100%;
     margin: auto;
     display: flex;
@@ -1629,15 +1631,15 @@ h4 {
     place-items: center;
     gap: 10px;
 }
-.restore-block__container {
+.restore-block__container,
+.profile-settings-block__container {
     width: 360px;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 .auth-block__half,
 .write-us-block__half,
-.restore-block__form-container {
+.restore-block__form-container,
+.profile-settings-block__form-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1736,6 +1738,18 @@ div[data-icon] {
     border-style: solid;
     border-color: transparent transparent #4F4F4F transparent;
     transform: translateX(-50%);
+}
+.profile-settings-block__form-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.form-block__header {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
