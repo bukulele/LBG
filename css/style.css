@@ -1627,7 +1627,7 @@ h4 {
 .write-us-block__group {
     display: grid;
     grid-template-columns: 360px;
-    grid-auto-rows: auto auto;
+    grid-template-rows: auto auto;
     place-items: center;
     gap: 10px;
 }
@@ -1969,7 +1969,7 @@ div[data-icon] {
     .auth-block__group,
     .write-us-block__group {
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: auto;
+        grid-template-rows: 1fr;
     }
     .auth-block__half,
     .write-us-block__half {
