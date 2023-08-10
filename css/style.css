@@ -1692,6 +1692,9 @@ input[class~="btn--yellow"] {
     color: #767676FF;
     font-size: 14px;
 }
+.profile-settings-block__form-input--hidden {
+    display: none;
+}
 .profile-settings-block__icon-container {
     width: 22px;
     height: 22px;
