@@ -1660,7 +1660,8 @@ input[class~="btn--yellow"] {
 }
 .auth-block__form,
 .write-us-block__form,
-.restore-block__form {
+.restore-block__form,
+.profile-settings-block__form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1672,7 +1673,8 @@ input[class~="btn--yellow"] {
 }
 .auth-block__form-input,
 .write-us-block__form-input,
-.restore-block__form-input {
+.restore-block__form-input,
+.profile-settings-block__form-input {
     border: none;
     border-radius: 13px;
     height: 50px;
@@ -1681,23 +1683,23 @@ input[class~="btn--yellow"] {
     font-family: inherit;
     background-color: #fff ;
 }
-.restore-block__photo-upload {
+.profile-settings-block__photo-upload {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.restore-block__photo-upload p {
+.profile-settings-block__photo-upload p {
     color: #767676FF;
     font-size: 14px;
 }
-.restore-block__icon-container {
+.profile-settings-block__icon-container {
     width: 22px;
     height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.restore-block__icon-container svg {
+.profile-settings-block__icon-container svg {
     width: 100%;
     height: 100%;
     color: #000;
