@@ -1654,6 +1654,10 @@ input[class~="btn--yellow"] {
     gap: 20px;
     background-color: #2F3134;
 }
+.profile-settings-block__form-container {
+    padding: 0 20px !important;
+    gap: 0 !important;
+}
 .auth-block__form,
 .write-us-block__form,
 .restore-block__form {
@@ -1770,7 +1774,12 @@ div[data-icon] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
     gap: 10px;
+}
+.profile-settings-block__form-block:nth-of-type(2) {
+    border-top: 1px solid #53575C;
+    border-bottom: 1px solid #53575C;
 }
 .form-block__header {
     color: #fff;
