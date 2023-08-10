@@ -5,8 +5,24 @@
       <p class="form-block__header">Change Personal Photo:</p>
       <form class="restore-block__form">
         <input type="text" class="restore-block__form-input" placeholder="Display name">
-        <input type="text" class="restore-block__form-input" placeholder="Photo (minimum 90x90)">
-        <input type="submit" class="btn btn--form btn--full btn--yellow" value="CHANGE">
+        <div class="restore-block__form-input restore-block__photo-upload">
+          <p>Photo (minimum 90x90)</p>
+          <div class="restore-block__icon-container">
+            <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="link-1107-svgrepo-com 1">
+                <g id="Page-1">
+                  <g id="Dribbble-Light-Preview">
+                    <g id="icons">
+                      <path id="link-[#1107]" fill-rule="evenodd" clip-rule="evenodd" d="M4.4 12.0999H17.6V9.8999H4.4V12.0999ZM13.2 4.3999V6.5999H19.8V15.3999H13.2V17.5999H22V4.3999H13.2ZM2.2 15.3999H8.8V17.5999H0V4.3999H8.8V6.5999H2.2V15.3999Z" fill="currentColor"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+<!--        <input type="button" class="restore-block__form-input btn" value="Photo (minimum 90x90)">-->
+        <button type="submit" class="btn btn--form btn--full btn--yellow">CHANGE</button>
       </form>
     </div>
     <div class="profile-settings-block__form-block">
@@ -15,7 +31,7 @@
         <input type="password" class="restore-block__form-input" placeholder="Current password">
         <input type="password" class="restore-block__form-input" placeholder="New password (at least 5 characters please)">
         <input type="password" class="restore-block__form-input" placeholder="New password confirmation (re-type your password)">
-        <input type="submit" class="btn btn--form btn--full btn--yellow" value="SEND AN APPEAL">
+        <button type="submit" class="btn btn--form btn--full btn--yellow">SEND AN APPEAL</button>
       </form>
     </div>
     <div class="profile-settings-block__form-block">
@@ -23,7 +39,7 @@
       <form class="restore-block__form">
         <input type="email" class="restore-block__form-input" placeholder="Current email">
         <input type="email" class="restore-block__form-input" placeholder="New email">
-        <input type="submit" class="btn btn--form btn--full btn--yellow" value="SEND AN APPEAL">
+        <button type="submit" class="btn btn--form btn--full btn--yellow">SEND AN APPEAL</button>
       </form>
     </div>
   </div>
