@@ -10,7 +10,7 @@ import messageBlock from './messageBlock.html';
 import filters from './videosFilters.html';
 import singleNewsBlock from './singleNewsBlock.html';
 import testVideo from '../../assets/temp/097 - That\'s My Mommy (1955)_New.mov';
-import manageVideoPreview from '../../js/manageVideoPreview';
+// import manageVideoPreview from '../../js/manageVideoPreview';
 
 const videos = [image1, image2, image3, image4, image5, image6];
 

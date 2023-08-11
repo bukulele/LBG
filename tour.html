@@ -4,31 +4,26 @@
   <meta charset="UTF-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <title>Video</title>
+  <title>Tour page</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<div id="page-container">
+<div id="page-container" class="home-page">
   <nav id="navbar" class="navbar"></nav>
   <div class="main">
-    <div id="watchVideoBlock" class="watch-video-block"></div>
-    <div id="picturesBlock" class="pictures-block"></div>
-    <div id="videosBlock" class="videos-block"></div>
-    <div id="commentsBlock" class="comments-block"></div>
+    <div id="tourBlock" class="tour-block"></div>
     <div id="banner_1" class="banner-block"></div>
     <div id="timerBlock" class="timer-block"></div>
   </div>
   <footer id="footer" class="footer"></footer>
 </div>
-<script src="dist/videoPage.bundle.js"></script>
-<script src="dist/picturesBlock.bundle.js"></script>
-<script src="dist/videosBlock.bundle.js"></script>
+<script src="dist/tourPage.bundle.js"></script>
 <script src="dist/timerBlock.bundle.js"></script>
 <script src="js/navbar.js"></script>
-<script src="js/settingSelectorWidth.js"></script>
-<script src="js/video.js"></script>
 <script src="js/timer.js"></script>
 <script src="js/common.js"></script>
 <script src="js/manageVideoPreview.js"></script>
 </body>
 </html>
+
+<!--npx webpack --mode development-->

@@ -6,7 +6,7 @@ import image5 from '../../assets/temp/image 5.png';
 import image6 from '../../assets/temp/image 6.png';
 import videoTitle from './videoTitle.html';
 import testVideo from '../../assets/temp/097 - That\'s My Mommy (1955)_New.mov';
-import manageVideoPreview from '../../js/manageVideoPreview';
+// import manageVideoPreview from '../../js/manageVideoPreview';
 
 
 const videos = [image1, image2, image3, image4, image5, image6];
