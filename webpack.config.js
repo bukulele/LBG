@@ -25,7 +25,8 @@ module.exports = {
     restorePasswordPage: './src/restorePasswordPage.js',
     createPasswordPage: './src/createPasswordPage.js',
     profileSettingsPage: './src/profileSettingsPage.js',
-    tourPage: './src/tourPage.js'
+    tourPage: './src/tourPage.js',
+    tourBlock: './src/components/tourBlock.js'
   }, // The entry point of your application
   output: {
     path: path.resolve(__dirname, 'dist'), // The output directory

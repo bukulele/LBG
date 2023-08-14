@@ -367,7 +367,8 @@ input[class~="btn--yellow"] {
 .auth-block,
 .write-us-block,
 .restore-block,
-.profile-settings-block {
+.profile-settings-block,
+.tour-block {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
@@ -400,7 +401,8 @@ input[class~="btn--yellow"] {
 .auth-block__container,
 .write-us-block__container,
 .restore-block__container,
-.profile-settings-block__container {
+.profile-settings-block__containerб
+.tour-block__container {
     width: 100%;
     margin: auto;
     display: flex;
@@ -1791,6 +1793,32 @@ div[data-icon] {
     color: #fff;
     font-size: 15px;
     font-weight: 800;
+}
+/*TOUR BLOCK*/
+.tour-block__titles {
+    column-count: 4;
+    column-gap: 30px;
+}
+.tour-block__title {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tour-block__image {
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.tour-block__image img {
+    width: 100%;
+    height: auto;
+}
+.tour-block__over {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
