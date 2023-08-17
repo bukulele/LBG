@@ -1709,21 +1709,19 @@ input[class~="btn--yellow"] {
     height: 100%;
     color: #000;
 }
-.auth-block__benefits,
-.write-us-block__benefits {
+.benefits-banner__container {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.auth-block__benefits-header,
-.write-us-block__benefits-header {
+.benefits-banner__header {
     color: #F3B800;
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
 }
-.auth-block__benefits-list li,
-.write-us-block__benefits-list li {
+
+.benefits-banner__list li {
     font-size: 14px;
     font-weight: 800;
     text-transform: uppercase;
@@ -1737,14 +1735,14 @@ input[class~="btn--yellow"] {
     white-space: nowrap;
     line-height: 2;
 }
-.auth-block__benefits-text,
-.write-us-block__benefits-text {
+
+.benefits-banner__text {
     color: #A1A1A1;
     font-size: 14px;
     font-weight: 700;
 }
-.auth-block__benefits-promo,
-.write-us-block__benefits-promo {
+
+.benefits-banner__promo {
     color: #FFF;
     font-size: 18px;
     font-weight: 800;
@@ -1830,6 +1828,9 @@ div[data-icon] {
     align-items: center;
     justify-content: center;
 }
+/*TOUR PAGE BANNER*/
+
+
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
     h2 {
@@ -2447,24 +2448,19 @@ div[data-icon] {
     .write-us-block__form {
         max-width: 421px;
     }
-    .auth-block__benefits,
-    .write-us-block__benefits {
+    .benefits-banner__container {
         gap: 22px;
     }
-    .auth-block__benefits-header,
-    .auth-block__benefits-promo,
-    .write-us-block__benefits-header,
-    .write-us-block__benefits-promo {
+    .benefits-banner__header,
+    .benefits-banner__promo {
         font-size: 32px;
     }
-    .auth-block__benefits-list li,
-    .write-us-block__benefits-list li {
+    .benefits-banner__list li {
         font-size: 24px;
         background-size: 24px;
         padding-left: 27px;
     }
-    .auth-block__benefits-text,
-    .write-us-block__benefits-text {
+    .benefits-banner__text {
         font-size: 20px;
     }
     .profile-settings-block__form-container {

@@ -15,6 +15,13 @@ import image52 from '../../assets/temp/image 52.png';
 import image53 from '../../assets/temp/image 53.png';
 import tourTitle from './tourTitle.html';
 import pagerContainer from './pagerContainer.html';
+import benefitsBanner from './benefitsBanner.html';
+
+// let targetContainer = document.querySelector('.write-us-block__group .write-us-block__half:last-of-type');
+//
+// targetContainer.innerHTML = benefitsBanner;
+// let benefitsBannerHeader = targetContainer.querySelector('.benefits-banner__header');
+// benefitsBannerHeader.innerHTML = 'Buy access to get:';
 
 import testVideo from '../../assets/temp/097 - That\'s My Mommy (1955)_New.mov';
 
