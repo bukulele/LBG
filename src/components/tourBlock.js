@@ -14,6 +14,7 @@ import image51 from '../../assets/temp/image 51.png';
 import image52 from '../../assets/temp/image 52.png';
 import image53 from '../../assets/temp/image 53.png';
 import tourTitle from './tourTitle.html';
+import pagerContainer from './pagerContainer.html';
 
 import testVideo from '../../assets/temp/097 - That\'s My Mommy (1955)_New.mov';
 
@@ -27,3 +28,5 @@ for (let image of images) {
   imageElement.src = image;
   tourBlockTitlesContainer.lastElementChild.querySelector('.tour-block__image').insertAdjacentElement('afterbegin', imageElement);
 }
+
+document.querySelector('.tour-block__button-container').innerHTML = pagerContainer;
