@@ -1800,6 +1800,9 @@ div[data-icon] {
     column-count: 2;
     column-gap: 10px;
 }
+.tour-block__titles * {
+    break-inside: avoid;
+}
 .tour-block__title {
     position: relative;
     width: 100%;
@@ -1828,8 +1831,27 @@ div[data-icon] {
     align-items: center;
     justify-content: center;
 }
-/*TOUR PAGE BANNER*/
-
+.tour-block__banner-container {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #1D1E20;
+    text-decoration: none;
+    padding: 30px 10px;
+    margin-bottom: 10px;
+}
+.tour-block__banner-container .benefits-banner__header,
+.tour-block__banner-container .benefits-banner__promo {
+    font-size: 10px;
+}
+.tour-block__banner-container .benefits-banner__list li {
+    font-size: 8px;
+    background-size: 8px;
+    padding-left: 11px;
+}
+.tour-block__banner-container .benefits-banner__text {
+    font-size: 10px;
+}
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
@@ -2069,6 +2091,22 @@ div[data-icon] {
     .tour-block__image {
         border-radius: 20px;
     }
+    .tour-block__banner-container {
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .tour-block__banner-container .benefits-banner__header,
+    .tour-block__banner-container .benefits-banner__promo {
+        font-size: 12px;
+    }
+    .tour-block__banner-container .benefits-banner__list li {
+        font-size: 10px;
+        background-size: 10px;
+        padding-left: 13px;
+    }
+    .tour-block__banner-container .benefits-banner__text {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -2227,6 +2265,10 @@ div[data-icon] {
     }
     .tour-block__image {
         border-radius: 30px;
+    }
+    .tour-block__banner-container {
+        border-radius: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -2469,6 +2511,21 @@ div[data-icon] {
     .profile-settings-block__form-block {
         padding: 0 50px;
     }
+    .tour-block__banner-container {
+        padding: 70px 20px;
+    }
+    .tour-block__banner-container .benefits-banner__header,
+    .tour-block__banner-container .benefits-banner__promo {
+        font-size: 32px;
+    }
+    .tour-block__banner-container .benefits-banner__list li {
+        font-size: 20px;
+        background-size: 20px;
+        padding-left: 23px;
+    }
+    .tour-block__banner-container .benefits-banner__text {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 1650px) {
@@ -2481,5 +2538,8 @@ div[data-icon] {
     .banner-block__chevrons svg {
         height: 20px;
         width: 40px;
+    }
+    .tour-block__banner-container {
+        padding: 70px 30px;
     }
 }

@@ -29,11 +29,20 @@ const images = [image39, image40, image41, image42, image43, image44, image45, i
 
 let tourBlockTitlesContainer = document.querySelector('.tour-block__container .tour-block__titles');
 
-for (let image of images) {
+for (let i = 0; i < images.length; i++) {
   tourBlockTitlesContainer.insertAdjacentHTML('beforeend', tourTitle);
   let imageElement = document.createElement('img');
-  imageElement.src = image;
+  imageElement.src = images[i];
   tourBlockTitlesContainer.lastElementChild.querySelector('.tour-block__image').insertAdjacentElement('afterbegin', imageElement);
+  if (i === 9) {
+    tourBlockTitlesContainer.insertAdjacentHTML('beforeend', `
+    <a href="" class="tour-block__banner-container">
+        ${benefitsBanner}
+    </a>
+    `);
+    let benefitsBannerHeader = tourBlockTitlesContainer.querySelector('.benefits-banner__header');
+    benefitsBannerHeader.innerHTML = 'Member benefits:';
+  }
 }
 
 document.querySelector('.tour-block__button-container').innerHTML = pagerContainer;
