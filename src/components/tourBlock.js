@@ -10,15 +10,15 @@ import image47 from '../../assets/temp/image 47.png';
 import image48 from '../../assets/temp/image 48.png';
 import image49 from '../../assets/temp/image 49.png';
 import image50 from '../../assets/temp/image 50.png';
-import image51 from '../../assets/temp/image 51.png';
 import image52 from '../../assets/temp/image 52.png';
 import image53 from '../../assets/temp/image 53.png';
 import tourTitle from './tourTitle.html';
 import pagerContainer from './pagerContainer.html';
 import benefitsBanner from './benefitsBanner.html';
 import banner3 from './banner3.html';
+import banner4 from './banner4.html';
 
-const images = [image39, image40, image41, image42, image43, image44, image45, image46, image47, image48, image49, image50, image51, image52, image53];
+const images = [image39, image40, image41, image42, image43, image44, image45, image46, image47, image48, image49, image50, image52, image53];
 
 let tourBlockTitlesContainer = document.querySelector('.tour-block__container .tour-block__titles');
 
@@ -38,6 +38,9 @@ for (let i = 0; i < images.length; i++) {
     `);
     let benefitsBannerHeader = tourBlockTitlesContainer.querySelector('.benefits-banner__header');
     benefitsBannerHeader.innerHTML = 'Member benefits:';
+  }
+  if (i === 11) {
+    tourBlockTitlesContainer.insertAdjacentHTML('beforeend', banner4);
   }
 }
 

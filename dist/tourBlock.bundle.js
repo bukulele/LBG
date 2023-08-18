@@ -16,7 +16,17 @@
   \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"tour-banner__container\\\">\\n    <p class=\\\"tour-banner__header\\\">They play and get punished! <br>It's realistic!</p>\\n    <p class=\\\"tour-banner__text\\\">Buy access and enjoy exclusive video content!</p>\\n    <a href=\\\"\\\" class=\\\"btn btn--classic btn--mobile-small btn--pink join-now-button\\\">JOIN NOW</a>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/banner3.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"tour-banner__container tour-banner__container--padding\\\">\\n    <p class=\\\"tour-banner__header\\\">They play and get punished! <br>It's realistic!</p>\\n    <p class=\\\"tour-banner__text\\\">Buy access and enjoy exclusive video content!</p>\\n    <a href=\\\"\\\" class=\\\"btn btn--classic btn--mobile-small btn--pink join-now-button\\\">JOIN NOW</a>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/banner3.html?");
+
+/***/ }),
+
+/***/ "./src/components/banner4.html":
+/*!*************************************!*\
+  !*** ./src/components/banner4.html ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/The most sophisticated punishments.png */ \"./assets/images/The most sophisticated punishments.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar code = \"<a class=\\\"tour-banner__container\\\">\\n   <div class=\\\"tour-banner__image-container\\\">\\n   </div>\\n   <div class=\\\"tour-banner__image-text-container\\\">\\n        <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\" alt=\\\"\\\">\\n   </div>\\n</a>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/banner4.html?");
 
 /***/ }),
 
@@ -50,13 +60,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = String(url.__esModule ? url.default : url);\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  }\n\n  if (options.maybeNeedQuotes && /[\\t\\n\\f\\r \"'=<>`]/.test(url)) {\n    return \"\\\"\".concat(url, \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/html-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
 /***/ "./src/components/tourBlock.js":
 /*!*************************************!*\
   !*** ./src/components/tourBlock.js ***!
   \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_temp_image_39_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/temp/image 39.png */ \"./assets/temp/image 39.png\");\n/* harmony import */ var _assets_temp_image_40_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/temp/image 40.png */ \"./assets/temp/image 40.png\");\n/* harmony import */ var _assets_temp_image_41_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/temp/image 41.png */ \"./assets/temp/image 41.png\");\n/* harmony import */ var _assets_temp_image_42_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/temp/image 42.png */ \"./assets/temp/image 42.png\");\n/* harmony import */ var _assets_temp_image_43_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/temp/image 43.png */ \"./assets/temp/image 43.png\");\n/* harmony import */ var _assets_temp_image_44_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/temp/image 44.png */ \"./assets/temp/image 44.png\");\n/* harmony import */ var _assets_temp_image_45_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/temp/image 45.png */ \"./assets/temp/image 45.png\");\n/* harmony import */ var _assets_temp_image_46_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/temp/image 46.png */ \"./assets/temp/image 46.png\");\n/* harmony import */ var _assets_temp_image_47_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/temp/image 47.png */ \"./assets/temp/image 47.png\");\n/* harmony import */ var _assets_temp_image_48_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/temp/image 48.png */ \"./assets/temp/image 48.png\");\n/* harmony import */ var _assets_temp_image_49_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/temp/image 49.png */ \"./assets/temp/image 49.png\");\n/* harmony import */ var _assets_temp_image_50_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/temp/image 50.png */ \"./assets/temp/image 50.png\");\n/* harmony import */ var _assets_temp_image_51_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/temp/image 51.png */ \"./assets/temp/image 51.png\");\n/* harmony import */ var _assets_temp_image_52_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../assets/temp/image 52.png */ \"./assets/temp/image 52.png\");\n/* harmony import */ var _assets_temp_image_53_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../assets/temp/image 53.png */ \"./assets/temp/image 53.png\");\n/* harmony import */ var _tourTitle_html__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./tourTitle.html */ \"./src/components/tourTitle.html\");\n/* harmony import */ var _pagerContainer_html__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pagerContainer.html */ \"./src/components/pagerContainer.html\");\n/* harmony import */ var _benefitsBanner_html__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./benefitsBanner.html */ \"./src/components/benefitsBanner.html\");\n/* harmony import */ var _banner3_html__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./banner3.html */ \"./src/components/banner3.html\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst images = [_assets_temp_image_39_png__WEBPACK_IMPORTED_MODULE_0__, _assets_temp_image_40_png__WEBPACK_IMPORTED_MODULE_1__, _assets_temp_image_41_png__WEBPACK_IMPORTED_MODULE_2__, _assets_temp_image_42_png__WEBPACK_IMPORTED_MODULE_3__, _assets_temp_image_43_png__WEBPACK_IMPORTED_MODULE_4__, _assets_temp_image_44_png__WEBPACK_IMPORTED_MODULE_5__, _assets_temp_image_45_png__WEBPACK_IMPORTED_MODULE_6__, _assets_temp_image_46_png__WEBPACK_IMPORTED_MODULE_7__, _assets_temp_image_47_png__WEBPACK_IMPORTED_MODULE_8__, _assets_temp_image_48_png__WEBPACK_IMPORTED_MODULE_9__, _assets_temp_image_49_png__WEBPACK_IMPORTED_MODULE_10__, _assets_temp_image_50_png__WEBPACK_IMPORTED_MODULE_11__, _assets_temp_image_51_png__WEBPACK_IMPORTED_MODULE_12__, _assets_temp_image_52_png__WEBPACK_IMPORTED_MODULE_13__, _assets_temp_image_53_png__WEBPACK_IMPORTED_MODULE_14__];\n\nlet tourBlockTitlesContainer = document.querySelector('.tour-block__container .tour-block__titles');\n\nfor (let i = 0; i < images.length; i++) {\n  tourBlockTitlesContainer.insertAdjacentHTML('beforeend', _tourTitle_html__WEBPACK_IMPORTED_MODULE_15__[\"default\"]);\n  let imageElement = document.createElement('img');\n  imageElement.src = images[i];\n  tourBlockTitlesContainer.lastElementChild.querySelector('.tour-block__image').insertAdjacentElement('afterbegin', imageElement);\n  if (i === 0) {\n    tourBlockTitlesContainer.insertAdjacentHTML('beforeend', _banner3_html__WEBPACK_IMPORTED_MODULE_18__[\"default\"]);\n  }\n  if (i === 9) {\n    tourBlockTitlesContainer.insertAdjacentHTML('beforeend', `\n    <a href=\"\" class=\"tour-block__banner-container\">\n        ${_benefitsBanner_html__WEBPACK_IMPORTED_MODULE_17__[\"default\"]}\n    </a>\n    `);\n    let benefitsBannerHeader = tourBlockTitlesContainer.querySelector('.benefits-banner__header');\n    benefitsBannerHeader.innerHTML = 'Member benefits:';\n  }\n}\n\ndocument.querySelector('.tour-block__button-container').innerHTML = _pagerContainer_html__WEBPACK_IMPORTED_MODULE_16__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/components/tourBlock.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_temp_image_39_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/temp/image 39.png */ \"./assets/temp/image 39.png\");\n/* harmony import */ var _assets_temp_image_40_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/temp/image 40.png */ \"./assets/temp/image 40.png\");\n/* harmony import */ var _assets_temp_image_41_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/temp/image 41.png */ \"./assets/temp/image 41.png\");\n/* harmony import */ var _assets_temp_image_42_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/temp/image 42.png */ \"./assets/temp/image 42.png\");\n/* harmony import */ var _assets_temp_image_43_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/temp/image 43.png */ \"./assets/temp/image 43.png\");\n/* harmony import */ var _assets_temp_image_44_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/temp/image 44.png */ \"./assets/temp/image 44.png\");\n/* harmony import */ var _assets_temp_image_45_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/temp/image 45.png */ \"./assets/temp/image 45.png\");\n/* harmony import */ var _assets_temp_image_46_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/temp/image 46.png */ \"./assets/temp/image 46.png\");\n/* harmony import */ var _assets_temp_image_47_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/temp/image 47.png */ \"./assets/temp/image 47.png\");\n/* harmony import */ var _assets_temp_image_48_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/temp/image 48.png */ \"./assets/temp/image 48.png\");\n/* harmony import */ var _assets_temp_image_49_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/temp/image 49.png */ \"./assets/temp/image 49.png\");\n/* harmony import */ var _assets_temp_image_50_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/temp/image 50.png */ \"./assets/temp/image 50.png\");\n/* harmony import */ var _assets_temp_image_52_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/temp/image 52.png */ \"./assets/temp/image 52.png\");\n/* harmony import */ var _assets_temp_image_53_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../assets/temp/image 53.png */ \"./assets/temp/image 53.png\");\n/* harmony import */ var _tourTitle_html__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./tourTitle.html */ \"./src/components/tourTitle.html\");\n/* harmony import */ var _pagerContainer_html__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pagerContainer.html */ \"./src/components/pagerContainer.html\");\n/* harmony import */ var _benefitsBanner_html__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./benefitsBanner.html */ \"./src/components/benefitsBanner.html\");\n/* harmony import */ var _banner3_html__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./banner3.html */ \"./src/components/banner3.html\");\n/* harmony import */ var _banner4_html__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./banner4.html */ \"./src/components/banner4.html\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst images = [_assets_temp_image_39_png__WEBPACK_IMPORTED_MODULE_0__, _assets_temp_image_40_png__WEBPACK_IMPORTED_MODULE_1__, _assets_temp_image_41_png__WEBPACK_IMPORTED_MODULE_2__, _assets_temp_image_42_png__WEBPACK_IMPORTED_MODULE_3__, _assets_temp_image_43_png__WEBPACK_IMPORTED_MODULE_4__, _assets_temp_image_44_png__WEBPACK_IMPORTED_MODULE_5__, _assets_temp_image_45_png__WEBPACK_IMPORTED_MODULE_6__, _assets_temp_image_46_png__WEBPACK_IMPORTED_MODULE_7__, _assets_temp_image_47_png__WEBPACK_IMPORTED_MODULE_8__, _assets_temp_image_48_png__WEBPACK_IMPORTED_MODULE_9__, _assets_temp_image_49_png__WEBPACK_IMPORTED_MODULE_10__, _assets_temp_image_50_png__WEBPACK_IMPORTED_MODULE_11__, _assets_temp_image_52_png__WEBPACK_IMPORTED_MODULE_12__, _assets_temp_image_53_png__WEBPACK_IMPORTED_MODULE_13__];\n\nlet tourBlockTitlesContainer = document.querySelector('.tour-block__container .tour-block__titles');\n\nfor (let i = 0; i < images.length; i++) {\n  tourBlockTitlesContainer.insertAdjacentHTML('beforeend', _tourTitle_html__WEBPACK_IMPORTED_MODULE_14__[\"default\"]);\n  let imageElement = document.createElement('img');\n  imageElement.src = images[i];\n  tourBlockTitlesContainer.lastElementChild.querySelector('.tour-block__image').insertAdjacentElement('afterbegin', imageElement);\n  if (i === 0) {\n    tourBlockTitlesContainer.insertAdjacentHTML('beforeend', _banner3_html__WEBPACK_IMPORTED_MODULE_17__[\"default\"]);\n  }\n  if (i === 9) {\n    tourBlockTitlesContainer.insertAdjacentHTML('beforeend', `\n    <a href=\"\" class=\"tour-block__banner-container\">\n        ${_benefitsBanner_html__WEBPACK_IMPORTED_MODULE_16__[\"default\"]}\n    </a>\n    `);\n    let benefitsBannerHeader = tourBlockTitlesContainer.querySelector('.benefits-banner__header');\n    benefitsBannerHeader.innerHTML = 'Member benefits:';\n  }\n  if (i === 11) {\n    tourBlockTitlesContainer.insertAdjacentHTML('beforeend', _banner4_html__WEBPACK_IMPORTED_MODULE_18__[\"default\"]);\n  }\n}\n\ndocument.querySelector('.tour-block__button-container').innerHTML = _pagerContainer_html__WEBPACK_IMPORTED_MODULE_15__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/components/tourBlock.js?");
+
+/***/ }),
+
+/***/ "./assets/images/The most sophisticated punishments.png":
+/*!**************************************************************!*\
+  !*** ./assets/images/The most sophisticated punishments.png ***!
+  \**************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/The most sophisticated punishments.png\";\n\n//# sourceURL=webpack:///./assets/images/The_most_sophisticated_punishments.png?");
 
 /***/ }),
 
@@ -180,16 +210,6 @@ eval("module.exports = __webpack_require__.p + \"images/image 50.png\";\n\n//# s
 
 /***/ }),
 
-/***/ "./assets/temp/image 51.png":
-/*!**********************************!*\
-  !*** ./assets/temp/image 51.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"images/image 51.png\";\n\n//# sourceURL=webpack:///./assets/temp/image_51.png?");
-
-/***/ }),
-
 /***/ "./assets/temp/image 52.png":
 /*!**********************************!*\
   !*** ./assets/temp/image 52.png ***!
@@ -236,7 +256,22 @@ eval("module.exports = __webpack_require__.p + \"images/image 53.png\";\n\n//# s
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -268,6 +303,32 @@ eval("module.exports = __webpack_require__.p + \"images/image 53.png\";\n\n//# s
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
 /******/ 		__webpack_require__.p = "./dist/";
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"tourBlock": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /************************************************************************/
