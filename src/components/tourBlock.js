@@ -16,14 +16,7 @@ import image53 from '../../assets/temp/image 53.png';
 import tourTitle from './tourTitle.html';
 import pagerContainer from './pagerContainer.html';
 import benefitsBanner from './benefitsBanner.html';
-
-// let targetContainer = document.querySelector('.write-us-block__group .write-us-block__half:last-of-type');
-//
-// targetContainer.innerHTML = benefitsBanner;
-// let benefitsBannerHeader = targetContainer.querySelector('.benefits-banner__header');
-// benefitsBannerHeader.innerHTML = 'Buy access to get:';
-
-import testVideo from '../../assets/temp/097 - That\'s My Mommy (1955)_New.mov';
+import banner3 from './banner3.html';
 
 const images = [image39, image40, image41, image42, image43, image44, image45, image46, image47, image48, image49, image50, image51, image52, image53];
 
@@ -34,6 +27,9 @@ for (let i = 0; i < images.length; i++) {
   let imageElement = document.createElement('img');
   imageElement.src = images[i];
   tourBlockTitlesContainer.lastElementChild.querySelector('.tour-block__image').insertAdjacentElement('afterbegin', imageElement);
+  if (i === 0) {
+    tourBlockTitlesContainer.insertAdjacentHTML('beforeend', banner3);
+  }
   if (i === 9) {
     tourBlockTitlesContainer.insertAdjacentHTML('beforeend', `
     <a href="" class="tour-block__banner-container">
