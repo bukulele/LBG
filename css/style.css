@@ -368,7 +368,8 @@ input[class~="btn--yellow"] {
 .write-us-block,
 .restore-block,
 .profile-settings-block,
-.tour-block {
+.tour-block,
+.buy-access-block {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
@@ -402,7 +403,8 @@ input[class~="btn--yellow"] {
 .write-us-block__container,
 .restore-block__container,
 .profile-settings-block__container,
-.tour-block__container {
+.tour-block__container,
+.buy-access-block__container {
     width: 100%;
     margin: auto;
     display: flex;
@@ -1930,6 +1932,9 @@ div[data-icon] {
     width: 100%;
     height: 100%;
 }
+/*BUY ACCESS BLOCK*/
+
+
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
     h2 {

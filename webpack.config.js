@@ -28,7 +28,8 @@ module.exports = {
     createPasswordPage: './src/createPasswordPage.js',
     profileSettingsPage: './src/profileSettingsPage.js',
     tourPage: './src/tourPage.js',
-    tourBlock: './src/components/tourBlock.js'
+    tourBlock: './src/components/tourBlock.js',
+    buyAccessPage: './src/buyAccessPage.js'
   }, // The entry point of your application
   output: {
     path: path.resolve(__dirname, 'dist'), // The output directory
