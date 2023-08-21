@@ -1933,7 +1933,50 @@ div[data-icon] {
     height: 100%;
 }
 /*BUY ACCESS BLOCK*/
-
+.buy-access-block__container {
+    width: 360px;
+    margin: auto;
+}
+.buy-access-block__secure-text {
+    color: #50C75C;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.buy-access-block__event {
+    width: 100%;
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #40464F;
+    border-radius: 30px;
+}
+.buy-access-block__event p {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+.buy-access-block__tariff-plans {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.buy-access-block__tariff {
+    width: 100%;
+    border-radius: 30px;
+    padding: 25px 20px;
+}
+.buy-access-block__tariff--best {
+    background: linear-gradient(180deg, #812828 0%, #F3B700 100%), #1D1E20;
+}
+.buy-access-block__tariff--black {
+    background-color: #1D1E20;
+}
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
