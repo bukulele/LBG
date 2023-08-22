@@ -16,7 +16,7 @@
   \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"buy-access-block__container\\\">\\n  <h2>buy access and enjoy</h2>\\n  <p class=\\\"buy-access-block__secure-text\\\">100% Safe , Secure & Discreet Transaction</p>\\n  <div class=\\\"buy-access-block__event\\\">\\n    <p>Have a Great Valentine’s Day! 🔥<br>\\n      UP TO 70% OFF! 🥳</p>\\n  </div>\\n  <div class=\\\"buy-access-block__tariff-plans\\\">\\n    <div class=\\\"buy-access-block__tariff buy-access-block__tariff--best buy-access-block__tariff-12\\\">\\n      <div class=\\\"buy-access-block__tariff-header\\\">\\n        <div class=\\\"buy-access-block__icon-container\\\">\\n          \\n        </div>\\n        <p><span>12 month</span> membership</p>\\n      </div>\\n      <div class=\\\"buy-access-block__tariff-offer\\\"></div>\\n      <p class=\\\"buy-access-block__tariff-text\\\"></p>\\n      <a href=\\\"\\\" class=\\\"btn btn--pink btn--classic btn--full-xs\\\">JOIN NOW</a>\\n    </div>\\n    <div class=\\\"buy-access-block__tariff buy-access-block__tariff--black buy-access-block__tariff-6\\\">\\n      <div class=\\\"buy-access-block__tariff-header\\\"></div>\\n      <div class=\\\"buy-access-block__tariff-offer\\\"></div>\\n      <p class=\\\"buy-access-block__tariff-text\\\"></p>\\n      <a href=\\\"\\\" class=\\\"btn btn--pink btn--classic btn--full-xs\\\">JOIN NOW</a>\\n    </div>\\n    <div class=\\\"buy-access-block__tariff buy-access-block__tariff--black buy-access-block__tariff-1\\\">\\n      <div class=\\\"buy-access-block__tariff-header\\\"></div>\\n      <div class=\\\"buy-access-block__tariff-offer\\\"></div>\\n      <p class=\\\"buy-access-block__tariff-text\\\"></p>\\n      <a href=\\\"\\\" class=\\\"btn btn--pink btn--classic btn--full-xs\\\">JOIN NOW</a>\\n    </div>\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/buyAccessBlock.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/crown1 1.png */ \"./assets/images/crown1 1.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/crown2 1.png */ \"./assets/images/crown2 1.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/4-41341_brown-eyes-clipart-google-eyes-grey-eyes-clip 1.png */ \"./assets/images/4-41341_brown-eyes-clipart-google-eyes-grey-eyes-clip 1.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);\nvar ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);\nvar code = \"<div class=\\\"buy-access-block__container\\\">\\n  <h2>buy access and enjoy</h2>\\n  <p class=\\\"buy-access-block__secure-text\\\">100% Safe , Secure & Discreet Transaction</p>\\n  <div class=\\\"buy-access-block__event\\\">\\n    <p>Have a Great Valentine’s Day! 🔥<br>\\n      UP TO 70% OFF! 🥳</p>\\n  </div>\\n  <div class=\\\"buy-access-block__tariff-plans\\\">\\n    <div class=\\\"buy-access-block__tariff buy-access-block__tariff--best buy-access-block__tariff-12\\\">\\n      <div class=\\\"buy-access-block__tariff-header\\\">\\n        <div class=\\\"buy-access-block__icon-container\\\">\\n          <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\" alt=\\\"\\\">\\n        </div>\\n        <p><span>12 month</span> membership</p>\\n      </div>\\n      <div class=\\\"buy-access-block__tariff-offer buy-access-block__tariff-offer--green\\\">\\n        <p class=\\\"buy-access-block__text buy-access-block__text--yellow\\\">\\n          Only <span>16.64$</span>/Month\\n        </p>\\n        <p class=\\\"buy-access-block__text buy-access-block__text--pink\\\">\\n          <span>38.64$/Month</span> 57% off\\n        </p>\\n      </div>\\n      <p class=\\\"buy-access-block__tariff-text\\\">\\n        Billed in one payment of $199.73 <span>$463.68</span>\\n      </p>\\n      <a href=\\\"\\\" class=\\\"btn btn--pink btn--classic btn--full-xs\\\">JOIN NOW</a>\\n    </div>\\n    <div class=\\\"buy-access-block__tariff buy-access-block__tariff--black buy-access-block__tariff-4\\\">\\n      <div class=\\\"buy-access-block__tariff-header\\\">\\n        <div class=\\\"buy-access-block__icon-container\\\">\\n          <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_1___ + \"\\\" alt=\\\"\\\">\\n        </div>\\n        <p><span>4 month</span> membership</p>\\n      </div>\\n      <div class=\\\"buy-access-block__tariff-offer buy-access-block__tariff-offer--gray\\\">\\n        <p class=\\\"buy-access-block__text buy-access-block__text--yellow\\\">\\n          Only <span>16.64$</span>/Month\\n        </p>\\n        <p class=\\\"buy-access-block__text buy-access-block__text--pink\\\">\\n          <span>38.64$/Month</span> 57% off\\n        </p>\\n      </div>\\n      <p class=\\\"buy-access-block__tariff-text\\\">\\n        Billed in one payment of $89.73 <span>$154.56</span>\\n      </p>\\n      <a href=\\\"\\\" class=\\\"btn btn--pink btn--classic btn--full-xs\\\">JOIN NOW</a>\\n    </div>\\n    <div class=\\\"buy-access-block__tariff buy-access-block__tariff--black buy-access-block__tariff-1\\\">\\n      <div class=\\\"buy-access-block__tariff-header\\\">\\n        <div class=\\\"buy-access-block__icon-container\\\">\\n          <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_2___ + \"\\\" alt=\\\"\\\">\\n        </div>\\n        <p><span>monthly</span> membership</p>\\n      </div>\\n      <div class=\\\"buy-access-block__tariff-offer buy-access-block__tariff-offer--gray\\\">\\n        <p class=\\\"buy-access-block__text buy-access-block__text--yellow\\\">\\n          Only <span>16.64$</span>/Month\\n        </p>\\n        <p class=\\\"buy-access-block__text buy-access-block__text--pink\\\">\\n          <span>38.64$/Month</span> 57% off\\n        </p>\\n      </div>\\n      <p class=\\\"buy-access-block__tariff-text\\\">\\n        Recurring every 30 days\\n      </p>\\n      <a href=\\\"\\\" class=\\\"btn btn--pink btn--classic btn--full-xs\\\">JOIN NOW</a>\\n    </div>\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/buyAccessBlock.html?");
 
 /***/ }),
 
@@ -60,6 +60,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 
 /***/ }),
 
+/***/ "./assets/images/4-41341_brown-eyes-clipart-google-eyes-grey-eyes-clip 1.png":
+/*!***********************************************************************************!*\
+  !*** ./assets/images/4-41341_brown-eyes-clipart-google-eyes-grey-eyes-clip 1.png ***!
+  \***********************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/4-41341_brown-eyes-clipart-google-eyes-grey-eyes-clip 1.png\";\n\n//# sourceURL=webpack:///./assets/images/4-41341_brown-eyes-clipart-google-eyes-grey-eyes-clip_1.png?");
+
+/***/ }),
+
 /***/ "./assets/images/LBG_logo.png":
 /*!************************************!*\
   !*** ./assets/images/LBG_logo.png ***!
@@ -87,6 +97,26 @@ eval("module.exports = __webpack_require__.p + \"images/asacp.png\";\n\n//# sour
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"images/award.png\";\n\n//# sourceURL=webpack:///./assets/images/award.png?");
+
+/***/ }),
+
+/***/ "./assets/images/crown1 1.png":
+/*!************************************!*\
+  !*** ./assets/images/crown1 1.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/crown1 1.png\";\n\n//# sourceURL=webpack:///./assets/images/crown1_1.png?");
+
+/***/ }),
+
+/***/ "./assets/images/crown2 1.png":
+/*!************************************!*\
+  !*** ./assets/images/crown2 1.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/crown2 1.png\";\n\n//# sourceURL=webpack:///./assets/images/crown2_1.png?");
 
 /***/ }),
 
