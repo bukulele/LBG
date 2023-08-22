@@ -369,7 +369,8 @@ input[class~="btn--yellow"] {
 .restore-block,
 .profile-settings-block,
 .tour-block,
-.buy-access-block {
+.buy-access-block,
+.buy-access-banner {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
@@ -404,7 +405,8 @@ input[class~="btn--yellow"] {
 .restore-block__container,
 .profile-settings-block__container,
 .tour-block__container,
-.buy-access-block__container {
+.buy-access-block__container,
+.buy-access-banner__container {
     width: 100%;
     margin: auto;
     display: flex;
@@ -925,6 +927,20 @@ a[class~='tour-banner__container'] {
 .tour-banner__image-text-container img {
     width: 90%;
     height: auto;
+}
+.buy-access-banner__container {
+    width: 360px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #1D1E20;
+}
+.buy-access-banner__group {
+
+}
+.buy-access-banner__half img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
 }
 /*TIMER BLOCK*/
 .timer-block__timer-container {

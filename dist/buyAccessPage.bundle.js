@@ -10,6 +10,26 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/banner5.html":
+/*!*************************************!*\
+  !*** ./src/components/banner5.html ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/temp/buy_access_image.png */ \"./assets/temp/buy_access_image.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar code = \"<div class=\\\"buy-access-banner__container\\\">\\n    <div class=\\\"buy-access-banner__group\\\">\\n        <div class=\\\"buy-access-banner__half\\\">\\n            <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\" alt=\\\"\\\">\\n        </div>\\n        <div class=\\\"buy-access-banner__half\\\">\\n            <!--      BENEFITS BANNER RENDER HERE-->\\n        </div>\\n    </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/banner5.html?");
+
+/***/ }),
+
+/***/ "./src/components/benefitsBanner.html":
+/*!********************************************!*\
+  !*** ./src/components/benefitsBanner.html ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"benefits-banner__container\\\">\\n  <p class=\\\"benefits-banner__header\\\"></p>\\n  <ul class=\\\"benefits-banner__list\\\">\\n    <li>100% Exclusive Content</li>\\n    <li>Real amateur girls</li>\\n    <li>Members submit video ideas</li>\\n    <li>High Quality</li>\\n    <li>Regular Updates</li>\\n    <li>Access to bonus content</li>\\n  </ul>\\n  <p class=\\\"benefits-banner__text\\\">Not your typical pornstars that you see everywhere, but your average everyday next door girls!</p>\\n  <p class=\\\"benefits-banner__promo\\\">24/7 Support Day and Night</p>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/benefitsBanner.html?");
+
+/***/ }),
+
 /***/ "./src/components/buyAccessBlock.html":
 /*!********************************************!*\
   !*** ./src/components/buyAccessBlock.html ***!
@@ -56,7 +76,7 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_buyAccessBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/buyAccessBlock.html */ \"./src/components/buyAccessBlock.html\");\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('buyAccessBlock').innerHTML = _components_buyAccessBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/buyAccessPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_buyAccessBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/buyAccessBlock.html */ \"./src/components/buyAccessBlock.html\");\n/* harmony import */ var _components_banner5_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner5.html */ \"./src/components/banner5.html\");\n/* harmony import */ var _components_benefitsBanner_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/benefitsBanner.html */ \"./src/components/benefitsBanner.html\");\n\n\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('buyAccessBlock').innerHTML = _components_buyAccessBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\ndocument.getElementById('banner_5').innerHTML = _components_banner5_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\ndocument.querySelector('#banner_5 .buy-access-banner__half:nth-of-type(2)').innerHTML = _components_benefitsBanner_html__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/buyAccessPage.js?");
 
 /***/ }),
 
@@ -257,6 +277,16 @@ eval("module.exports = __webpack_require__.p + \"images/vice.png\";\n\n//# sourc
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"images/visa.png\";\n\n//# sourceURL=webpack:///./assets/images/visa.png?");
+
+/***/ }),
+
+/***/ "./assets/temp/buy_access_image.png":
+/*!******************************************!*\
+  !*** ./assets/temp/buy_access_image.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/buy_access_image.png\";\n\n//# sourceURL=webpack:///./assets/temp/buy_access_image.png?");
 
 /***/ })
 
