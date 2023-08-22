@@ -2541,6 +2541,22 @@ div[data-icon] {
     .tour-banner__text {
         font-size: 20px;
     }
+    .buy-access-block__container,
+    .payment-options-banner__container,
+    .buy-access-banner__container {
+        width: 1100px;
+    }
+    .buy-access-block__tariff-plans {
+        flex-direction: row;
+    }
+    .buy-access-banner__container {
+        padding: 30px;
+    }
+    .buy-access-banner__group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
 }
 
 @media only screen and (min-width: 1275px) {
@@ -2591,6 +2607,9 @@ div[data-icon] {
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
+    }
+    .buy-access-block__container {
+        gap: 30px;
     }
 }
 
@@ -2806,6 +2825,48 @@ div[data-icon] {
     .tour-banner__header,
     .tour-banner__text {
         font-size: 32px;
+    }
+    .buy-access-block__container,
+    .payment-options-banner__container,
+    .buy-access-banner__container {
+        width: 1400px;
+    }
+    .buy-access-block__container {
+        gap: 50px;
+    }
+    .buy-access-block__secure-text {
+        font-size: 32px;
+    }
+    .buy-access-block__event {
+        padding: 30px;
+    }
+    .buy-access-block__event p {
+        font-size: 32px;
+    }
+    .buy-access-block__tariff-plans {
+        justify-content: space-between;
+    }
+    .buy-access-block__tariff {
+        width: 450px;
+        gap: 20px;
+    }
+    .buy-access-block__tariff-header {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .buy-access-block__icon-container {
+        height: 138px;
+        width: auto;
+    }
+    .buy-access-block__tariff-header p {
+        font-size: 24px;
+    }
+    .buy-access-block__tariff-offer {
+        padding: 15px 0 19px;
+    }
+    .buy-access-block__text {
+        font-size: 24px;
     }
 }
 
