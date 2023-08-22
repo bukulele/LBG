@@ -936,6 +936,10 @@ a[class~='tour-banner__container'] {
     border-radius: 30px;
     background-color: #1D1E20;
 }
+.buy-access-banner__half {
+    display: flex;
+    align-items: center;
+}
 .buy-access-banner__half img {
     width: 100%;
     height: auto;
