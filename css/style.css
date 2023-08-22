@@ -2008,6 +2008,7 @@ div[data-icon] {
     gap: 20px;
 }
 .buy-access-block__tariff {
+    position: relative;
     width: 100%;
     border-radius: 30px;
     padding: 25px 20px;
@@ -2867,6 +2868,15 @@ div[data-icon] {
     }
     .buy-access-block__text {
         font-size: 24px;
+    }
+    .buy-access-block__tariff--best::before {
+        position: absolute;
+        content: "";
+        background: left / contain no-repeat url("../assets/images/best-value.png");
+        height: 145px;
+        width: 155px;
+        left: 0;
+        top: 20px;
     }
 }
 
