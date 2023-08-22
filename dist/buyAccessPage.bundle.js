@@ -60,6 +60,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/paymentOptionsBanner.html":
+/*!**************************************************!*\
+  !*** ./src/components/paymentOptionsBanner.html ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/mastercard-1.png */ \"./assets/images/mastercard-1.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/visa-1.png */ \"./assets/images/visa-1.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);\nvar code = \"<div class=\\\"payment-options-banner__container\\\">\\n    <h3>payment options</h3>\\n    <div class=\\\"payment-options-banner__icons-container\\\">\\n        <div class=\\\"payment-options-banner__icon\\\">\\n            <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\" alt=\\\"\\\">\\n        </div>\\n        <div class=\\\"payment-options-banner__icon\\\">\\n            <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_1___ + \"\\\" alt=\\\"\\\">\\n        </div>\\n    </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/paymentOptionsBanner.html?");
+
+/***/ }),
+
 /***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
 /*!*********************************************************!*\
   !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
@@ -76,7 +86,7 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_buyAccessBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/buyAccessBlock.html */ \"./src/components/buyAccessBlock.html\");\n/* harmony import */ var _components_banner5_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner5.html */ \"./src/components/banner5.html\");\n/* harmony import */ var _components_benefitsBanner_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/benefitsBanner.html */ \"./src/components/benefitsBanner.html\");\n\n\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('buyAccessBlock').innerHTML = _components_buyAccessBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\ndocument.getElementById('banner_5').innerHTML = _components_banner5_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\ndocument.querySelector('#banner_5 .buy-access-banner__half:nth-of-type(2)').innerHTML = _components_benefitsBanner_html__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/buyAccessPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/navbar.html */ \"./src/components/navbar.html\");\n/* harmony import */ var _components_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer.html */ \"./src/components/footer.html\");\n/* harmony import */ var _components_buyAccessBlock_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/buyAccessBlock.html */ \"./src/components/buyAccessBlock.html\");\n/* harmony import */ var _components_banner5_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/banner5.html */ \"./src/components/banner5.html\");\n/* harmony import */ var _components_benefitsBanner_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/benefitsBanner.html */ \"./src/components/benefitsBanner.html\");\n/* harmony import */ var _components_paymentOptionsBanner_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/paymentOptionsBanner.html */ \"./src/components/paymentOptionsBanner.html\");\n\n\n\n\n\n\n\ndocument.getElementById('navbar').innerHTML = _components_navbar_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\ndocument.getElementById('footer').innerHTML = _components_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('buyAccessBlock').innerHTML = _components_buyAccessBlock_html__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\ndocument.getElementById('banner_5').innerHTML = _components_banner5_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\ndocument.getElementById('paymentOptions').innerHTML = _components_paymentOptionsBanner_html__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\n\ndocument.querySelector('#banner_5 .buy-access-banner__half:nth-of-type(2)').innerHTML = _components_benefitsBanner_html__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\n\n\n//# sourceURL=webpack:///./src/buyAccessPage.js?");
 
 /***/ }),
 
@@ -190,6 +200,16 @@ eval("module.exports = __webpack_require__.p + \"images/laweekly.png\";\n\n//# s
 
 /***/ }),
 
+/***/ "./assets/images/mastercard-1.png":
+/*!****************************************!*\
+  !*** ./assets/images/mastercard-1.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/mastercard-1.png\";\n\n//# sourceURL=webpack:///./assets/images/mastercard-1.png?");
+
+/***/ }),
+
 /***/ "./assets/images/mastercard.png":
 /*!**************************************!*\
   !*** ./assets/images/mastercard.png ***!
@@ -267,6 +287,16 @@ eval("module.exports = __webpack_require__.p + \"images/the_washington_post.png\
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"images/vice.png\";\n\n//# sourceURL=webpack:///./assets/images/vice.png?");
+
+/***/ }),
+
+/***/ "./assets/images/visa-1.png":
+/*!**********************************!*\
+  !*** ./assets/images/visa-1.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/visa-1.png\";\n\n//# sourceURL=webpack:///./assets/images/visa-1.png?");
 
 /***/ }),
 

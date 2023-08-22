@@ -370,7 +370,9 @@ input[class~="btn--yellow"] {
 .profile-settings-block,
 .tour-block,
 .buy-access-block,
-.buy-access-banner {
+.buy-access-banner,
+.payment-options-block,
+.payment-options-banner {
     background-color: #25272A;
     padding-bottom: 50px;
     width: 100%;
@@ -934,13 +936,36 @@ a[class~='tour-banner__container'] {
     border-radius: 30px;
     background-color: #1D1E20;
 }
-.buy-access-banner__group {
-
-}
 .buy-access-banner__half img {
     width: 100%;
     height: auto;
     border-radius: 30px;
+}
+.payment-options-banner__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 360px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #1D1E20;
+    margin: auto;
+}
+.payment-options-banner__icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 60px;
+}
+.payment-options-banner__icon {
+    height: 100%;
+}
+.payment-options-banner__icon img {
+    height: 100%;
+    width: auto;
 }
 /*TIMER BLOCK*/
 .timer-block__timer-container {
