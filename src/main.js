@@ -7,6 +7,9 @@ import banner from './components/banner.html';
 import banner2 from './components/banner2.html';
 import timerBlock from './components/timerBlock.html';
 import mainVideoBlock from './components/mainVideoBlock.html';
+import memberButtonSide from './components/memberButtonSide.html';
+import memberButton from './components/memberButton.html';
+import loginJoinButtons from './components/logInJoinButtons.html';
 
 document.getElementById('navbar').innerHTML = navbar;
 document.getElementById('footer').innerHTML = footer;
@@ -25,3 +28,12 @@ sliderBlock1.querySelector('.slider-block__container h2').innerHTML = 'OUR LOST 
 sliderBlock2.querySelector('.slider-block__container h2').innerHTML = 'OUR LOST BETS PUNISHMENTS';
 
 document.querySelector('.videos-block__container h2').innerHTML = 'HOTTEST AND FRESHEST VIDEO';
+
+if (sessionStorage.getItem('auth') === 'true') {
+  document.querySelector('#navbar .links-container__user-buttons').innerHTML = memberButtonSide;
+  document.querySelector('#navbar .navbar__user-buttons').innerHTML = memberButton;
+} else {
+  document.querySelector('#navbar .links-container__user-buttons').innerHTML = loginJoinButtons;
+  document.querySelector('#navbar .navbar__user-buttons').innerHTML = loginJoinButtons;
+  document.querySelector('#navbar .navbar__user-buttons .join-now-button').classList.add('btn--mobile-small');
+}

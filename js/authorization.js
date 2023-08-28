@@ -3,9 +3,11 @@ let authorizationForm = document.querySelector('.auth-block__form');
 function handleFormSubmission (event) {
   event.preventDefault();
 
+  // DELETE FROM HERE
   if (authorizationForm.login.value === 'qwe' && authorizationForm.password.value === 'rty') {
-    localStorage.setItem('auth', 'true');
+    sessionStorage.setItem('auth', 'true');
   }
+//   DELETE TO HERE
 }
 
 
