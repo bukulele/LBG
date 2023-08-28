@@ -16,7 +16,7 @@
   \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"tour-banner__container tour-banner__container--padding\\\">\\n    <p class=\\\"tour-banner__header\\\">They play and get punished! <br>It's realistic!</p>\\n    <p class=\\\"tour-banner__text\\\">Buy access and enjoy exclusive video content!</p>\\n    <a href=\\\"\\\" class=\\\"btn btn--classic btn--mobile-small btn--pink join-now-button\\\">JOIN NOW</a>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/banner3.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"tour-banner__container tour-banner__container--padding\\\">\\n    <p class=\\\"tour-banner__header\\\">They play and get punished! <br>It's realistic!</p>\\n    <p class=\\\"tour-banner__text\\\">Buy access and enjoy exclusive video content!</p>\\n    <a href=\\\"buyAccess.html\\\" class=\\\"btn btn--classic btn--mobile-small btn--pink join-now-button\\\">JOIN NOW</a>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/banner3.html?");
 
 /***/ }),
 
