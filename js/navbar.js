@@ -66,3 +66,17 @@ document.addEventListener('click', hideNavigationMenu);
 
 if (memberButtonSide) memberButtonSide.addEventListener('click', toggleMemberLinks);
 if (memberButton) memberButton.addEventListener('click', showUserMenu);
+
+//DELETE FROM HERE
+
+function logOut(event) {
+  if (event.target.className.includes('log-out-button')) {
+    event.preventDefault();
+    sessionStorage.setItem('auth', 'false');
+    window.location.href = '/LBG/index.html';
+  }
+}
+
+document.addEventListener('click', logOut);
+
+//DELETE TO HERE
