@@ -27,6 +27,7 @@ function hideNavigationMenu(event) {
     memberZoneContainer.style.removeProperty('top');
     memberZoneContainer.classList.remove('navbar__member-zone-container--visible');
     memberZoneContainer.classList.add('navbar__member-zone-container--hidden');
+    if (memberButton) memberButton.addEventListener('click', showUserMenu);
   }
 
 }
@@ -56,6 +57,7 @@ function showUserMenu (event) {
     memberZoneContainer.classList.remove('navbar__member-zone-container--hidden');
     memberZoneContainer.classList.add('navbar__member-zone-container--visible');
     memberZoneContainer.style.top = `${navBarHeight}px`;
+    memberButton.removeEventListener('click', showUserMenu);
   }
 }
 
