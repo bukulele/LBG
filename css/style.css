@@ -2782,7 +2782,8 @@ div[data-icon] {
         height: 100%;
     }
     .auth-block__form,
-    .write-us-block__form {
+    .write-us-block__form,
+    .restore-block__form {
         max-width: 421px;
     }
     .benefits-banner__container {
