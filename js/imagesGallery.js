@@ -16,4 +16,11 @@ function openImageGallery(event) {
   }
 }
 
+function closeImageGallery(event) {
+  if (event.target.className === 'images-gallery-block__container') {
+    imagesGalleryBlock.style.display = 'none';
+  }
+}
+
 document.addEventListener('click', openImageGallery);
+document.addEventListener('click', closeImageGallery);
