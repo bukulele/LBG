@@ -10,6 +10,7 @@ import mainVideoBlock from './components/mainVideoBlock.html';
 import memberButtonSide from './components/memberButtonSide.html';
 import memberButton from './components/memberButton.html';
 import loginJoinButtons from './components/logInJoinButtons.html';
+import imagesGalleryBlock from './components/imagesGalleryBlock.html';
 
 document.getElementById('navbar').innerHTML = navbar;
 document.getElementById('footer').innerHTML = footer;
@@ -21,6 +22,7 @@ document.getElementById('modelsBlock').innerHTML = modelsBlock;
 document.getElementById('banner_1').innerHTML = banner;
 document.getElementById('banner_2').innerHTML = banner2;
 document.getElementById('timerBlock').innerHTML = timerBlock;
+document.getElementById('imagesGalleryBlock').innerHTML = imagesGalleryBlock;
 
 sliderBlock1.innerHTML = sliderBlock;
 sliderBlock2.innerHTML = sliderBlock;

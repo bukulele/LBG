@@ -13,6 +13,8 @@ let screenshotsContainer = document.querySelector('.timer-block .timer-block__vi
 let mainVideoImage = document.createElement('img');
 mainVideoImage.src = image15;
 
+screenshotsContainer.setAttribute('data-gallery-images', JSON.stringify(screenshots));
+
 // mainVideoContainer.insertAdjacentElement('afterbegin', mainVideoImage);
 mainVideoContainer.insertAdjacentHTML('afterbegin', videoTitle);
 let title = mainVideoContainer.querySelector('.video-title__container');
