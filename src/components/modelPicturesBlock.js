@@ -12,6 +12,8 @@ import pictureTitle from "./pictureTitle.html";
 const pictures = [image26, image27, image28, image29, image30, image31, image32, image33];
 
 let picturesBlockTitles = document.getElementById('picturesBlockTitles');
+picturesBlockTitles.setAttribute('data-gallery-images', JSON.stringify(pictures));
+
 
 for (let picture of pictures) {
   picturesBlockTitles.insertAdjacentHTML('beforeend', pictureTitle);

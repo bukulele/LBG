@@ -25,6 +25,7 @@ function fulfillScreenshots (elem, screenshots) {
   for (let screenshot of screenshots) {
     let imageElement = document.createElement('img');
     imageElement.src = screenshot;
+    imageElement.setAttribute('data-gallery-open-image', '');
     elem.insertAdjacentElement('beforeend', imageElement);
   }
 }
