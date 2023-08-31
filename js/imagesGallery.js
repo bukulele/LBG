@@ -22,5 +22,29 @@ function closeImageGallery(event) {
   }
 }
 
+function nextImage(event) {
+  if (event.target.className.includes('images-gallery-block__slide-right')) {
+    if (imageIndex === imagesList.length - 1) {
+      imageIndex = 0;
+    } else {
+      imageIndex += 1;
+    }
+    imageElement.src = imagesList[imageIndex];
+  }
+}
+
+function prevImage(event) {
+  if (event.target.className.includes('images-gallery-block__slide-left')) {
+    if (imageIndex === 0) {
+      imageIndex = imagesList.length - 1;
+    } else {
+      imageIndex -= 1;
+    }
+    imageElement.src = imagesList[imageIndex];
+  }
+}
+
 document.addEventListener('click', openImageGallery);
 document.addEventListener('click', closeImageGallery);
+document.addEventListener('click', nextImage);
+document.addEventListener('click', prevImage);
