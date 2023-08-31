@@ -19,6 +19,7 @@ for (let picture of pictures) {
   picturesBlockTitles.insertAdjacentHTML('beforeend', pictureTitle);
   let imageElement = document.createElement('img');
   imageElement.src = picture;
+  imageElement.setAttribute('data-gallery-open-image', '');
   let title = picturesBlockTitles.lastElementChild.querySelector('.picture-title__image');
   title.insertAdjacentElement('afterbegin', imageElement);
 }
