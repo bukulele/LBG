@@ -470,6 +470,7 @@ input[class~="btn--yellow"] {
 }
 .video-title__image,
 .video-title__video {
+    display: flex;
     width: 100%;
     height: 100%;
 }
@@ -2108,6 +2109,7 @@ div[data-icon] {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 9999;
 }
 .images-gallery-block__container {
     display: flex;
@@ -2118,6 +2120,7 @@ div[data-icon] {
     justify-content: center;
 }
 .images-gallery-block__image-container {
+    line-height: 0;
     position: relative;
     width: 80%;
     border: 3px solid #fff;
