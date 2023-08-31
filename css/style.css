@@ -2112,17 +2112,19 @@ div[data-icon] {
     z-index: 9999;
 }
 .images-gallery-block__container {
+    position: relative;
     display: flex;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 .images-gallery-block__image-container {
     line-height: 0;
-    position: relative;
-    width: 80%;
+    width: 75%;
     border: 3px solid #fff;
 }
 .images-gallery-block__image {
