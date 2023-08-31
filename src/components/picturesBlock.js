@@ -7,11 +7,14 @@ import pictureTitle from "./pictureTitle.html";
 const pictures = [image21, image22, image23, image24];
 
 let picturesBlockTitles = document.getElementById('picturesBlockTitles');
+picturesBlockTitles.setAttribute('data-gallery-images', JSON.stringify(pictures));
+
 
 for (let picture of pictures) {
   picturesBlockTitles.insertAdjacentHTML('beforeend', pictureTitle);
   let imageElement = document.createElement('img');
   imageElement.src = picture;
+  imageElement.setAttribute('data-gallery-open-image', '');
   let title = picturesBlockTitles.lastElementChild.querySelector('.picture-title__image');
   title.insertAdjacentElement('afterbegin', imageElement);
 }
