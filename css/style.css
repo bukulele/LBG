@@ -1606,7 +1606,7 @@ a[class~='tour-banner__container'] {
     gap: 20px;
 }
 .comments-block__comment[data-reply='true'] {
-    margin-left: 70px;
+    padding-left: 70px;
 }
 .comments-block__user {
     display: flex;

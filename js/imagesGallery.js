@@ -24,6 +24,7 @@ function closeImageGallery(event) {
 
 function nextImage(event) {
   if (event.target.className.includes('images-gallery-block__slide-right')) {
+    event.preventDefault();
     if (imageIndex === imagesList.length - 1) {
       imageIndex = 0;
     } else {
@@ -35,6 +36,7 @@ function nextImage(event) {
 
 function prevImage(event) {
   if (event.target.className.includes('images-gallery-block__slide-left')) {
+    event.preventDefault();
     if (imageIndex === 0) {
       imageIndex = imagesList.length - 1;
     } else {
