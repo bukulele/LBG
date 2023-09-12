@@ -1,12 +1,19 @@
 let videoContainer = document.querySelector('.watch-video-block__video-container');
-let videoContainerHeight = videoContainer.offsetHeight;
 let videoControlPanel = document.querySelector('.watch-video-block__control-panel');
-let windowWidth = window.innerWidth;
+let videoContainerHeight;
+let windowWidth;
 
-defineElementsDimensions();
+const resizeObserver = new ResizeObserver((entries) => {
 
-window.addEventListener('resize', defineElementsDimensions);
+  const entry = entries[0];
 
+  videoContainerHeight = entry.contentRect.height;
+  windowWidth = window.innerWidth;
+
+  setControlPanelMinHeight();
+});
+
+resizeObserver.observe(videoContainer);
 
 function setControlPanelMinHeight () {
   if (windowWidth >= 1510) {
@@ -14,9 +21,4 @@ function setControlPanelMinHeight () {
   } else {
     videoControlPanel.style.minHeight = 'fit-content';
   }
-}
-
-function defineElementsDimensions () {
-  windowWidth = window.innerWidth;
-  setControlPanelMinHeight();
 }
