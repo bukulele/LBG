@@ -1371,12 +1371,16 @@ a[class~='tour-banner__container'] {
     font-weight: 700;
 }
 .get-access__close {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 15px;
     height: 15px;
     color: #fff;
+}
+.get-access__close * {
+    pointer-events: none;
 }
 .get-access__close svg {
     width: 100%;

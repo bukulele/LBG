@@ -1,5 +1,7 @@
 let videoContainer = document.querySelector('.watch-video-block__video-container');
 let videoControlPanel = document.querySelector('.watch-video-block__control-panel');
+let getFullAccessBlock = videoContainer.querySelector('.video-container__get-access');
+let getFullAccessCloseButton = getFullAccessBlock.querySelector('.get-access__close');
 let videoContainerHeight;
 let windowWidth;
 
@@ -15,10 +17,16 @@ const resizeObserver = new ResizeObserver((entries) => {
 
 resizeObserver.observe(videoContainer);
 
+getFullAccessCloseButton.addEventListener('click', closeFullAccessBlock);
+
 function setControlPanelMinHeight () {
   if (windowWidth >= 1510) {
     videoControlPanel.style.minHeight = `${videoContainerHeight}px`;
   } else {
     videoControlPanel.style.minHeight = 'fit-content';
   }
+}
+
+function closeFullAccessBlock () {
+  getFullAccessBlock.style.display = 'none';
 }
