@@ -2147,10 +2147,16 @@ div[data-icon] {
     .btn--mobile-xs {
         height: 50px;
         padding: 0 30px;
-        font-size: inherit;
+        /*font-size: inherit;*/
     }
     .btn--full-xs {
         width: fit-content;
+    }
+    .btn--link {
+        font-size: 16px;
+    }
+    .btn--classic {
+        font-size: 20px;
     }
     .main-video-block__image,
     .main-video-block__video {
@@ -2730,9 +2736,9 @@ div[data-icon] {
     .terms-block__text {
         font-size: 16px;
     }
-    .btn--link {
-        font-size: 16px;
-    }
+    /*.btn--link {*/
+    /*    font-size: 16px;*/
+    /*}*/
     .watch-video-block__container {
         grid-template-columns: auto minmax(360px, 440px);
         grid-template-areas: "watchVideoContainer watchVideoControl"
