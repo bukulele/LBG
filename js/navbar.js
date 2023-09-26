@@ -14,13 +14,15 @@ if (memberButtonSide) memberButtonSideChevron = memberButtonSide.querySelector('
 if (memberButton) memberButtonChevron = memberButton.querySelector('.user-buttons__chevron');
 function showNavigationMenu() {
   navbarWrapper.classList.add('navbar__links-container-wrapper--show');
-  navbarLinksContainer.style.right = '0px';
+  navbarLinksContainer.classList.remove('navbar__links-container--hidden');
+  // navbarLinksContainer.style.right = '0px';
 }
 
 function hideNavigationMenu(event) {
   if (event.target.className.includes('navbar__close') || event.target.className.includes('navbar__links-container-wrapper')) {
     navbarWrapper.classList.remove('navbar__links-container-wrapper--show');
-    navbarLinksContainer.style.right = '-300px';
+    // navbarLinksContainer.style.right = '-300px';
+    navbarLinksContainer.classList.add('navbar__links-container--hidden');
   }
   if (memberZoneContainer.className.includes('navbar__member-zone-container--visible') && !event.target.closest('.navbar__member-zone-container')) {
     memberButtonChevron.style.removeProperty('transform');
