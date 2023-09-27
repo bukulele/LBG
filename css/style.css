@@ -84,12 +84,17 @@ h4 {
     cursor: pointer;
 }
 
-.btn--classic {
+.btn--classic,
+.btn--pink,
+.btn--member {
     border-radius: 6px;
-    gap: 5px;
+    gap: 10px;
     height: 50px;
     padding: 0 30px;
     font-weight: 700;
+    font-size: 15px;
+}
+.btn--member {
     font-size: 16px;
 }
 .btn--form {
@@ -141,6 +146,7 @@ h4 {
 }
 
 .btn--pink {
+    font-size: 16px;
     color: #fff;
     background: linear-gradient(180deg, #FA00FF 0%, #FF4F4F 100%), linear-gradient(180deg, #01D52F 0%, #00F335 100%);
 }
@@ -2155,7 +2161,7 @@ div[data-icon] {
     .btn--link {
         font-size: 16px;
     }
-    .btn--classic {
+    .btn--pink {
         font-size: 20px;
     }
     .main-video-block__image,
