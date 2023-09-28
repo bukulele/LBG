@@ -131,9 +131,9 @@ h4 {
 }
 
 .btn--mobile-xs {
-    height: 34px;
-    padding: 10px;
-    font-size: 14px;
+    height: 36px;
+    padding: 8px 10px;
+    font-size: 15px;
 }
 
 .btn--red {
@@ -171,7 +171,7 @@ input[class~="btn--yellow"] {
     background: linear-gradient(0deg, #FBFF31, #FBFF31), #8C171E;
 }
 
-.btn--yellow .icon-container {
+.btn--yellow svg {
     color: #6C060C;
 }
 
@@ -237,11 +237,6 @@ input[class~="btn--yellow"] {
 }
 .btn--framed span {
     color: rgba(255, 255, 255, 0.5);
-}
-.icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .banner-block__chevrons svg {
     height: 10px;
@@ -796,8 +791,9 @@ input[class~="btn--yellow"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 18px;
 }
 
 .footer__links li {
@@ -822,6 +818,28 @@ input[class~="btn--yellow"] {
 .social__networks a:hover {
     color: #F3B700;
 }
+.social__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+.social__icon-container svg {
+    width: 100%;
+    height: 100%;
+}
+.footer__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+}
+.footer__icon-container svg {
+    width: 100%;
+    height: 100%;
+}
 .footer__social {
     display: grid;
     grid-template-columns: 100%;
@@ -835,7 +853,7 @@ input[class~="btn--yellow"] {
 .social__disclaimer {
     grid-area: socialDiscaimer;
     display: flex;
-    gap: 10px;
+    gap: 11px;
     justify-content: flex-start;
     align-items: center;
 }
