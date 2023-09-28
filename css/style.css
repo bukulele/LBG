@@ -2759,9 +2759,6 @@ div[data-icon] {
     h2 {
         font-size: 30px;
     }
-    #memberButton {
-        display: flex;
-    }
 
     .navbar {
         height: 90px;
@@ -3147,6 +3144,9 @@ div[data-icon] {
 
     .navbar__hamburger {
         display: none;
+    }
+    #memberButton {
+        display: flex;
     }
     .footer__upper {
         grid-template-columns: 1fr min-content 1fr;
