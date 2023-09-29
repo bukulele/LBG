@@ -85,7 +85,7 @@ h4 {
 }
 
 .btn--classic,
-.btn--pink,
+.btn--promo,
 .btn--member {
     border-radius: 6px;
     gap: 10px;
@@ -93,6 +93,12 @@ h4 {
     padding: 0 30px;
     font-weight: 700;
     font-size: 15px;
+}
+.btn--promo {
+    font-size: 16px;
+}
+.btn--promo-lg {
+    font-size: 20px;
 }
 .btn--member {
     font-size: 16px;
@@ -146,7 +152,6 @@ h4 {
 }
 
 .btn--pink {
-    font-size: 16px;
     color: #fff;
     background: linear-gradient(180deg, #FA00FF 0%, #FF4F4F 100%), linear-gradient(180deg, #01D52F 0%, #00F335 100%);
 }
@@ -760,6 +765,7 @@ input[class~="btn--yellow"] {
 .upper__footer-benefits li {
     list-style: none;
     font-weight: 500;
+    line-height: 22px;
 }
 .upper__footer-benefits li::before {
     content: "\2022";
@@ -770,7 +776,7 @@ input[class~="btn--yellow"] {
 }
 .upper__footer-award {
     /*margin: 10px 0;*/
-    width: fit-content;
+    width: 208px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2854,7 +2860,7 @@ div[data-icon] {
     .btn--link {
         font-size: 16px;
     }
-    .btn--pink {
+    .btn--promo {
         font-size: 20px;
     }
     .main-video-block__image,
