@@ -686,12 +686,14 @@ input[class~="btn--yellow"] {
       "footerText"
       "footerBenefits"
       "footerAward";
-    width: 100%;
-    max-width: 1400px;
-    padding: 0 25px 80px;
-    row-gap: 20px;
+    /*width: 100%;*/
+    /*max-width: 1400px;*/
+    /*padding: 0 25px 80px;*/
+    width: 360px;
+    /*row-gap: 20px;*/
     column-gap: 60px;
     place-items: center;
+    padding-bottom: 80px;
 }
 .upper__footer-futured {
     grid-area: footerFutured;
@@ -707,7 +709,7 @@ input[class~="btn--yellow"] {
     height: auto !important;
 }
 .footer-futured__logos {
-    padding: 0 40px 40px 40px;
+    /*padding: 0 40px 40px 40px;*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -743,15 +745,17 @@ input[class~="btn--yellow"] {
     align-items: center;
     width: fit-content;
     color: #fff;
+    gap: 10px;
 }
 .upper__footer-benefits h4 {
     text-align: center;
     text-transform: uppercase;
     color: #FFC30A;
+    margin-top: 20px;
 }
 .upper__footer-benefits ul {
     font-size: 14px;
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
 }
 .upper__footer-benefits li {
     list-style: none;
@@ -765,12 +769,13 @@ input[class~="btn--yellow"] {
     width: 1em;
 }
 .upper__footer-award {
-    margin: 10px 0;
+    /*margin: 10px 0;*/
     width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    margin-top: 35px;
 }
 .footer__lower {
     display: flex;
