@@ -783,6 +783,10 @@ input[class~="btn--yellow"] {
     gap: 27px;
     margin-top: 35px;
 }
+.upper__footer-award img {
+    width: 110px;
+    height: auto;
+}
 .footer__lower {
     display: flex;
     flex-direction: column;
@@ -2842,6 +2846,31 @@ div[data-icon] {
     .upper__footer-benefits {
         align-items: flex-start;
     }
+    .upper__footer-award {
+        justify-self: start;
+        align-self: start;
+    }
+    .upper__footer-award img {
+        width: 155px;
+    }
+    .upper__footer-benefits {
+        justify-self: end;
+    }
+    .upper__footer-benefits h4 {
+        margin-top: 35px;
+    }
+    .footer__lower {
+        padding: 0 30px 50px;
+    }
+    .footer__navigation-container {
+        width: 100%;
+        max-width: 853px;
+    }
+    .footer__links {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 18px;
+    }
     .footer-futured__logos img {
         width: 15%;
         height: auto;
@@ -2851,9 +2880,30 @@ div[data-icon] {
         grid-template-rows: repeat(2, auto);
         grid-template-areas: "socialDiscaimer socialDiscaimer"
         "socialLinks socialNetworks";
+        row-gap: 20px;
+        column-gap: 35px;
+        width: 100%;
+        max-width: 1400px;
+    }
+    .social__disclaimer,
+    .social__links {
+        margin: 0;
+    }
+    .social__links {
+        justify-self: end;
+        gap: 35px;
     }
     .social__disclaimer > p {
         white-space: nowrap;
+    }
+    .social__networks {
+        justify-self: start;
+    }
+    .footer__rights {
+        gap: 35px;
+    }
+    .footer__partners {
+        gap: 22px;
     }
     .main {
         margin-top: 90px;
