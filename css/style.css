@@ -774,7 +774,7 @@ input[class~="btn--yellow"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 27px;
     margin-top: 35px;
 }
 .footer__lower {
