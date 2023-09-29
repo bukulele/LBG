@@ -27,7 +27,7 @@ html, body, button {
     padding: 0;
 }
 
-h2 {
+h2, h3 {
     font-weight: 800;
     font-size: 20px;
     color: #fff;
@@ -35,12 +35,12 @@ h2 {
     margin-top: 50px;
     text-align: center;
 }
-h3 {
-    font-weight: 800;
-    font-size: 20px;
-    color: #fff;
-    text-transform: uppercase;
-}
+/*h3 {*/
+/*    font-weight: 800;*/
+/*    font-size: 20px;*/
+/*    color: #fff;*/
+/*    text-transform: uppercase;*/
+/*}*/
 
 h4 {
     font-weight: 800;
@@ -734,10 +734,10 @@ input[class~="btn--yellow"] {
     width: fit-content;
     color: #fff;
 }
-.upper__footer-text h3 {
-    text-align: center;
-    text-transform: uppercase;
-}
+/*.upper__footer-text h3 {*/
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+/*}*/
 .upper__footer-text p {
     text-align: justify;
     font-size: 14px;
@@ -2801,7 +2801,11 @@ div[data-icon] {
     h2 {
         font-size: 30px;
     }
-
+    h3 {
+        font-size: 25px;
+        text-align: start;
+        margin-top: 60px;
+    }
     .navbar {
         height: 90px;
     }
@@ -2828,6 +2832,12 @@ div[data-icon] {
         "footerFutured footerFutured"
         "footerText footerText"
         "footerAward footerBenefits";
+        width: 100%;
+        max-width: 1400px;
+        padding: 10px 30px 61px;
+    }
+    .upper__footer-text {
+        align-items: start;
     }
     .upper__footer-benefits {
         align-items: flex-start;
