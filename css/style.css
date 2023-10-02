@@ -188,8 +188,8 @@ input[class~="btn--yellow"] {
     font-size: 25px;
     color: #fff;
     font-weight: 800;
-    padding: 0 30px;
-    gap: 20px;
+    padding: 0 20px;
+    gap: 15px;
 }
 .btn--banner p span {
     color: #FFC30A;
@@ -3012,14 +3012,14 @@ div[data-icon] {
         font-size: 12px;
     }
     .btn--banner {
-        min-height: 40px;
-        font-size: 18px;
+        height: 60px;
+        font-size: 30px;
         padding: 0 20px;
         align-self: center;
     }
     .banner-block__chevrons svg {
-        height: 9px;
-        width: 18px;
+        height: 15px;
+        width: 30px;
     }
     .banner-block__content--vertical-s {
         flex-direction: row;
@@ -3301,19 +3301,19 @@ div[data-icon] {
         aspect-ratio: 340/188;
     }
 
-    .btn--banner {
-        min-height: 50px;
-        font-size: 25px;
-    }
+    /*.btn--banner {*/
+    /*    min-height: 50px;*/
+    /*    font-size: 25px;*/
+    /*}*/
 
     .banner-block__description {
         font-size: 15px;
     }
 
-    .banner-block__chevrons svg {
-        height: 10px;
-        width: 20px;
-    }
+    /*.banner-block__chevrons svg {*/
+    /*    height: 10px;*/
+    /*    width: 20px;*/
+    /*}*/
 
     .banner-block__content--padding-small {
         padding: 5px 10px;
@@ -3575,8 +3575,15 @@ div[data-icon] {
     .btn--link-g {
         font-size: 16px;
     }
+    .btn--banner {
+        height: 82px;
+        font-size: 40px;
+        padding: 0 30px;
+        gap: 20px;
+    }
     .main-video-block__over {
         padding: 60px 10px;
+        gap: 42px;
     }
     .models-block__titles {
         column-gap: 30px;
@@ -3843,12 +3850,12 @@ div[data-icon] {
     .navbar__user-buttons {
         gap: 38px;
     }
-    .btn--banner {
-        min-height: 82px;
-        font-size: 40px;
-        padding: 0 30px;
-        align-self: center;
-    }
+    /*.btn--banner {*/
+    /*    min-height: 82px;*/
+    /*    font-size: 40px;*/
+    /*    padding: 0 30px;*/
+    /*    align-self: center;*/
+    /*}*/
     .banner-block__chevrons svg {
         height: 20px;
         width: 40px;
