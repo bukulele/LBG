@@ -708,6 +708,7 @@ input[class~="btn--yellow"] {
     gap: 20px;
     visibility: hidden;
     height: 0;
+    width: 100%;
 }
 .home-page .upper__footer-futured {
     visibility: visible !important;
@@ -720,6 +721,8 @@ input[class~="btn--yellow"] {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    /*width: 100%;*/
+    max-width: 1302px;
 }
 .footer-futured__logos img {
     width: 20%;
@@ -2804,6 +2807,7 @@ div[data-icon] {
 @media only screen and (min-width: 768px) {
     h2 {
         font-size: 30px;
+        margin-top: 60px;
     }
     h3 {
         font-size: 25px;
@@ -2837,8 +2841,8 @@ div[data-icon] {
         "footerText footerText"
         "footerAward footerBenefits";
         width: 100%;
-        max-width: 1400px;
-        padding: 10px 30px 61px;
+        max-width: 1460px;
+        padding: 0 30px 61px;
     }
     .upper__footer-text {
         align-items: start;
@@ -2883,7 +2887,7 @@ div[data-icon] {
         row-gap: 20px;
         column-gap: 35px;
         width: 100%;
-        max-width: 1400px;
+        /*max-width: 1400px;*/
     }
     .social__disclaimer,
     .social__links {
@@ -3470,10 +3474,20 @@ div[data-icon] {
     .navbar__search {
         max-width: 394px;
     }
+    .upper__footer-futured {
+        gap: 41px;
+    }
+    .footer__lower {
+        gap: 35px;
+    }
     .footer__social {
         grid-template-columns: auto auto auto;
         grid-template-rows: 100%;
         grid-template-areas: "socialDiscaimer socialLinks socialNetworks";
+        width: auto;
+    }
+    .footer__links a {
+        gap: 10px;
     }
     .videos-block,
     .models-block,
