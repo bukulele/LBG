@@ -726,6 +726,7 @@ input[class~="btn--yellow"] {
 }
 .footer-futured__logos img {
     width: 20%;
+    max-width: max-content;
     height: auto;
 }
 .upper__footer-text {
@@ -3506,6 +3507,9 @@ div[data-icon] {
     }
     .footer__links a {
         gap: 10px;
+    }
+    .footer-futured__logos img {
+        width: 20%;
     }
     .videos-block,
     .models-block,
