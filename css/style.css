@@ -3464,6 +3464,10 @@ div[data-icon] {
     h2 {
         font-size: 40px;
     }
+    h3 {
+        font-size: 32px;
+        margin-top: 27px;
+    }
     /*.navbar__container {*/
     /*  padding: 0 20px;*/
     /*}*/
@@ -3474,8 +3478,22 @@ div[data-icon] {
     .navbar__search {
         max-width: 394px;
     }
+    .footer__upper {
+        row-gap: 60px;
+        place-items: start;
+        padding-bottom: 120px;
+    }
     .upper__footer-futured {
         gap: 41px;
+    }
+    .upper__footer-award {
+        margin-top: 27px;
+    }
+    .upper__footer-benefits {
+        justify-self: center;
+    }
+    .upper__footer-benefits h4 {
+        margin-top: 27px;
     }
     .footer__lower {
         gap: 35px;
@@ -3547,9 +3565,9 @@ div[data-icon] {
 }
 
 @media only screen and (min-width: 1510px) {
-    h3 {
-        font-size: 30px;
-    }
+    /*h3 {*/
+    /*    font-size: 30px;*/
+    /*}*/
     .btn--link-g {
         font-size: 16px;
     }
