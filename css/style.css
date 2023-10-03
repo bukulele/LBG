@@ -966,7 +966,7 @@ input[class~="btn--yellow"] {
     left: 0;
     width: 100%;
     height: 100%;
-    max-height: 90vh;
+    /*max-height: 90vh;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3257,6 +3257,19 @@ div[data-icon] {
     /*}*/
     h3 {
         margin-top: 35px;
+    }
+    .main-video-block {
+        height: calc(100vh - 90px);
+    }
+    .main-video-block__image,
+    .main-video-block__video {
+        height: 100%;
+    }
+    .main-video-block__image img,
+    .main-video-block__video video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     .footer__upper {
         grid-template-columns: 1fr min-content 1fr;

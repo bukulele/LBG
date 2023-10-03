@@ -21,7 +21,7 @@ function handleImageLoading () {
   videoElement.play()
     .then(() => {
       mainImageContainer.style.display = 'none';
-      mainVideoContainer.style.display = 'block';
+      mainVideoContainer.style.display = 'flex';
       muteButton.style.display = 'block';
     })
     .catch(e => {
