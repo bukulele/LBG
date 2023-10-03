@@ -3183,7 +3183,99 @@ div[data-icon] {
     }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
+    /*.navbar__container {*/
+    /*    !*padding: 0 10px;*!*/
+    /*    display: grid;*/
+    /*    grid-template-columns: auto minmax(min-content, 100%) auto;*/
+    /*    grid-template-rows: 100%;*/
+    /*}*/
+
+    /*.navbar__logo img {*/
+    /*    width: 100%;*/
+    /*    object-fit: contain;*/
+    /*    object-position: left;*/
+    /*}*/
+
+    /*!*.navbar__user-buttons {*!*/
+    /*!*  gap: 20px;*!*/
+    /*!*}*!*/
+    /*.navbar__links-container {*/
+    /*    gap: 10px;*/
+    /*}*/
+
+    /*.navbar__links-container--device-position {*/
+    /*    position: relative;*/
+    /*    flex-direction: row;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*    width: 100% !important;*/
+    /*    right: unset !important;*/
+    /*    height: 100% !important;*/
+    /*    padding: 0 30px 0 0;*/
+    /*}*/
+
+    /*.navbar__links-container--background-set {*/
+    /*    background: transparent;*/
+    /*}*/
+
+    /*.navbar__search {*/
+    /*    margin: 0;*/
+    /*    max-width: 300px;*/
+    /*}*/
+
+    /*.navbar__close {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.navbar__links-container-wrapper {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.navbar__links {*/
+    /*    flex-direction: row;*/
+    /*    gap: 10px;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*    width: auto;*/
+    /*    height: 100%;*/
+    /*}*/
+
+    /*.links-container__member-links {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.links-container__user-buttons {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.navbar__hamburger {*/
+    /*    display: none;*/
+    /*}*/
+    /*#memberButton {*/
+    /*    display: flex;*/
+    /*}*/
+    h3 {
+        margin-top: 35px;
+    }
+    .footer__upper {
+        grid-template-columns: 1fr min-content 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "footerFutured footerFutured footerFutured"
+        "footerText footerAward footerBenefits";
+    }
+    .upper__footer-text {
+        max-width: 530px;
+    }
+    .footer__links a {
+        font-size: 16px;
+    }
+    .upper__footer-benefits {
+        align-self: start;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
     .navbar__container {
         /*padding: 0 10px;*/
         display: grid;
@@ -3255,21 +3347,6 @@ div[data-icon] {
     #memberButton {
         display: flex;
     }
-    .footer__upper {
-        grid-template-columns: 1fr min-content 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "footerFutured footerFutured footerFutured"
-        "footerText footerAward footerBenefits";
-    }
-    .upper__footer-text {
-        max-width: 530px;
-    }
-    .footer__links a {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (min-width: 1100px) {
     .videos-block__titles {
         display: grid;
         grid-template-columns: repeat(3, minmax(340px, 1fr));
