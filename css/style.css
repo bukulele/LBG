@@ -3615,6 +3615,9 @@ div[data-icon] {
     .footer-futured__logos img {
         width: 20%;
     }
+    .slider-block__container {
+        gap: 34px;
+    }
     .videos-block,
     .models-block,
     .pictures-block {
@@ -3624,10 +3627,10 @@ div[data-icon] {
     .models-block__container {
         gap: 35px;
     }
-    .video-title__name,
-    .slider-element__name {
-        font-size: 24px;
-    }
+    /*.video-title__name,*/
+    /*.slider-element__name {*/
+    /*    font-size: 24px;*/
+    /*}*/
     .video-title__icon-container {
         width: 30px;
         height: 30px;
@@ -3688,6 +3691,14 @@ div[data-icon] {
     .main-video-block__over {
         padding: 60px 10px;
         gap: 42px;
+    }
+    .video-title__block-over,
+    .slider-element__block-over {
+        padding: 0 35px 25px;
+    }
+    .video-title__name,
+    .slider-element__name {
+        font-size: 24px;
     }
     .models-block__titles {
         column-gap: 30px;
