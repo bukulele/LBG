@@ -1262,15 +1262,15 @@ input[class~="btn--yellow"] {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 17px;
+    gap: 10px;
     color: #F3B700;
 }
 .video-title__icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
 }
 .video-title__icon-container svg {
     width: 100%;
