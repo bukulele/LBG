@@ -2971,7 +2971,8 @@ div[data-icon] {
     .videos-block__titles,
     .slider-block__slider,
     .pictures-block__titles {
-        gap: 30px;
+        column-gap: 30px;
+        row-gap: 27px;
     }
     .slider-block {
         padding-bottom: 60px;
