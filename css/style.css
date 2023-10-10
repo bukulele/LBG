@@ -3566,13 +3566,13 @@ div[data-icon] {
 }
 
 @media only screen and (min-width: 1275px) {
-    h2 {
-        font-size: 40px;
-    }
-    h3 {
-        font-size: 32px;
-        margin-top: 27px;
-    }
+    /*h2 {*/
+    /*    font-size: 40px;*/
+    /*}*/
+    /*h3 {*/
+    /*    font-size: 32px;*/
+    /*    margin-top: 27px;*/
+    /*}*/
     /*.navbar__container {*/
     /*  padding: 0 20px;*/
     /*}*/
@@ -3676,6 +3676,13 @@ div[data-icon] {
 }
 
 @media only screen and (min-width: 1510px) {
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 32px;
+        margin-top: 27px;
+    }
     /*h3 {*/
     /*    font-size: 30px;*/
     /*}*/
