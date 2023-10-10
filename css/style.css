@@ -3621,7 +3621,8 @@ div[data-icon] {
     .videos-block,
     .models-block,
     .pictures-block {
-        padding: 0 30px 50px;
+        padding: 0 30px 60px;
+        /*padding: 0 30px 50px;*/
     }
     .videos-block__container,
     .models-block__container {
@@ -3631,10 +3632,10 @@ div[data-icon] {
     /*.slider-element__name {*/
     /*    font-size: 24px;*/
     /*}*/
-    .video-title__icon-container {
-        width: 30px;
-        height: 30px;
-    }
+    /*.video-title__icon-container {*/
+    /*    width: 30px;*/
+    /*    height: 30px;*/
+    /*}*/
     .slider-block__buttons {
         padding: 0 60px;
     }
@@ -3698,6 +3699,13 @@ div[data-icon] {
     .main-video-block__over {
         padding: 60px 10px;
         gap: 42px;
+    }
+    .video-title__icons {
+        gap: 15px;
+    }
+    .video-title__icon-container {
+        width: 30px;
+        height: 30px;
     }
     .video-title__block-over,
     .slider-element__block-over {
