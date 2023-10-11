@@ -182,7 +182,7 @@ input[class~="btn--yellow"] {
 
 .btn--banner {
     background-color: #000;
-    border: 3px solid #FFC30A;
+    border: 2px solid #FFC30A;
     border-radius: 12px;
     min-height: 50px;
     font-size: 25px;
@@ -1062,6 +1062,9 @@ input[class~="btn--yellow"] {
 .block--zero-padding-b {
     padding-bottom: 0 !important;
 }
+.block--padding-b {
+    padding-bottom: 50px;
+}
 .slider-block--lighter-bg {
     background-color: #25272A;
 }
@@ -1462,12 +1465,14 @@ input[class~="btn--yellow"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    justify-content: space-between;
 }
 .banner-block__content--padding-big {
     padding: 46px 30px;
 }
 .banner-block__content--padding-small {
-    padding: 30px 0;
+    padding: 30px 0 23px;
 }
 .banner-block__title {
     margin-bottom: 5px;
@@ -1507,7 +1512,7 @@ input[class~="btn--yellow"] {
     font-size: 14px;
     font-weight: 700;
     color: #A1A1A1;
-    margin: 5px 0 0 43px;
+    margin: 5px 60px 0 43px;
 }
 .banner-block__list {
     margin-left: 20px;
@@ -3050,7 +3055,7 @@ div[data-icon] {
         height: 35px;
         min-height: 35px;
         padding: 5px 15px;
-        border: 2px solid #FFC30A;
+        /*border: 2px solid #FFC30A;*/
     }
     .banner-block .btn--banner p {
         font-size: 16px;
@@ -3418,7 +3423,7 @@ div[data-icon] {
         height: 60px;
         font-size: 30px;
         padding: 0 20px;
-        border: 3px solid #FFC30A;
+        /*border: 3px solid #FFC30A;*/
     }
     .banner-block .btn--banner p {
         font-size: 30px;
