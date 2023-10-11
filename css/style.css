@@ -2985,7 +2985,7 @@ div[data-icon] {
         padding: 0 30px;
     }
     .models-block__titles {
-        column-gap: 30px;
+        column-gap: 22px;
         row-gap: 50px;
     }
     .slider-block__buttons {
