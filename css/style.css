@@ -2970,7 +2970,7 @@ div[data-icon] {
         pointer-events: none;
     }
     .models-block {
-        padding: 0 30px 50px;
+        padding: 0 30px;
     }
     .video-title__block-over,
     .slider-element__block-over {
@@ -3072,6 +3072,7 @@ div[data-icon] {
         flex-direction: row;
         align-items: flex-start;
         width: 100%;
+        height: fit-content;
     }
     .banner-block__content--padding-big {
         padding: 10px 30px;
