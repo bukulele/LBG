@@ -1056,8 +1056,8 @@ input[class~="btn--yellow"] {
     padding-bottom: 50px;
     /*background-color: #25272A;*/
 }
-.block--zero-padding {
-    padding: 0 !important;
+.block--zero-padding-b {
+    padding-bottom: 0 !important;
 }
 .slider-block--lighter-bg {
     background-color: #25272A;
