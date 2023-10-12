@@ -3000,7 +3000,7 @@ div[data-icon] {
     .slider-block__slider,
     .pictures-block__titles {
         column-gap: 30px;
-        row-gap: 22px;
+        row-gap: 27px;
     }
     .slider-block {
         padding-bottom: 60px;
@@ -3889,6 +3889,9 @@ div[data-icon] {
         /*width: 686px;*/
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto;
+    }
+    .timer-block__name p {
+        font-size: 30px;
     }
     /*.timer-block__main-video {*/
     /*    grid-column-start: 1;*/
