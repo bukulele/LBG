@@ -3823,6 +3823,7 @@ div[data-icon] {
     .video-title__block-over,
     .slider-element__block-over {
         padding: 0 35px 25px;
+        gap: 15px;
     }
     .video-title__name,
     .slider-element__name {
