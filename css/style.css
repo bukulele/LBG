@@ -1071,6 +1071,9 @@ input[class~="btn--yellow"] {
 .slider-block--lighter-bg {
     background-color: #25272A;
 }
+.slider-block--padding-small {
+    padding-bottom: 0!important;
+}
 .timer-block {
     padding: 50px 0;
 }
@@ -3827,6 +3830,9 @@ div[data-icon] {
     .slider-element__block-over {
         padding: 0 35px 25px;
         gap: 15px;
+    }
+    .slider-block--padding-small {
+        padding-bottom: 30px!important;
     }
     .video-title__name,
     .slider-element__name {
