@@ -3834,13 +3834,17 @@ div[data-icon] {
     /*.banner-block__description {*/
     /*    font-size: 24px;*/
     /*}*/
+    .banner-block__content--padding-small {
+        padding: 5px 20px 5px 10px;
+    }
     .banner-block__list li {
-        font-size: 32px;
-        background-size: 32px;
-        padding-left: 35px;
+        font-size: 25px;
+        background-size: 25px;
+        padding-left: 30px;
     }
     .banner-block__section p {
         font-size: 17px;
+        margin: 2px 10px 0 40px
     }
     .banner-block__content {
         justify-content: space-between;
@@ -4105,6 +4109,9 @@ div[data-icon] {
     /*    height: 20px;*/
     /*    width: 40px;*/
     /*}*/
+    .banner-block__content--padding-small {
+        padding: 5px 50px;
+    }
     .tour-block__banner-container {
         padding: 70px 30px;
     }
