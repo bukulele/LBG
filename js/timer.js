@@ -1,7 +1,12 @@
-let targetDate = new Date(2024, 0, 1, 0, 0, 0);
+let targetDate = new Date(2023, 0, 1, 0, 0, 0);
 
 function defineLeftTime() {
   let timeLeft = (Number(targetDate) - Date.now());
+  if (timeLeft < 0) {
+    let timerBlock = document.querySelector('#timerBlock');
+    timerBlock.remove();
+    return;
+  }
   let daysLeft = timeLeft / 1000 / 60 / 60 / 24;
   let daysDecimal = daysLeft.toString().split('.')[1];
   let hoursLeft = Number('0.' + daysDecimal) * 24;
