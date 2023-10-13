@@ -1,4 +1,4 @@
-let targetDate = new Date(2023, 0, 1, 0, 0, 0);
+let targetDate = new Date(2024, 0, 1, 0, 0, 0);
 
 function defineLeftTime() {
   let timeLeft = (Number(targetDate) - Date.now());
