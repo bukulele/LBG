@@ -2950,6 +2950,10 @@ div[data-icon] {
     .social__networks {
         justify-self: start;
     }
+    .social__icon-container {
+        width: 32px;
+        height: 19px;
+    }
     .footer__rights {
         gap: 35px;
     }
@@ -3137,13 +3141,13 @@ div[data-icon] {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: stretch;
-        padding: 0 35px;
+        /*padding: 0 35px;*/
     }
     .timer-block__half {
         width: 340px;
     }
     .timer-block__half--styled {
-        padding: 20px;
+        /*padding: 20px;*/
         background-color: #25272A;
         border-radius: 30px;
     }
