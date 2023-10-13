@@ -746,6 +746,7 @@ input[class~="btn--yellow"] {
     text-align: justify;
     font-size: 14px;
     font-weight: 500;
+    line-height: 22px;
 }
 .upper__footer-benefits {
     grid-area: footerBenefits;
@@ -1686,6 +1687,10 @@ a[class~='tour-banner__container'] {
     border: 1px solid #F3B800;
     border-radius: 50px;
     width: fit-content;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .timer-block__upcoming p {
     font-size: 12px;
@@ -3137,6 +3142,7 @@ div[data-icon] {
         top: 20px;
         right: 20px;
         left: unset;
+
     }
     .btn--pager-s {
         display: flex;
@@ -3681,7 +3687,7 @@ div[data-icon] {
     .footer__upper {
         row-gap: 60px;
         place-items: start;
-        padding-bottom: 120px;
+        padding-bottom: 147px;
     }
     .upper__footer-futured {
         gap: 41px;
@@ -3719,11 +3725,13 @@ div[data-icon] {
         padding: 0 30px;
         /*padding: 0 30px 50px;*/
     }
-    .videos-block__container,
-    .models-block__container {
-        gap: 34px;
-    }
-    /*.video-title__name,*/
+    /*.videos-block__container {*/
+    /*    gap: 34px;*/
+    /*}*/
+    /*.models-block__container {*/
+    /*    gap: 50px;*/
+    /*}*/
+        /*.video-title__name,*/
     /*.slider-element__name {*/
     /*    font-size: 24px;*/
     /*}*/
@@ -3809,12 +3817,22 @@ div[data-icon] {
     .banner-block__description {
         margin-bottom: 5px;
     }
+    .banner-block--padding-small {
+        padding: 60px 30px;
+    }
     .main-video-block {
         margin-bottom: 60px;
     }
     .main-video-block__over {
         padding: 60px 10px;
         gap: 42px;
+    }
+    .videos-block__container {
+        gap: 34px;
+    }
+    .models-block__container {
+        gap: 50px;
+        padding-bottom: 30px;
     }
     .video-title__icons {
         gap: 15px;
@@ -3824,7 +3842,7 @@ div[data-icon] {
         height: 32px;
     }
     .video-title__block-over {
-        padding: 0 32px 30px;
+        padding: 0 30px 32px;
         /*gap: 15px;*/
     }
     .slider-element__block-over {
@@ -3885,6 +3903,9 @@ div[data-icon] {
     }
     .banner-block__content--padding-big {
         padding: 50px 30px;
+    }
+    .timer-block__container {
+        gap: 30px;
     }
     .timer-block__half {
         width: 685px;
@@ -4125,6 +4146,9 @@ div[data-icon] {
         width: 155px;
         left: 0;
         top: 20px;
+    }
+    .footer-futured__logos {
+        gap: 37px;
     }
 }
 
