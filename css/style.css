@@ -2991,6 +2991,9 @@ div[data-icon] {
     .models-block {
         padding: 0 30px;
     }
+    .models-block__container {
+        gap: 30px;
+    }
     .slider-element__block-over {
         padding: 0 27px 20px;
     }
