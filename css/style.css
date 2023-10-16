@@ -32,7 +32,7 @@ h2, h3 {
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     text-align: center;
 }
 /*h3 {*/
@@ -1048,6 +1048,14 @@ input[class~="btn--yellow"] {
     /*padding-bottom: 50px;*/
     width: 100%;
 }
+#home-page .videos-block,
+#home-page .models-block,
+#home-page .slider-block,
+#home-page .footer,
+.upper__footer-text {
+    padding-top: 50px;
+}
+
 #home-page .banner-block--type-1 {
     padding: 50px 0 0;
 }
@@ -2847,14 +2855,21 @@ div[data-icon] {
 }
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 768px) {
+    #home-page .videos-block,
+    #home-page .models-block,
+    #home-page .slider-block,
+    #home-page .footer,
+    .upper__footer-text {
+        padding-top: 60px;
+    }
     h2 {
         font-size: 30px;
-        margin-top: 60px;
+        /*margin-top: 60px;*/
     }
     h3 {
         font-size: 25px;
         text-align: start;
-        margin-top: 60px;
+        /*margin-top: 60px;*/
     }
     .navbar {
         height: 90px;
@@ -3348,9 +3363,9 @@ div[data-icon] {
     /*#memberButton {*/
     /*    display: flex;*/
     /*}*/
-    h3 {
-        margin-top: 35px;
-    }
+    /*h3 {*/
+    /*    margin-top: 35px;*/
+    /*}*/
     .main-video-block {
         height: calc(100vh - 90px);
     }
@@ -3372,6 +3387,7 @@ div[data-icon] {
     }
     .upper__footer-text {
         max-width: 530px;
+        padding-top: 35px;
     }
     .footer__links a {
         font-size: 16px;
@@ -3802,7 +3818,10 @@ div[data-icon] {
     }
     h3 {
         font-size: 32px;
-        margin-top: 27px;
+        /*margin-top: 27px;*/
+    }
+    .upper__footer-text {
+        padding-top: 27px;
     }
     /*h3 {*/
     /*    font-size: 30px;*/
