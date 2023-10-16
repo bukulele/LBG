@@ -49,7 +49,7 @@ for (let video of videos) {
   imageElement.src = video;
   videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }
-let banner2Container = '<div id="banner_2" class="banner-block"></div>';
+let banner2Container = '<div id="banner_2" class="banner-block banner-block--type-2"></div>';
 
 videosBlockTitles.insertAdjacentHTML('beforeend', banner2Container);
 document.getElementById('banner_2').innerHTML = banner2;
