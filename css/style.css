@@ -49,18 +49,17 @@ h4 {
     text-transform: uppercase;
 }
 
-#page-container {
+#recaptchaContainer {
+    display: flex;
+    justify-content: center;
+}
+.page-container {
     position: relative;
     min-height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto min-content;
-}
-
-#recaptchaContainer {
-    display: flex;
-    justify-content: center;
 }
 .main {
     margin-top: 70px;
@@ -710,7 +709,7 @@ input[class~="btn--yellow"] {
     height: 0;
     width: 100%;
 }
-.home-page .upper__footer-futured {
+#home-page .upper__footer-futured {
     visibility: visible !important;
     height: auto !important;
 }
@@ -1049,10 +1048,10 @@ input[class~="btn--yellow"] {
     /*padding-bottom: 50px;*/
     width: 100%;
 }
-.banner-block--padding-big {
+#home-page .banner-block--type-1 {
     padding: 50px 0 0;
 }
-.banner-block--padding-small {
+#home-page .banner-block--type-2 {
     padding: 50px 0;
 }
 .videos-block__titles > .banner-block,
@@ -1788,11 +1787,12 @@ a[class~='tour-banner__container'] {
 .news-block__filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    row-gap: 20px;
+    column-gap: 5px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0 25px;
+    margin: 0 auto;
 }
 .videos-block__selector label,
 .models-block__selector label,
@@ -1812,7 +1812,7 @@ a[class~='tour-banner__container'] {
     font-size: 14px;
     font-weight: 800;
     color: #F3B800;
-    cursor: inherit;
+    cursor: pointer;
     line-height: inherit;
     outline: none;
 }
@@ -3043,10 +3043,10 @@ div[data-icon] {
         padding: 0 33px;
         justify-content: space-between;
     }
-    .banner-block--padding-big {
+    #home-page .banner-block--type-1 {
         padding: 60px 30px 0;
     }
-    .banner-block--padding-small {
+    #home-page .banner-block--type-2 {
         padding: 40px 30px;
     }
     .videos-block__titles > .banner-block,
@@ -3831,7 +3831,7 @@ div[data-icon] {
     .banner-block__description {
         margin-bottom: 5px;
     }
-    .banner-block--padding-small {
+    #home-page .banner-block--type-2 {
         padding: 60px 30px;
     }
     .main-video-block {

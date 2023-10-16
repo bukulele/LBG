@@ -18,6 +18,7 @@ for (let filtersBlock of filtersBlocks) {
     let compStyles = window.getComputedStyle(elem);
     let elemFontSize = compStyles.getPropertyValue('font-size');
     let selectedOptionText = elem.options[elem.selectedIndex].text;
+    console.log(selectedOptionText);
     let fakeElement = document.createElement("span");
     fakeElement.style.visibility = "hidden";
     fakeElement.style.whiteSpace = "nowrap";
@@ -26,6 +27,6 @@ for (let filtersBlock of filtersBlocks) {
     document.body.appendChild(fakeElement);
     let width = fakeElement.offsetWidth;
     document.body.removeChild(fakeElement);
-    elem.style.width = `${width + 30}px`;
+    elem.style.width = `${width + 25}px`;
   }
 }
