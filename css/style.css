@@ -1051,7 +1051,7 @@ input[class~="btn--yellow"] {
 #home-page .videos-block,
 #home-page .models-block,
 #home-page .slider-block,
-#home-page .footer,
+#home-page .footer__container,
 .upper__footer-text {
     padding-top: 50px;
 }
@@ -2858,7 +2858,7 @@ div[data-icon] {
     #home-page .videos-block,
     #home-page .models-block,
     #home-page .slider-block,
-    #home-page .footer,
+    #home-page .footer__container,
     .upper__footer-text {
         padding-top: 60px;
     }
