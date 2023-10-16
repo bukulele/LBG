@@ -1704,7 +1704,7 @@ a[class~='tour-banner__container'] {
     font-size: 20px;
     font-weight: 700;
     color: #fff;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .timer-block__timer {
     display: flex;
