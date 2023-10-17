@@ -3084,8 +3084,6 @@ div[data-icon] {
     }
     .videos-block__titles > .banner-block,
     .videos-block__titles > .message-block,
-    .models-block__titles > .banner-block,
-    .models-block__titles > .message-block,
     .news-item-block {
         padding: 0 30px;
     }
