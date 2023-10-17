@@ -708,12 +708,12 @@ input[class~="btn--yellow"] {
     visibility: hidden;
     height: 0;
     width: 100%;
-    padding-bottom: 50px;
 }
 #home-page .upper__footer-futured,
 #videos-page .upper__footer-futured {
     visibility: visible !important;
     height: auto !important;
+    padding-bottom: 50px;
 }
 .footer-futured__logos {
     /*padding: 0 40px 40px 40px;*/
