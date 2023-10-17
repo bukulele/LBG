@@ -24,7 +24,7 @@ for (let model of models) {
   title.insertAdjacentElement('afterbegin', imageElement);
 }
 
-let banner2Container = '<div id="banner_2" class="banner-block"></div>';
+let banner2Container = '<div id="banner_2" class="banner-block banner-block--type-2"></div>';
 
 modelsBlockTitles.insertAdjacentHTML('beforeend', banner2Container);
 document.getElementById('banner_2').innerHTML = banner2;
