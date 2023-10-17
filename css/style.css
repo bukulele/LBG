@@ -3597,7 +3597,7 @@ div[data-icon] {
         grid-column-end: 5;
     }
     .news-item-block {
-        padding: 0;
+        /*padding: 0;*/
         width: 100%;
     }
     .banner-block__container,
@@ -3868,6 +3868,7 @@ div[data-icon] {
     /*}*/
     .btn--link {
         font-size: 16px;
+        gap: 7px;
     }
     .btn--link-g {
         font-size: 16px;
@@ -4244,6 +4245,19 @@ div[data-icon] {
     .comments-block__login p,
     .comments-block__text p {
         font-size: 16px;
+    }
+    #videos-page .videos-block {
+        padding: 60px 30px 34px;
+    }
+    #videos-page .banner-block--type-1 {
+        padding: 50px 30px;
+    }
+    .videos-block__titles > .banner-block,
+    .videos-block__titles > .message-block {
+        padding: 7px 0;
+    }
+    .news-item-block {
+        padding: 0;
     }
     .footer-futured__logos {
         gap: 37px;
