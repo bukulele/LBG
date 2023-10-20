@@ -2897,9 +2897,7 @@ div[data-icon] {
         /*margin-top: 60px;*/
     }
     h3,
-    #video-page .pictures-block h2,
-    #video-page .videos-block h2,
-    #video-page .comments-block h2 {
+    #video-page h2 {
         font-size: 25px;
         text-align: start;
         /*margin-top: 60px;*/
@@ -3207,6 +3205,9 @@ div[data-icon] {
     }
     .btn--pager-s {
         display: flex;
+    }
+    .watch-video-block__name p {
+        font-size: 20px;
     }
     .watch-video-block__container {
         width: 100%;
@@ -3900,9 +3901,7 @@ div[data-icon] {
         font-size: 40px;
     }
     h3,
-    #video-page .pictures-block h2,
-    #video-page .videos-block h2,
-    #video-page .comments-block h2 {
+    #video-page h2 {
         font-size: 32px;
         /*margin-top: 27px;*/
     }
