@@ -2122,6 +2122,9 @@ a[class~='tour-banner__container'] {
     height: 15px;
     color: #fff;
 }
+.get-access__close:hover {
+    color: #F3B800;
+}
 .get-access__close * {
     pointer-events: none;
 }
@@ -4113,6 +4116,9 @@ div[data-icon] {
     .get-access__header p {
         font-size: 32px;
     }
+    .get-access__list {
+        padding: 0 10px;
+    }
     .get-access__list li {
         font-size: 20px;
         background-size: 20px;
@@ -4120,20 +4126,21 @@ div[data-icon] {
         line-height: 2;
     }
     .get-access__close {
-        top: 30px;
-        right: 30px;
+        top: 25px;
+        right: 25px;
+        width: 22px;
+        height: 22px;
     }
     .watch-video-block__container .controls__play-container {
-        min-width: 233px;
-        width: 233px;
-        min-height: 233px;
-        height: 233px;
+        min-width: 150px;
+        width: 150px;
+        min-height: 150px;
+        height: 150px;
     }
     .watch-video-block__container .play-container__icon-container {
-        width: 90px;
-        height: 90px;
+        width: 60px;
+        height: 60px;
     }
-
     .data__actors > p,
     .data__tags > p,
     .data__actors-list p,
@@ -4334,6 +4341,16 @@ div[data-icon] {
     /*    height: 20px;*/
     /*    width: 40px;*/
     /*}*/
+    .watch-video-block__container .controls__play-container {
+        min-width: 233px;
+        width: 233px;
+        min-height: 233px;
+        height: 233px;
+    }
+    .watch-video-block__container .play-container__icon-container {
+        width: 90px;
+        height: 90px;
+    }
     .banner-block__content--padding-small {
         padding: 5px 50px;
     }
