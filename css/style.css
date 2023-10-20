@@ -686,7 +686,7 @@ input[class~="btn--yellow"] {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "footerFutured"
+    grid-template-areas: "footerFeatured"
       "footerText"
       "footerBenefits"
       "footerAward";
@@ -699,8 +699,8 @@ input[class~="btn--yellow"] {
     place-items: center;
     padding-bottom: 80px;
 }
-.upper__footer-futured {
-    grid-area: footerFutured;
+.upper__footer-featured {
+    grid-area: footerFeatured;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -709,13 +709,13 @@ input[class~="btn--yellow"] {
     height: 0;
     width: 100%;
 }
-#home-page .upper__footer-futured,
-#videos-page .upper__footer-futured {
+#home-page .upper__footer-featured,
+#videos-page .upper__footer-featured {
     visibility: visible !important;
     height: auto !important;
     padding-bottom: 50px;
 }
-.footer-futured__logos {
+.footer-featured__logos {
     /*padding: 0 40px 40px 40px;*/
     display: flex;
     flex-wrap: wrap;
@@ -725,7 +725,7 @@ input[class~="btn--yellow"] {
     /*width: 100%;*/
     max-width: 1302px;
 }
-.footer-futured__logos img {
+.footer-featured__logos img {
     width: 20%;
     max-width: max-content;
     height: auto;
@@ -2925,15 +2925,15 @@ div[data-icon] {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas:
-        "footerFutured footerFutured"
+        "footerFeatured footerFeatured"
         "footerText footerText"
         "footerAward footerBenefits";
         width: 100%;
         max-width: 1460px;
         padding: 0 30px 61px;
     }
-    #home-page .upper__footer-futured,
-    #videos-page .upper__footer-futured {
+    #home-page .upper__footer-featured,
+    #videos-page .upper__footer-featured {
         padding-bottom: 60px;
     }
     .upper__footer-text {
@@ -2966,11 +2966,11 @@ div[data-icon] {
         justify-content: space-between;
         margin-bottom: 18px;
     }
-    .footer-futured__logos {
+    .footer-featured__logos {
         justify-content: space-between;
         gap: 10px;
     }
-    .footer-futured__logos img {
+    .footer-featured__logos img {
         width: 15%;
         height: auto;
     }
@@ -3415,7 +3415,7 @@ div[data-icon] {
     .footer__upper {
         grid-template-columns: 1fr min-content 1fr;
         grid-template-rows: auto auto;
-        grid-template-areas: "footerFutured footerFutured footerFutured"
+        grid-template-areas: "footerFeatured footerFeatured footerFeatured"
         "footerText footerAward footerBenefits";
     }
     .upper__footer-text {
@@ -3787,7 +3787,7 @@ div[data-icon] {
     #videos-page .footer__upper {
         row-gap: 60px;
     }
-    .upper__footer-futured {
+    .upper__footer-featured {
         gap: 41px;
     }
     .upper__footer-award {
@@ -3811,7 +3811,7 @@ div[data-icon] {
     .footer__links a {
         gap: 10px;
     }
-    .footer-futured__logos img {
+    .footer-featured__logos img {
         width: 20%;
     }
     .slider-block__container {
@@ -4311,7 +4311,7 @@ div[data-icon] {
     .news-item-block {
         padding: 0;
     }
-    .footer-futured__logos {
+    .footer-featured__logos {
         gap: 37px;
     }
 }
