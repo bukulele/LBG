@@ -1043,11 +1043,17 @@ input[class~="btn--yellow"] {
     padding-top: 23px;
 }
 #videos-page .banner-block--type-1,
-#models-page .banner-block--type-1 {
+#models-page .banner-block--type-1,
+#video-page .banner-block--type-1 {
     padding: 30px 0;
 }
+#video-page .pictures-block,
+#video-page .videos-block,
+#video-page .comments-block {
+    padding-top: 30px;
+}
 
-/*VIDEOS, MODELS AND SLIDER BLOCK*/
+    /*VIDEOS, MODELS AND SLIDER BLOCK*/
 .watch-video-block {
     /*padding-top: 23px;*/
     background-color: #25272A;
