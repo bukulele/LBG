@@ -3603,7 +3603,7 @@ div[data-icon] {
         padding: 0;
     }
     .timer-block__half {
-        width: 540px;
+        width: 500px;
     }
     .timer-block__videos-container {
         width: 100%;
@@ -3625,7 +3625,8 @@ div[data-icon] {
         width: 100%;
     }
 
-    #models-page .banner-block--type-1 {
+    #models-page .banner-block--type-1,
+    #video-page .banner-block--type-1 {
         padding: 30px;
     }
 
