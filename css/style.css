@@ -3780,9 +3780,12 @@ div[data-icon] {
         max-width: 394px;
     }
     .footer__upper {
-        row-gap: 60px;
         place-items: start;
         padding-bottom: 147px;
+    }
+    #home-page .footer__upper,
+    #videos-page .footer__upper {
+        row-gap: 60px;
     }
     .upper__footer-futured {
         gap: 41px;
