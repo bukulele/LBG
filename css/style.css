@@ -2893,7 +2893,10 @@ div[data-icon] {
     #home-page .videos-block,
     #home-page .models-block,
     #home-page .slider-block,
-    #home-page .footer__container {
+    #home-page .footer__container,
+    #video-page .pictures-block,
+    #video-page .videos-block,
+    #video-page .comments-block {
         padding-top: 60px;
     }
     h2 {
@@ -3639,12 +3642,12 @@ div[data-icon] {
     #videos-page .single-news-block__container--dimensions {
         width: calc(90% + 60px);
     }
-    .videos-block,
-    .models-block,
-    .pictures-block {
-        /*padding: 0 30px;*/
-        /*padding: 0 30px 50px;*/
-    }
+    /*.videos-block,*/
+    /*.models-block,*/
+    /*.pictures-block {*/
+    /*    !*padding: 0 30px;*!*/
+    /*    !*padding: 0 30px 50px;*!*/
+    /*}*/
     .videos-block__filters,
     .models-block__filters,
     .comments-block__filters,
@@ -3957,7 +3960,8 @@ div[data-icon] {
         padding: 60px 10px;
         gap: 42px;
     }
-    .videos-block__container {
+    .videos-block__container,
+    .pictures-block__container {
         gap: 34px;
     }
     .models-block__container {
@@ -4105,7 +4109,8 @@ div[data-icon] {
         grid-template-columns: auto minmax(360px, 440px);
         grid-template-areas: "watchVideoContainer watchVideoControl"
         "watchVideoDescription watchVideoControl";
-        gap: 25px;
+        column-gap: 25px;
+        row-gap: 50px;
     }
     .watch-video-block__control-panel {
         max-height: 100%;
@@ -4306,11 +4311,15 @@ div[data-icon] {
     }
     #videos-page .videos-block,
     #models-page .models-block,
-    #video-page .watch-video-block {
+    #video-page .watch-video-block,
+    #video-page .pictures-block,
+    #video-page .videos-block,
+    #video-page .comments-block {
         padding: 60px 30px 34px;
     }
     #videos-page .banner-block--type-1,
-    #models-page .banner-block--type-1 {
+    #models-page .banner-block--type-1,
+    #video-page .banner-block--type-1 {
         padding: 50px 30px;
     }
     .videos-block__titles > .banner-block,
