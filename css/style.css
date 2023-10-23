@@ -1039,17 +1039,22 @@ input[class~="btn--yellow"] {
 
 #videos-page .videos-block,
 #models-page .models-block,
-#video-page .watch-video-block {
+#video-page .watch-video-block,
+#model-page .model-profile-block {
     padding-top: 23px;
 }
 #videos-page .banner-block--type-1,
 #models-page .banner-block--type-1,
-#video-page .banner-block--type-1 {
+#video-page .banner-block--type-1,
+#model-page .banner-block--type-1 {
     padding: 30px 0;
 }
 #video-page .pictures-block,
 #video-page .videos-block,
-#video-page .comments-block {
+#video-page .comments-block,
+#model-page .pictures-block,
+#model-page .videos-block,
+#model-page .comments-block {
     padding-top: 30px;
 }
 
@@ -1104,9 +1109,9 @@ input[class~="btn--yellow"] {
 .timer-block {
     padding: 50px 0;
 }
-.model-profile-block {
-    padding-top: 20px;
-}
+/*.model-profile-block {*/
+/*    padding-top: 20px;*/
+/*}*/
 .videos-block__container,
 .models-block__container,
 .slider-block__container,
@@ -1407,10 +1412,13 @@ input[class~="btn--yellow"] {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
 }
 .model-title__bottom-block {
     padding-left: 3px;
+    gap: 10px;
+}
+.model-profile-block__participation {
+    gap: 15px;
 }
 .bottom-block__activity,
 .participation__activity {
@@ -2448,7 +2456,7 @@ a[class~='tour-banner__container'] {
     "modelControls"
     "modelDescription"
     "modelParticipation";
-    gap: 20px;
+    gap: 15px;
     background-color: #2F3134;
     border-radius: 30px;
     padding: 20px;
@@ -2477,6 +2485,7 @@ a[class~='tour-banner__container'] {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
+    padding-top: 5px;
 }
 .model-profile-block__description {
     grid-area: modelDescription;
@@ -2904,7 +2913,8 @@ div[data-icon] {
         /*margin-top: 60px;*/
     }
     h3,
-    #video-page h2 {
+    #video-page h2,
+    #model-page h2 {
         font-size: 25px;
         text-align: start;
         /*margin-top: 60px;*/
@@ -3887,9 +3897,9 @@ div[data-icon] {
     /*    width: 30px;*/
     /*    height: 30px;*/
     /*}*/
-    .pictures-block__titles {
-        gap: 30px;
-    }
+    /*.pictures-block__titles {*/
+    /*    gap: 30px;*/
+    /*}*/
     .model-profile-block__control-panel {
         flex-direction: row;
         align-items: center;
@@ -3912,7 +3922,8 @@ div[data-icon] {
         font-size: 40px;
     }
     h3,
-    #video-page h2 {
+    #video-page h2,
+    #model-page h2 {
         font-size: 32px;
         /*margin-top: 27px;*/
     }
