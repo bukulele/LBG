@@ -41,6 +41,9 @@ h2, h3 {
 /*    color: #fff;*/
 /*    text-transform: uppercase;*/
 /*}*/
+.header-text--colored {
+    color: #FFC30A;
+}
 
 h4 {
     font-weight: 800;
@@ -3851,6 +3854,11 @@ div[data-icon] {
     }
     .video-title__container,
     .slider-element__container {
+        width: 100%;
+    }
+    #videos-page .banner-block__container,
+    #videos-page .message-block__container--dimensions,
+    #videos-page .single-news-block__container--dimensions {
         width: 100%;
     }
     #videos-page .banner-block--type-1,

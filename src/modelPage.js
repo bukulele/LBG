@@ -22,7 +22,7 @@ document.getElementById('banner_1').innerHTML = banner;
 document.getElementById('timerBlock').innerHTML = timerBlock;
 document.getElementById('imagesGalleryBlock').innerHTML = imagesGalleryBlock;
 
-document.querySelector('.videos-block__container h2').innerHTML = 'VIDEOS';
+document.querySelector('.videos-block__container h2').innerHTML = 'VIDEOS <span class="header-text--colored">(17)</span>';
 document.querySelector('.pictures-block__button-container').innerHTML = pagerContainer;
 
 if (sessionStorage.getItem('auth') === 'true') {
