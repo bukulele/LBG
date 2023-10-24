@@ -4337,7 +4337,10 @@ div[data-icon] {
     #video-page .watch-video-block,
     #video-page .pictures-block,
     #video-page .videos-block,
-    #video-page .comments-block {
+    #video-page .comments-block,
+    #model-page .pictures-block,
+    #model-page .videos-block,
+    #model-page .comments-block {
         padding: 60px 30px 34px;
     }
     #videos-page .banner-block--type-1,
