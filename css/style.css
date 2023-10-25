@@ -2359,6 +2359,11 @@ a[class~='tour-banner__container'] {
     align-items: center;
     gap: 20px;
 }
+.comments-block__comments-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .comments-block__login p {
     font-size: 14px;
     font-weight: 500;
@@ -2374,6 +2379,10 @@ a[class~='tour-banner__container'] {
     width: 100%;
     flex-direction: column;
     gap: 10px;
+    padding-top: 20px;
+}
+.comments-block__comment:first-of-type {
+    padding-top: 0;
 }
 .comments-block__comment[data-reply='true'] {
     padding-left: 70px;
@@ -4361,6 +4370,24 @@ div[data-icon] {
     }
     .news-item-block {
         padding: 0;
+    }
+    .comments-block__container,
+    .comments-block__form {
+        gap: 34px;
+    }
+    .comments-block__comment {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 40px;
+    }
+    /*.comments-block__comment:first-of-type {*/
+    /*    padding-top: 0;*/
+    /*}*/
+    .comments-block__comment[data-reply='true'] {
+        padding-left: 70px;
+        padding-top: 20px;
     }
     .footer-featured__logos {
         gap: 37px;
