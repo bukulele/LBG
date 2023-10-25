@@ -122,6 +122,7 @@ h4 {
     width: 56px;
     border-radius: 13px;
     background: rgba(255, 255, 255, 0.5);
+    pointer-events: auto;
 }
 
 .btn * {
@@ -1337,6 +1338,7 @@ input[class~="btn--yellow"] {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    pointer-events: none;
 }
 .btn--slider svg {
     width: 20px;
