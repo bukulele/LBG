@@ -8,6 +8,7 @@ setSliders(sliderBlock, sliderElementAll);
 
 function setSliders(sliderBlock, sliderElementAll) {
   for (let elem of sliderElementAll) {
+    // console.log(sliderElementReference);
     elem.style.width = `${sliderElementReference.offsetWidth}px`;
   }
 

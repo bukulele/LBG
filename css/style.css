@@ -1029,7 +1029,7 @@ input[class~="btn--yellow"] {
 /*PAGES*/
 #home-page .videos-block,
 #home-page .models-block,
-#home-page .slider-block,
+.slider-block,
 .footer__container {
     padding-top: 50px;
 }
@@ -2906,14 +2906,14 @@ div[data-icon] {
 @media only screen and (min-width: 768px) {
     #home-page .videos-block,
     #home-page .models-block,
-    #home-page .slider-block,
     #home-page .footer__container,
     #video-page .pictures-block,
     #video-page .videos-block,
     #video-page .comments-block,
     #model-page .pictures-block,
     #model-page .videos-block,
-    #model-page .comments-block {
+    #model-page .comments-blockб
+    .slider-block {
         padding-top: 60px;
     }
     h2 {

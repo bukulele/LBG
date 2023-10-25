@@ -16,7 +16,7 @@
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<a class=\\\"slider-element__container\\\" href=\\\"\\\">\\n  <div class=\\\"slider-element__block-over\\\">\\n    <p class=\\\"slider-element__name\\\">Strip Red Light Green Light With Delilah Minx</p>\\n    <div class=\\\"slider-element__info\\\">\\n      <div class=\\\"slider-element__videos-number\\\"><p>51 videos</p></div>\\n    </div>\\n  </div>\\n</a>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/sliderElement.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<a class=\\\"slider-element__container\\\" href=\\\"\\\">\\n<!--  RENDER IMAGE HERE-->\\n  <div class=\\\"slider-element__block-over\\\">\\n    <!--  REMOVE slider-element__block-over IF PHOTO SLIDER-->\\n    <p class=\\\"slider-element__name\\\">Strip Red Light Green Light With Delilah Minx</p>\\n    <div class=\\\"slider-element__info\\\">\\n      <div class=\\\"slider-element__videos-number\\\"><p>51 videos</p></div>\\n    </div>\\n  </div>\\n</a>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/sliderElement.html?");
 
 /***/ }),
 

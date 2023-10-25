@@ -30,7 +30,8 @@ module.exports = {
     tourPage: './src/tourPage.js',
     tourBlock: './src/components/tourBlock.js',
     buyAccessPage: './src/buyAccessPage.js',
-    videosBlockModelPage: './src/components/videosBlockModelPage.js'
+    videosBlockModelPage: './src/components/videosBlockModelPage.js',
+    sliderBlockPhotos: './src/components/sliderBlockPhotos.js'
   }, // The entry point of your application
   output: {
     path: path.resolve(__dirname, 'dist'), // The output directory
