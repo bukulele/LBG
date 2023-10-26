@@ -4375,6 +4375,9 @@ div[data-icon] {
     .comments-block__form {
         gap: 34px;
     }
+    .comments-block__form {
+        padding-top: 6px;
+    }
     .comments-block__comment {
         display: flex;
         width: 100%;
