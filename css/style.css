@@ -1051,7 +1051,8 @@ input[class~="btn--yellow"] {
 #videos-page .banner-block--type-1,
 #models-page .banner-block--type-1,
 #video-page .banner-block--type-1,
-#model-page .banner-block--type-1 {
+#model-page .banner-block--type-1,
+#news-page .banner-block--type-1 {
     padding: 30px 0;
 }
 #video-page .pictures-block,
@@ -1898,11 +1899,11 @@ a[class~='tour-banner__container'] {
 .single-news-block__container {
     gap: 15px;
 }
-.news-block .single-news-block__container,
-.terms-block .terms-block__container
-{
-    width: 360px !important;
-}
+/*.news-block .single-news-block__container,*/
+/*.terms-block .terms-block__container*/
+/*{*/
+/*    width: 360px;*/
+/*}*/
 .message-block__container--background-red {
     background-color: #681213;
 }
@@ -3670,14 +3671,14 @@ div[data-icon] {
     }
     .banner-block__container,
     .message-block__container--dimensions,
-    .single-news-block__container--dimensions,
     .terms-block__container--dimensions {
         width: 100%;
     }
 
     #models-page .banner-block--type-1,
     #video-page .banner-block--type-1,
-    #model-page .banner-block--type-1 {
+    #model-page .banner-block--type-1,
+    #news-page .banner-block--type-1 {
         padding: 30px;
     }
 
@@ -3727,9 +3728,9 @@ div[data-icon] {
     }
 
     .comments-block__container,
-    .news-block .single-news-block__container,
+    .single-news-block__container--dimensions,
     .terms-block .terms-block__container {
-        width: 892px !important;
+        width: 892px;
     }
 
     .news-block__container,
@@ -3923,7 +3924,6 @@ div[data-icon] {
     /*}*/
     .banner-block__container,
     .message-block__container--dimensions,
-    .single-news-block__container--dimensions,
     .terms-block__container--dimensions {
         width: 100%;
     }
@@ -4372,7 +4372,8 @@ div[data-icon] {
     #videos-page .banner-block--type-1,
     #models-page .banner-block--type-1,
     #video-page .banner-block--type-1,
-    #model-page .banner-block--type-1 {
+    #model-page .banner-block--type-1,
+    #news-page .banner-block--type-1 {
         padding: 50px 30px;
     }
     .videos-block__titles > .banner-block,
