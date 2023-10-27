@@ -3319,6 +3319,7 @@ div[data-icon] {
         "modelPhoto modelControls"
         "modelPhoto modelDescription"
         "modelPhoto modelParticipation";
+        place-items: start;
     }
     .model-profile-block__photo {
         align-self: start;
@@ -4045,6 +4046,11 @@ div[data-icon] {
     .video-title__name,
     .slider-element__name {
         font-size: 24px;
+    }
+    .model-profile-block__container {
+        padding: 50px;
+        column-gap: 50px;
+        
     }
     .model-title__container {
         gap: 20px;

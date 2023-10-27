@@ -18,7 +18,7 @@ for (let filtersBlock of filtersBlocks) {
     let compStyles = window.getComputedStyle(elem);
     let elemFontSize = compStyles.getPropertyValue('font-size');
     let selectedOptionText = elem.options[elem.selectedIndex].text;
-    console.log(selectedOptionText);
+    // console.log(selectedOptionText);
     let fakeElement = document.createElement("span");
     fakeElement.style.visibility = "hidden";
     fakeElement.style.whiteSpace = "nowrap";
