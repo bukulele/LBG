@@ -14,7 +14,8 @@ const models = [image7, image8, image9, image10, image11, image12, image13, imag
 
 let modelsBlockTitles = document.getElementById('modelsBlockTitles');
 
-modelsBlockTitles.insertAdjacentHTML('beforebegin', filters);
+let headerContainer = document.querySelector('.models-block .header__container');
+headerContainer.insertAdjacentHTML('beforeend', filters);
 
 for (let model of models) {
   modelsBlockTitles.insertAdjacentHTML('beforeend', modelTitle);

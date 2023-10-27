@@ -14,8 +14,8 @@ const videos = [image1, image2, image3, image4, image5, image6];
 
 let videosBlockTitles = document.getElementById('videosBlockTitles');
 
-videosBlockTitles.insertAdjacentHTML('beforebegin', filters);
-
+let headerContainer = document.querySelector('.videos-block .header__container');
+headerContainer.insertAdjacentHTML('beforeend', filters);
 
 for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);

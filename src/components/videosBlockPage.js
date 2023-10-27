@@ -30,7 +30,8 @@ newsItemBlock.querySelector('.single-news-block__upper-container').insertAdjacen
       </div>
 `);
 
-newsItemBlock.insertAdjacentHTML('beforebegin', filters);
+let headerContainer = document.querySelector('.videos-block .header__container');
+headerContainer.insertAdjacentHTML('beforeend', filters);
 
 for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);

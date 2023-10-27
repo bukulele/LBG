@@ -76,7 +76,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"models-block__container\\\">\\n  <h2>MODELS</h2>\\n  <div id=\\\"modelsBlockTitles\\\" class=\\\"models-block__titles\\\">\\n  </div>\\n  <div class=\\\"models-block__button-container\\\">\\n    <a href=\\\"models.html\\\" class=\\\"btn btn--classic btn--red\\\">SHOW MORE MODELS</a>\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/modelsBlock.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"models-block__container\\\">\\n  <div class=\\\"header__container\\\">\\n    <h2>MODELS</h2>\\n  </div>\\n  <div id=\\\"modelsBlockTitles\\\" class=\\\"models-block__titles\\\">\\n  </div>\\n  <div class=\\\"models-block__button-container\\\">\\n    <a href=\\\"models.html\\\" class=\\\"btn btn--classic btn--red\\\">SHOW MORE MODELS</a>\\n  </div>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/modelsBlock.html?");
 
 /***/ }),
 
