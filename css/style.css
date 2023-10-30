@@ -2957,8 +2957,10 @@ div[data-icon] {
     #video-page h2,
     #model-page h2 {
         font-size: 25px;
-        text-align: start;
         /*margin-top: 60px;*/
+    }
+    .upper__footer-text h3 {
+        text-align: start;
     }
     .navbar {
         height: 90px;
