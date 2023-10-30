@@ -1053,7 +1053,8 @@ input[class~="btn--yellow"] {
 #video-page .watch-video-block,
 #model-page .model-profile-block,
 #news-page .news-block,
-#terms-page .terms-block {
+#terms-page .terms-block,
+#authorization-page .auth-block {
     padding-top: 23px;
 }
 #videos-page .banner-block--type-1,
@@ -2630,7 +2631,9 @@ a[class~='tour-banner__container'] {
     width: 100%;
     padding: 0 20px;
     font-family: inherit;
-    background-color: #fff ;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 500;
 }
 .profile-settings-block__photo-upload {
     display: flex;
@@ -4408,7 +4411,8 @@ div[data-icon] {
     #model-page .comments-block,
     #news-page .comments-block,
     #news-page .news-block,
-    #terms-page .terms-block {
+    #terms-page .terms-block,
+    #authorization-page .auth-block {
         padding: 60px 30px 34px;
     }
     #videos-page .banner-block--type-1,
