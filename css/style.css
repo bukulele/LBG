@@ -1151,6 +1151,9 @@ input[class~="btn--yellow"] {
     align-items: center;
     gap: 20px;
 }
+.news-block__container {
+    gap: 30px;
+}
 .slider-block__slider-group {
     position: relative;
     display: flex;
