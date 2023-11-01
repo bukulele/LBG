@@ -4284,7 +4284,7 @@ div[data-icon] {
         width: 100%;
         min-width: 360px;
         max-width: 678px;
-        padding: 50px 30px;
+        padding: 50px 35px;
         gap: 30px;
     }
     .restore-block__container {
@@ -4309,7 +4309,8 @@ div[data-icon] {
     .benefits-banner__list li {
         font-size: 24px;
         background-size: 24px;
-        padding-left: 27px;
+        padding-left: 30px;
+        line-height: 42px;
     }
     .benefits-banner__text {
         font-size: 20px;
