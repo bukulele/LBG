@@ -2888,9 +2888,13 @@ div[data-icon] {
 }
 .buy-access-block__icon-container {
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .buy-access-block__icon-container img {
-    height: 100%;
+    height: auto;
+    max-height: 100%;
 }
 .buy-access-block__tariff-offer {
     width: 100%;
@@ -2899,7 +2903,7 @@ div[data-icon] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    /*gap: 10px;*/
     border-radius: 15px;
 }
 .buy-access-block__tariff-offer--green {
@@ -3203,6 +3207,9 @@ div[data-icon] {
     .single-news-block__container--dimensions,
     .terms-text__container--dimensions {
         width: 710px;
+    }
+    #buy-access-page .header__container {
+        width: 360px;
     }
     .banner-block__image-container--bg1 {
         aspect-ratio: 1862/401;
@@ -3715,6 +3722,7 @@ div[data-icon] {
         grid-column-start: 1;
         grid-column-end: 5;
     }
+    #buy-access-page .header__container,
     .header__container,
     .news-item-block,
     .banner-block__container,
@@ -4006,9 +4014,21 @@ div[data-icon] {
     }
     h3,
     #video-page h2,
-    #model-page h2 {
+    #model-page h2,
+    .message-block__intro,
+    .single-news-block__intro,
+    .terms-text__intro,
+    .get-access__header p,
+    .model-profile-block__name p,
+    .benefits-banner__header,
+    .benefits-banner__promo,
+    .tour-block__banner-container .benefits-banner__header,
+    .tour-block__banner-container .benefits-banner__promo,
+    .tour-banner__header,
+    .tour-banner__text,
+    .buy-access-block__secure-text,
+    .buy-access-block__event p {
         font-size: 32px;
-        /*margin-top: 27px;*/
     }
     .header__container,
     .slider-block__container,
@@ -4023,6 +4043,9 @@ div[data-icon] {
     .auth-block__container,
     .write-us-block__container {
         gap: 34px;
+    }
+    #buy-access-page .header__container {
+        gap: 50px;
     }
     .upper__footer-text {
         padding-top: 27px;
@@ -4202,11 +4225,11 @@ div[data-icon] {
     .terms-text__text {
         font-weight: 500 !important;
     }
-    .message-block__intro,
-    .single-news-block__intro,
-    .terms-text__intro {
-        font-size: 32px;
-    }
+    /*.message-block__intro,*/
+    /*.single-news-block__intro,*/
+    /*.terms-text__intro {*/
+    /*    font-size: 32px;*/
+    /*}*/
     .terms-text__text-header {
         font-size: 20px;
     }
@@ -4236,9 +4259,9 @@ div[data-icon] {
     .video-container__get-access {
         gap: 30px;
     }
-    .get-access__header p {
-        font-size: 32px;
-    }
+    /*.get-access__header p {*/
+    /*    font-size: 32px;*/
+    /*}*/
     .get-access__list {
         padding: 0 10px;
     }
@@ -4286,9 +4309,9 @@ div[data-icon] {
         width: 50px;
         height: 50px;
     }
-    .model-profile-block__name p {
-        font-size: 32px;
-    }
+    /*.model-profile-block__name p {*/
+    /*    font-size: 32px;*/
+    /*}*/
     .model-profile-block__description p {
         font-size: 16px;
     }
@@ -4331,10 +4354,10 @@ div[data-icon] {
     .benefits-banner__container {
         gap: 22px;
     }
-    .benefits-banner__header,
-    .benefits-banner__promo {
-        font-size: 32px;
-    }
+    /*.benefits-banner__header,*/
+    /*.benefits-banner__promo {*/
+    /*    font-size: 32px;*/
+    /*}*/
     .benefits-banner__list li {
         font-size: 24px;
         background-size: 24px;
@@ -4353,10 +4376,10 @@ div[data-icon] {
     .tour-block__banner-container {
         padding: 70px 20px;
     }
-    .tour-block__banner-container .benefits-banner__header,
-    .tour-block__banner-container .benefits-banner__promo {
-        font-size: 32px;
-    }
+    /*.tour-block__banner-container .benefits-banner__header,*/
+    /*.tour-block__banner-container .benefits-banner__promo {*/
+    /*    font-size: 32px;*/
+    /*}*/
     .tour-block__banner-container .benefits-banner__list li {
         font-size: 20px;
         background-size: 20px;
@@ -4371,10 +4394,10 @@ div[data-icon] {
     .tour-banner__container--padding {
         padding: 30px;
     }
-    .tour-banner__header,
-    .tour-banner__text {
-        font-size: 32px;
-    }
+    /*.tour-banner__header,*/
+    /*.tour-banner__text {*/
+    /*    font-size: 32px;*/
+    /*}*/
     .buy-access-block__container,
     .payment-options-banner__container,
     .buy-access-banner__container {
@@ -4383,21 +4406,22 @@ div[data-icon] {
     .buy-access-block__container {
         gap: 50px;
     }
-    .buy-access-block__secure-text {
-        font-size: 32px;
-    }
+    /*.buy-access-block__secure-text {*/
+    /*    font-size: 32px;*/
+    /*}*/
     .buy-access-block__event {
         padding: 30px;
     }
-    .buy-access-block__event p {
-        font-size: 32px;
-    }
+    /*.buy-access-block__event p {*/
+    /*    font-size: 32px;*/
+    /*}*/
     .buy-access-block__tariff-plans {
         justify-content: space-between;
     }
     .buy-access-block__tariff {
-        width: 450px;
+        /*width: 450px;*/
         gap: 20px;
+        padding: 30px;
     }
     .buy-access-block__tariff-header {
         flex-direction: column;
@@ -4417,6 +4441,9 @@ div[data-icon] {
     .buy-access-block__text {
         font-size: 24px;
     }
+    .buy-access-block__text--s {
+        font-size: 20px;
+    }
     .buy-access-block__tariff--best::before {
         position: absolute;
         content: "";
@@ -4425,6 +4452,19 @@ div[data-icon] {
         width: 155px;
         left: 0;
         top: 20px;
+    }
+    .buy-access-banner {
+        padding-top: 16px;
+    }
+    .payment-options-banner {
+        padding-top: 50px;
+    }
+    .payment-options-banner__container {
+        gap: 45px;
+        padding: 30px 30px 50px;
+    }
+    .payment-options-banner__icons-container {
+        gap: 27px;
     }
     .videos-block__selector label,
     .videos-block__selector select,

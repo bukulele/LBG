@@ -24,3 +24,5 @@ if (sessionStorage.getItem('auth') === 'true') {
   document.querySelector('#navbar .navbar__user-buttons').innerHTML = loginJoinButtons;
   document.querySelector('#navbar .navbar__user-buttons .join-now-button').classList.add('btn--mobile-small');
 }
+
+document.querySelector('.buy-access-banner .benefits-banner__header').remove();
