@@ -1705,6 +1705,10 @@ a[class~='tour-banner__container'] {
     width: 90%;
     height: auto;
 }
+.buy-access-banner,
+.payment-options-banner {
+    padding-top: 30px;
+}
 .buy-access-banner__container {
     width: 360px;
     padding: 20px;
@@ -2809,6 +2813,9 @@ div[data-icon] {
     height: 100%;
 }
 /*BUY ACCESS BLOCK*/
+.buy-access-block {
+    padding-bottom: 43px;
+}
 .buy-access-block__container {
     width: 360px;
     margin: auto;
