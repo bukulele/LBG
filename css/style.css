@@ -18,13 +18,13 @@ svg, svg * {
     pointer-events: none;
 }
 
-html, body, button, textarea {
+html, body {
     width: 100%;
     height: 100%;
-    font-family: 'Manrope', sans-serif;
     background-color: #1D1E20;
-    margin: 0;
-    padding: 0;
+}
+html, body, button, textarea {
+    font-family: 'Manrope', sans-serif;
 }
 
 h2, h3 {
@@ -1054,7 +1054,8 @@ input[class~="btn--yellow"] {
 #model-page .model-profile-block,
 #news-page .news-block,
 #terms-page .terms-block,
-#authorization-page .auth-block {
+#authorization-page .auth-block,
+#write-us-page .write-us-block {
     padding-top: 23px;
 }
 #videos-page .banner-block--type-1,
@@ -2617,10 +2618,6 @@ a[class~='tour-banner__container'] {
     flex-direction: column;
     gap: 10px;
 }
-.write-us-block__form textarea {
-    resize: none;
-    height: 181px;
-}
 .auth-block__form-input,
 .write-us-block__form-input,
 .restore-block__form-input,
@@ -2634,6 +2631,11 @@ a[class~='tour-banner__container'] {
     background-color: #fff;
     font-size: 15px;
     font-weight: 500;
+}
+.write-us-block__form textarea {
+    resize: none;
+    height: 181px;
+    padding: 20px;
 }
 .profile-settings-block__photo-upload {
     display: flex;
@@ -3995,7 +3997,8 @@ div[data-icon] {
     .news-block__list,
     .news-block__news-container,
     .terms-block__container,
-    .auth-block__container {
+    .auth-block__container,
+    .write-us-block__container {
         gap: 34px;
     }
     .upper__footer-text {
@@ -4270,13 +4273,16 @@ div[data-icon] {
     /*.write-us-block__group {*/
     /*    gap: 30px;*/
     /*}*/
-    .auth-block__group {
+    .auth-block__group,
+    .write-us-block__group {
         width: 1400px;
     }
-    .auth-block__half:first-of-type {
+    .auth-block__half:first-of-type,
+    .write-us-block__half:first-of-type {
         justify-self: flex-start;
     }
-    .auth-block__half:last-of-type {
+    .auth-block__half:last-of-type,
+    .write-us-block__half:last-of-type {
         justify-self: flex-end;
     }
     .auth-block__half,
@@ -4423,7 +4429,8 @@ div[data-icon] {
     #news-page .comments-block,
     #news-page .news-block,
     #terms-page .terms-block,
-    #authorization-page .auth-block {
+    #authorization-page .auth-block,
+    #write-us-page .write-us-block {
         padding: 60px 30px 34px;
     }
     #videos-page .banner-block--type-1,
