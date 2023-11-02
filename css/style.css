@@ -1056,7 +1056,8 @@ input[class~="btn--yellow"] {
 #terms-page .terms-block,
 #authorization-page .auth-block,
 #write-us-page .write-us-block,
-#buy-access-page .buy-access-block {
+#buy-access-page .buy-access-block,
+#profile-settings-page .profile-settings-block {
     padding-top: 23px;
 }
 #videos-page .banner-block--type-1,
@@ -4507,7 +4508,8 @@ div[data-icon] {
     #terms-page .terms-block,
     #authorization-page .auth-block,
     #write-us-page .write-us-block,
-    #buy-access-page .buy-access-block {
+    #buy-access-page .buy-access-block,
+    #profile-settings-page .profile-settings-block {
         padding: 60px 30px 34px;
     }
     #videos-page .banner-block--type-1,
