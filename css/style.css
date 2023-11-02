@@ -1740,14 +1740,22 @@ a[class~='tour-banner__container'] {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 27px;
+    /*height: 60px;*/
+}
+/*.payment-options-banner__icon {*/
+/*    height: 100%;*/
+/*}*/
+/*.payment-options-banner__icon img {*/
+/*    height: 100%;*/
+/*    width: auto;*/
+/*}*/
+.payment-options-banner__icon .icon--master {
     height: 60px;
+    width: auto;
 }
-.payment-options-banner__icon {
-    height: 100%;
-}
-.payment-options-banner__icon img {
-    height: 100%;
+.payment-options-banner__icon .icon--visa {
+    height: 40px;
     width: auto;
 }
 /*TIMER BLOCK*/
@@ -4463,8 +4471,13 @@ div[data-icon] {
         gap: 45px;
         padding: 30px 30px 50px;
     }
-    .payment-options-banner__icons-container {
-        gap: 27px;
+    .payment-options-banner__icon .icon--master {
+        height: 76px;
+        width: auto;
+    }
+    .payment-options-banner__icon .icon--visa {
+        height: 46px;
+        width: auto;
     }
     .videos-block__selector label,
     .videos-block__selector select,
