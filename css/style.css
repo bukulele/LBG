@@ -1058,7 +1058,8 @@ input[class~="btn--yellow"] {
 #write-us-page .write-us-block,
 #buy-access-page .buy-access-block,
 #profile-settings-page .profile-settings-block,
-#restore-password-page .restore-block {
+#restore-password-page .restore-block,
+#new-password-page .restore-block {
     padding-top: 23px;
 }
 #videos-page .banner-block--type-1,
@@ -4361,7 +4362,7 @@ div[data-icon] {
     .auth-block__form,
     .write-us-block__form,
     .restore-block__form {
-        max-width: 421px;
+        max-width: 420px;
     }
     .benefits-banner__container {
         gap: 22px;
@@ -4514,7 +4515,8 @@ div[data-icon] {
     #write-us-page .write-us-block,
     #buy-access-page .buy-access-block,
     #profile-settings-page .profile-settings-block,
-    #restore-password-page .restore-block {
+    #restore-password-page .restore-block,
+    #new-password-page .restore-block {
         padding: 60px 30px 34px;
     }
     #videos-page .banner-block--type-1,
