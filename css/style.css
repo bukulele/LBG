@@ -2741,13 +2741,17 @@ div[data-icon] {
     font-weight: 800;
 }
 /*TOUR BLOCK*/
-.tour-block__container {
+.tour-block {
     padding: 20px 10px;
+}
+.tour-block__container {
+    /*padding: 20px 10px;*/
     gap: 10px;
 }
 .tour-block__titles {
     column-count: 2;
     column-gap: 10px;
+    width: 100%;
 }
 .tour-block__titles * {
     break-inside: avoid;
@@ -3843,9 +3847,9 @@ div[data-icon] {
         border-left: 1px solid #53575C;
         border-right: 1px solid #53575C;
     }
-    .tour-block__container {
-        padding: 60px 30px 0;
-    }
+    /*.tour-block__container {*/
+    /*    padding: 60px 30px 0;*/
+    /*}*/
     .tour-block__titles {
         column-count: 4;
         column-gap: 30px;
@@ -4066,7 +4070,8 @@ div[data-icon] {
     .auth-block__container,
     .write-us-block__container,
     .profile-settings-block__container,
-    .restore-block__container {
+    .restore-block__container,
+    .tour-block__container {
         gap: 34px;
     }
     #buy-access-page .header__container {
@@ -4528,7 +4533,8 @@ div[data-icon] {
     #buy-access-page .buy-access-block,
     #profile-settings-page .profile-settings-block,
     #restore-password-page .restore-block,
-    #new-password-page .restore-block {
+    #new-password-page .restore-block,
+    .tour-block {
         padding: 60px 30px 34px;
     }
     #videos-page .banner-block--type-1,
