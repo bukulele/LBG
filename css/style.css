@@ -4049,13 +4049,15 @@ div[data-icon] {
     .model-profile-block__name p,
     .benefits-banner__header,
     .benefits-banner__promo,
-    .tour-block__banner-container .benefits-banner__header,
-    .tour-block__banner-container .benefits-banner__promo,
     .tour-banner__header,
     .tour-banner__text,
     .buy-access-block__secure-text,
     .buy-access-block__event p {
         font-size: 32px;
+    }
+    .tour-block__banner-container .benefits-banner__header,
+    .tour-block__banner-container .benefits-banner__promo {
+        font-size: 25px;
     }
     .header__container,
     .slider-block__container,
@@ -4405,19 +4407,19 @@ div[data-icon] {
         padding: 0 50px;
     }
     .tour-block__banner-container {
-        padding: 70px 20px;
+        padding: 50px 20px;
     }
     /*.tour-block__banner-container .benefits-banner__header,*/
     /*.tour-block__banner-container .benefits-banner__promo {*/
     /*    font-size: 32px;*/
     /*}*/
     .tour-block__banner-container .benefits-banner__list li {
-        font-size: 20px;
-        background-size: 20px;
-        padding-left: 23px;
+        font-size: 18px;
+        background-size: 18px;
+        padding-left: 24px;
     }
     .tour-block__banner-container .benefits-banner__text {
-        font-size: 20px;
+        font-size: 18px;
     }
     .tour-banner__container {
         gap: 30px;
@@ -4613,6 +4615,18 @@ div[data-icon] {
     }
     .tour-block__banner-container {
         padding: 70px 30px;
+    }
+    .tour-block__banner-container .benefits-banner__header,
+    .tour-block__banner-container .benefits-banner__promo {
+        font-size: 32px;
+    }
+    .tour-block__banner-container .benefits-banner__list li {
+        font-size: 20px;
+        background-size: 20px;
+        padding-left: 23px;
+    }
+    .tour-block__banner-container .benefits-banner__text {
+        font-size: 20px;
     }
     .tour-block__play-container {
         min-width: 100px;
