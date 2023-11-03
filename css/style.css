@@ -1067,7 +1067,8 @@ input[class~="btn--yellow"] {
 #video-page .banner-block--type-1,
 #model-page .banner-block--type-1,
 #news-page .banner-block--type-1,
-#terms-page .banner-block--type-1 {
+#terms-page .banner-block--type-1,
+#tour-page .banner-block--type-1 {
     padding: 30px 0;
 }
 #video-page .pictures-block,
@@ -3224,6 +3225,12 @@ div[data-icon] {
     .terms-text__container--dimensions {
         width: 710px;
     }
+    #tour-page .banner-block--type-1 {
+        padding: 30px;
+    }
+    #tour-page .banner-block--type-1 .banner-block__container {
+        width: 100%;
+    }
     #buy-access-page .header__container {
         width: 360px;
     }
@@ -4529,7 +4536,8 @@ div[data-icon] {
     #video-page .banner-block--type-1,
     #model-page .banner-block--type-1,
     #news-page .banner-block--type-1,
-    #terms-page .banner-block--type-1 {
+    #terms-page .banner-block--type-1,
+    #tour-page .banner-block--type-1 {
         padding: 50px 30px;
     }
     .videos-block__titles > .banner-block,
