@@ -4050,7 +4050,8 @@ div[data-icon] {
     .news-block__news-container,
     .terms-block__container,
     .auth-block__container,
-    .write-us-block__container {
+    .write-us-block__container,
+    .profile-settings-block__container {
         gap: 34px;
     }
     #buy-access-page .header__container {
@@ -4378,6 +4379,7 @@ div[data-icon] {
     }
     .profile-settings-block__form-container {
         padding: 50px 0 !important;
+        align-items: flex-start;
     }
     .profile-settings-block__form-block {
         padding: 0 50px;
