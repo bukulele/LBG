@@ -1057,7 +1057,8 @@ input[class~="btn--yellow"] {
 #authorization-page .auth-block,
 #write-us-page .write-us-block,
 #buy-access-page .buy-access-block,
-#profile-settings-page .profile-settings-block {
+#profile-settings-page .profile-settings-block,
+#restore-password-page .restore-block {
     padding-top: 23px;
 }
 #videos-page .banner-block--type-1,
@@ -4051,7 +4052,8 @@ div[data-icon] {
     .terms-block__container,
     .auth-block__container,
     .write-us-block__container,
-    .profile-settings-block__container {
+    .profile-settings-block__container,
+    .restore-block__container {
         gap: 34px;
     }
     #buy-access-page .header__container {
@@ -4511,7 +4513,8 @@ div[data-icon] {
     #authorization-page .auth-block,
     #write-us-page .write-us-block,
     #buy-access-page .buy-access-block,
-    #profile-settings-page .profile-settings-block {
+    #profile-settings-page .profile-settings-block,
+    #restore-password-page .restore-block {
         padding: 60px 30px 34px;
     }
     #videos-page .banner-block--type-1,
