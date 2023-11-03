@@ -1167,7 +1167,6 @@ input[class~="btn--yellow"] {
 .write-us-block__container,
 .restore-block__container,
 .profile-settings-block__container,
-.tour-block__container,
 .buy-access-banner__container {
     gap: 20px;
 }
@@ -2738,6 +2737,7 @@ div[data-icon] {
 /*TOUR BLOCK*/
 .tour-block__container {
     padding: 20px 10px;
+    gap: 10px;
 }
 .tour-block__titles {
     column-count: 2;
@@ -2797,7 +2797,7 @@ div[data-icon] {
     padding-left: 11px;
 }
 .tour-block__banner-container .benefits-banner__text {
-    font-size: 10px;
+    font-size: 8px;
 }
 .tour-block__play-container {
     min-width: 40px;
