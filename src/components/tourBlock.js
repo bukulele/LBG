@@ -1,5 +1,5 @@
 import image39 from '../../assets/temp/image 39.png';
-import image40 from '../../assets/temp/image 40.png';
+// import image40 from '../../assets/temp/image 40.png';
 import image41 from '../../assets/temp/image 41.png';
 import image42 from '../../assets/temp/image 42.png';
 import image43 from '../../assets/temp/image 43.png';
@@ -17,8 +17,9 @@ import pagerContainer from './pagerContainer.html';
 import benefitsBanner from './benefitsBanner.html';
 import banner3 from './banner3.html';
 import banner4 from './banner4.html';
+import banner6 from './banner6.html';
 
-const images = [image39, image40, image41, image42, image43, image44, image45, image46, image47, image48, image49, image50, image52, image53];
+const images = [image39, image41, image42, image43, image44, image45, image46, image47, image48, image49, image50, image52, image53];
 
 let tourBlockTitlesContainer = document.querySelector('.tour-block__container .tour-block__titles');
 
@@ -29,6 +30,9 @@ for (let i = 0; i < images.length; i++) {
   tourBlockTitlesContainer.lastElementChild.querySelector('.tour-block__image').insertAdjacentElement('afterbegin', imageElement);
   if (i === 0) {
     tourBlockTitlesContainer.insertAdjacentHTML('beforeend', banner3);
+  }
+  if (i === 5) {
+    tourBlockTitlesContainer.insertAdjacentHTML('beforeend', banner6);
   }
   if (i === 9) {
     tourBlockTitlesContainer.insertAdjacentHTML('beforeend', `

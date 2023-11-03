@@ -1692,9 +1692,14 @@ a[class~='tour-banner__container'] {
 .tour-banner__image-container {
     width: 100%;
     height: 100%;
+}
+.tour-banner__image-container--banner-4 {
     background: center / cover no-repeat url("../assets/temp/image%2051.png");
 }
 
+.tour-banner__image-container--banner-6 {
+    background: center / cover no-repeat url("../assets/temp/image%2040.png");
+}
 .tour-banner__image-text-container {
     position: absolute;
     width: 100%;
