@@ -4616,9 +4616,11 @@ div[data-icon] {
     .tour-block__banner-container {
         padding: 70px 30px;
     }
-    .tour-block__banner-container .benefits-banner__header,
-    .tour-block__banner-container .benefits-banner__promo {
+    .tour-block__banner-container .benefits-banner__header {
         font-size: 32px;
+    }
+    .tour-block__banner-container .benefits-banner__promo {
+        font-size: 24px;
     }
     .tour-block__banner-container .benefits-banner__list li {
         font-size: 20px;
