@@ -3852,11 +3852,11 @@ div[data-icon] {
     /*}*/
     .tour-block__titles {
         column-count: 4;
-        column-gap: 30px;
+        /*column-gap: 30px;*/
     }
     .tour-block__title,
     .tour-block__banner-container {
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;*/
         border-radius: 30px;
     }
     .tour-block__play-container {
@@ -3871,7 +3871,7 @@ div[data-icon] {
     }
     .tour-banner__container {
         border-radius: 30px;
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;*/
     }
     .tour-banner__header,
     .tour-banner__text {
@@ -4054,10 +4054,12 @@ div[data-icon] {
         font-size: 32px;
     }
     .tour-block__banner-container .benefits-banner__header,
-    .tour-block__banner-container .benefits-banner__promo,
     .tour-banner__header,
     .tour-banner__text {
         font-size: 25px;
+    }
+    .tour-block__banner-container .benefits-banner__promo {
+        font-size: 20px;
     }
     .header__container,
     .slider-block__container,
@@ -4406,6 +4408,14 @@ div[data-icon] {
     .profile-settings-block__form-block {
         padding: 0 50px;
     }
+    .tour-block__titles {
+        /*column-count: 4;*/
+        column-gap: 30px;
+    }
+    .tour-block__title,
+    .tour-block__banner-container {
+        margin-bottom: 30px;
+    }
     .tour-block__banner-container {
         padding: 50px 20px;
     }
@@ -4419,10 +4429,11 @@ div[data-icon] {
         padding-left: 24px;
     }
     .tour-block__banner-container .benefits-banner__text {
-        font-size: 18px;
+        font-size: 16px;
     }
     .tour-banner__container {
         gap: 30px;
+        margin-bottom: 30px;
     }
     .tour-banner__container--padding {
         padding: 30px 40px;
@@ -4626,6 +4637,9 @@ div[data-icon] {
     .tour-banner__header,
     .tour-banner__text {
         font-size: 32px;
+    }
+    .tour-block__banner-container .benefits-banner__text {
+        font-size: 18px;
     }
     .tour-banner__container .btn--promo {
         height: 76px;
