@@ -3978,6 +3978,7 @@ div[data-icon] {
     #videos-page .single-news-block__container--dimensions {
         width: 100%;
     }
+    #videos-page .single-news-block__container--dimensions,
     #videos-page .banner-block--type-1,
     #models-page .banner-block--type-1 {
         padding: 30px;
