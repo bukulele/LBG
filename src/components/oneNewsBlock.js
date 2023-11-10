@@ -31,7 +31,7 @@ singleBlockButtons.innerHTML = `
 singleBlockButtons.insertAdjacentHTML('beforebegin', `
 <div class="single-news-block__photos"></div>
     <div class="single-news-block__text-container">
-        <p class="single-news-block__text">And now the hottest thing is casting:</p>
+        <p class="single-news-block__text"><span class="single-news-block__text--bold">And now the hottest thing is casting:</span></p>
     </div>
 <div class="single-news-block__video"></div>
 `);
