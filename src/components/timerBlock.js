@@ -12,6 +12,7 @@ let screenshotsContainer = document.querySelector('.timer-block .timer-block__vi
 
 let mainVideoImage = document.createElement('img');
 mainVideoImage.src = image15;
+mainVideoImage.dataset.preview = './dist/videos/097 - That\'s My Mommy (1955)_New.mov';
 
 screenshotsContainer.setAttribute('data-gallery-images', JSON.stringify(screenshots));
 

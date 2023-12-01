@@ -17,5 +17,6 @@ for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
+  imageElement.dataset.preview = './dist/videos/097 - That\'s My Mommy (1955)_New.mov';
   videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }

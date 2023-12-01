@@ -37,6 +37,7 @@ for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
+  imageElement.dataset.preview = './dist/videos/097 - That\'s My Mommy (1955)_New.mov';
   videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }
 
@@ -48,6 +49,7 @@ for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
+  imageElement.dataset.preview = './dist/videos/097 - That\'s My Mommy (1955)_New.mov';
   videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }
 let banner2Container = '<div id="banner_2" class="banner-block banner-block--type-2"></div>';
@@ -59,11 +61,13 @@ for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
+  imageElement.dataset.preview = './dist/videos/097 - That\'s My Mommy (1955)_New.mov';
   videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }
 for (let video of videos) {
   videosBlockTitles.insertAdjacentHTML('beforeend', videoTitle);
   let imageElement = document.createElement('img');
   imageElement.src = video;
+  imageElement.dataset.preview = './dist/videos/097 - That\'s My Mommy (1955)_New.mov';
   videosBlockTitles.lastElementChild.querySelector('.video-title__image').insertAdjacentElement('afterbegin', imageElement);
 }
