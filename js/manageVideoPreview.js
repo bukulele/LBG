@@ -1,5 +1,5 @@
 // initialization
-let windowWidth = window.outerWidth;
+let windowWidthForIntersect = window.outerWidth;
 window.addEventListener('load', createObserver);
 window.addEventListener('resize', handleVideoPreviewResize);
 
@@ -66,7 +66,7 @@ function defineTargetVideoToShow(event) {
     typeof event.target.className.includes !== 'undefined' &&
     event.target.className.includes('video-title__container');
 
-  if ((targetIsVideo && !clientY) || (windowWidth > 430 && targetIsVideo && Math.abs(clientY - startYTouchPosition) > 40)) {
+  if ((targetIsVideo && !clientY) || (windowWidthForIntersect > 430 && targetIsVideo && Math.abs(clientY - startYTouchPosition) > 40)) {
     let videoElement = event.target.querySelector('video');
     if (videoElement && currentlyPlayingVideoPreview !== videoElement) {
       if (currentlyPlayingVideoPreview) {
@@ -81,8 +81,8 @@ function defineTargetVideoToShow(event) {
 }
 
 function defineTargetVideoToHide(event) {
-  if (event.target.className && typeof event.target.className.includes !== 'undefined' && event.target.className.includes('video-preview')) {
-    let videoElement = event.target.parentNode.querySelector('video');
+  if (event.target.className && typeof event.target.className.includes !== 'undefined' && event.target.className.includes('video-title__container')) {
+    let videoElement = event.target.querySelector('video');
     currentlyPlayingVideoPreview = null;
     hideLoader(event.target);
     hideVideoPreview(videoElement);
@@ -128,13 +128,13 @@ document.addEventListener('mouseout', defineTargetVideoToHide);
 let startYTouchPosition;
 
 function handleTouchVideoPreview(event) {
-  if (event.target.className && typeof event.target.className.includes !== 'undefined' && event.target.className.includes('video-preview')) {
+  if (event.target.className && typeof event.target.className.includes !== 'undefined' && event.target.className.includes('video-title__container')) {
     startYTouchPosition = event.changedTouches[0].clientY;
   }
 }
 
 function handleVideoPreviewResize() {
-  if (windowWidth !== window.outerWidth) {
+  if (windowWidthForIntersect !== window.outerWidth) {
     hideVideoPreview(currentlyPlayingVideoPreview);
     currentlyPlayingVideoPreview = null;
 
@@ -143,7 +143,7 @@ function handleVideoPreviewResize() {
     });
     videosPlaying = [];
 
-    windowWidth = window.outerWidth;
+    windowWidthForIntersect = window.outerWidth;
   }
 }
 
@@ -168,7 +168,7 @@ document.addEventListener('touchmove', defineTargetVideoToShow);
 // handling video preview on mobile scrolling
 
 function mobilePreviewIntersect(entries) {
-  if (windowWidth <= 430) {
+  if (windowWidthForIntersect <= 430) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         let videoContainer = entry.target.querySelector('.video-title__container');

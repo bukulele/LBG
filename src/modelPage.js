@@ -4,7 +4,7 @@ import banner from './components/banner.html';
 import timerBlock from './components/timerBlock.html';
 // import picturesBlock from './components/picturesBlock.html';
 import commentsBlock from './components/commentsBlock.html';
-import pagerContainer from './components/pagerContainer.html';
+// import pagerContainer from './components/pagerContainer.html';
 import modelProfileBlock from './components/modelProfileBlock.html';
 import videosBlock from './components/videosBlock.html';
 import memberButtonSide from './components/memberButtonSide.html';
@@ -27,7 +27,7 @@ document.getElementById('timerBlock').innerHTML = timerBlock;
 document.getElementById('imagesGalleryBlock').innerHTML = imagesGalleryBlock;
 
 document.querySelector('.videos-block__container h2').innerHTML = 'VIDEOS <span class="header-text--colored">(17)</span>';
-document.querySelector('.pictures-block__button-container').innerHTML = pagerContainer;
+// document.querySelector('.pictures-block__button-container').innerHTML = pagerContainer;
 
 if (sessionStorage.getItem('auth') === 'true') {
   document.querySelector('#navbar .links-container__user-buttons').innerHTML = memberButtonSide;
