@@ -6,7 +6,7 @@ window.addEventListener('resize', handleVideoPreviewResize);
 let currentlyPlayingVideoPreview;
 let videosPlaying = [];
 
-let loaderTimerId = null;
+let currentTarget = null;
 
 // getting url for preload
 let videoPreviewContainers = document.querySelectorAll('.video-title__container');
@@ -67,6 +67,10 @@ function defineTargetVideoToShow(event) {
     event.target.className.includes('video-title__container');
 
   if ((targetIsVideo && !clientY) || (windowWidthForIntersect > 430 && targetIsVideo && Math.abs(clientY - startYTouchPosition) > 40)) {
+
+    if (currentTarget) return;
+    currentTarget = event.target;
+
     let videoElement = event.target.querySelector('video');
     if (videoElement && currentlyPlayingVideoPreview !== videoElement) {
       if (currentlyPlayingVideoPreview) {
@@ -82,10 +86,20 @@ function defineTargetVideoToShow(event) {
 
 function defineTargetVideoToHide(event) {
   if (event.target.className && typeof event.target.className.includes !== 'undefined' && event.target.className.includes('video-title__container')) {
+    let relatedTarget = event.relatedTarget;
+
+    while (relatedTarget) {
+      if (relatedTarget === currentTarget) return;
+
+      relatedTarget = relatedTarget.parentNode;
+    }
+
     let videoElement = event.target.querySelector('video');
     currentlyPlayingVideoPreview = null;
     hideLoader(event.target);
     hideVideoPreview(videoElement);
+
+    currentTarget = null;
   }
 }
 
@@ -95,9 +109,8 @@ function showVideoPreview(video) {
     let imgRef = videoContainer.querySelector('img[data-preview]');
     video.play()
       .then(() => {
-        hideVideoInfo(videoContainer);
+        // hideVideoInfo(videoContainer);
         hideLoader(videoContainer);
-        // video.style.visibility = 'visible';
         video.setAttribute('height', imgRef.offsetHeight);
         videoContainer.querySelector('.video-title__image').style.display = 'none';
         videoContainer.querySelector('.video-title__video').style.display = 'flex';
@@ -111,10 +124,9 @@ function showVideoPreview(video) {
 function hideVideoPreview(video) {
   if (video) {
     let videoContainer = video.parentNode;
-    showVideoInfo(videoContainer);
+    // showVideoInfo(videoContainer);
     video.pause();
     video.currentTime = 0;
-    // video.style.visibility = 'hidden';
     videoContainer.querySelector('.video-title__image').style.display = 'flex';
     videoContainer.querySelector('.video-title__video').style.display = 'none';
   }
@@ -154,9 +166,6 @@ function showLoader(container) {
 }
 
 function hideLoader(container) {
-  if (loaderTimerId) {
-    clearTimeout(loaderTimerId);
-  }
   if (container.className.includes('preview-loading')) {
     container.classList.remove('preview-loading');
   }
@@ -172,9 +181,7 @@ function mobilePreviewIntersect(entries) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         let videoContainer = entry.target.querySelector('.video-title__container');
-        // if (videoContainer) {
-        //   showLoader(videoContainer);
-        // }
+
         let videoElement = entry.target.querySelector('video');
         if (videoElement && videoContainer) {
           showLoader(videoContainer);
@@ -199,21 +206,18 @@ function mobilePreviewIntersect(entries) {
 // hiding info over video
 
 function hideVideoInfo(container) {
-  console.log('hideVideoInfo');
-  // let videoInfo = container.querySelector('.thumb-spot__duration-block');
-  // if (!videoInfo.className.includes('thumb-spot__hidden')) {
-  //   videoInfo.classList.add('thumb-spot__hidden');
-  // }
+  let videoInfo = container.querySelector('.video-title__block-over');
+  if (!videoInfo.className.includes('video-title__block-over--hidden')) {
+    videoInfo.classList.add('video-title__block-over--hidden');
+  }
 }
 
 function showVideoInfo(container) {
-  console.log('showVideoInfo');
-  // let videoInfo = container.querySelector('.thumb-spot__duration-block');
-  // if (videoInfo.className.includes('thumb-spot__hidden')) {
-  //   videoInfo.classList.remove('thumb-spot__hidden');
-  // }
+  let videoInfo = container.querySelector('.video-title__block-over');
+  if (videoInfo.className.includes('video-title__block-over--hidden')) {
+    videoInfo.classList.remove('video-title__block-over--hidden');
+  }
 }
-
 
 
 // let currentTarget = null;

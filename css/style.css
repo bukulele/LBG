@@ -284,12 +284,23 @@ input[class~="btn--yellow"] {
     height: 50px;
     top: 50%;
     left: 50%;
+    opacity: 0;
     /*border: 5px solid #f3b700;*/
     /*border-top-color: transparent;*/
     /*border-radius: 50%;*/
     background: center / contain no-repeat url("../assets/images/Rolling-1s-100px.png");
     z-index: 1;
-    animation: rotateLoader 1s linear infinite;
+    animation: showLoader 0.1s ease 0.2s 1 normal forwards,
+            rotateLoader 1s linear infinite;
+}
+
+@keyframes showLoader {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 
 @keyframes rotateLoader {
@@ -1297,6 +1308,10 @@ input[class~="btn--yellow"] {
 .video-title__block-over {
     padding: 0 20px 27px 17px;
     gap: 15px;
+    transition: opacity .2s linear;
+}
+.video-title__block-over--hidden {
+    opacity: 0;
 }
 .slider-element__block-over {
     padding: 0 20px 23px;
