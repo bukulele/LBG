@@ -3,6 +3,12 @@ const mainImageContainer = document.querySelector('.main-video-block__image');
 const mainImage = mainImageContainer.querySelector('img');
 const muteButton = document.querySelector('.main-video-block__sound');
 // alert('Preview Loaded');
+
+mainImage.onload = handleImageLoading;
+if (mainImage.complete) {
+  handleImageLoading();
+}
+
 function handleImageLoading () {
   // alert('Image loaded');
   let videoElement = mainVideoContainer.querySelector('video');
@@ -40,5 +46,5 @@ function toggleMute (event) {
   }
 }
 
-mainImage.addEventListener('load', handleImageLoading);
+// mainImage.addEventListener('load', handleImageLoading);
 muteButton.addEventListener('click', toggleMute);
