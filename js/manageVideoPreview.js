@@ -68,8 +68,8 @@ function defineTargetVideoToShow(event) {
 
   if ((targetIsVideo && !clientY) || (windowWidthForIntersect > 430 && targetIsVideo && Math.abs(clientY - startYTouchPosition) > 40)) {
 
-    if (currentTarget) return;
-    currentTarget = event.target;
+    // if (currentTarget) return;
+    // currentTarget = event.target;
 
     let videoElement = event.target.querySelector('video');
     if (videoElement && currentlyPlayingVideoPreview !== videoElement) {
@@ -81,6 +81,8 @@ function defineTargetVideoToShow(event) {
       showLoader(event.target);
       showVideoPreview(currentlyPlayingVideoPreview);
     }
+    if (currentTarget) return;
+    currentTarget = event.target;
   }
 }
 
