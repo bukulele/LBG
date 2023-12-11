@@ -15,6 +15,9 @@ let videoPreviewContainers = document.querySelectorAll('.video-title__container'
 let videoContainersObserver;
 let videoPreviewObserver;
 
+// handling touch events
+let startYTouchPosition;
+
 function createObserver() {
   videoContainersObserver = new IntersectionObserver(handleIntersect);
   videoPreviewObserver = new IntersectionObserver(mobilePreviewIntersect, {
@@ -86,7 +89,7 @@ function defineTargetVideoToShow(event) {
     if (currentTarget) return;
     currentTarget = event.target;
   } else {
-    if (windowWidthForIntersect > 430) {
+    if (windowWidthForIntersect > 430 && currentTarget !== event.target) {
       videoPreviewContainers.forEach(container => {
         let videoElement = container.querySelector('video');
         while (relatedTarget) {
@@ -155,8 +158,9 @@ document.addEventListener('mouseover', defineTargetVideoToShow);
 document.addEventListener('mouseout', defineTargetVideoToHide);
 
 
-// handling touch events
-let startYTouchPosition;
+// // handling touch events
+// let startYTouchPosition;
+// let clientY;
 
 function handleTouchVideoPreview(event) {
   if (event.target.className && typeof event.target.className.includes !== 'undefined' && event.target.className.includes('video-title__container')) {
