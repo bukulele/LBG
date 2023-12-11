@@ -2726,6 +2726,7 @@ div[data-icon] {
 }
 
 .icon-tooltip {
+    pointer-events: none;
     position: fixed;
     display: flex;
     align-items: center;
@@ -2739,6 +2740,7 @@ div[data-icon] {
     font-weight: 800;
 }
 .icon-tooltip__arrow {
+    pointer-events: none;
     position: fixed;
     content: " ";
     border-width: 7px;

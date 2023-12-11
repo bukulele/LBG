@@ -66,6 +66,8 @@ function defineTargetVideoToShow(event) {
     typeof event.target.className.includes !== 'undefined' &&
     event.target.className.includes('video-title__container');
 
+  let relatedTarget = event.relatedTarget;
+
   if ((targetIsVideo && !clientY) || (windowWidthForIntersect > 430 && targetIsVideo && Math.abs(clientY - startYTouchPosition) > 40)) {
 
     // if (currentTarget) return;
@@ -83,6 +85,21 @@ function defineTargetVideoToShow(event) {
     }
     if (currentTarget) return;
     currentTarget = event.target;
+  } else {
+    if (windowWidthForIntersect > 430) {
+      videoPreviewContainers.forEach(container => {
+        let videoElement = container.querySelector('video');
+        while (relatedTarget) {
+          if (relatedTarget === currentTarget) return;
+
+          relatedTarget = relatedTarget.parentNode;
+        }
+        hideLoader(container);
+        hideVideoPreview(videoElement);
+      });
+      currentTarget = null;
+      currentlyPlayingVideoPreview = null;
+    }
   }
 }
 
