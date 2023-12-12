@@ -2721,7 +2721,8 @@ a[class~='tour-banner__container'] {
     height: 100%;
     color: #000;
 }
-div[data-icon] {
+div[data-icon],
+a[data-icon] {
     pointer-events: auto;
 }
 
