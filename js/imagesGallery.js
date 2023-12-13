@@ -17,7 +17,7 @@ function openImageGallery(event) {
 }
 
 function closeImageGallery(event) {
-  if (event.target.className === 'images-gallery-block__container') {
+  if (event.target.className === 'images-gallery-block__container' || event.target.className === 'images-gallery-block__close') {
     imagesGalleryBlock.style.display = 'none';
   }
 }
