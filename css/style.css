@@ -4283,7 +4283,9 @@ a[data-icon] {
     }
     .single-news-block__close {
         min-width: 22px;
-        height: 22px;
+        min-height: 22px;
+        max-width: 22px;
+        max-height: 22px;
     }
     .single-news-block__container .btn--red {
         margin: 34px 0;
