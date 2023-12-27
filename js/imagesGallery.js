@@ -9,7 +9,6 @@ function openImageGallery(event) {
   if (targetElement) {
     event.preventDefault();
     imagesList = JSON.parse(targetElement.getAttribute('data-gallery-images'));
-    // console.log(event.target.getAttribute('src'));
     imageIndex = imagesList.findIndex(item => item === event.target.getAttribute('src'));
     imagesGalleryBlock.style.display = 'block';
     imageElement.src = imagesList[imageIndex];
@@ -22,31 +21,43 @@ function closeImageGallery(event) {
   }
 }
 
-function nextImage(event) {
+function switchImage(event) {
   if (event.target.className.includes('images-gallery-block__slide-right')) {
-    event.preventDefault();
-    if (imageIndex === imagesList.length - 1) {
-      imageIndex = 0;
-    } else {
-      imageIndex += 1;
-    }
-    imageElement.src = imagesList[imageIndex];
+    nextImage(event);
+  } else if (event.target.className.includes('images-gallery-block__slide-left')) {
+    prevImage(event);
   }
 }
 
+function nextImage(event) {
+  event.preventDefault();
+  if (imageIndex === imagesList.length - 1) {
+    imageIndex = 0;
+  } else {
+    imageIndex += 1;
+  }
+  imageElement.src = imagesList[imageIndex];
+}
+
 function prevImage(event) {
-  if (event.target.className.includes('images-gallery-block__slide-left')) {
+  event.preventDefault();
+  if (imageIndex === 0) {
+    imageIndex = imagesList.length - 1;
+  } else {
+    imageIndex -= 1;
+  }
+  imageElement.src = imagesList[imageIndex];
+}
+
+function handleImageGalleryTouch(event) {
+
+  if (event.target.className.includes('btn--slider')) {
     event.preventDefault();
-    if (imageIndex === 0) {
-      imageIndex = imagesList.length - 1;
-    } else {
-      imageIndex -= 1;
-    }
-    imageElement.src = imagesList[imageIndex];
+    switchImage(event);
   }
 }
 
 document.addEventListener('click', openImageGallery);
 document.addEventListener('click', closeImageGallery);
-document.addEventListener('click', nextImage);
-document.addEventListener('click', prevImage);
+document.addEventListener('click', switchImage);
+document.addEventListener('touchstart', handleImageGalleryTouch, {passive: false});
