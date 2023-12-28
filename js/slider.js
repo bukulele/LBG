@@ -99,9 +99,20 @@ function handleWindowResize() {
 }
 
 function handleSliderTouch(event) {
+  let currentTarget = event.target;
+
+  if (currentTarget.className.includes('slider-block__slider-group')) {
+    return;
+  }
+
+  while (event.target.className && typeof event.target.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
+    currentTarget = currentTarget.parentNode;
+  }
+  if (currentTarget.className.includes('slider-block__slider')) {
+    console.log(currentTarget);
+  }
 
   if (event.target.className.includes('btn--slider')) {
-
     event.preventDefault();
     moveSlides(event);
   }
