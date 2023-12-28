@@ -101,10 +101,15 @@ function handleImageGalleryTouchMove(event) {
   // console.log(event);
 }
 
+function clearGalleryStartTouchPosition() {
+  gallery_startXPosition = null;
+}
+
 document.addEventListener('click', openImageGallery);
 // document.addEventListener('click', closeImageGallery);
 document.addEventListener('click', handleImageGalleryClick);
 // document.addEventListener('click', switchImage);
 document.addEventListener('touchstart', handleImageGalleryTouch, {passive: false});
 document.addEventListener('touchmove', handleImageGalleryTouchMove);
+document.addEventListener('touchend', clearGalleryStartTouchPosition);
 document.addEventListener('keydown', keyboardGalleryHandler);
