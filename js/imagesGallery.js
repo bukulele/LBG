@@ -16,20 +16,25 @@ function openImageGallery(event) {
   }
 }
 
-function closeImageGallery(event) {
-  if (event.target.className === 'images-gallery-block__container' || event.target.className === 'images-gallery-block__close') {
+function closeImageGallery() {
+  // if (event.target.className === 'images-gallery-block__container' ||
+  //   event.target.className === 'images-gallery-block__close') {
     // imagesGalleryBlock.style.display = 'none';
     imagesGalleryBlock.classList.add('images-gallery-block_hidden');
-  }
+  // }
 }
 
-function switchImage(event) {
+function handleImageGalleryClick(event) {
   if (event.target.className.includes('images-gallery-block__slide-right')) {
     event.preventDefault();
     nextImage();
   } else if (event.target.className.includes('images-gallery-block__slide-left')) {
     event.preventDefault();
     prevImage();
+  } else if (event.target.className === 'images-gallery-block__container' ||
+    event.target.className === 'images-gallery-block__close') {
+    event.preventDefault();
+    closeImageGallery();
   }
 }
 
@@ -57,24 +62,29 @@ function handleImageGalleryTouch(event) {
 
   if (event.target.className.includes('btn--slider')) {
     event.preventDefault();
-    switchImage(event);
+    handleImageGalleryClick(event);
   }
 }
 
 function keyboardGalleryHandler(event) {
   if (!imagesGalleryBlock.className.includes('images-gallery-block_hidden')) {
     event.preventDefault();
+    // console.log(event.key);
     if (event.key === 'ArrowLeft') {
       prevImage();
     }
     if (event.key === 'ArrowRight') {
       nextImage();
     }
+    if (event.key === 'Escape') {
+      closeImageGallery();
+    }
   }
 }
 
 document.addEventListener('click', openImageGallery);
-document.addEventListener('click', closeImageGallery);
-document.addEventListener('click', switchImage);
+// document.addEventListener('click', closeImageGallery);
+document.addEventListener('click', handleImageGalleryClick);
+// document.addEventListener('click', switchImage);
 document.addEventListener('touchstart', handleImageGalleryTouch, {passive: false});
 document.addEventListener('keydown', keyboardGalleryHandler);
