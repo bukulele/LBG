@@ -4,6 +4,8 @@ let imageElement = imagesGalleryContainer.querySelector('.images-gallery-block__
 let imagesList;
 let imageIndex = 0;
 
+let gallery_startXPosition;
+
 function openImageGallery(event) {
   let targetElement = event.target.getAttribute('data-gallery-open-image') === '' && event.target.closest('[data-gallery-images]');
   if (targetElement) {
@@ -59,10 +61,11 @@ function prevImage() {
 }
 
 function handleImageGalleryTouch(event) {
-
   if (event.target.className.includes('btn--slider')) {
     event.preventDefault();
     handleImageGalleryClick(event);
+  } else if (event.target.className.includes('images-gallery-block__image')) {
+    gallery_startXPosition = event.changedTouches[0].clientX;
   }
 }
 
@@ -82,9 +85,26 @@ function keyboardGalleryHandler(event) {
   }
 }
 
+function handleImageGalleryTouchMove(event) {
+  if (event.target.className.includes('images-gallery-block__image') && gallery_startXPosition) {
+    event.preventDefault();
+    let currentTouch = event.changedTouches[0].clientX;
+    if (gallery_startXPosition - currentTouch > 40) {
+      nextImage();
+      gallery_startXPosition = null;
+    } else if (gallery_startXPosition - currentTouch < -40) {
+      prevImage();
+      gallery_startXPosition = null;
+    }
+    // console.log(gallery_startXPosition - currentTouch);
+  }
+  // console.log(event);
+}
+
 document.addEventListener('click', openImageGallery);
 // document.addEventListener('click', closeImageGallery);
 document.addEventListener('click', handleImageGalleryClick);
 // document.addEventListener('click', switchImage);
 document.addEventListener('touchstart', handleImageGalleryTouch, {passive: false});
+document.addEventListener('touchmove', handleImageGalleryTouchMove);
 document.addEventListener('keydown', keyboardGalleryHandler);
