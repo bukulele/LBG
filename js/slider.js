@@ -6,6 +6,9 @@ const startingElementNumber = 2;
 let sliderBlock = document.querySelectorAll('.slider-block__slider');
 setSliders(sliderBlock, sliderElementAll);
 
+let slider_startXPosition;
+let slider_startYPosition;
+
 function setSliders(sliderBlock, sliderElementAll) {
   for (let elem of sliderElementAll) {
     elem.style.width = `${sliderElementReference.offsetWidth}px`;
@@ -35,7 +38,10 @@ function moveSlides(event) {
 }
 
 function moveSlidesLeft(event) {
-  event.preventDefault();
+  // console.log(event.target);
+  if (event.cancelable) {
+    event.preventDefault();
+  }
   let sliderGroup = event.target.closest('.slider-block__slider-group');
   let currentSlider = event.target.closest('.slider-block__container').querySelector('.slider-block__slider');
   let currentSlide = Number(currentSlider.dataset.currentSlide);
@@ -59,7 +65,10 @@ function moveSlidesLeft(event) {
 }
 
 function moveSlidesRight(event) {
-  event.preventDefault();
+  // console.log(event);
+  if (event.cancelable) {
+    event.preventDefault();
+  }
   let sliderGroup = event.target.closest('.slider-block__slider-group');
   let currentSlider = event.target.closest('.slider-block__container').querySelector('.slider-block__slider');
   let currentSlide = Number(currentSlider.dataset.currentSlide);
@@ -105,11 +114,13 @@ function handleSliderTouch(event) {
     return;
   }
 
-  while (event.target.className && typeof event.target.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
+  while (currentTarget.className && typeof currentTarget.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
     currentTarget = currentTarget.parentNode;
   }
+
   if (currentTarget.className.includes('slider-block__slider')) {
-    console.log(currentTarget);
+    slider_startXPosition = event.changedTouches[0].clientX;
+    slider_startYPosition = event.changedTouches[0].clientY;
   }
 
   if (event.target.className.includes('btn--slider')) {
@@ -118,6 +129,37 @@ function handleSliderTouch(event) {
   }
 }
 
+function handleSliderTouchMove(event) {
+  let currentTarget = event.target;
+
+  if (currentTarget.className.includes('slider-block__slider-group')) {
+    return;
+  }
+
+  while (currentTarget.className && typeof currentTarget.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
+    currentTarget = currentTarget.parentNode;
+  }
+
+  if (currentTarget.className.includes('slider-block__slider') && slider_startXPosition) {
+    // event.preventDefault();
+    let currentTouchX = event.changedTouches[0].clientX;
+    let currentTouchY = event.changedTouches[0].clientY;
+    // console.log(event.changedTouches[0].clientY);
+    // console.log(currentTouchY);
+    // console.log(slider_startYPosition, currentTouchY, Math.abs(slider_startYPosition - currentTouchY));
+    if (slider_startXPosition - currentTouchX > 40 && Math.abs(slider_startYPosition - currentTouchY) < 40) {
+      moveSlidesRight(event);
+      slider_startXPosition = null;
+      slider_startYPosition = null;
+    } else if (slider_startXPosition - currentTouchX < -40 && Math.abs(slider_startYPosition - currentTouchY) < 40) {
+      moveSlidesLeft(event);
+      slider_startXPosition = null;
+      slider_startYPosition = null;
+    }
+  }
+}
+
 document.addEventListener('click', moveSlides);
 document.addEventListener('touchstart', handleSliderTouch, {passive: false});
+document.addEventListener('touchmove', handleSliderTouchMove, {passive: false});
 window.addEventListener('resize', handleWindowResize);
