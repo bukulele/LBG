@@ -110,6 +110,6 @@ document.addEventListener('click', openImageGallery);
 document.addEventListener('click', handleImageGalleryClick);
 // document.addEventListener('click', switchImage);
 document.addEventListener('touchstart', handleImageGalleryTouch, {passive: false});
-document.addEventListener('touchmove', handleImageGalleryTouchMove);
+document.addEventListener('touchmove', handleImageGalleryTouchMove, {passive: false});
 document.addEventListener('touchend', clearGalleryStartTouchPosition);
 document.addEventListener('keydown', keyboardGalleryHandler);

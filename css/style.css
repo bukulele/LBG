@@ -3513,14 +3513,14 @@ a[data-icon] {
     .tour-banner__text {
         font-size: 14px;
     }
-    .images-gallery-block__close {
-        top: 50px;
-        right: 50px;
-        min-width: 50px;
-        max-width: 50px;
-        min-height: 50px;
-        max-height: 50px;
-    }
+    /*.images-gallery-block__close {*/
+    /*    top: 50px;*/
+    /*    right: 50px;*/
+    /*    min-width: 50px;*/
+    /*    max-width: 50px;*/
+    /*    min-height: 50px;*/
+    /*    max-height: 50px;*/
+    /*}*/
 }
 
 @media only screen and (min-width: 1024px) {
@@ -3629,6 +3629,14 @@ a[data-icon] {
     }
     .upper__footer-benefits {
         align-self: end;
+    }
+    .images-gallery-block__close {
+        top: 50px;
+        right: 50px;
+        min-width: 50px;
+        max-width: 50px;
+        min-height: 50px;
+        max-height: 50px;
     }
 }
 
