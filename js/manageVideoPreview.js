@@ -1,5 +1,5 @@
 // initialization
-let windowWidthForIntersect = window.outerWidth;
+let windowWidthForIntersect = window.innerWidth;
 window.addEventListener('load', createObserver);
 window.addEventListener('resize', handleVideoPreviewResize);
 
@@ -169,7 +169,7 @@ function handleTouchVideoPreview(event) {
 }
 
 function handleVideoPreviewResize() {
-  if (windowWidthForIntersect !== window.outerWidth) {
+  if (windowWidthForIntersect !== window.innerWidth) {
     hideVideoPreview(currentlyPlayingVideoPreview);
     currentlyPlayingVideoPreview = null;
 
@@ -178,7 +178,7 @@ function handleVideoPreviewResize() {
     });
     videosPlaying = [];
 
-    windowWidthForIntersect = window.outerWidth;
+    windowWidthForIntersect = window.innerWidth;
   }
 }
 
