@@ -2172,6 +2172,14 @@ a[class~='tour-banner__container'] {
     width: 100%;
     height: auto;
 }
+
+.watch-video-block__video-container video {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+    place-content: center;
+    display: none;
+}
 .video-container__block-over {
     position: absolute;
     top: 0;
@@ -2199,6 +2207,9 @@ a[class~='tour-banner__container'] {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.controls__play-container * {
+    pointer-events: none;
 }
 .play-container__icon-container {
     width: 25px;
