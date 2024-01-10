@@ -17,7 +17,8 @@ function handleImageLoading () {
   // videoElement.muted = true;
   // videoElement.playsinline = true;
   // videoElement.controls = false;
-  // videoElement.disablepictureinpicture = true;
+  videoElement.disablepictureinpicture = !0;
+  videoElement.controlsList = 'nodownload';
   // videoElement.autoPlay = true;
   // videoElement.type = 'video/mp4';
   // videoElement.setAttribute('webkit-playsinline', 'true');

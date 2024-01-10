@@ -2203,13 +2203,19 @@ a[class~='tour-banner__container'] {
     min-height: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: rgba(106, 11, 15, 0.5);;
+    background-color: rgba(106, 11, 15, 0.5);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.1s ease-in-out;
 }
 .controls__play-container * {
     pointer-events: none;
+}
+.controls__play-container_focused {
+    background-color: #6A0B0F;
+    color: #F3B700;
 }
 .play-container__icon-container {
     width: 25px;
@@ -2217,7 +2223,7 @@ a[class~='tour-banner__container'] {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: inherit;
     transform: translateX(10%);
 }
 .play-container__icon-container svg {

@@ -182,17 +182,17 @@ function handleVideoPreviewResize() {
   }
 }
 
-function showLoader(container) {
-  if (!container.className.includes('preview-loading')) {
-    container.classList.add('preview-loading');
-  }
-}
-
-function hideLoader(container) {
-  if (container.className.includes('preview-loading')) {
-    container.classList.remove('preview-loading');
-  }
-}
+// function showLoader(container) {
+//   if (!container.className.includes('preview-loading')) {
+//     container.classList.add('preview-loading');
+//   }
+// }
+//
+// function hideLoader(container) {
+//   if (container.className.includes('preview-loading')) {
+//     container.classList.remove('preview-loading');
+//   }
+// }
 
 document.addEventListener('touchstart', handleTouchVideoPreview);
 document.addEventListener('touchmove', defineTargetVideoToShow);
