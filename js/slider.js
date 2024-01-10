@@ -114,8 +114,13 @@ function handleSliderTouch(event) {
     return;
   }
 
-  while (currentTarget.className && typeof currentTarget.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
+  // while (currentTarget.className && typeof currentTarget.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
+  while (typeof currentTarget.className === 'string' && typeof currentTarget.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
     currentTarget = currentTarget.parentNode;
+  }
+
+  if (typeof currentTarget.className !== 'string') {
+    return;
   }
 
   if (currentTarget.className.includes('slider-block__slider')) {
@@ -135,9 +140,13 @@ function handleSliderTouchMove(event) {
   if (currentTarget.className.includes('slider-block__slider-group')) {
     return;
   }
-
-  while (currentTarget.className && typeof currentTarget.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
+  // while (currentTarget.className && typeof currentTarget.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
+  while (typeof currentTarget.className === 'string' && typeof currentTarget.className.includes !== 'undefined' && !currentTarget.className.includes('slider-block__slider')) {
     currentTarget = currentTarget.parentNode;
+  }
+
+  if (typeof currentTarget.className !== 'string') {
+    return;
   }
 
   if (currentTarget.className.includes('slider-block__slider') && slider_startXPosition) {
