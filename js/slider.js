@@ -1,6 +1,7 @@
 // SET SIZE OF SLIDER ELEMENTS IN LINE WITH VIDEOS TITLES
 let sliderElementReference = document.querySelector('.video-title__container');
 let sliderElementAll = document.querySelectorAll('.slider-element__container');
+let windowWidthForSlider = window.innerWidth;
 
 const startingElementNumber = 2;
 let sliderBlock = document.querySelectorAll('.slider-block__slider');
@@ -104,7 +105,10 @@ function removeAnimation(elem) {
 }
 
 function handleWindowResize() {
-  setSliders(sliderBlock, sliderElementAll);
+  if (window.innerWidth !== windowWidthForSlider) {
+    setSliders(sliderBlock, sliderElementAll);
+    windowWidthForSlider = window.innerWidth;
+  }
 }
 
 function handleSliderTouch(event) {
