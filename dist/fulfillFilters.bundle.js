@@ -16,7 +16,7 @@
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"dropdown__container\\\">\\n    <ul class=\\\"dropdown__list\\\">\\n\\n    </ul>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/dropdown.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div class=\\\"dropdown__container\\\">\\n    <ul class=\\\"dropdown__list\\\">\\n<!--render the list of links here-->\\n    </ul>\\n</div>\\n\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack:///./src/components/dropdown.html?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dropdown_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dropdown.html */ \"./src/components/dropdown.html\");\n\n\nlet allFilterSelectors = document.querySelectorAll('div[data-selector]');\n\nfor (let filter of allFilterSelectors) {\n  let linksArray = JSON.parse(filter.dataset.selector);\n\n  filter.insertAdjacentHTML('beforeend', _dropdown_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n  let dropdownContainerList = filter.querySelector('.dropdown__list');\n  let listElement = document.createElement('ul');\n  let selectorChoice = filter.querySelector('.selector__choice p');\n  selectorChoice.innerHTML = linksArray[0];\n  for (let link of linksArray) {\n    listElement.insertAdjacentHTML('beforeend', `\n      <li>${link}</li>\n    `);\n  }\n  dropdownContainerList.insertAdjacentElement('afterbegin', listElement);\n}\n\n\n//# sourceURL=webpack:///./src/components/fulfillFilters.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dropdown_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dropdown.html */ \"./src/components/dropdown.html\");\n\n\nlet allFilterSelectors = document.querySelectorAll('div[data-selector]');\n\nfor (let filter of allFilterSelectors) {\n  let linksArray = JSON.parse(filter.dataset.selector);\n\n  filter.insertAdjacentHTML('beforeend', _dropdown_html__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n  let dropdownContainerList = filter.querySelector('.dropdown__list');\n  // let listElement = document.createElement('ul');\n  let selectorChoice = filter.querySelector('.selector__choice p');\n  selectorChoice.innerHTML = linksArray[0];\n  for (let link of linksArray) {\n    dropdownContainerList.insertAdjacentHTML('beforeend', `\n      <li class=\"selector__option\">${link}</li>\n    `);\n  }\n}\n\n\n//# sourceURL=webpack:///./src/components/fulfillFilters.js?");
 
 /***/ })
 

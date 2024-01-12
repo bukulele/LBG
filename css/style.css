@@ -1937,6 +1937,12 @@ a[class~='tour-banner__container'] {
     width: 100%;
     margin: 0 auto;
 }
+.videos-block__selector,
+.models-block__selector,
+.comments-block__selector,
+.news-block__selector {
+    position: relative;
+}
 /*.videos-block__selector label,*/
 /*.models-block__selector label,*/
 /*.comments-block__selector label,*/
@@ -1949,6 +1955,9 @@ a[class~='tour-banner__container'] {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.selector__label-container * {
+    pointer-events: none;
 }
 .selector__label p {
     color: #fff;
@@ -1992,12 +2001,30 @@ a[class~='tour-banner__container'] {
 /*    font-size: 14px;*/
 /*    font-weight: 500;*/
 /*}*/
+.dropdown__container {
+    position: absolute;
+    right: 0;
+    display: none;
+    transform: scaleY(0.9);
+    opacity: 0;
+    background-color: #45484B;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+    z-index: 1;
+}
 .dropdown__list li {
-    background-color: #1D1E20;
     font-size: 14px;
     font-weight: 500;
     list-style: none;
     color: #fff;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+.dropdown__list li:hover {
+    background-color: #F3B800;
+    color: #000;
 }
 .pager-container {
     width: 100%;
@@ -4658,7 +4685,7 @@ a[data-icon] {
     .selector__label p,
     .selector__choice p,
     .dropdown__list li,
-    .news-block__selector select,
+    /*.news-block__selector select,*/
         /*.model-title__bottom-block p,*/
     .comments-block__login p,
     .comments-block__text p {

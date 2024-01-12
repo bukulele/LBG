@@ -7,13 +7,12 @@ for (let filter of allFilterSelectors) {
 
   filter.insertAdjacentHTML('beforeend', dropdown);
   let dropdownContainerList = filter.querySelector('.dropdown__list');
-  let listElement = document.createElement('ul');
+  // let listElement = document.createElement('ul');
   let selectorChoice = filter.querySelector('.selector__choice p');
   selectorChoice.innerHTML = linksArray[0];
   for (let link of linksArray) {
-    listElement.insertAdjacentHTML('beforeend', `
-      <li>${link}</li>
+    dropdownContainerList.insertAdjacentHTML('beforeend', `
+      <li class="selector__option">${link}</li>
     `);
   }
-  dropdownContainerList.insertAdjacentElement('afterbegin', listElement);
 }
