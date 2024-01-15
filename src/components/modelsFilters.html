@@ -1,83 +1,199 @@
 <div class="models-block__filters filters-block">
-    <div class="models-block__selector">
-        <label for="type">Sort models by: </label>
-        <select id="type" name="type">
-            <option>Latest</option>
-            <option>Most popular</option>
-            <option>Newest</option>
-        </select>
+    <div class="models-block__selector" data-selector='["Latest", "Most popular", "Newest"]'>
+        <div class="selector__label-container">
+            <div class="selector__label">
+                <p>Sort models by:</p>
+            </div>
+            <div class="selector__choice">
+                <p></p>
+            </div>
+            <div class="selector__chevron">
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+<!--        <label for="type">Sort models by: </label>-->
+<!--        <select id="type" name="type">-->
+<!--            <option>Latest</option>-->
+<!--            <option>Most popular</option>-->
+<!--            <option>Newest</option>-->
+<!--        </select>-->
     </div>
 
-    <div class="models-block__selector">
-        <label for="gender">Gender: </label>
-        <select id="gender" name="gender">
-            <option>All</option>
-            <option>Male</option>
-            <option>Female</option>
-        </select>
+    <div class="models-block__selector" data-selector='["All", "Male", "Female"]'>
+        <div class="selector__label-container">
+            <div class="selector__label">
+                <p>Gender:</p>
+            </div>
+            <div class="selector__choice">
+                <p></p>
+            </div>
+            <div class="selector__chevron">
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+<!--        <label for="gender">Gender: </label>-->
+<!--        <select id="gender" name="gender">-->
+<!--            <option>All</option>-->
+<!--            <option>Male</option>-->
+<!--            <option>Female</option>-->
+<!--        </select>-->
     </div>
 
-    <div class="models-block__selector">
-        <label for="ethnicity">Ethnicity: </label>
-        <select id="ethnicity" name="ethnicity">
-            <option>All</option>
-            <option>Some</option>
-            <option>Elf</option>
-        </select>
+    <div class="models-block__selector" data-selector='["All", "Some", "Elf"]'>
+        <div class="selector__label-container">
+            <div class="selector__label">
+                <p>Ethnicity:</p>
+            </div>
+            <div class="selector__choice">
+                <p></p>
+            </div>
+            <div class="selector__chevron">
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+<!--        <label for="ethnicity">Ethnicity: </label>-->
+<!--        <select id="ethnicity" name="ethnicity">-->
+<!--            <option>All</option>-->
+<!--            <option>Some</option>-->
+<!--            <option>Elf</option>-->
+<!--        </select>-->
     </div>
 
-    <div class="models-block__selector">
-        <label for="hairColor">Hair color: </label>
-        <select id="hairColor" name="hairColor">
-            <option>Blonde</option>
-            <option>Brown</option>
-            <option>Green</option>
-        </select>
+    <div class="models-block__selector" data-selector='["Blonde", "Brown", "Green"]'>
+        <div class="selector__label-container">
+            <div class="selector__label">
+                <p>Hair color:</p>
+            </div>
+            <div class="selector__choice">
+                <p></p>
+            </div>
+            <div class="selector__chevron">
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+<!--        <label for="hairColor">Hair color: </label>-->
+<!--        <select id="hairColor" name="hairColor">-->
+<!--            <option>Blonde</option>-->
+<!--            <option>Brown</option>-->
+<!--            <option>Green</option>-->
+<!--        </select>-->
     </div>
 
-    <div class="models-block__selector">
-        <label for="breast">Breast type: </label>
-        <select id="breast" name="breast">
-            <option>All</option>
-            <option>Some</option>
-            <option>None</option>
-        </select>
+    <div class="models-block__selector" data-selector='["All", "Some", "None"]'>
+        <div class="selector__label-container">
+            <div class="selector__label">
+                <p>Breast type:</p>
+            </div>
+            <div class="selector__choice">
+                <p></p>
+            </div>
+            <div class="selector__chevron">
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+<!--        <label for="breast">Breast type: </label>-->
+<!--        <select id="breast" name="breast">-->
+<!--            <option>All</option>-->
+<!--            <option>Some</option>-->
+<!--            <option>None</option>-->
+<!--        </select>-->
     </div>
 
-    <div class="models-block__selector">
-        <label for="cup">Cup size: </label>
-        <select id="cup" name="cup">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
+    <div class="models-block__selector" data-selector='["1", "2", "3"]'>
+        <div class="selector__label-container">
+            <div class="selector__label">
+                <p>Cup size:</p>
+            </div>
+            <div class="selector__choice">
+                <p></p>
+            </div>
+            <div class="selector__chevron">
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+<!--        <label for="cup">Cup size: </label>-->
+<!--        <select id="cup" name="cup">-->
+<!--            <option>1</option>-->
+<!--            <option>2</option>-->
+<!--            <option>3</option>-->
+<!--        </select>-->
     </div>
 
-    <div class="models-block__selector">
-        <label for="age">Age: </label>
-        <select id="age" name="age">
-            <option>Young</option>
-            <option>Old</option>
-            <option>Medium</option>
-        </select>
+    <div class="models-block__selector" data-selector='["All", "Some", "Elf"]'>
+        <div class="selector__label-container">
+            <div class="selector__label">
+                <p>Age:</p>
+            </div>
+            <div class="selector__choice">
+                <p></p>
+            </div>
+            <div class="selector__chevron">
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+<!--        <label for="age">Age: </label>-->
+<!--        <select id="age" name="age">-->
+<!--            <option>Young</option>-->
+<!--            <option>Old</option>-->
+<!--            <option>Medium</option>-->
+<!--        </select>-->
     </div>
 
-    <div class="models-block__selector">
-        <label for="tattoo">Tattoo: </label>
-        <select id="tattoo" name="tattoo">
-            <option>All</option>
-            <option>Yes</option>
-            <option>No</option>
-        </select>
+    <div class="models-block__selector" data-selector='["All", "Yes", "No"]'>
+        <div class="selector__label-container">
+            <div class="selector__label">
+                <p>Tattoo:</p>
+            </div>
+            <div class="selector__choice">
+                <p></p>
+            </div>
+            <div class="selector__chevron">
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+<!--        <label for="tattoo">Tattoo: </label>-->
+<!--        <select id="tattoo" name="tattoo">-->
+<!--            <option>All</option>-->
+<!--            <option>Yes</option>-->
+<!--            <option>No</option>-->
+<!--        </select>-->
     </div>
 
-    <div class="models-block__selector">
-        <label for="piercing">Piercing: </label>
-        <select id="piercing" name="piercing">
-            <option>All</option>
-            <option>Yes</option>
-            <option>No</option>
-        </select>
+    <div class="models-block__selector" data-selector='["All", "Yes", "No"]'>
+        <div class="selector__label-container">
+            <div class="selector__label">
+                <p>Piercing:</p>
+            </div>
+            <div class="selector__choice">
+                <p></p>
+            </div>
+            <div class="selector__chevron">
+                <svg width="14" height="14" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.12285L0.983755 0.150098L7.00918 5.93296L7.65184 5.31636L7.6483 5.31943L13.0014 0.181201L14 1.13994C12.5205 2.56009 8.38983 6.52485 7.00918 7.8501C5.98305 6.86582 6.98305 7.82569 0 1.12285Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+<!--        <label for="piercing">Piercing: </label>-->
+<!--        <select id="piercing" name="piercing">-->
+<!--            <option>All</option>-->
+<!--            <option>Yes</option>-->
+<!--            <option>No</option>-->
+<!--        </select>-->
     </div>
-
 </div>
