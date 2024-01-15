@@ -2,6 +2,9 @@ let selectorIsOpened = null;
 
 function showSelector(event) {
   if (event.target.className.includes('selector__label-container')) {
+    if (selectorIsOpened) {
+      hideSelector(selectorIsOpened);
+    }
     event.stopImmediatePropagation();
     let selectorContainer = event.target.closest('div[data-selector]');
     let dropdown = selectorContainer.querySelector('.dropdown__container');
@@ -45,8 +48,9 @@ function hideSelector(dropdown) {
   dropdown.style.opacity = '0';
   setTimeout(() => {
     dropdown.style.display = 'NONE';
-    selectorIsOpened = null;
+    // selectorIsOpened = null;
   }, 200);
+  selectorIsOpened = null;
 }
 
 document.addEventListener('click', showSelector);
