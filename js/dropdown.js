@@ -33,8 +33,9 @@ function selectOption(event) {
     // event.stopImmediatePropagation();
     let selectorContainer = event.target.closest('div[data-selector]');
     let selectorChoice = selectorContainer.querySelector('.selector__choice p');
+    let selectorOption = event.target.querySelector('p');
     // let dropdown = selectorContainer.querySelector('.dropdown__container');
-    selectorChoice.innerHTML = event.target.innerText;
+    selectorChoice.innerHTML = selectorOption.innerText;
     // hideSelector();
     // hideSelector(selectorIsOpened);
   }
