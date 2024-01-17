@@ -1996,6 +1996,9 @@ a[class~='tour-banner__container'] {
 .selector__chevron {
     color: #F3B800;
 }
+.selector__option * {
+    pointer-events: none;
+}
 /*.videos-block__selector select::-ms-expand,*/
 /*.models-block__selector select::-ms-expand,*/
 /*.comments-block__selector select::-ms-expand,*/

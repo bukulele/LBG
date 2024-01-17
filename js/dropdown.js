@@ -29,7 +29,7 @@ function showSelector(event) {
 }
 
 function selectOption(event) {
-  if (event.target.className.includes('selector__option') && !selectorIsOpened) {
+  if (event.target.className.includes('selector__option')) {
     // event.stopImmediatePropagation();
     let selectorContainer = event.target.closest('div[data-selector]');
     let selectorChoice = selectorContainer.querySelector('.selector__choice p');
