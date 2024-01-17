@@ -254,6 +254,9 @@ input[class~="btn--yellow"] {
     border: 2px solid #4F4F4F;
     color: #fff;
 }
+.btn--framed:hover {
+    color: #FFC30A;
+}
 .btn--framed span {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -2529,9 +2532,9 @@ a[class~='tour-banner__container'] {
     width: 100%;
     height: 100%;
 }
-.control-panel__favorites {
-    color: #fff;
-}
+/*.control-panel__favorites {*/
+/*    color: #fff;*/
+/*}*/
 .favorites__icon-container {
     width: 22px;
     height: 22px;
