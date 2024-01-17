@@ -3,6 +3,8 @@ let imagesGalleryContainer = document.querySelector('.images-gallery-block__cont
 let imageElement = imagesGalleryContainer.querySelector('.images-gallery-block__image');
 let imagesList;
 let imageIndex = 0;
+let imageGalleryInnerWidth = window.innerWidth;
+console.log('initial screen width:', imageGalleryInnerWidth);
 
 let gallery_startXPosition;
 
@@ -105,6 +107,10 @@ function clearGalleryStartTouchPosition() {
   gallery_startXPosition = null;
 }
 
+function resizeImageGallery() {
+  console.log('resized screen width:', window.innerWidth);
+}
+
 document.addEventListener('click', openImageGallery);
 // document.addEventListener('click', closeImageGallery);
 document.addEventListener('click', handleImageGalleryClick);
@@ -113,3 +119,4 @@ document.addEventListener('touchstart', handleImageGalleryTouch, {passive: false
 document.addEventListener('touchmove', handleImageGalleryTouchMove, {passive: false});
 document.addEventListener('touchend', clearGalleryStartTouchPosition);
 document.addEventListener('keydown', keyboardGalleryHandler);
+window.addEventListener('resize', resizeImageGallery);
