@@ -3,8 +3,6 @@ let imagesGalleryContainer = document.querySelector('.images-gallery-block__cont
 let imageElement = imagesGalleryContainer.querySelector('.images-gallery-block__image');
 let imagesList;
 let imageIndex = 0;
-let imageGalleryInnerWidth = window.innerWidth;
-console.log('initial screen width:', imageGalleryInnerWidth);
 
 let gallery_startXPosition;
 
@@ -119,4 +117,3 @@ document.addEventListener('touchstart', handleImageGalleryTouch, {passive: false
 document.addEventListener('touchmove', handleImageGalleryTouchMove, {passive: false});
 document.addEventListener('touchend', clearGalleryStartTouchPosition);
 document.addEventListener('keydown', keyboardGalleryHandler);
-window.addEventListener('resize', resizeImageGallery);

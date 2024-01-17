@@ -3173,6 +3173,19 @@ a[data-icon] {
     height: auto;
 }
 /*MEDIA QUERIES*/
+@media only screen and (orientation: landscape) {
+    .images-gallery-block__image-container {
+        width: 70%;
+    }
+    .slider-block__buttons {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 0 33px;
+        justify-content: space-between;
+    }
+}
 @media only screen and (min-width: 768px) {
     #home-page .videos-block,
     #home-page .models-block,
@@ -3387,6 +3400,9 @@ a[data-icon] {
     .models-block__titles {
         column-gap: 22px;
         row-gap: 50px;
+    }
+    .images-gallery-block__image-container {
+        width: 75%;
     }
     .slider-block__buttons {
         position: absolute;
