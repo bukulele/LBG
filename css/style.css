@@ -2580,12 +2580,17 @@ a[class~='tour-banner__container'] {
     font-size: 14px;
     color: #fff
 }
-.data__actors-list p {
+.actors-list__actor {
     font-size: 14px;
     font-weight: 800;
-    color: #fff
+    color: #fff;
+    text-decoration: none;
 }
-.data__actors-list p span {
+.actors-list__actor:hover span {
+    color: #FBFF31;
+    text-decoration: underline;
+}
+.actors-list__actor span {
     color: #F3B800;
 }
 .tags-container__tag {
