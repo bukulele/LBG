@@ -2484,7 +2484,7 @@ a[class~='tour-banner__container'] {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -2492,9 +2492,11 @@ a[class~='tour-banner__container'] {
     width: fit-content;
     padding: 0 30px;
 }
-.control-panel__rate-video > p,
-.control-panel__rate-model > p{
+.control-panel__rating-header {
     color: rgba(255, 255, 255, 0.5);
+}
+.control-panel__rating-text {
+    color: #fff;
 }
 .control-panel__rate-video .btn,
 .control-panel__rate-model .btn {
@@ -2512,6 +2514,7 @@ a[class~='tour-banner__container'] {
 .rate-video__rate-minus .rate-video__icon-container,
 .rate-model__rate-minus .rate-model__icon-container {
     color: #8C171E;
+    margin-left: 10px;
 }
 .rate-video__icon-container,
 .rate-model__icon-container {
