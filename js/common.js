@@ -1,5 +1,10 @@
+let lengthControlTexts = document.querySelectorAll('.control-length__text');
 let tooltip = null;
 let arrow = null;
+
+lengthControlTexts.forEach(element => {
+  controlTextLength(element);
+});
 
 function showTooltip (event) {
   if (event.target.dataset.icon) {
@@ -48,6 +53,19 @@ function hideLoader(container) {
   if (container.className.includes('preview-loading')) {
     container.classList.remove('preview-loading');
   }
+}
+
+function controlTextLength(container) {
+  let text;
+  if (container.innerText.length > 380) {
+    text = container.innerText.slice(0, 380) + '... ';
+  }
+  let readMoreButton = document.createElement('span');
+  readMoreButton.innerText = 'Read more';
+  readMoreButton.classList.add('btn--text');
+  // readMoreButton.addEventListener('click', showMoreText);
+  container.innerText = text;
+  container.insertAdjacentElement('beforeend', readMoreButton);
 }
 
 document.addEventListener('mouseover', showTooltip);

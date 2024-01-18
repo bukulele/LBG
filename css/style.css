@@ -260,6 +260,16 @@ input[class~="btn--yellow"] {
 .btn--framed span {
     color: rgba(255, 255, 255, 0.5);
 }
+.btn--text {
+    color: #FFC30A;
+    text-decoration: none;
+    white-space: pre;
+}
+.btn--text:hover {
+    color: #FBFF31;
+    text-decoration: underline;
+    cursor: pointer;
+}
 .banner-block__chevrons svg {
     height: 10px;
     width: 20px;
@@ -2450,11 +2460,9 @@ a[class~='tour-banner__container'] {
     font-size: 14px;
     font-weight: 500;
 }
-.watch-video-block__text p a {
-    color: #FFC30A;
-    text-decoration: none;
-    white-space: pre;
-}
+/*.watch-video-block__text p span {*/
+/*    white-space: pre;*/
+/*}*/
 .watch-video-block__control-panel {
     grid-area: watchVideoControl;
     width: 100%;
@@ -2593,13 +2601,13 @@ a[class~='tour-banner__container'] {
     color: #fff;
     text-decoration: none;
 }
-.actors-list__actor:hover span {
-    color: #FBFF31;
-    text-decoration: underline;
-}
-.actors-list__actor span {
-    color: #F3B800;
-}
+/*.actors-list__actor:hover span {*/
+/*    color: #FBFF31;*/
+/*    text-decoration: underline;*/
+/*}*/
+/*.actors-list__actor span {*/
+/*    color: #F3B800;*/
+/*}*/
 .tags-container__tag {
     border-radius: 10px;
     font-size: 14px;
