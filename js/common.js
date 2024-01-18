@@ -58,7 +58,7 @@ function hideLoader(container) {
 function controlTextLength(container) {
   let text;
   if (container.innerText.length > 380) {
-    text = container.innerText.slice(0, 380) + '... ';
+    text = container.innerText.slice(0, 380).trim() + '\u2026 \u00A0';
   }
   let readMoreButton = document.createElement('span');
   readMoreButton.innerText = 'Read more';
