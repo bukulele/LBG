@@ -2455,6 +2455,9 @@ a[class~='tour-banner__container'] {
 .watch-video-block__icon[data-icon]:hover {
     background-color: #FBFF31;
 }
+.watch-video-block__text {
+    transition: all 0.2s ease-in-out;
+}
 .watch-video-block__text p {
     color: #fff;
     font-size: 14px;
