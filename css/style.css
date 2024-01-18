@@ -3588,45 +3588,45 @@ only screen and (min-width: 768px) {
         width: 100%;
         grid-template-columns: auto 360px;
         grid-template-rows: repeat(2, auto);
-        grid-template-areas: "watchVideoContainer watchVideoContainer"
+        grid-template-areas: "watchVideoContainer watchVideoControl"
         "watchVideoDescription watchVideoControl";
         padding-left: 20px;
         padding-right: 20px;
         place-items: flex-start;
     }
-    .video-container__get-access {
-        gap: 20px;
-    }
-    .video-container__get-access > a > p > span::before {
-        content: " ";
-    }
-    .get-access__header p {
-        font-size: 20px;
-    }
-    .get-access__list li {
-        font-size: 14px;
-        background-size: 14px;
-        padding-left: 17px;
-        line-height: 2;
-    }
-    .get-access__header {
-        justify-content: center;
-    }
-    .get-access__close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    .controls__play-container {
-        min-width: 100px;
-        width: 100px;
-        min-height: 100px;
-        height: 100px;
-    }
-    .play-container__icon-container {
-        width: 40px;
-        height: 40px;
-    }
+    /*.video-container__get-access {*/
+    /*    gap: 20px;*/
+    /*}*/
+    /*.video-container__get-access > a > p > span::before {*/
+    /*    content: " ";*/
+    /*}*/
+    /*.get-access__header p {*/
+    /*    font-size: 20px;*/
+    /*}*/
+    /*.get-access__list li {*/
+    /*    font-size: 14px;*/
+    /*    background-size: 14px;*/
+    /*    padding-left: 17px;*/
+    /*    line-height: 2;*/
+    /*}*/
+    /*.get-access__header {*/
+    /*    justify-content: center;*/
+    /*}*/
+    /*.get-access__close {*/
+    /*    position: absolute;*/
+    /*    top: 20px;*/
+    /*    right: 20px;*/
+    /*}*/
+    /*.controls__play-container {*/
+    /*    min-width: 100px;*/
+    /*    width: 100px;*/
+    /*    min-height: 100px;*/
+    /*    height: 100px;*/
+    /*}*/
+    /*.play-container__icon-container {*/
+    /*    width: 40px;*/
+    /*    height: 40px;*/
+    /*}*/
     .model-profile-block {
         padding: 23px 30px 0;
     }
@@ -4068,10 +4068,10 @@ only screen and (min-width: 768px) {
         font-size: 16px;
     }
 
-    .watch-video-block__container {
-        grid-template-areas: "watchVideoContainer watchVideoControl"
-        "watchVideoDescription watchVideoControl";
-    }
+    /*.watch-video-block__container {*/
+    /*    grid-template-areas: "watchVideoContainer watchVideoControl"*/
+    /*    "watchVideoDescription watchVideoControl";*/
+    /*}*/
 
     .watch-video-block__description {
         grid-template-columns: auto auto;
@@ -4082,6 +4082,39 @@ only screen and (min-width: 768px) {
     .watch-video-block__name {
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+    .video-container__get-access {
+        gap: 20px;
+    }
+    .video-container__get-access > a > p > span::before {
+        content: " ";
+    }
+    .get-access__header p {
+        font-size: 20px;
+    }
+    .get-access__list li {
+        font-size: 14px;
+        background-size: 14px;
+        padding-left: 17px;
+        line-height: 2;
+    }
+    .get-access__header {
+        justify-content: center;
+    }
+    .get-access__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .controls__play-container {
+        min-width: 100px;
+        width: 100px;
+        min-height: 100px;
+        height: 100px;
+    }
+    .play-container__icon-container {
+        width: 40px;
+        height: 40px;
     }
 
     .comments-block__container,
