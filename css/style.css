@@ -3192,6 +3192,11 @@ a[data-icon] {
 }
 /*MEDIA QUERIES*/
 @media only screen and (orientation: landscape) {
+    body {
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: 100%;
+    }
     .images-gallery-block__image-container {
         width: 70%;
     }
