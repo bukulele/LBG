@@ -709,6 +709,10 @@ input[class~="btn--yellow"] {
     height: 100%;
 }
 
+.log-out-button * {
+    pointer-events: none;
+}
+
 /*FOOTER*/
 .footer {
     display: flex;
@@ -4159,9 +4163,10 @@ only screen and (min-width: 768px) {
     }
     .profile-settings-block__form-container {
         padding: 20px 0 !important;
-    }
-    .profile-settings-block__form-container {
+    /*}*/
+    /*.profile-settings-block__form-container {*/
         flex-direction: row;
+        align-items: flex-start;
     }
 
     .profile-settings-block__form-block {
@@ -4752,7 +4757,7 @@ only screen and (min-width: 768px) {
     }
     .profile-settings-block__form-container {
         padding: 50px 0 !important;
-        align-items: flex-start;
+        /*align-items: flex-start;*/
     }
     .profile-settings-block__form-block {
         padding: 0 50px;

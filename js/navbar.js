@@ -72,7 +72,9 @@ if (memberButton) memberButton.addEventListener('click', showUserMenu);
 //DELETE FROM HERE
 
 function logOut(event) {
+  // console.log(event.target);
   if (event.target.className.includes('log-out-button')) {
+    // console.log(event);
     event.preventDefault();
     sessionStorage.setItem('auth', 'false');
     window.location.href = '/LBG/index.html';
