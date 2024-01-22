@@ -58,7 +58,7 @@ function showUserMenu (event) {
   if (memberZoneContainer.className.includes('navbar__member-zone-container--hidden')) {
     memberZoneContainer.classList.remove('navbar__member-zone-container--hidden');
     memberZoneContainer.classList.add('navbar__member-zone-container--visible');
-    memberZoneContainer.style.top = `${navBarHeight}px`;
+    memberZoneContainer.style.top = `${navBarHeight - 1}px`;
     memberButton.removeEventListener('click', showUserMenu);
   }
 }
