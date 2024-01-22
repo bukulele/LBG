@@ -1949,7 +1949,7 @@ a[class~='tour-banner__container'] {
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
-    column-gap: 5px;
+    column-gap: 40px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -4069,12 +4069,12 @@ only screen and (min-width: 768px) {
         padding-right: 30px;
         /*padding: 0 30px 50px;*/
     }
-    .videos-block__filters,
-    .models-block__filters,
-    .comments-block__filters,
-    .news-block__filters {
-        column-gap: 40px;
-    }
+    /*.videos-block__filters,*/
+    /*.models-block__filters,*/
+    /*.comments-block__filters,*/
+    /*.news-block__filters {*/
+    /*    column-gap: 40px;*/
+    /*}*/
     .message-block__container {
         gap: 20px;
     }
