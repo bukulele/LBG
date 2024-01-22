@@ -4156,7 +4156,56 @@ only screen and (min-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
     }
-
+    .auth-block__group,
+    .write-us-block__group {
+        max-width: 1080px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .auth-block__half:first-of-type,
+    .write-us-block__half:first-of-type {
+        justify-self: flex-start;
+    }
+    .auth-block__half:last-of-type,
+    .write-us-block__half:last-of-type {
+        justify-self: flex-end;
+    }
+    .auth-block__half,
+    .write-us-block__half {
+        width: 100%;
+        min-width: 360px;
+        max-width: 678px;
+        padding: 50px 35px;
+        gap: 30px;
+    }
+    .restore-block__container {
+        width: 450px;
+        height: 375px;
+    }
+    .restore-block__form-container {
+        height: 100%;
+    }
+    .auth-block__form,
+    .write-us-block__form,
+    .restore-block__form {
+        max-width: 320px;
+    }
+    /*.benefits-banner__container {*/
+    /*    gap: 22px;*/
+    /*}*/
+    /*.benefits-banner__header,*/
+    /*.benefits-banner__promo {*/
+    /*    font-size: 32px;*/
+    /*}*/
+    /*.benefits-banner__list li {*/
+    /*    font-size: 24px;*/
+    /*    background-size: 24px;*/
+    /*    padding-left: 30px;*/
+    /*    line-height: 42px;*/
+    /*}*/
+    /*.benefits-banner__text {*/
+    /*    font-size: 20px;*/
+    /*}*/
     .profile-settings-block__container {
         width: 100%;
         padding: 0 20px;
@@ -4709,24 +4758,26 @@ only screen and (min-width: 768px) {
     /*}*/
     .auth-block__group,
     .write-us-block__group {
+        max-width: unset;
         width: 1400px;
+        padding: 0;
     }
-    .auth-block__half:first-of-type,
-    .write-us-block__half:first-of-type {
-        justify-self: flex-start;
-    }
-    .auth-block__half:last-of-type,
-    .write-us-block__half:last-of-type {
-        justify-self: flex-end;
-    }
-    .auth-block__half,
-    .write-us-block__half {
-        width: 100%;
-        min-width: 360px;
-        max-width: 678px;
-        padding: 50px 35px;
-        gap: 30px;
-    }
+    /*.auth-block__half:first-of-type,*/
+    /*.write-us-block__half:first-of-type {*/
+    /*    justify-self: flex-start;*/
+    /*}*/
+    /*.auth-block__half:last-of-type,*/
+    /*.write-us-block__half:last-of-type {*/
+    /*    justify-self: flex-end;*/
+    /*}*/
+    /*.auth-block__half,*/
+    /*.write-us-block__half {*/
+    /*    width: 100%;*/
+    /*    min-width: 360px;*/
+    /*    max-width: 678px;*/
+    /*    padding: 50px 35px;*/
+    /*    gap: 30px;*/
+    /*}*/
     .restore-block__container {
         width: 678px;
         height: 565px;
