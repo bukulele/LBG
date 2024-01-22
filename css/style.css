@@ -3285,7 +3285,7 @@ only screen and (min-width: 768px) {
         "footerText footerText"
         "footerAward footerBenefits";
         width: 100%;
-        max-width: 1460px;
+        max-width: 710px;
         padding: 0 30px 61px;
     }
     .upper__footer-featured {
@@ -3818,22 +3818,22 @@ only screen and (min-width: 768px) {
     .model-profile-block__name p {
         padding: 0;
     }
-    .footer__upper {
-        grid-template-columns: 1fr min-content 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "footerFeatured footerFeatured footerFeatured"
-        "footerText footerAward footerBenefits";
-    }
-    .upper__footer-text {
-        max-width: 530px;
-        padding-top: 35px;
-    }
+    /*.footer__upper {*/
+    /*    grid-template-columns: 1fr min-content 1fr;*/
+    /*    grid-template-rows: auto auto;*/
+    /*    grid-template-areas: "footerFeatured footerFeatured footerFeatured"*/
+    /*    "footerText footerAward footerBenefits";*/
+    /*}*/
+    /*.upper__footer-text {*/
+    /*    max-width: 530px;*/
+    /*    padding-top: 35px;*/
+    /*}*/
     .footer__links a {
         font-size: 16px;
     }
-    .upper__footer-benefits {
-        align-self: end;
-    }
+    /*.upper__footer-benefits {*/
+    /*    align-self: end;*/
+    /*}*/
     .images-gallery-block__close {
         top: 50px;
         right: 50px;
@@ -4220,6 +4220,21 @@ only screen and (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
         gap: 50px;
     }
+    .footer__upper {
+        grid-template-columns: 1fr min-content 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "footerFeatured footerFeatured footerFeatured"
+        "footerText footerAward footerBenefits";
+        max-width: 1080px;
+        /*padding: 0;*/
+    }
+    .upper__footer-text {
+        max-width: 530px;
+        padding-top: 35px;
+    }
+    .upper__footer-benefits {
+        align-self: start;
+    }
 }
 
 @media only screen and (min-width: 1275px) {
@@ -4251,6 +4266,9 @@ only screen and (min-width: 768px) {
     .upper__footer-featured {
         gap: 41px;
     }
+    .upper__footer-text {
+        padding-top: 27px;
+    }
     .upper__footer-award {
         margin-top: 27px;
     }
@@ -4272,9 +4290,9 @@ only screen and (min-width: 768px) {
     .footer__links a {
         gap: 10px;
     }
-    .footer-featured__logos img {
-        width: 20%;
-    }
+    /*.footer-featured__logos img {*/
+    /*    width: 20%;*/
+    /*}*/
     /*.slider-block__container {*/
     /*    gap: 34px;*/
     /*}*/
@@ -4930,8 +4948,14 @@ only screen and (min-width: 768px) {
     /*.news-block__news-container {*/
     /*    gap: 34px;*/
     /*}*/
+    .footer__upper {
+        max-width: 1460px;
+    }
     .footer-featured__logos {
         gap: 37px;
+    }
+    .footer-featured__logos img {
+        width: 20%;
     }
 }
 
