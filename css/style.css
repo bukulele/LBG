@@ -2528,10 +2528,18 @@ a[class~='tour-banner__container'] {
 .rate-model__rate-plus .rate-model__icon-container {
     color: #4BD135;
 }
+.rate-video__rate-plus:hover .rate-video__icon-container,
+.rate-model__rate-plus:hover .rate-model__icon-container {
+    color: #abfda0;
+}
 .rate-video__rate-minus .rate-video__icon-container,
 .rate-model__rate-minus .rate-model__icon-container {
     color: #8C171E;
     margin-left: 10px;
+}
+.rate-video__rate-minus:hover .rate-video__icon-container,
+.rate-model__rate-minus:hover .rate-model__icon-container {
+    color: #ff6d77;
 }
 .rate-video__icon-container,
 .rate-model__icon-container {
