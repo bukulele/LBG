@@ -4466,6 +4466,15 @@ only screen and (min-width: 768px) {
     .buy-access-block__container {
         gap: 30px;
     }
+    .buy-access-block__tariff-header {
+        flex-direction: column;
+        height: auto;
+        /*gap: 20px;*/
+    }
+    .buy-access-block__icon-container {
+        height: 50px;
+        width: auto;
+    }
 }
 
 @media only screen and (min-width: 1290px) {
@@ -4919,7 +4928,7 @@ only screen and (min-width: 768px) {
     }
     .buy-access-block__icon-container {
         height: 138px;
-        width: auto;
+        /*width: auto;*/
     }
     .buy-access-block__tariff-header p {
         font-size: 24px;
