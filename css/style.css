@@ -3270,9 +3270,9 @@ only screen and (min-width: 768px) {
     .upper__footer-text h3 {
         text-align: start;
     }
-    .navbar {
-        height: 91px;
-    }
+    /*.navbar {*/
+    /*    height: 91px;*/
+    /*}*/
 
     .navbar__links-container--device-position {
         width: 400px;
@@ -3743,6 +3743,9 @@ only screen and (min-width: 768px) {
 }
 
 @media only screen and (min-width: 768px) {
+    .navbar {
+        height: 91px;
+    }
     .videos-block__titles,
     .models-block__titles,
     .pictures-block__titles {
