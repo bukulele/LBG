@@ -470,6 +470,7 @@ input[class~="btn--yellow"] {
 
 .navbar__links-container {
     min-height: 100%;
+    max-height: 100%;
     height: auto;
     display: flex;
     overflow-y: auto;
@@ -506,7 +507,12 @@ input[class~="btn--yellow"] {
 .navbar__close * {
     pointer-events: none;
 }
-
+.navbar__scrollable-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 .navbar__links,
 .links-container__member-links,
 .member-zone-container__member-links {
@@ -3924,6 +3930,13 @@ only screen and (min-width: 768px) {
         background: transparent;
     }
 
+    .navbar__scrollable-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
     .navbar__search {
         margin: 0;
         max-width: 300px;
@@ -4479,7 +4492,8 @@ only screen and (min-width: 768px) {
 
 @media only screen and (min-width: 1290px) {
     .navbar__links-container,
-    .navbar__links {
+    .navbar__links,
+    .navbar__scrollable-container {
         gap: 43px;
     }
 }
