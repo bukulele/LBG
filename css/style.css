@@ -3230,6 +3230,8 @@ a[data-icon] {
     left: 0;
     background-color: rgba(47, 49, 52, 0.85);
     z-index: 1000;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 .subscribe-window__container {
     position: fixed;
@@ -3238,7 +3240,7 @@ a[data-icon] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -3246,9 +3248,11 @@ a[data-icon] {
     border-radius: 30px;
     background-color: #690E11;
     z-index: 1001;
-    /*padding: 20px;*/
-    /*overflow: hidden;*/
-    /*transform: scale(1);*/
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.subscribe-window_visible {
+    opacity: 1;
 }
 .subscribe-window__close {
     position: absolute;
@@ -3858,7 +3862,7 @@ only screen and (min-width: 768px) {
     /*    max-height: 50px;*/
     /*}*/
     .subscribe-window__wrapper {
-        display: none;
+        display: none !important;
     }
     .subscribe-window__container {
         height: fit-content;
