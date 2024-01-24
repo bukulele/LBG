@@ -3268,9 +3268,13 @@ a[data-icon] {
     right: -10px;
     top: -10px;
     background-color: #8C171E;
+    cursor: pointer;
 }
 .subscribe-window__close * {
     pointer-events: none;
+}
+.subscribe-window__close:hover {
+    color: #F3B800;
 }
 .subscribe-window__close svg {
     width: 70%;
