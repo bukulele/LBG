@@ -96,7 +96,14 @@ img[data-gallery-open-image] {
 .btn:hover {
     cursor: pointer;
 }
-
+.btn--square {
+    gap: 10px;
+    height: 29px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 .btn--classic,
 .btn--promo,
 .btn--member {
@@ -338,6 +345,20 @@ input[class~="btn--yellow"] {
     height: 71px;
     z-index: 100;
     margin-top: -1px;
+}
+.navbar__news-bar {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background: linear-gradient(270deg, rgba(26, 39, 71, 0.25) 0%, rgba(72, 61, 103, 0.25) 48.44%, rgba(132, 18, 52, 0.25) 100%), #551420;
+}
+.navbar__news-bar p {
+    color: #F3B800;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .navbar__container {
@@ -681,7 +702,7 @@ input[class~="btn--yellow"] {
 }
 
 .navbar__member-zone-container--hidden {
-    top: -100vh;
+    top: -130vh;
 }
 
 .navbar__member-zone-container--visible {
