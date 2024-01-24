@@ -2869,7 +2869,8 @@ a[class~='tour-banner__container'] {
 .auth-block__form,
 .write-us-block__form,
 .restore-block__form,
-.profile-settings-block__form {
+.profile-settings-block__form,
+.subscribe-window__form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2878,7 +2879,8 @@ a[class~='tour-banner__container'] {
 .auth-block__form-input,
 .write-us-block__form-input,
 .restore-block__form-input,
-.profile-settings-block__form-input {
+.profile-settings-block__form-input,
+.subscribe-window__form-input {
     border: none;
     border-radius: 13px;
     height: 50px;
@@ -3240,13 +3242,16 @@ a[data-icon] {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 20px;
     border-radius: 30px;
     background-color: #690E11;
     z-index: 1001;
-    padding: 20px;
+    /*padding: 20px;*/
+    /*overflow: hidden;*/
+    /*transform: scale(1);*/
 }
 .subscribe-window__close {
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3268,13 +3273,69 @@ a[data-icon] {
     height: 70%;
 }
 .subscribe-window__photo-container {
-    border-radius: 15px;
-    overflow: hidden;
     display: flex;
+    width: 100%;
+    padding: 20px 20px 0;
 }
 .subscribe-window__photo-container img {
     width: 100%;
     height: auto;
+    border-radius: 15px;
+}
+.subscribe-window__message-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 34px 20px 20px;
+    overflow: hidden;
+}
+.subscribe-window__envelope-container {
+    position: absolute;
+    top: 0;
+    left: -4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 195px;
+    height: 150px;
+}
+.subscribe-window__envelope-container svg {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.subscribe-window__message-header {
+    display: flex;
+    gap: 20px;
+}
+.subscribe-window__message-header p {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 113.1%;
+    text-transform: uppercase;
+    color: #F3B800;
+}
+.subscribe-window__image-header {
+    display: flex;
+    width: 51px;
+}
+.subscribe-window__image-header img {
+    width: 100%;
+    height: auto;
+}
+.subscribe-window__message-text p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+.subscribe-window__message-text p span {
+    font-weight: 800;
+}
+.subscribe-window__form-container {
+    width: 100%;
+    padding: 0 20px 20px;
 }
 /*MEDIA QUERIES*/
 @media only screen and (orientation: landscape) {
