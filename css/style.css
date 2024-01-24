@@ -23,7 +23,7 @@ html, body {
     height: 100%;
     background-color: #1D1E20;
 }
-html, body, button, textarea {
+html, body, button, textarea, .btn {
     font-family: 'Manrope', sans-serif;
 }
 
