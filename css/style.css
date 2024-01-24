@@ -3501,9 +3501,9 @@ only screen and (min-width: 768px) {
     /*.footer__partners {*/
     /*    gap: 22px;*/
     /*}*/
-    .main {
-        margin-top: 90px;
-    }
+    /*.main {*/
+    /*    margin-top: 90px;*/
+    /*}*/
     .btn--mobile-small,
     .btn--mobile-xs {
         height: 50px;
@@ -3903,6 +3903,9 @@ only screen and (min-width: 768px) {
 @media only screen and (min-width: 768px) {
     .navbar {
         height: 91px;
+    }
+    .main {
+        margin-top: 90px;
     }
     .videos-block__titles,
     .models-block__titles,
