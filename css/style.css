@@ -3244,6 +3244,7 @@ a[data-icon] {
     height: auto;
 }
 .subscribe-window__wrapper {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;

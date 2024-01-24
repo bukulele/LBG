@@ -6,6 +6,8 @@ const memberButtonSide = document.querySelector('#memberButtonSide');
 const navbarHamburger = document.querySelector('.navbar__hamburger');
 const memberButton = document.querySelector('#memberButton');
 const memberZoneContainer = document.querySelector('.navbar__member-zone-container');
+const navbarNewsBar = navBarElement.querySelector('.navbar__news-bar');
+const closeNavbarNewsBarButton = navBarElement.querySelector('.navbar__news-bar .btn');
 
 let memberButtonSideChevron;
 let memberButtonChevron;
@@ -63,11 +65,18 @@ function showUserMenu (event) {
   }
 }
 
+function closeNavbarNewsBar(event) {
+  navbarNewsBar.remove();
+}
+
 navbarHamburger.addEventListener('click', showNavigationMenu);
 document.addEventListener('click', hideNavigationMenu);
+if (closeNavbarNewsBarButton) document.addEventListener('click', closeNavbarNewsBar);
 
 if (memberButtonSide) memberButtonSide.addEventListener('click', toggleMemberLinks);
 if (memberButton) memberButton.addEventListener('click', showUserMenu);
+
+
 
 //DELETE FROM HERE
 
