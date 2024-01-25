@@ -65,13 +65,13 @@ function showUserMenu (event) {
   }
 }
 
-function closeNavbarNewsBar(event) {
+function closeNavbarNewsBar() {
   navbarNewsBar.remove();
 }
 
 navbarHamburger.addEventListener('click', showNavigationMenu);
 document.addEventListener('click', hideNavigationMenu);
-if (closeNavbarNewsBarButton) document.addEventListener('click', closeNavbarNewsBar);
+if (closeNavbarNewsBarButton) closeNavbarNewsBarButton.addEventListener('click', closeNavbarNewsBar);
 
 if (memberButtonSide) memberButtonSide.addEventListener('click', toggleMemberLinks);
 if (memberButton) memberButton.addEventListener('click', showUserMenu);
