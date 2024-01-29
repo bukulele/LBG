@@ -25,6 +25,7 @@ function showSelector(event) {
     //   dropdown.style.opacity = '1';
     // }, 0);
     // turnChevron(selectorContainer);
+    document.addEventListener('click', handleClickOutsideSelector);
   }
 }
 
@@ -47,6 +48,7 @@ function handleClickOutsideSelector(event) {
 
   while (typeof currentTarget.className === 'string' && typeof currentTarget.className.includes !== 'undefined' && !currentTarget.className.includes('dropdown__container')) {
     currentTarget = currentTarget.parentNode;
+    console.log(currentTarget);
     if (currentTarget.className === 'string' && currentTarget.className.includes('dropdown__container')) {
       return;
     }
@@ -91,10 +93,10 @@ function hideSelector() {
   //   // selectorIsOpened = null;
   // }, 200);
   selectorIsOpened = false;
+  document.removeEventListener('click', handleClickOutsideSelector);
 }
 
 function turnChevron(dropdown) {
-  console.log('pupupu');
   let selectorContainer = dropdown.closest('div[data-selector]');
   let chevron = selectorContainer.querySelector('.selector__chevron');
   if (dropdown.className.includes('dropdown__container_showed')) {
@@ -105,5 +107,5 @@ function turnChevron(dropdown) {
 }
 
 document.addEventListener('click', showSelector);
-document.addEventListener('click', handleClickOutsideSelector);
+// document.addEventListener('click', handleClickOutsideSelector);
 document.addEventListener('click', selectOption);
