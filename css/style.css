@@ -348,6 +348,7 @@ input[class~="btn--yellow"] {
     margin-top: -1px;
 }
 .navbar__news-bar {
+    position: relative;
     width: 100%;
     padding: 15px;
     display: flex;
@@ -356,6 +357,7 @@ input[class~="btn--yellow"] {
     justify-content: center;
     gap: 18px;
     background: linear-gradient(270deg, rgba(26, 39, 71, 0.25) 0%, rgba(72, 61, 103, 0.25) 48.44%, rgba(132, 18, 52, 0.25) 100%), #551420;
+    z-index: 1;
 }
 .navbar__news-bar p {
     color: #F3B800;
