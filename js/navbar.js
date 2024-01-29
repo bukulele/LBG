@@ -8,12 +8,21 @@ const memberButton = document.querySelector('#memberButton');
 const memberZoneContainer = document.querySelector('.navbar__member-zone-container');
 const navbarNewsBar = navBarElement.querySelector('.navbar__news-bar');
 const closeNavbarNewsBarButton = navBarElement.querySelector('.navbar__news-bar .btn');
+const mainContainer = document.querySelector('.main');
+let navBarHeight;
 
 let memberButtonSideChevron;
 let memberButtonChevron;
 
 if (memberButtonSide) memberButtonSideChevron = memberButtonSide.querySelector('.user-buttons__chevron');
 if (memberButton) memberButtonChevron = memberButton.querySelector('.user-buttons__chevron');
+
+setMainBlockMargin();
+
+function handleNavbarHeight() {
+  navBarHeight = navBarElement.offsetHeight;
+}
+
 function showNavigationMenu() {
   navbarWrapper.classList.add('navbar__links-container-wrapper--show');
   navbarLinksContainer.classList.remove('navbar__links-container--hidden');
@@ -56,7 +65,8 @@ function clearNavbarMemberLinks () {
 function showUserMenu (event) {
   event.stopPropagation();
   memberButtonChevron.style.transform = 'rotate(-180deg)';
-  let navBarHeight = navBarElement.offsetHeight;
+  // let navBarHeight = navBarElement.offsetHeight;
+  handleNavbarHeight();
   if (memberZoneContainer.className.includes('navbar__member-zone-container--hidden')) {
     memberZoneContainer.classList.remove('navbar__member-zone-container--hidden');
     memberZoneContainer.classList.add('navbar__member-zone-container--visible');
@@ -67,6 +77,12 @@ function showUserMenu (event) {
 
 function closeNavbarNewsBar() {
   navbarNewsBar.remove();
+  setMainBlockMargin();
+}
+
+function setMainBlockMargin() {
+  handleNavbarHeight();
+  mainContainer.style.marginTop = `${navBarHeight}px`;
 }
 
 navbarHamburger.addEventListener('click', showNavigationMenu);

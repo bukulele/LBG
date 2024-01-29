@@ -1,3 +1,4 @@
+
 let lengthControlTexts = document.querySelectorAll('.control-length__text');
 let tooltip = null;
 let arrow = null;
