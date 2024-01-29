@@ -92,6 +92,7 @@ if (closeNavbarNewsBarButton) closeNavbarNewsBarButton.addEventListener('click',
 if (memberButtonSide) memberButtonSide.addEventListener('click', toggleMemberLinks);
 if (memberButton) memberButton.addEventListener('click', showUserMenu);
 
+window.addEventListener('resize', setMainBlockMargin);
 
 
 //DELETE FROM HERE
