@@ -3209,7 +3209,7 @@ a[data-icon] {
 .buy-access-block__tariff-text {
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 .buy-access-block__tariff-text span {
@@ -4773,6 +4773,15 @@ only screen and (min-width: 768px) {
     .navbar__scrollable-container {
         gap: 43px;
     }
+    .buy-access-block__tariff--best::before {
+        position: absolute;
+        content: "";
+        background: left / contain no-repeat url("../assets/images/best-value.png");
+        height: 112px;
+        width: 120px;
+        left: 0;
+        top: 10px;
+    }
 }
 
 @media only screen and (min-width: 1510px) {
@@ -5234,12 +5243,8 @@ only screen and (min-width: 768px) {
         font-size: 20px;
     }
     .buy-access-block__tariff--best::before {
-        position: absolute;
-        content: "";
-        background: left / contain no-repeat url("../assets/images/best-value.png");
         height: 145px;
         width: 155px;
-        left: 0;
         top: 20px;
     }
     .buy-access-banner {
