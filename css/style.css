@@ -345,7 +345,7 @@ input[class~="btn--yellow"] {
     height: fit-content;
     /*height: 71px;*/
     z-index: 100;
-    margin-top: -1px;
+    /*margin-top: -1px;*/
 }
 .navbar__news-bar {
     position: relative;
@@ -378,6 +378,7 @@ input[class~="btn--yellow"] {
     padding: 0 20px;
     /*gap: 20px;*/
     z-index: 1;
+    margin-top: -1px;
 }
 
 .navbar a {
@@ -424,6 +425,7 @@ input[class~="btn--yellow"] {
     animation-name: show-links-container-wrapper;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
+    z-index: 900;
 }
 
 @keyframes show-links-container-wrapper {
@@ -3257,7 +3259,7 @@ a[data-icon] {
     top: 0;
     left: 0;
     background-color: rgba(47, 49, 52, 0.85);
-    z-index: 90;
+    z-index: 1000;
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
@@ -3275,7 +3277,7 @@ a[data-icon] {
     gap: 20px;
     border-radius: 30px;
     background-color: #690E11;
-    z-index: 90;
+    z-index: 1001;
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
