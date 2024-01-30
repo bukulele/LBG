@@ -3266,7 +3266,8 @@ a[data-icon] {
 .subscribe-window__container {
     position: fixed;
     width: 358px;
-    height: 588px;
+    height: auto;
+    /*height: 588px;*/
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -3274,7 +3275,8 @@ a[data-icon] {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    /*gap: 20px;*/
     border-radius: 30px;
     background-color: #690E11;
     z-index: 1001;
@@ -3324,14 +3326,17 @@ a[data-icon] {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
+    /*gap: 20px;*/
     width: 100%;
-    padding: 34px 20px 20px;
-    overflow: hidden;
+    padding: 20px 20px 0;
+    /*padding: 34px 20px 20px;*/
+    overflow-x: clip;
 }
 .subscribe-window__envelope-container {
     position: absolute;
-    top: 0;
+    top: 13px;
+    /*top: 0;*/
     left: -4%;
     display: flex;
     align-items: center;
@@ -4603,10 +4608,10 @@ only screen and (min-width: 768px) {
     .upper__footer-benefits {
         align-self: start;
     }
-    .subscribe-window__container {
-        height: 588px;
-        gap: 20px;
-    }
+    /*.subscribe-window__container {*/
+    /*    height: 588px;*/
+    /*    gap: 20px;*/
+    /*}*/
     .subscribe-window__close {
         right: 7px;
         top: 6px;
@@ -4614,10 +4619,10 @@ only screen and (min-width: 768px) {
     .subscribe-window__photo-container {
         display: flex;
     }
-    .subscribe-window__message-container {
-        padding: 34px 20px 20px;
-        gap: 20px;
-    }
+    /*.subscribe-window__message-container {*/
+    /*    padding: 34px 20px 20px;*/
+    /*    gap: 20px;*/
+    /*}*/
     .subscribe-window__envelope-container {
         top: 0;
     }
@@ -5359,6 +5364,17 @@ only screen and (min-width: 768px) {
     }
     .footer-featured__logos img {
         width: 20%;
+    }
+    .subscribe-window__container {
+        /*height: 588px;*/
+        gap: 20px;
+    }
+    .subscribe-window__message-container {
+        padding: 34px 20px 20px;
+        gap: 20px;
+    }
+    .subscribe-window__envelope-container {
+        top: 0;
     }
 }
 
